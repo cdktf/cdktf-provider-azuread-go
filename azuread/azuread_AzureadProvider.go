@@ -58,6 +58,9 @@ type AzureadProvider interface {
 	OidcRequestUrl() *string
 	SetOidcRequestUrl(val *string)
 	OidcRequestUrlInput() *string
+	OidcToken() *string
+	SetOidcToken(val *string)
+	OidcTokenInput() *string
 	PartnerId() *string
 	SetPartnerId(val *string)
 	PartnerIdInput() *string
@@ -97,6 +100,7 @@ type AzureadProvider interface {
 	ResetMsiEndpoint()
 	ResetOidcRequestToken()
 	ResetOidcRequestUrl()
+	ResetOidcToken()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -400,6 +404,26 @@ func (j *jsiiProxy_AzureadProvider) OidcRequestUrlInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_AzureadProvider) OidcToken() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"oidcToken",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AzureadProvider) OidcTokenInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"oidcTokenInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AzureadProvider) PartnerId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -655,6 +679,14 @@ func (j *jsiiProxy_AzureadProvider) SetOidcRequestUrl(val *string) {
 	)
 }
 
+func (j *jsiiProxy_AzureadProvider) SetOidcToken(val *string) {
+	_jsii_.Set(
+		j,
+		"oidcToken",
+		val,
+	)
+}
+
 func (j *jsiiProxy_AzureadProvider) SetPartnerId(val *string) {
 	_jsii_.Set(
 		j,
@@ -838,6 +870,14 @@ func (a *jsiiProxy_AzureadProvider) ResetOidcRequestUrl() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetOidcRequestUrl",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AzureadProvider) ResetOidcToken() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetOidcToken",
 		nil, // no parameters
 	)
 }
