@@ -99,6 +99,9 @@ func (j *jsiiProxy_DataAzureadUsersUsersList) WrapsSet() *bool {
 func NewDataAzureadUsersUsersList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzureadUsersUsersList {
 	_init_.Initialize()
 
+	if err := validateNewDataAzureadUsersUsersListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataAzureadUsersUsersList{}
 
 	_jsii_.Create(
@@ -120,7 +123,10 @@ func NewDataAzureadUsersUsersList_Override(d DataAzureadUsersUsersList, terrafor
 	)
 }
 
-func (j *jsiiProxy_DataAzureadUsersUsersList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataAzureadUsersUsersList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -128,7 +134,10 @@ func (j *jsiiProxy_DataAzureadUsersUsersList) SetTerraformAttribute(val *string)
 	)
 }
 
-func (j *jsiiProxy_DataAzureadUsersUsersList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataAzureadUsersUsersList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -136,7 +145,10 @@ func (j *jsiiProxy_DataAzureadUsersUsersList) SetTerraformResource(val cdktf.IIn
 	)
 }
 
-func (j *jsiiProxy_DataAzureadUsersUsersList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DataAzureadUsersUsersList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -158,6 +170,9 @@ func (d *jsiiProxy_DataAzureadUsersUsersList) ComputeFqn() *string {
 }
 
 func (d *jsiiProxy_DataAzureadUsersUsersList) Get(index *float64) DataAzureadUsersUsersOutputReference {
+	if err := d.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns DataAzureadUsersUsersOutputReference
 
 	_jsii_.Invoke(
@@ -171,6 +186,9 @@ func (d *jsiiProxy_DataAzureadUsersUsersList) Get(index *float64) DataAzureadUse
 }
 
 func (d *jsiiProxy_DataAzureadUsersUsersList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

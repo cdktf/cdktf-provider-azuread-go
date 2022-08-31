@@ -99,6 +99,9 @@ func (j *jsiiProxy_DataAzureadApplicationApiList) WrapsSet() *bool {
 func NewDataAzureadApplicationApiList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzureadApplicationApiList {
 	_init_.Initialize()
 
+	if err := validateNewDataAzureadApplicationApiListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataAzureadApplicationApiList{}
 
 	_jsii_.Create(
@@ -120,7 +123,10 @@ func NewDataAzureadApplicationApiList_Override(d DataAzureadApplicationApiList, 
 	)
 }
 
-func (j *jsiiProxy_DataAzureadApplicationApiList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataAzureadApplicationApiList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -128,7 +134,10 @@ func (j *jsiiProxy_DataAzureadApplicationApiList) SetTerraformAttribute(val *str
 	)
 }
 
-func (j *jsiiProxy_DataAzureadApplicationApiList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataAzureadApplicationApiList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -136,7 +145,10 @@ func (j *jsiiProxy_DataAzureadApplicationApiList) SetTerraformResource(val cdktf
 	)
 }
 
-func (j *jsiiProxy_DataAzureadApplicationApiList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DataAzureadApplicationApiList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -158,6 +170,9 @@ func (d *jsiiProxy_DataAzureadApplicationApiList) ComputeFqn() *string {
 }
 
 func (d *jsiiProxy_DataAzureadApplicationApiList) Get(index *float64) DataAzureadApplicationApiOutputReference {
+	if err := d.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns DataAzureadApplicationApiOutputReference
 
 	_jsii_.Invoke(
@@ -171,6 +186,9 @@ func (d *jsiiProxy_DataAzureadApplicationApiList) Get(index *float64) DataAzurea
 }
 
 func (d *jsiiProxy_DataAzureadApplicationApiList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

@@ -247,6 +247,9 @@ func (j *jsiiProxy_ServicePrincipalPasswordTimeoutsOutputReference) UpdateInput(
 func NewServicePrincipalPasswordTimeoutsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ServicePrincipalPasswordTimeoutsOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewServicePrincipalPasswordTimeoutsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ServicePrincipalPasswordTimeoutsOutputReference{}
 
 	_jsii_.Create(
@@ -268,7 +271,10 @@ func NewServicePrincipalPasswordTimeoutsOutputReference_Override(s ServicePrinci
 	)
 }
 
-func (j *jsiiProxy_ServicePrincipalPasswordTimeoutsOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ServicePrincipalPasswordTimeoutsOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -276,7 +282,10 @@ func (j *jsiiProxy_ServicePrincipalPasswordTimeoutsOutputReference) SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_ServicePrincipalPasswordTimeoutsOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ServicePrincipalPasswordTimeoutsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -284,7 +293,10 @@ func (j *jsiiProxy_ServicePrincipalPasswordTimeoutsOutputReference) SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_ServicePrincipalPasswordTimeoutsOutputReference) SetCreate(val *string) {
+func (j *jsiiProxy_ServicePrincipalPasswordTimeoutsOutputReference)SetCreate(val *string) {
+	if err := j.validateSetCreateParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"create",
@@ -292,7 +304,10 @@ func (j *jsiiProxy_ServicePrincipalPasswordTimeoutsOutputReference) SetCreate(va
 	)
 }
 
-func (j *jsiiProxy_ServicePrincipalPasswordTimeoutsOutputReference) SetDelete(val *string) {
+func (j *jsiiProxy_ServicePrincipalPasswordTimeoutsOutputReference)SetDelete(val *string) {
+	if err := j.validateSetDeleteParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"delete",
@@ -300,7 +315,10 @@ func (j *jsiiProxy_ServicePrincipalPasswordTimeoutsOutputReference) SetDelete(va
 	)
 }
 
-func (j *jsiiProxy_ServicePrincipalPasswordTimeoutsOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ServicePrincipalPasswordTimeoutsOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -308,7 +326,10 @@ func (j *jsiiProxy_ServicePrincipalPasswordTimeoutsOutputReference) SetInternalV
 	)
 }
 
-func (j *jsiiProxy_ServicePrincipalPasswordTimeoutsOutputReference) SetRead(val *string) {
+func (j *jsiiProxy_ServicePrincipalPasswordTimeoutsOutputReference)SetRead(val *string) {
+	if err := j.validateSetReadParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"read",
@@ -316,7 +337,10 @@ func (j *jsiiProxy_ServicePrincipalPasswordTimeoutsOutputReference) SetRead(val 
 	)
 }
 
-func (j *jsiiProxy_ServicePrincipalPasswordTimeoutsOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ServicePrincipalPasswordTimeoutsOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -324,7 +348,10 @@ func (j *jsiiProxy_ServicePrincipalPasswordTimeoutsOutputReference) SetTerraform
 	)
 }
 
-func (j *jsiiProxy_ServicePrincipalPasswordTimeoutsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ServicePrincipalPasswordTimeoutsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -332,7 +359,10 @@ func (j *jsiiProxy_ServicePrincipalPasswordTimeoutsOutputReference) SetTerraform
 	)
 }
 
-func (j *jsiiProxy_ServicePrincipalPasswordTimeoutsOutputReference) SetUpdate(val *string) {
+func (j *jsiiProxy_ServicePrincipalPasswordTimeoutsOutputReference)SetUpdate(val *string) {
+	if err := j.validateSetUpdateParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"update",
@@ -354,6 +384,9 @@ func (s *jsiiProxy_ServicePrincipalPasswordTimeoutsOutputReference) ComputeFqn()
 }
 
 func (s *jsiiProxy_ServicePrincipalPasswordTimeoutsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -367,6 +400,9 @@ func (s *jsiiProxy_ServicePrincipalPasswordTimeoutsOutputReference) GetAnyMapAtt
 }
 
 func (s *jsiiProxy_ServicePrincipalPasswordTimeoutsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -380,6 +416,9 @@ func (s *jsiiProxy_ServicePrincipalPasswordTimeoutsOutputReference) GetBooleanAt
 }
 
 func (s *jsiiProxy_ServicePrincipalPasswordTimeoutsOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := s.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -393,6 +432,9 @@ func (s *jsiiProxy_ServicePrincipalPasswordTimeoutsOutputReference) GetBooleanMa
 }
 
 func (s *jsiiProxy_ServicePrincipalPasswordTimeoutsOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := s.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -406,6 +448,9 @@ func (s *jsiiProxy_ServicePrincipalPasswordTimeoutsOutputReference) GetListAttri
 }
 
 func (s *jsiiProxy_ServicePrincipalPasswordTimeoutsOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := s.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -419,6 +464,9 @@ func (s *jsiiProxy_ServicePrincipalPasswordTimeoutsOutputReference) GetNumberAtt
 }
 
 func (s *jsiiProxy_ServicePrincipalPasswordTimeoutsOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := s.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -432,6 +480,9 @@ func (s *jsiiProxy_ServicePrincipalPasswordTimeoutsOutputReference) GetNumberLis
 }
 
 func (s *jsiiProxy_ServicePrincipalPasswordTimeoutsOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := s.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -445,6 +496,9 @@ func (s *jsiiProxy_ServicePrincipalPasswordTimeoutsOutputReference) GetNumberMap
 }
 
 func (s *jsiiProxy_ServicePrincipalPasswordTimeoutsOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := s.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -458,6 +512,9 @@ func (s *jsiiProxy_ServicePrincipalPasswordTimeoutsOutputReference) GetStringAtt
 }
 
 func (s *jsiiProxy_ServicePrincipalPasswordTimeoutsOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := s.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -484,6 +541,9 @@ func (s *jsiiProxy_ServicePrincipalPasswordTimeoutsOutputReference) Interpolatio
 }
 
 func (s *jsiiProxy_ServicePrincipalPasswordTimeoutsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -529,6 +589,9 @@ func (s *jsiiProxy_ServicePrincipalPasswordTimeoutsOutputReference) ResetUpdate(
 }
 
 func (s *jsiiProxy_ServicePrincipalPasswordTimeoutsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

@@ -111,6 +111,9 @@ func (j *jsiiProxy_ApplicationRequiredResourceAccessList) WrapsSet() *bool {
 func NewApplicationRequiredResourceAccessList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ApplicationRequiredResourceAccessList {
 	_init_.Initialize()
 
+	if err := validateNewApplicationRequiredResourceAccessListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ApplicationRequiredResourceAccessList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewApplicationRequiredResourceAccessList_Override(a ApplicationRequiredReso
 	)
 }
 
-func (j *jsiiProxy_ApplicationRequiredResourceAccessList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ApplicationRequiredResourceAccessList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_ApplicationRequiredResourceAccessList) SetInternalValue(val i
 	)
 }
 
-func (j *jsiiProxy_ApplicationRequiredResourceAccessList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ApplicationRequiredResourceAccessList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_ApplicationRequiredResourceAccessList) SetTerraformAttribute(
 	)
 }
 
-func (j *jsiiProxy_ApplicationRequiredResourceAccessList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ApplicationRequiredResourceAccessList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_ApplicationRequiredResourceAccessList) SetTerraformResource(v
 	)
 }
 
-func (j *jsiiProxy_ApplicationRequiredResourceAccessList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_ApplicationRequiredResourceAccessList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (a *jsiiProxy_ApplicationRequiredResourceAccessList) ComputeFqn() *string {
 }
 
 func (a *jsiiProxy_ApplicationRequiredResourceAccessList) Get(index *float64) ApplicationRequiredResourceAccessOutputReference {
+	if err := a.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns ApplicationRequiredResourceAccessOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (a *jsiiProxy_ApplicationRequiredResourceAccessList) Get(index *float64) Ap
 }
 
 func (a *jsiiProxy_ApplicationRequiredResourceAccessList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := a.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

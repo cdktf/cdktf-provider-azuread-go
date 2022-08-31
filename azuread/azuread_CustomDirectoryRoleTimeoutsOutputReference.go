@@ -247,6 +247,9 @@ func (j *jsiiProxy_CustomDirectoryRoleTimeoutsOutputReference) UpdateInput() *st
 func NewCustomDirectoryRoleTimeoutsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) CustomDirectoryRoleTimeoutsOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewCustomDirectoryRoleTimeoutsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_CustomDirectoryRoleTimeoutsOutputReference{}
 
 	_jsii_.Create(
@@ -268,7 +271,10 @@ func NewCustomDirectoryRoleTimeoutsOutputReference_Override(c CustomDirectoryRol
 	)
 }
 
-func (j *jsiiProxy_CustomDirectoryRoleTimeoutsOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_CustomDirectoryRoleTimeoutsOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -276,7 +282,10 @@ func (j *jsiiProxy_CustomDirectoryRoleTimeoutsOutputReference) SetComplexObjectI
 	)
 }
 
-func (j *jsiiProxy_CustomDirectoryRoleTimeoutsOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_CustomDirectoryRoleTimeoutsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -284,7 +293,10 @@ func (j *jsiiProxy_CustomDirectoryRoleTimeoutsOutputReference) SetComplexObjectI
 	)
 }
 
-func (j *jsiiProxy_CustomDirectoryRoleTimeoutsOutputReference) SetCreate(val *string) {
+func (j *jsiiProxy_CustomDirectoryRoleTimeoutsOutputReference)SetCreate(val *string) {
+	if err := j.validateSetCreateParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"create",
@@ -292,7 +304,10 @@ func (j *jsiiProxy_CustomDirectoryRoleTimeoutsOutputReference) SetCreate(val *st
 	)
 }
 
-func (j *jsiiProxy_CustomDirectoryRoleTimeoutsOutputReference) SetDelete(val *string) {
+func (j *jsiiProxy_CustomDirectoryRoleTimeoutsOutputReference)SetDelete(val *string) {
+	if err := j.validateSetDeleteParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"delete",
@@ -300,7 +315,10 @@ func (j *jsiiProxy_CustomDirectoryRoleTimeoutsOutputReference) SetDelete(val *st
 	)
 }
 
-func (j *jsiiProxy_CustomDirectoryRoleTimeoutsOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_CustomDirectoryRoleTimeoutsOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -308,7 +326,10 @@ func (j *jsiiProxy_CustomDirectoryRoleTimeoutsOutputReference) SetInternalValue(
 	)
 }
 
-func (j *jsiiProxy_CustomDirectoryRoleTimeoutsOutputReference) SetRead(val *string) {
+func (j *jsiiProxy_CustomDirectoryRoleTimeoutsOutputReference)SetRead(val *string) {
+	if err := j.validateSetReadParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"read",
@@ -316,7 +337,10 @@ func (j *jsiiProxy_CustomDirectoryRoleTimeoutsOutputReference) SetRead(val *stri
 	)
 }
 
-func (j *jsiiProxy_CustomDirectoryRoleTimeoutsOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_CustomDirectoryRoleTimeoutsOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -324,7 +348,10 @@ func (j *jsiiProxy_CustomDirectoryRoleTimeoutsOutputReference) SetTerraformAttri
 	)
 }
 
-func (j *jsiiProxy_CustomDirectoryRoleTimeoutsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CustomDirectoryRoleTimeoutsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -332,7 +359,10 @@ func (j *jsiiProxy_CustomDirectoryRoleTimeoutsOutputReference) SetTerraformResou
 	)
 }
 
-func (j *jsiiProxy_CustomDirectoryRoleTimeoutsOutputReference) SetUpdate(val *string) {
+func (j *jsiiProxy_CustomDirectoryRoleTimeoutsOutputReference)SetUpdate(val *string) {
+	if err := j.validateSetUpdateParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"update",
@@ -354,6 +384,9 @@ func (c *jsiiProxy_CustomDirectoryRoleTimeoutsOutputReference) ComputeFqn() *str
 }
 
 func (c *jsiiProxy_CustomDirectoryRoleTimeoutsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -367,6 +400,9 @@ func (c *jsiiProxy_CustomDirectoryRoleTimeoutsOutputReference) GetAnyMapAttribut
 }
 
 func (c *jsiiProxy_CustomDirectoryRoleTimeoutsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -380,6 +416,9 @@ func (c *jsiiProxy_CustomDirectoryRoleTimeoutsOutputReference) GetBooleanAttribu
 }
 
 func (c *jsiiProxy_CustomDirectoryRoleTimeoutsOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := c.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -393,6 +432,9 @@ func (c *jsiiProxy_CustomDirectoryRoleTimeoutsOutputReference) GetBooleanMapAttr
 }
 
 func (c *jsiiProxy_CustomDirectoryRoleTimeoutsOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := c.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -406,6 +448,9 @@ func (c *jsiiProxy_CustomDirectoryRoleTimeoutsOutputReference) GetListAttribute(
 }
 
 func (c *jsiiProxy_CustomDirectoryRoleTimeoutsOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := c.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -419,6 +464,9 @@ func (c *jsiiProxy_CustomDirectoryRoleTimeoutsOutputReference) GetNumberAttribut
 }
 
 func (c *jsiiProxy_CustomDirectoryRoleTimeoutsOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := c.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -432,6 +480,9 @@ func (c *jsiiProxy_CustomDirectoryRoleTimeoutsOutputReference) GetNumberListAttr
 }
 
 func (c *jsiiProxy_CustomDirectoryRoleTimeoutsOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := c.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -445,6 +496,9 @@ func (c *jsiiProxy_CustomDirectoryRoleTimeoutsOutputReference) GetNumberMapAttri
 }
 
 func (c *jsiiProxy_CustomDirectoryRoleTimeoutsOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := c.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -458,6 +512,9 @@ func (c *jsiiProxy_CustomDirectoryRoleTimeoutsOutputReference) GetStringAttribut
 }
 
 func (c *jsiiProxy_CustomDirectoryRoleTimeoutsOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := c.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -484,6 +541,9 @@ func (c *jsiiProxy_CustomDirectoryRoleTimeoutsOutputReference) InterpolationAsLi
 }
 
 func (c *jsiiProxy_CustomDirectoryRoleTimeoutsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -529,6 +589,9 @@ func (c *jsiiProxy_CustomDirectoryRoleTimeoutsOutputReference) ResetUpdate() {
 }
 
 func (c *jsiiProxy_CustomDirectoryRoleTimeoutsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

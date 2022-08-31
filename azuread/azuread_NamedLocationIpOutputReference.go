@@ -198,6 +198,9 @@ func (j *jsiiProxy_NamedLocationIpOutputReference) TrustedInput() interface{} {
 func NewNamedLocationIpOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) NamedLocationIpOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewNamedLocationIpOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_NamedLocationIpOutputReference{}
 
 	_jsii_.Create(
@@ -219,7 +222,10 @@ func NewNamedLocationIpOutputReference_Override(n NamedLocationIpOutputReference
 	)
 }
 
-func (j *jsiiProxy_NamedLocationIpOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_NamedLocationIpOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -227,7 +233,10 @@ func (j *jsiiProxy_NamedLocationIpOutputReference) SetComplexObjectIndex(val int
 	)
 }
 
-func (j *jsiiProxy_NamedLocationIpOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_NamedLocationIpOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -235,7 +244,10 @@ func (j *jsiiProxy_NamedLocationIpOutputReference) SetComplexObjectIsFromSet(val
 	)
 }
 
-func (j *jsiiProxy_NamedLocationIpOutputReference) SetInternalValue(val *NamedLocationIp) {
+func (j *jsiiProxy_NamedLocationIpOutputReference)SetInternalValue(val *NamedLocationIp) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -243,7 +255,10 @@ func (j *jsiiProxy_NamedLocationIpOutputReference) SetInternalValue(val *NamedLo
 	)
 }
 
-func (j *jsiiProxy_NamedLocationIpOutputReference) SetIpRanges(val *[]*string) {
+func (j *jsiiProxy_NamedLocationIpOutputReference)SetIpRanges(val *[]*string) {
+	if err := j.validateSetIpRangesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"ipRanges",
@@ -251,7 +266,10 @@ func (j *jsiiProxy_NamedLocationIpOutputReference) SetIpRanges(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_NamedLocationIpOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_NamedLocationIpOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -259,7 +277,10 @@ func (j *jsiiProxy_NamedLocationIpOutputReference) SetTerraformAttribute(val *st
 	)
 }
 
-func (j *jsiiProxy_NamedLocationIpOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_NamedLocationIpOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -267,7 +288,10 @@ func (j *jsiiProxy_NamedLocationIpOutputReference) SetTerraformResource(val cdkt
 	)
 }
 
-func (j *jsiiProxy_NamedLocationIpOutputReference) SetTrusted(val interface{}) {
+func (j *jsiiProxy_NamedLocationIpOutputReference)SetTrusted(val interface{}) {
+	if err := j.validateSetTrustedParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"trusted",
@@ -289,6 +313,9 @@ func (n *jsiiProxy_NamedLocationIpOutputReference) ComputeFqn() *string {
 }
 
 func (n *jsiiProxy_NamedLocationIpOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := n.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -302,6 +329,9 @@ func (n *jsiiProxy_NamedLocationIpOutputReference) GetAnyMapAttribute(terraformA
 }
 
 func (n *jsiiProxy_NamedLocationIpOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := n.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -315,6 +345,9 @@ func (n *jsiiProxy_NamedLocationIpOutputReference) GetBooleanAttribute(terraform
 }
 
 func (n *jsiiProxy_NamedLocationIpOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := n.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -328,6 +361,9 @@ func (n *jsiiProxy_NamedLocationIpOutputReference) GetBooleanMapAttribute(terraf
 }
 
 func (n *jsiiProxy_NamedLocationIpOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := n.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -341,6 +377,9 @@ func (n *jsiiProxy_NamedLocationIpOutputReference) GetListAttribute(terraformAtt
 }
 
 func (n *jsiiProxy_NamedLocationIpOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := n.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -354,6 +393,9 @@ func (n *jsiiProxy_NamedLocationIpOutputReference) GetNumberAttribute(terraformA
 }
 
 func (n *jsiiProxy_NamedLocationIpOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := n.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -367,6 +409,9 @@ func (n *jsiiProxy_NamedLocationIpOutputReference) GetNumberListAttribute(terraf
 }
 
 func (n *jsiiProxy_NamedLocationIpOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := n.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -380,6 +425,9 @@ func (n *jsiiProxy_NamedLocationIpOutputReference) GetNumberMapAttribute(terrafo
 }
 
 func (n *jsiiProxy_NamedLocationIpOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := n.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -393,6 +441,9 @@ func (n *jsiiProxy_NamedLocationIpOutputReference) GetStringAttribute(terraformA
 }
 
 func (n *jsiiProxy_NamedLocationIpOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := n.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -419,6 +470,9 @@ func (n *jsiiProxy_NamedLocationIpOutputReference) InterpolationAsList() cdktf.I
 }
 
 func (n *jsiiProxy_NamedLocationIpOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := n.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -440,6 +494,9 @@ func (n *jsiiProxy_NamedLocationIpOutputReference) ResetTrusted() {
 }
 
 func (n *jsiiProxy_NamedLocationIpOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := n.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

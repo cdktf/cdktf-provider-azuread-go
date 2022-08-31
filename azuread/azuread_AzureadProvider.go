@@ -569,6 +569,9 @@ func (j *jsiiProxy_AzureadProvider) UseOidcInput() interface{} {
 func NewAzureadProvider(scope constructs.Construct, id *string, config *AzureadProviderConfig) AzureadProvider {
 	_init_.Initialize()
 
+	if err := validateNewAzureadProviderParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_AzureadProvider{}
 
 	_jsii_.Create(
@@ -591,7 +594,7 @@ func NewAzureadProvider_Override(a AzureadProvider, scope constructs.Construct, 
 	)
 }
 
-func (j *jsiiProxy_AzureadProvider) SetAlias(val *string) {
+func (j *jsiiProxy_AzureadProvider)SetAlias(val *string) {
 	_jsii_.Set(
 		j,
 		"alias",
@@ -599,7 +602,7 @@ func (j *jsiiProxy_AzureadProvider) SetAlias(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AzureadProvider) SetClientCertificate(val *string) {
+func (j *jsiiProxy_AzureadProvider)SetClientCertificate(val *string) {
 	_jsii_.Set(
 		j,
 		"clientCertificate",
@@ -607,7 +610,7 @@ func (j *jsiiProxy_AzureadProvider) SetClientCertificate(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AzureadProvider) SetClientCertificatePassword(val *string) {
+func (j *jsiiProxy_AzureadProvider)SetClientCertificatePassword(val *string) {
 	_jsii_.Set(
 		j,
 		"clientCertificatePassword",
@@ -615,7 +618,7 @@ func (j *jsiiProxy_AzureadProvider) SetClientCertificatePassword(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AzureadProvider) SetClientCertificatePath(val *string) {
+func (j *jsiiProxy_AzureadProvider)SetClientCertificatePath(val *string) {
 	_jsii_.Set(
 		j,
 		"clientCertificatePath",
@@ -623,7 +626,7 @@ func (j *jsiiProxy_AzureadProvider) SetClientCertificatePath(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AzureadProvider) SetClientId(val *string) {
+func (j *jsiiProxy_AzureadProvider)SetClientId(val *string) {
 	_jsii_.Set(
 		j,
 		"clientId",
@@ -631,7 +634,7 @@ func (j *jsiiProxy_AzureadProvider) SetClientId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AzureadProvider) SetClientSecret(val *string) {
+func (j *jsiiProxy_AzureadProvider)SetClientSecret(val *string) {
 	_jsii_.Set(
 		j,
 		"clientSecret",
@@ -639,7 +642,10 @@ func (j *jsiiProxy_AzureadProvider) SetClientSecret(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AzureadProvider) SetDisableTerraformPartnerId(val interface{}) {
+func (j *jsiiProxy_AzureadProvider)SetDisableTerraformPartnerId(val interface{}) {
+	if err := j.validateSetDisableTerraformPartnerIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"disableTerraformPartnerId",
@@ -647,7 +653,7 @@ func (j *jsiiProxy_AzureadProvider) SetDisableTerraformPartnerId(val interface{}
 	)
 }
 
-func (j *jsiiProxy_AzureadProvider) SetEnvironment(val *string) {
+func (j *jsiiProxy_AzureadProvider)SetEnvironment(val *string) {
 	_jsii_.Set(
 		j,
 		"environment",
@@ -655,7 +661,7 @@ func (j *jsiiProxy_AzureadProvider) SetEnvironment(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AzureadProvider) SetMsiEndpoint(val *string) {
+func (j *jsiiProxy_AzureadProvider)SetMsiEndpoint(val *string) {
 	_jsii_.Set(
 		j,
 		"msiEndpoint",
@@ -663,7 +669,7 @@ func (j *jsiiProxy_AzureadProvider) SetMsiEndpoint(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AzureadProvider) SetOidcRequestToken(val *string) {
+func (j *jsiiProxy_AzureadProvider)SetOidcRequestToken(val *string) {
 	_jsii_.Set(
 		j,
 		"oidcRequestToken",
@@ -671,7 +677,7 @@ func (j *jsiiProxy_AzureadProvider) SetOidcRequestToken(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AzureadProvider) SetOidcRequestUrl(val *string) {
+func (j *jsiiProxy_AzureadProvider)SetOidcRequestUrl(val *string) {
 	_jsii_.Set(
 		j,
 		"oidcRequestUrl",
@@ -679,7 +685,7 @@ func (j *jsiiProxy_AzureadProvider) SetOidcRequestUrl(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AzureadProvider) SetOidcToken(val *string) {
+func (j *jsiiProxy_AzureadProvider)SetOidcToken(val *string) {
 	_jsii_.Set(
 		j,
 		"oidcToken",
@@ -687,7 +693,7 @@ func (j *jsiiProxy_AzureadProvider) SetOidcToken(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AzureadProvider) SetPartnerId(val *string) {
+func (j *jsiiProxy_AzureadProvider)SetPartnerId(val *string) {
 	_jsii_.Set(
 		j,
 		"partnerId",
@@ -695,7 +701,7 @@ func (j *jsiiProxy_AzureadProvider) SetPartnerId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AzureadProvider) SetTenantId(val *string) {
+func (j *jsiiProxy_AzureadProvider)SetTenantId(val *string) {
 	_jsii_.Set(
 		j,
 		"tenantId",
@@ -703,7 +709,10 @@ func (j *jsiiProxy_AzureadProvider) SetTenantId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AzureadProvider) SetUseCli(val interface{}) {
+func (j *jsiiProxy_AzureadProvider)SetUseCli(val interface{}) {
+	if err := j.validateSetUseCliParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"useCli",
@@ -711,7 +720,10 @@ func (j *jsiiProxy_AzureadProvider) SetUseCli(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AzureadProvider) SetUseMsi(val interface{}) {
+func (j *jsiiProxy_AzureadProvider)SetUseMsi(val interface{}) {
+	if err := j.validateSetUseMsiParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"useMsi",
@@ -719,7 +731,10 @@ func (j *jsiiProxy_AzureadProvider) SetUseMsi(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AzureadProvider) SetUseOidc(val interface{}) {
+func (j *jsiiProxy_AzureadProvider)SetUseOidc(val interface{}) {
+	if err := j.validateSetUseOidcParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"useOidc",
@@ -747,6 +762,9 @@ func (j *jsiiProxy_AzureadProvider) SetUseOidc(val interface{}) {
 func AzureadProvider_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateAzureadProvider_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -771,6 +789,9 @@ func AzureadProvider_TfResourceType() *string {
 }
 
 func (a *jsiiProxy_AzureadProvider) AddOverride(path *string, value interface{}) {
+	if err := a.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		a,
 		"addOverride",
@@ -779,6 +800,9 @@ func (a *jsiiProxy_AzureadProvider) AddOverride(path *string, value interface{})
 }
 
 func (a *jsiiProxy_AzureadProvider) OverrideLogicalId(newLogicalId *string) {
+	if err := a.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		a,
 		"overrideLogicalId",

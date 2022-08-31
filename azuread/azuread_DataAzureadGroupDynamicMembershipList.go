@@ -99,6 +99,9 @@ func (j *jsiiProxy_DataAzureadGroupDynamicMembershipList) WrapsSet() *bool {
 func NewDataAzureadGroupDynamicMembershipList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzureadGroupDynamicMembershipList {
 	_init_.Initialize()
 
+	if err := validateNewDataAzureadGroupDynamicMembershipListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataAzureadGroupDynamicMembershipList{}
 
 	_jsii_.Create(
@@ -120,7 +123,10 @@ func NewDataAzureadGroupDynamicMembershipList_Override(d DataAzureadGroupDynamic
 	)
 }
 
-func (j *jsiiProxy_DataAzureadGroupDynamicMembershipList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataAzureadGroupDynamicMembershipList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -128,7 +134,10 @@ func (j *jsiiProxy_DataAzureadGroupDynamicMembershipList) SetTerraformAttribute(
 	)
 }
 
-func (j *jsiiProxy_DataAzureadGroupDynamicMembershipList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataAzureadGroupDynamicMembershipList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -136,7 +145,10 @@ func (j *jsiiProxy_DataAzureadGroupDynamicMembershipList) SetTerraformResource(v
 	)
 }
 
-func (j *jsiiProxy_DataAzureadGroupDynamicMembershipList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DataAzureadGroupDynamicMembershipList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -158,6 +170,9 @@ func (d *jsiiProxy_DataAzureadGroupDynamicMembershipList) ComputeFqn() *string {
 }
 
 func (d *jsiiProxy_DataAzureadGroupDynamicMembershipList) Get(index *float64) DataAzureadGroupDynamicMembershipOutputReference {
+	if err := d.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns DataAzureadGroupDynamicMembershipOutputReference
 
 	_jsii_.Invoke(
@@ -171,6 +186,9 @@ func (d *jsiiProxy_DataAzureadGroupDynamicMembershipList) Get(index *float64) Da
 }
 
 func (d *jsiiProxy_DataAzureadGroupDynamicMembershipList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

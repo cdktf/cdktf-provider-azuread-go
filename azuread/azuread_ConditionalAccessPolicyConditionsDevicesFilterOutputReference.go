@@ -197,6 +197,9 @@ func (j *jsiiProxy_ConditionalAccessPolicyConditionsDevicesFilterOutputReference
 func NewConditionalAccessPolicyConditionsDevicesFilterOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ConditionalAccessPolicyConditionsDevicesFilterOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewConditionalAccessPolicyConditionsDevicesFilterOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ConditionalAccessPolicyConditionsDevicesFilterOutputReference{}
 
 	_jsii_.Create(
@@ -218,7 +221,10 @@ func NewConditionalAccessPolicyConditionsDevicesFilterOutputReference_Override(c
 	)
 }
 
-func (j *jsiiProxy_ConditionalAccessPolicyConditionsDevicesFilterOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ConditionalAccessPolicyConditionsDevicesFilterOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -226,7 +232,10 @@ func (j *jsiiProxy_ConditionalAccessPolicyConditionsDevicesFilterOutputReference
 	)
 }
 
-func (j *jsiiProxy_ConditionalAccessPolicyConditionsDevicesFilterOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ConditionalAccessPolicyConditionsDevicesFilterOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -234,7 +243,10 @@ func (j *jsiiProxy_ConditionalAccessPolicyConditionsDevicesFilterOutputReference
 	)
 }
 
-func (j *jsiiProxy_ConditionalAccessPolicyConditionsDevicesFilterOutputReference) SetInternalValue(val *ConditionalAccessPolicyConditionsDevicesFilter) {
+func (j *jsiiProxy_ConditionalAccessPolicyConditionsDevicesFilterOutputReference)SetInternalValue(val *ConditionalAccessPolicyConditionsDevicesFilter) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -242,7 +254,10 @@ func (j *jsiiProxy_ConditionalAccessPolicyConditionsDevicesFilterOutputReference
 	)
 }
 
-func (j *jsiiProxy_ConditionalAccessPolicyConditionsDevicesFilterOutputReference) SetMode(val *string) {
+func (j *jsiiProxy_ConditionalAccessPolicyConditionsDevicesFilterOutputReference)SetMode(val *string) {
+	if err := j.validateSetModeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"mode",
@@ -250,7 +265,10 @@ func (j *jsiiProxy_ConditionalAccessPolicyConditionsDevicesFilterOutputReference
 	)
 }
 
-func (j *jsiiProxy_ConditionalAccessPolicyConditionsDevicesFilterOutputReference) SetRule(val *string) {
+func (j *jsiiProxy_ConditionalAccessPolicyConditionsDevicesFilterOutputReference)SetRule(val *string) {
+	if err := j.validateSetRuleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"rule",
@@ -258,7 +276,10 @@ func (j *jsiiProxy_ConditionalAccessPolicyConditionsDevicesFilterOutputReference
 	)
 }
 
-func (j *jsiiProxy_ConditionalAccessPolicyConditionsDevicesFilterOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ConditionalAccessPolicyConditionsDevicesFilterOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -266,7 +287,10 @@ func (j *jsiiProxy_ConditionalAccessPolicyConditionsDevicesFilterOutputReference
 	)
 }
 
-func (j *jsiiProxy_ConditionalAccessPolicyConditionsDevicesFilterOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ConditionalAccessPolicyConditionsDevicesFilterOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -288,6 +312,9 @@ func (c *jsiiProxy_ConditionalAccessPolicyConditionsDevicesFilterOutputReference
 }
 
 func (c *jsiiProxy_ConditionalAccessPolicyConditionsDevicesFilterOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -301,6 +328,9 @@ func (c *jsiiProxy_ConditionalAccessPolicyConditionsDevicesFilterOutputReference
 }
 
 func (c *jsiiProxy_ConditionalAccessPolicyConditionsDevicesFilterOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -314,6 +344,9 @@ func (c *jsiiProxy_ConditionalAccessPolicyConditionsDevicesFilterOutputReference
 }
 
 func (c *jsiiProxy_ConditionalAccessPolicyConditionsDevicesFilterOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := c.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -327,6 +360,9 @@ func (c *jsiiProxy_ConditionalAccessPolicyConditionsDevicesFilterOutputReference
 }
 
 func (c *jsiiProxy_ConditionalAccessPolicyConditionsDevicesFilterOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := c.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -340,6 +376,9 @@ func (c *jsiiProxy_ConditionalAccessPolicyConditionsDevicesFilterOutputReference
 }
 
 func (c *jsiiProxy_ConditionalAccessPolicyConditionsDevicesFilterOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := c.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -353,6 +392,9 @@ func (c *jsiiProxy_ConditionalAccessPolicyConditionsDevicesFilterOutputReference
 }
 
 func (c *jsiiProxy_ConditionalAccessPolicyConditionsDevicesFilterOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := c.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -366,6 +408,9 @@ func (c *jsiiProxy_ConditionalAccessPolicyConditionsDevicesFilterOutputReference
 }
 
 func (c *jsiiProxy_ConditionalAccessPolicyConditionsDevicesFilterOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := c.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -379,6 +424,9 @@ func (c *jsiiProxy_ConditionalAccessPolicyConditionsDevicesFilterOutputReference
 }
 
 func (c *jsiiProxy_ConditionalAccessPolicyConditionsDevicesFilterOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := c.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -392,6 +440,9 @@ func (c *jsiiProxy_ConditionalAccessPolicyConditionsDevicesFilterOutputReference
 }
 
 func (c *jsiiProxy_ConditionalAccessPolicyConditionsDevicesFilterOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := c.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -418,6 +469,9 @@ func (c *jsiiProxy_ConditionalAccessPolicyConditionsDevicesFilterOutputReference
 }
 
 func (c *jsiiProxy_ConditionalAccessPolicyConditionsDevicesFilterOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -431,6 +485,9 @@ func (c *jsiiProxy_ConditionalAccessPolicyConditionsDevicesFilterOutputReference
 }
 
 func (c *jsiiProxy_ConditionalAccessPolicyConditionsDevicesFilterOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

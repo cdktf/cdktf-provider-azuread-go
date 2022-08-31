@@ -480,6 +480,9 @@ func (j *jsiiProxy_ServicePrincipalPassword) Value() *string {
 func NewServicePrincipalPassword(scope constructs.Construct, id *string, config *ServicePrincipalPasswordConfig) ServicePrincipalPassword {
 	_init_.Initialize()
 
+	if err := validateNewServicePrincipalPasswordParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ServicePrincipalPassword{}
 
 	_jsii_.Create(
@@ -502,7 +505,10 @@ func NewServicePrincipalPassword_Override(s ServicePrincipalPassword, scope cons
 	)
 }
 
-func (j *jsiiProxy_ServicePrincipalPassword) SetConnection(val interface{}) {
+func (j *jsiiProxy_ServicePrincipalPassword)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -510,7 +516,7 @@ func (j *jsiiProxy_ServicePrincipalPassword) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ServicePrincipalPassword) SetCount(val *float64) {
+func (j *jsiiProxy_ServicePrincipalPassword)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -518,7 +524,7 @@ func (j *jsiiProxy_ServicePrincipalPassword) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_ServicePrincipalPassword) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ServicePrincipalPassword)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -526,7 +532,10 @@ func (j *jsiiProxy_ServicePrincipalPassword) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ServicePrincipalPassword) SetDisplayName(val *string) {
+func (j *jsiiProxy_ServicePrincipalPassword)SetDisplayName(val *string) {
+	if err := j.validateSetDisplayNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"displayName",
@@ -534,7 +543,10 @@ func (j *jsiiProxy_ServicePrincipalPassword) SetDisplayName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ServicePrincipalPassword) SetEndDate(val *string) {
+func (j *jsiiProxy_ServicePrincipalPassword)SetEndDate(val *string) {
+	if err := j.validateSetEndDateParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"endDate",
@@ -542,7 +554,10 @@ func (j *jsiiProxy_ServicePrincipalPassword) SetEndDate(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ServicePrincipalPassword) SetEndDateRelative(val *string) {
+func (j *jsiiProxy_ServicePrincipalPassword)SetEndDateRelative(val *string) {
+	if err := j.validateSetEndDateRelativeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"endDateRelative",
@@ -550,7 +565,7 @@ func (j *jsiiProxy_ServicePrincipalPassword) SetEndDateRelative(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ServicePrincipalPassword) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ServicePrincipalPassword)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -558,7 +573,10 @@ func (j *jsiiProxy_ServicePrincipalPassword) SetForEach(val cdktf.ITerraformIter
 	)
 }
 
-func (j *jsiiProxy_ServicePrincipalPassword) SetId(val *string) {
+func (j *jsiiProxy_ServicePrincipalPassword)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -566,7 +584,10 @@ func (j *jsiiProxy_ServicePrincipalPassword) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ServicePrincipalPassword) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ServicePrincipalPassword)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -574,7 +595,7 @@ func (j *jsiiProxy_ServicePrincipalPassword) SetLifecycle(val *cdktf.TerraformRe
 	)
 }
 
-func (j *jsiiProxy_ServicePrincipalPassword) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ServicePrincipalPassword)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -582,7 +603,10 @@ func (j *jsiiProxy_ServicePrincipalPassword) SetProvider(val cdktf.TerraformProv
 	)
 }
 
-func (j *jsiiProxy_ServicePrincipalPassword) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ServicePrincipalPassword)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -590,7 +614,10 @@ func (j *jsiiProxy_ServicePrincipalPassword) SetProvisioners(val *[]interface{})
 	)
 }
 
-func (j *jsiiProxy_ServicePrincipalPassword) SetRotateWhenChanged(val *map[string]*string) {
+func (j *jsiiProxy_ServicePrincipalPassword)SetRotateWhenChanged(val *map[string]*string) {
+	if err := j.validateSetRotateWhenChangedParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"rotateWhenChanged",
@@ -598,7 +625,10 @@ func (j *jsiiProxy_ServicePrincipalPassword) SetRotateWhenChanged(val *map[strin
 	)
 }
 
-func (j *jsiiProxy_ServicePrincipalPassword) SetServicePrincipalId(val *string) {
+func (j *jsiiProxy_ServicePrincipalPassword)SetServicePrincipalId(val *string) {
+	if err := j.validateSetServicePrincipalIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"servicePrincipalId",
@@ -606,7 +636,10 @@ func (j *jsiiProxy_ServicePrincipalPassword) SetServicePrincipalId(val *string) 
 	)
 }
 
-func (j *jsiiProxy_ServicePrincipalPassword) SetStartDate(val *string) {
+func (j *jsiiProxy_ServicePrincipalPassword)SetStartDate(val *string) {
+	if err := j.validateSetStartDateParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"startDate",
@@ -634,6 +667,9 @@ func (j *jsiiProxy_ServicePrincipalPassword) SetStartDate(val *string) {
 func ServicePrincipalPassword_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateServicePrincipalPassword_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -658,6 +694,9 @@ func ServicePrincipalPassword_TfResourceType() *string {
 }
 
 func (s *jsiiProxy_ServicePrincipalPassword) AddOverride(path *string, value interface{}) {
+	if err := s.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"addOverride",
@@ -666,6 +705,9 @@ func (s *jsiiProxy_ServicePrincipalPassword) AddOverride(path *string, value int
 }
 
 func (s *jsiiProxy_ServicePrincipalPassword) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -679,6 +721,9 @@ func (s *jsiiProxy_ServicePrincipalPassword) GetAnyMapAttribute(terraformAttribu
 }
 
 func (s *jsiiProxy_ServicePrincipalPassword) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -692,6 +737,9 @@ func (s *jsiiProxy_ServicePrincipalPassword) GetBooleanAttribute(terraformAttrib
 }
 
 func (s *jsiiProxy_ServicePrincipalPassword) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := s.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -705,6 +753,9 @@ func (s *jsiiProxy_ServicePrincipalPassword) GetBooleanMapAttribute(terraformAtt
 }
 
 func (s *jsiiProxy_ServicePrincipalPassword) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := s.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -718,6 +769,9 @@ func (s *jsiiProxy_ServicePrincipalPassword) GetListAttribute(terraformAttribute
 }
 
 func (s *jsiiProxy_ServicePrincipalPassword) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := s.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -731,6 +785,9 @@ func (s *jsiiProxy_ServicePrincipalPassword) GetNumberAttribute(terraformAttribu
 }
 
 func (s *jsiiProxy_ServicePrincipalPassword) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := s.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -744,6 +801,9 @@ func (s *jsiiProxy_ServicePrincipalPassword) GetNumberListAttribute(terraformAtt
 }
 
 func (s *jsiiProxy_ServicePrincipalPassword) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := s.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -757,6 +817,9 @@ func (s *jsiiProxy_ServicePrincipalPassword) GetNumberMapAttribute(terraformAttr
 }
 
 func (s *jsiiProxy_ServicePrincipalPassword) GetStringAttribute(terraformAttribute *string) *string {
+	if err := s.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -770,6 +833,9 @@ func (s *jsiiProxy_ServicePrincipalPassword) GetStringAttribute(terraformAttribu
 }
 
 func (s *jsiiProxy_ServicePrincipalPassword) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := s.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -783,6 +849,9 @@ func (s *jsiiProxy_ServicePrincipalPassword) GetStringMapAttribute(terraformAttr
 }
 
 func (s *jsiiProxy_ServicePrincipalPassword) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -796,6 +865,9 @@ func (s *jsiiProxy_ServicePrincipalPassword) InterpolationForAttribute(terraform
 }
 
 func (s *jsiiProxy_ServicePrincipalPassword) OverrideLogicalId(newLogicalId *string) {
+	if err := s.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"overrideLogicalId",
@@ -804,6 +876,9 @@ func (s *jsiiProxy_ServicePrincipalPassword) OverrideLogicalId(newLogicalId *str
 }
 
 func (s *jsiiProxy_ServicePrincipalPassword) PutTimeouts(value *ServicePrincipalPasswordTimeouts) {
+	if err := s.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"putTimeouts",

@@ -247,6 +247,9 @@ func (j *jsiiProxy_NamedLocationTimeoutsOutputReference) UpdateInput() *string {
 func NewNamedLocationTimeoutsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) NamedLocationTimeoutsOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewNamedLocationTimeoutsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_NamedLocationTimeoutsOutputReference{}
 
 	_jsii_.Create(
@@ -268,7 +271,10 @@ func NewNamedLocationTimeoutsOutputReference_Override(n NamedLocationTimeoutsOut
 	)
 }
 
-func (j *jsiiProxy_NamedLocationTimeoutsOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_NamedLocationTimeoutsOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -276,7 +282,10 @@ func (j *jsiiProxy_NamedLocationTimeoutsOutputReference) SetComplexObjectIndex(v
 	)
 }
 
-func (j *jsiiProxy_NamedLocationTimeoutsOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_NamedLocationTimeoutsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -284,7 +293,10 @@ func (j *jsiiProxy_NamedLocationTimeoutsOutputReference) SetComplexObjectIsFromS
 	)
 }
 
-func (j *jsiiProxy_NamedLocationTimeoutsOutputReference) SetCreate(val *string) {
+func (j *jsiiProxy_NamedLocationTimeoutsOutputReference)SetCreate(val *string) {
+	if err := j.validateSetCreateParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"create",
@@ -292,7 +304,10 @@ func (j *jsiiProxy_NamedLocationTimeoutsOutputReference) SetCreate(val *string) 
 	)
 }
 
-func (j *jsiiProxy_NamedLocationTimeoutsOutputReference) SetDelete(val *string) {
+func (j *jsiiProxy_NamedLocationTimeoutsOutputReference)SetDelete(val *string) {
+	if err := j.validateSetDeleteParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"delete",
@@ -300,7 +315,10 @@ func (j *jsiiProxy_NamedLocationTimeoutsOutputReference) SetDelete(val *string) 
 	)
 }
 
-func (j *jsiiProxy_NamedLocationTimeoutsOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_NamedLocationTimeoutsOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -308,7 +326,10 @@ func (j *jsiiProxy_NamedLocationTimeoutsOutputReference) SetInternalValue(val in
 	)
 }
 
-func (j *jsiiProxy_NamedLocationTimeoutsOutputReference) SetRead(val *string) {
+func (j *jsiiProxy_NamedLocationTimeoutsOutputReference)SetRead(val *string) {
+	if err := j.validateSetReadParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"read",
@@ -316,7 +337,10 @@ func (j *jsiiProxy_NamedLocationTimeoutsOutputReference) SetRead(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NamedLocationTimeoutsOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_NamedLocationTimeoutsOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -324,7 +348,10 @@ func (j *jsiiProxy_NamedLocationTimeoutsOutputReference) SetTerraformAttribute(v
 	)
 }
 
-func (j *jsiiProxy_NamedLocationTimeoutsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_NamedLocationTimeoutsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -332,7 +359,10 @@ func (j *jsiiProxy_NamedLocationTimeoutsOutputReference) SetTerraformResource(va
 	)
 }
 
-func (j *jsiiProxy_NamedLocationTimeoutsOutputReference) SetUpdate(val *string) {
+func (j *jsiiProxy_NamedLocationTimeoutsOutputReference)SetUpdate(val *string) {
+	if err := j.validateSetUpdateParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"update",
@@ -354,6 +384,9 @@ func (n *jsiiProxy_NamedLocationTimeoutsOutputReference) ComputeFqn() *string {
 }
 
 func (n *jsiiProxy_NamedLocationTimeoutsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := n.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -367,6 +400,9 @@ func (n *jsiiProxy_NamedLocationTimeoutsOutputReference) GetAnyMapAttribute(terr
 }
 
 func (n *jsiiProxy_NamedLocationTimeoutsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := n.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -380,6 +416,9 @@ func (n *jsiiProxy_NamedLocationTimeoutsOutputReference) GetBooleanAttribute(ter
 }
 
 func (n *jsiiProxy_NamedLocationTimeoutsOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := n.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -393,6 +432,9 @@ func (n *jsiiProxy_NamedLocationTimeoutsOutputReference) GetBooleanMapAttribute(
 }
 
 func (n *jsiiProxy_NamedLocationTimeoutsOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := n.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -406,6 +448,9 @@ func (n *jsiiProxy_NamedLocationTimeoutsOutputReference) GetListAttribute(terraf
 }
 
 func (n *jsiiProxy_NamedLocationTimeoutsOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := n.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -419,6 +464,9 @@ func (n *jsiiProxy_NamedLocationTimeoutsOutputReference) GetNumberAttribute(terr
 }
 
 func (n *jsiiProxy_NamedLocationTimeoutsOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := n.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -432,6 +480,9 @@ func (n *jsiiProxy_NamedLocationTimeoutsOutputReference) GetNumberListAttribute(
 }
 
 func (n *jsiiProxy_NamedLocationTimeoutsOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := n.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -445,6 +496,9 @@ func (n *jsiiProxy_NamedLocationTimeoutsOutputReference) GetNumberMapAttribute(t
 }
 
 func (n *jsiiProxy_NamedLocationTimeoutsOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := n.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -458,6 +512,9 @@ func (n *jsiiProxy_NamedLocationTimeoutsOutputReference) GetStringAttribute(terr
 }
 
 func (n *jsiiProxy_NamedLocationTimeoutsOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := n.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -484,6 +541,9 @@ func (n *jsiiProxy_NamedLocationTimeoutsOutputReference) InterpolationAsList() c
 }
 
 func (n *jsiiProxy_NamedLocationTimeoutsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := n.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -529,6 +589,9 @@ func (n *jsiiProxy_NamedLocationTimeoutsOutputReference) ResetUpdate() {
 }
 
 func (n *jsiiProxy_NamedLocationTimeoutsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := n.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

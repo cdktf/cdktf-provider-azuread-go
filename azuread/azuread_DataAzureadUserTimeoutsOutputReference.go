@@ -175,6 +175,9 @@ func (j *jsiiProxy_DataAzureadUserTimeoutsOutputReference) TerraformResource() c
 func NewDataAzureadUserTimeoutsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataAzureadUserTimeoutsOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewDataAzureadUserTimeoutsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataAzureadUserTimeoutsOutputReference{}
 
 	_jsii_.Create(
@@ -196,7 +199,10 @@ func NewDataAzureadUserTimeoutsOutputReference_Override(d DataAzureadUserTimeout
 	)
 }
 
-func (j *jsiiProxy_DataAzureadUserTimeoutsOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DataAzureadUserTimeoutsOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -204,7 +210,10 @@ func (j *jsiiProxy_DataAzureadUserTimeoutsOutputReference) SetComplexObjectIndex
 	)
 }
 
-func (j *jsiiProxy_DataAzureadUserTimeoutsOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DataAzureadUserTimeoutsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -212,7 +221,10 @@ func (j *jsiiProxy_DataAzureadUserTimeoutsOutputReference) SetComplexObjectIsFro
 	)
 }
 
-func (j *jsiiProxy_DataAzureadUserTimeoutsOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataAzureadUserTimeoutsOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -220,7 +232,10 @@ func (j *jsiiProxy_DataAzureadUserTimeoutsOutputReference) SetInternalValue(val 
 	)
 }
 
-func (j *jsiiProxy_DataAzureadUserTimeoutsOutputReference) SetRead(val *string) {
+func (j *jsiiProxy_DataAzureadUserTimeoutsOutputReference)SetRead(val *string) {
+	if err := j.validateSetReadParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"read",
@@ -228,7 +243,10 @@ func (j *jsiiProxy_DataAzureadUserTimeoutsOutputReference) SetRead(val *string) 
 	)
 }
 
-func (j *jsiiProxy_DataAzureadUserTimeoutsOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataAzureadUserTimeoutsOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -236,7 +254,10 @@ func (j *jsiiProxy_DataAzureadUserTimeoutsOutputReference) SetTerraformAttribute
 	)
 }
 
-func (j *jsiiProxy_DataAzureadUserTimeoutsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataAzureadUserTimeoutsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -258,6 +279,9 @@ func (d *jsiiProxy_DataAzureadUserTimeoutsOutputReference) ComputeFqn() *string 
 }
 
 func (d *jsiiProxy_DataAzureadUserTimeoutsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -271,6 +295,9 @@ func (d *jsiiProxy_DataAzureadUserTimeoutsOutputReference) GetAnyMapAttribute(te
 }
 
 func (d *jsiiProxy_DataAzureadUserTimeoutsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -284,6 +311,9 @@ func (d *jsiiProxy_DataAzureadUserTimeoutsOutputReference) GetBooleanAttribute(t
 }
 
 func (d *jsiiProxy_DataAzureadUserTimeoutsOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -297,6 +327,9 @@ func (d *jsiiProxy_DataAzureadUserTimeoutsOutputReference) GetBooleanMapAttribut
 }
 
 func (d *jsiiProxy_DataAzureadUserTimeoutsOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -310,6 +343,9 @@ func (d *jsiiProxy_DataAzureadUserTimeoutsOutputReference) GetListAttribute(terr
 }
 
 func (d *jsiiProxy_DataAzureadUserTimeoutsOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -323,6 +359,9 @@ func (d *jsiiProxy_DataAzureadUserTimeoutsOutputReference) GetNumberAttribute(te
 }
 
 func (d *jsiiProxy_DataAzureadUserTimeoutsOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -336,6 +375,9 @@ func (d *jsiiProxy_DataAzureadUserTimeoutsOutputReference) GetNumberListAttribut
 }
 
 func (d *jsiiProxy_DataAzureadUserTimeoutsOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -349,6 +391,9 @@ func (d *jsiiProxy_DataAzureadUserTimeoutsOutputReference) GetNumberMapAttribute
 }
 
 func (d *jsiiProxy_DataAzureadUserTimeoutsOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -362,6 +407,9 @@ func (d *jsiiProxy_DataAzureadUserTimeoutsOutputReference) GetStringAttribute(te
 }
 
 func (d *jsiiProxy_DataAzureadUserTimeoutsOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -388,6 +436,9 @@ func (d *jsiiProxy_DataAzureadUserTimeoutsOutputReference) InterpolationAsList()
 }
 
 func (d *jsiiProxy_DataAzureadUserTimeoutsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -409,6 +460,9 @@ func (d *jsiiProxy_DataAzureadUserTimeoutsOutputReference) ResetRead() {
 }
 
 func (d *jsiiProxy_DataAzureadUserTimeoutsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

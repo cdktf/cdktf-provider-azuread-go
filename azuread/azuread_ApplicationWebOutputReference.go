@@ -247,6 +247,9 @@ func (j *jsiiProxy_ApplicationWebOutputReference) TerraformResource() cdktf.IInt
 func NewApplicationWebOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ApplicationWebOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewApplicationWebOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ApplicationWebOutputReference{}
 
 	_jsii_.Create(
@@ -268,7 +271,10 @@ func NewApplicationWebOutputReference_Override(a ApplicationWebOutputReference, 
 	)
 }
 
-func (j *jsiiProxy_ApplicationWebOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ApplicationWebOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -276,7 +282,10 @@ func (j *jsiiProxy_ApplicationWebOutputReference) SetComplexObjectIndex(val inte
 	)
 }
 
-func (j *jsiiProxy_ApplicationWebOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ApplicationWebOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -284,7 +293,10 @@ func (j *jsiiProxy_ApplicationWebOutputReference) SetComplexObjectIsFromSet(val 
 	)
 }
 
-func (j *jsiiProxy_ApplicationWebOutputReference) SetHomepageUrl(val *string) {
+func (j *jsiiProxy_ApplicationWebOutputReference)SetHomepageUrl(val *string) {
+	if err := j.validateSetHomepageUrlParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"homepageUrl",
@@ -292,7 +304,10 @@ func (j *jsiiProxy_ApplicationWebOutputReference) SetHomepageUrl(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ApplicationWebOutputReference) SetInternalValue(val *ApplicationWeb) {
+func (j *jsiiProxy_ApplicationWebOutputReference)SetInternalValue(val *ApplicationWeb) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -300,7 +315,10 @@ func (j *jsiiProxy_ApplicationWebOutputReference) SetInternalValue(val *Applicat
 	)
 }
 
-func (j *jsiiProxy_ApplicationWebOutputReference) SetLogoutUrl(val *string) {
+func (j *jsiiProxy_ApplicationWebOutputReference)SetLogoutUrl(val *string) {
+	if err := j.validateSetLogoutUrlParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"logoutUrl",
@@ -308,7 +326,10 @@ func (j *jsiiProxy_ApplicationWebOutputReference) SetLogoutUrl(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ApplicationWebOutputReference) SetRedirectUris(val *[]*string) {
+func (j *jsiiProxy_ApplicationWebOutputReference)SetRedirectUris(val *[]*string) {
+	if err := j.validateSetRedirectUrisParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"redirectUris",
@@ -316,7 +337,10 @@ func (j *jsiiProxy_ApplicationWebOutputReference) SetRedirectUris(val *[]*string
 	)
 }
 
-func (j *jsiiProxy_ApplicationWebOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ApplicationWebOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -324,7 +348,10 @@ func (j *jsiiProxy_ApplicationWebOutputReference) SetTerraformAttribute(val *str
 	)
 }
 
-func (j *jsiiProxy_ApplicationWebOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ApplicationWebOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -346,6 +373,9 @@ func (a *jsiiProxy_ApplicationWebOutputReference) ComputeFqn() *string {
 }
 
 func (a *jsiiProxy_ApplicationWebOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -359,6 +389,9 @@ func (a *jsiiProxy_ApplicationWebOutputReference) GetAnyMapAttribute(terraformAt
 }
 
 func (a *jsiiProxy_ApplicationWebOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := a.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -372,6 +405,9 @@ func (a *jsiiProxy_ApplicationWebOutputReference) GetBooleanAttribute(terraformA
 }
 
 func (a *jsiiProxy_ApplicationWebOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := a.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -385,6 +421,9 @@ func (a *jsiiProxy_ApplicationWebOutputReference) GetBooleanMapAttribute(terrafo
 }
 
 func (a *jsiiProxy_ApplicationWebOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := a.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -398,6 +437,9 @@ func (a *jsiiProxy_ApplicationWebOutputReference) GetListAttribute(terraformAttr
 }
 
 func (a *jsiiProxy_ApplicationWebOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := a.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -411,6 +453,9 @@ func (a *jsiiProxy_ApplicationWebOutputReference) GetNumberAttribute(terraformAt
 }
 
 func (a *jsiiProxy_ApplicationWebOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := a.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -424,6 +469,9 @@ func (a *jsiiProxy_ApplicationWebOutputReference) GetNumberListAttribute(terrafo
 }
 
 func (a *jsiiProxy_ApplicationWebOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := a.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -437,6 +485,9 @@ func (a *jsiiProxy_ApplicationWebOutputReference) GetNumberMapAttribute(terrafor
 }
 
 func (a *jsiiProxy_ApplicationWebOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := a.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -450,6 +501,9 @@ func (a *jsiiProxy_ApplicationWebOutputReference) GetStringAttribute(terraformAt
 }
 
 func (a *jsiiProxy_ApplicationWebOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := a.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -476,6 +530,9 @@ func (a *jsiiProxy_ApplicationWebOutputReference) InterpolationAsList() cdktf.IR
 }
 
 func (a *jsiiProxy_ApplicationWebOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := a.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -489,6 +546,9 @@ func (a *jsiiProxy_ApplicationWebOutputReference) InterpolationForAttribute(prop
 }
 
 func (a *jsiiProxy_ApplicationWebOutputReference) PutImplicitGrant(value *ApplicationWebImplicitGrant) {
+	if err := a.validatePutImplicitGrantParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		a,
 		"putImplicitGrant",
@@ -529,6 +589,9 @@ func (a *jsiiProxy_ApplicationWebOutputReference) ResetRedirectUris() {
 }
 
 func (a *jsiiProxy_ApplicationWebOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := a.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

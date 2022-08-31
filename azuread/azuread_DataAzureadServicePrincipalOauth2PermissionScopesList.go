@@ -99,6 +99,9 @@ func (j *jsiiProxy_DataAzureadServicePrincipalOauth2PermissionScopesList) WrapsS
 func NewDataAzureadServicePrincipalOauth2PermissionScopesList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzureadServicePrincipalOauth2PermissionScopesList {
 	_init_.Initialize()
 
+	if err := validateNewDataAzureadServicePrincipalOauth2PermissionScopesListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataAzureadServicePrincipalOauth2PermissionScopesList{}
 
 	_jsii_.Create(
@@ -120,7 +123,10 @@ func NewDataAzureadServicePrincipalOauth2PermissionScopesList_Override(d DataAzu
 	)
 }
 
-func (j *jsiiProxy_DataAzureadServicePrincipalOauth2PermissionScopesList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataAzureadServicePrincipalOauth2PermissionScopesList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -128,7 +134,10 @@ func (j *jsiiProxy_DataAzureadServicePrincipalOauth2PermissionScopesList) SetTer
 	)
 }
 
-func (j *jsiiProxy_DataAzureadServicePrincipalOauth2PermissionScopesList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataAzureadServicePrincipalOauth2PermissionScopesList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -136,7 +145,10 @@ func (j *jsiiProxy_DataAzureadServicePrincipalOauth2PermissionScopesList) SetTer
 	)
 }
 
-func (j *jsiiProxy_DataAzureadServicePrincipalOauth2PermissionScopesList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DataAzureadServicePrincipalOauth2PermissionScopesList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -158,6 +170,9 @@ func (d *jsiiProxy_DataAzureadServicePrincipalOauth2PermissionScopesList) Comput
 }
 
 func (d *jsiiProxy_DataAzureadServicePrincipalOauth2PermissionScopesList) Get(index *float64) DataAzureadServicePrincipalOauth2PermissionScopesOutputReference {
+	if err := d.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns DataAzureadServicePrincipalOauth2PermissionScopesOutputReference
 
 	_jsii_.Invoke(
@@ -171,6 +186,9 @@ func (d *jsiiProxy_DataAzureadServicePrincipalOauth2PermissionScopesList) Get(in
 }
 
 func (d *jsiiProxy_DataAzureadServicePrincipalOauth2PermissionScopesList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

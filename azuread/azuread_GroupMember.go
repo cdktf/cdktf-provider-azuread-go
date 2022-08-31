@@ -361,6 +361,9 @@ func (j *jsiiProxy_GroupMember) TimeoutsInput() interface{} {
 func NewGroupMember(scope constructs.Construct, id *string, config *GroupMemberConfig) GroupMember {
 	_init_.Initialize()
 
+	if err := validateNewGroupMemberParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_GroupMember{}
 
 	_jsii_.Create(
@@ -383,7 +386,10 @@ func NewGroupMember_Override(g GroupMember, scope constructs.Construct, id *stri
 	)
 }
 
-func (j *jsiiProxy_GroupMember) SetConnection(val interface{}) {
+func (j *jsiiProxy_GroupMember)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -391,7 +397,7 @@ func (j *jsiiProxy_GroupMember) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GroupMember) SetCount(val *float64) {
+func (j *jsiiProxy_GroupMember)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -399,7 +405,7 @@ func (j *jsiiProxy_GroupMember) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_GroupMember) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GroupMember)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -407,7 +413,7 @@ func (j *jsiiProxy_GroupMember) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GroupMember) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GroupMember)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -415,7 +421,10 @@ func (j *jsiiProxy_GroupMember) SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_GroupMember) SetGroupObjectId(val *string) {
+func (j *jsiiProxy_GroupMember)SetGroupObjectId(val *string) {
+	if err := j.validateSetGroupObjectIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"groupObjectId",
@@ -423,7 +432,10 @@ func (j *jsiiProxy_GroupMember) SetGroupObjectId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GroupMember) SetId(val *string) {
+func (j *jsiiProxy_GroupMember)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -431,7 +443,10 @@ func (j *jsiiProxy_GroupMember) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GroupMember) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GroupMember)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -439,7 +454,10 @@ func (j *jsiiProxy_GroupMember) SetLifecycle(val *cdktf.TerraformResourceLifecyc
 	)
 }
 
-func (j *jsiiProxy_GroupMember) SetMemberObjectId(val *string) {
+func (j *jsiiProxy_GroupMember)SetMemberObjectId(val *string) {
+	if err := j.validateSetMemberObjectIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"memberObjectId",
@@ -447,7 +465,7 @@ func (j *jsiiProxy_GroupMember) SetMemberObjectId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GroupMember) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GroupMember)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -455,7 +473,10 @@ func (j *jsiiProxy_GroupMember) SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_GroupMember) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GroupMember)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -483,6 +504,9 @@ func (j *jsiiProxy_GroupMember) SetProvisioners(val *[]interface{}) {
 func GroupMember_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateGroupMember_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -507,6 +531,9 @@ func GroupMember_TfResourceType() *string {
 }
 
 func (g *jsiiProxy_GroupMember) AddOverride(path *string, value interface{}) {
+	if err := g.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
@@ -515,6 +542,9 @@ func (g *jsiiProxy_GroupMember) AddOverride(path *string, value interface{}) {
 }
 
 func (g *jsiiProxy_GroupMember) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -528,6 +558,9 @@ func (g *jsiiProxy_GroupMember) GetAnyMapAttribute(terraformAttribute *string) *
 }
 
 func (g *jsiiProxy_GroupMember) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -541,6 +574,9 @@ func (g *jsiiProxy_GroupMember) GetBooleanAttribute(terraformAttribute *string) 
 }
 
 func (g *jsiiProxy_GroupMember) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := g.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -554,6 +590,9 @@ func (g *jsiiProxy_GroupMember) GetBooleanMapAttribute(terraformAttribute *strin
 }
 
 func (g *jsiiProxy_GroupMember) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := g.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -567,6 +606,9 @@ func (g *jsiiProxy_GroupMember) GetListAttribute(terraformAttribute *string) *[]
 }
 
 func (g *jsiiProxy_GroupMember) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := g.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -580,6 +622,9 @@ func (g *jsiiProxy_GroupMember) GetNumberAttribute(terraformAttribute *string) *
 }
 
 func (g *jsiiProxy_GroupMember) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := g.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -593,6 +638,9 @@ func (g *jsiiProxy_GroupMember) GetNumberListAttribute(terraformAttribute *strin
 }
 
 func (g *jsiiProxy_GroupMember) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := g.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -606,6 +654,9 @@ func (g *jsiiProxy_GroupMember) GetNumberMapAttribute(terraformAttribute *string
 }
 
 func (g *jsiiProxy_GroupMember) GetStringAttribute(terraformAttribute *string) *string {
+	if err := g.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -619,6 +670,9 @@ func (g *jsiiProxy_GroupMember) GetStringAttribute(terraformAttribute *string) *
 }
 
 func (g *jsiiProxy_GroupMember) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := g.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -632,6 +686,9 @@ func (g *jsiiProxy_GroupMember) GetStringMapAttribute(terraformAttribute *string
 }
 
 func (g *jsiiProxy_GroupMember) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -645,6 +702,9 @@ func (g *jsiiProxy_GroupMember) InterpolationForAttribute(terraformAttribute *st
 }
 
 func (g *jsiiProxy_GroupMember) OverrideLogicalId(newLogicalId *string) {
+	if err := g.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
@@ -653,6 +713,9 @@ func (g *jsiiProxy_GroupMember) OverrideLogicalId(newLogicalId *string) {
 }
 
 func (g *jsiiProxy_GroupMember) PutTimeouts(value *GroupMemberTimeouts) {
+	if err := g.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		g,
 		"putTimeouts",

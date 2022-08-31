@@ -828,6 +828,9 @@ func (j *jsiiProxy_ServicePrincipal) UseExistingInput() interface{} {
 func NewServicePrincipal(scope constructs.Construct, id *string, config *ServicePrincipalConfig) ServicePrincipal {
 	_init_.Initialize()
 
+	if err := validateNewServicePrincipalParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ServicePrincipal{}
 
 	_jsii_.Create(
@@ -850,7 +853,10 @@ func NewServicePrincipal_Override(s ServicePrincipal, scope constructs.Construct
 	)
 }
 
-func (j *jsiiProxy_ServicePrincipal) SetAccountEnabled(val interface{}) {
+func (j *jsiiProxy_ServicePrincipal)SetAccountEnabled(val interface{}) {
+	if err := j.validateSetAccountEnabledParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"accountEnabled",
@@ -858,7 +864,10 @@ func (j *jsiiProxy_ServicePrincipal) SetAccountEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ServicePrincipal) SetAlternativeNames(val *[]*string) {
+func (j *jsiiProxy_ServicePrincipal)SetAlternativeNames(val *[]*string) {
+	if err := j.validateSetAlternativeNamesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"alternativeNames",
@@ -866,7 +875,10 @@ func (j *jsiiProxy_ServicePrincipal) SetAlternativeNames(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ServicePrincipal) SetApplicationId(val *string) {
+func (j *jsiiProxy_ServicePrincipal)SetApplicationId(val *string) {
+	if err := j.validateSetApplicationIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"applicationId",
@@ -874,7 +886,10 @@ func (j *jsiiProxy_ServicePrincipal) SetApplicationId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ServicePrincipal) SetAppRoleAssignmentRequired(val interface{}) {
+func (j *jsiiProxy_ServicePrincipal)SetAppRoleAssignmentRequired(val interface{}) {
+	if err := j.validateSetAppRoleAssignmentRequiredParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"appRoleAssignmentRequired",
@@ -882,7 +897,10 @@ func (j *jsiiProxy_ServicePrincipal) SetAppRoleAssignmentRequired(val interface{
 	)
 }
 
-func (j *jsiiProxy_ServicePrincipal) SetConnection(val interface{}) {
+func (j *jsiiProxy_ServicePrincipal)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -890,7 +908,7 @@ func (j *jsiiProxy_ServicePrincipal) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ServicePrincipal) SetCount(val *float64) {
+func (j *jsiiProxy_ServicePrincipal)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -898,7 +916,7 @@ func (j *jsiiProxy_ServicePrincipal) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_ServicePrincipal) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ServicePrincipal)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -906,7 +924,10 @@ func (j *jsiiProxy_ServicePrincipal) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ServicePrincipal) SetDescription(val *string) {
+func (j *jsiiProxy_ServicePrincipal)SetDescription(val *string) {
+	if err := j.validateSetDescriptionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"description",
@@ -914,7 +935,7 @@ func (j *jsiiProxy_ServicePrincipal) SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ServicePrincipal) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ServicePrincipal)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -922,7 +943,10 @@ func (j *jsiiProxy_ServicePrincipal) SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_ServicePrincipal) SetId(val *string) {
+func (j *jsiiProxy_ServicePrincipal)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -930,7 +954,10 @@ func (j *jsiiProxy_ServicePrincipal) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ServicePrincipal) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ServicePrincipal)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -938,7 +965,10 @@ func (j *jsiiProxy_ServicePrincipal) SetLifecycle(val *cdktf.TerraformResourceLi
 	)
 }
 
-func (j *jsiiProxy_ServicePrincipal) SetLoginUrl(val *string) {
+func (j *jsiiProxy_ServicePrincipal)SetLoginUrl(val *string) {
+	if err := j.validateSetLoginUrlParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"loginUrl",
@@ -946,7 +976,10 @@ func (j *jsiiProxy_ServicePrincipal) SetLoginUrl(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ServicePrincipal) SetNotes(val *string) {
+func (j *jsiiProxy_ServicePrincipal)SetNotes(val *string) {
+	if err := j.validateSetNotesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"notes",
@@ -954,7 +987,10 @@ func (j *jsiiProxy_ServicePrincipal) SetNotes(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ServicePrincipal) SetNotificationEmailAddresses(val *[]*string) {
+func (j *jsiiProxy_ServicePrincipal)SetNotificationEmailAddresses(val *[]*string) {
+	if err := j.validateSetNotificationEmailAddressesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"notificationEmailAddresses",
@@ -962,7 +998,10 @@ func (j *jsiiProxy_ServicePrincipal) SetNotificationEmailAddresses(val *[]*strin
 	)
 }
 
-func (j *jsiiProxy_ServicePrincipal) SetOwners(val *[]*string) {
+func (j *jsiiProxy_ServicePrincipal)SetOwners(val *[]*string) {
+	if err := j.validateSetOwnersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"owners",
@@ -970,7 +1009,10 @@ func (j *jsiiProxy_ServicePrincipal) SetOwners(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ServicePrincipal) SetPreferredSingleSignOnMode(val *string) {
+func (j *jsiiProxy_ServicePrincipal)SetPreferredSingleSignOnMode(val *string) {
+	if err := j.validateSetPreferredSingleSignOnModeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"preferredSingleSignOnMode",
@@ -978,7 +1020,7 @@ func (j *jsiiProxy_ServicePrincipal) SetPreferredSingleSignOnMode(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ServicePrincipal) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ServicePrincipal)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -986,7 +1028,10 @@ func (j *jsiiProxy_ServicePrincipal) SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_ServicePrincipal) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ServicePrincipal)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -994,7 +1039,10 @@ func (j *jsiiProxy_ServicePrincipal) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ServicePrincipal) SetTags(val *[]*string) {
+func (j *jsiiProxy_ServicePrincipal)SetTags(val *[]*string) {
+	if err := j.validateSetTagsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"tags",
@@ -1002,7 +1050,10 @@ func (j *jsiiProxy_ServicePrincipal) SetTags(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ServicePrincipal) SetUseExisting(val interface{}) {
+func (j *jsiiProxy_ServicePrincipal)SetUseExisting(val interface{}) {
+	if err := j.validateSetUseExistingParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"useExisting",
@@ -1030,6 +1081,9 @@ func (j *jsiiProxy_ServicePrincipal) SetUseExisting(val interface{}) {
 func ServicePrincipal_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateServicePrincipal_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -1054,6 +1108,9 @@ func ServicePrincipal_TfResourceType() *string {
 }
 
 func (s *jsiiProxy_ServicePrincipal) AddOverride(path *string, value interface{}) {
+	if err := s.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"addOverride",
@@ -1062,6 +1119,9 @@ func (s *jsiiProxy_ServicePrincipal) AddOverride(path *string, value interface{}
 }
 
 func (s *jsiiProxy_ServicePrincipal) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -1075,6 +1135,9 @@ func (s *jsiiProxy_ServicePrincipal) GetAnyMapAttribute(terraformAttribute *stri
 }
 
 func (s *jsiiProxy_ServicePrincipal) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -1088,6 +1151,9 @@ func (s *jsiiProxy_ServicePrincipal) GetBooleanAttribute(terraformAttribute *str
 }
 
 func (s *jsiiProxy_ServicePrincipal) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := s.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -1101,6 +1167,9 @@ func (s *jsiiProxy_ServicePrincipal) GetBooleanMapAttribute(terraformAttribute *
 }
 
 func (s *jsiiProxy_ServicePrincipal) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := s.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -1114,6 +1183,9 @@ func (s *jsiiProxy_ServicePrincipal) GetListAttribute(terraformAttribute *string
 }
 
 func (s *jsiiProxy_ServicePrincipal) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := s.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -1127,6 +1199,9 @@ func (s *jsiiProxy_ServicePrincipal) GetNumberAttribute(terraformAttribute *stri
 }
 
 func (s *jsiiProxy_ServicePrincipal) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := s.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -1140,6 +1215,9 @@ func (s *jsiiProxy_ServicePrincipal) GetNumberListAttribute(terraformAttribute *
 }
 
 func (s *jsiiProxy_ServicePrincipal) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := s.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -1153,6 +1231,9 @@ func (s *jsiiProxy_ServicePrincipal) GetNumberMapAttribute(terraformAttribute *s
 }
 
 func (s *jsiiProxy_ServicePrincipal) GetStringAttribute(terraformAttribute *string) *string {
+	if err := s.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -1166,6 +1247,9 @@ func (s *jsiiProxy_ServicePrincipal) GetStringAttribute(terraformAttribute *stri
 }
 
 func (s *jsiiProxy_ServicePrincipal) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := s.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -1179,6 +1263,9 @@ func (s *jsiiProxy_ServicePrincipal) GetStringMapAttribute(terraformAttribute *s
 }
 
 func (s *jsiiProxy_ServicePrincipal) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -1192,6 +1279,9 @@ func (s *jsiiProxy_ServicePrincipal) InterpolationForAttribute(terraformAttribut
 }
 
 func (s *jsiiProxy_ServicePrincipal) OverrideLogicalId(newLogicalId *string) {
+	if err := s.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"overrideLogicalId",
@@ -1200,6 +1290,9 @@ func (s *jsiiProxy_ServicePrincipal) OverrideLogicalId(newLogicalId *string) {
 }
 
 func (s *jsiiProxy_ServicePrincipal) PutFeatures(value interface{}) {
+	if err := s.validatePutFeaturesParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"putFeatures",
@@ -1208,6 +1301,9 @@ func (s *jsiiProxy_ServicePrincipal) PutFeatures(value interface{}) {
 }
 
 func (s *jsiiProxy_ServicePrincipal) PutFeatureTags(value interface{}) {
+	if err := s.validatePutFeatureTagsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"putFeatureTags",
@@ -1216,6 +1312,9 @@ func (s *jsiiProxy_ServicePrincipal) PutFeatureTags(value interface{}) {
 }
 
 func (s *jsiiProxy_ServicePrincipal) PutSamlSingleSignOn(value *ServicePrincipalSamlSingleSignOn) {
+	if err := s.validatePutSamlSingleSignOnParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"putSamlSingleSignOn",
@@ -1224,6 +1323,9 @@ func (s *jsiiProxy_ServicePrincipal) PutSamlSingleSignOn(value *ServicePrincipal
 }
 
 func (s *jsiiProxy_ServicePrincipal) PutTimeouts(value *ServicePrincipalTimeouts) {
+	if err := s.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"putTimeouts",

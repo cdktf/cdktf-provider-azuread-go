@@ -99,6 +99,9 @@ func (j *jsiiProxy_DataAzureadApplicationRequiredResourceAccessList) WrapsSet() 
 func NewDataAzureadApplicationRequiredResourceAccessList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzureadApplicationRequiredResourceAccessList {
 	_init_.Initialize()
 
+	if err := validateNewDataAzureadApplicationRequiredResourceAccessListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataAzureadApplicationRequiredResourceAccessList{}
 
 	_jsii_.Create(
@@ -120,7 +123,10 @@ func NewDataAzureadApplicationRequiredResourceAccessList_Override(d DataAzureadA
 	)
 }
 
-func (j *jsiiProxy_DataAzureadApplicationRequiredResourceAccessList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataAzureadApplicationRequiredResourceAccessList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -128,7 +134,10 @@ func (j *jsiiProxy_DataAzureadApplicationRequiredResourceAccessList) SetTerrafor
 	)
 }
 
-func (j *jsiiProxy_DataAzureadApplicationRequiredResourceAccessList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataAzureadApplicationRequiredResourceAccessList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -136,7 +145,10 @@ func (j *jsiiProxy_DataAzureadApplicationRequiredResourceAccessList) SetTerrafor
 	)
 }
 
-func (j *jsiiProxy_DataAzureadApplicationRequiredResourceAccessList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DataAzureadApplicationRequiredResourceAccessList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -158,6 +170,9 @@ func (d *jsiiProxy_DataAzureadApplicationRequiredResourceAccessList) ComputeFqn(
 }
 
 func (d *jsiiProxy_DataAzureadApplicationRequiredResourceAccessList) Get(index *float64) DataAzureadApplicationRequiredResourceAccessOutputReference {
+	if err := d.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns DataAzureadApplicationRequiredResourceAccessOutputReference
 
 	_jsii_.Invoke(
@@ -171,6 +186,9 @@ func (d *jsiiProxy_DataAzureadApplicationRequiredResourceAccessList) Get(index *
 }
 
 func (d *jsiiProxy_DataAzureadApplicationRequiredResourceAccessList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

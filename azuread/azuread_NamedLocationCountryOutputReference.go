@@ -198,6 +198,9 @@ func (j *jsiiProxy_NamedLocationCountryOutputReference) TerraformResource() cdkt
 func NewNamedLocationCountryOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) NamedLocationCountryOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewNamedLocationCountryOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_NamedLocationCountryOutputReference{}
 
 	_jsii_.Create(
@@ -219,7 +222,10 @@ func NewNamedLocationCountryOutputReference_Override(n NamedLocationCountryOutpu
 	)
 }
 
-func (j *jsiiProxy_NamedLocationCountryOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_NamedLocationCountryOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -227,7 +233,10 @@ func (j *jsiiProxy_NamedLocationCountryOutputReference) SetComplexObjectIndex(va
 	)
 }
 
-func (j *jsiiProxy_NamedLocationCountryOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_NamedLocationCountryOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -235,7 +244,10 @@ func (j *jsiiProxy_NamedLocationCountryOutputReference) SetComplexObjectIsFromSe
 	)
 }
 
-func (j *jsiiProxy_NamedLocationCountryOutputReference) SetCountriesAndRegions(val *[]*string) {
+func (j *jsiiProxy_NamedLocationCountryOutputReference)SetCountriesAndRegions(val *[]*string) {
+	if err := j.validateSetCountriesAndRegionsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"countriesAndRegions",
@@ -243,7 +255,10 @@ func (j *jsiiProxy_NamedLocationCountryOutputReference) SetCountriesAndRegions(v
 	)
 }
 
-func (j *jsiiProxy_NamedLocationCountryOutputReference) SetIncludeUnknownCountriesAndRegions(val interface{}) {
+func (j *jsiiProxy_NamedLocationCountryOutputReference)SetIncludeUnknownCountriesAndRegions(val interface{}) {
+	if err := j.validateSetIncludeUnknownCountriesAndRegionsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"includeUnknownCountriesAndRegions",
@@ -251,7 +266,10 @@ func (j *jsiiProxy_NamedLocationCountryOutputReference) SetIncludeUnknownCountri
 	)
 }
 
-func (j *jsiiProxy_NamedLocationCountryOutputReference) SetInternalValue(val *NamedLocationCountry) {
+func (j *jsiiProxy_NamedLocationCountryOutputReference)SetInternalValue(val *NamedLocationCountry) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -259,7 +277,10 @@ func (j *jsiiProxy_NamedLocationCountryOutputReference) SetInternalValue(val *Na
 	)
 }
 
-func (j *jsiiProxy_NamedLocationCountryOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_NamedLocationCountryOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -267,7 +288,10 @@ func (j *jsiiProxy_NamedLocationCountryOutputReference) SetTerraformAttribute(va
 	)
 }
 
-func (j *jsiiProxy_NamedLocationCountryOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_NamedLocationCountryOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -289,6 +313,9 @@ func (n *jsiiProxy_NamedLocationCountryOutputReference) ComputeFqn() *string {
 }
 
 func (n *jsiiProxy_NamedLocationCountryOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := n.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -302,6 +329,9 @@ func (n *jsiiProxy_NamedLocationCountryOutputReference) GetAnyMapAttribute(terra
 }
 
 func (n *jsiiProxy_NamedLocationCountryOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := n.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -315,6 +345,9 @@ func (n *jsiiProxy_NamedLocationCountryOutputReference) GetBooleanAttribute(terr
 }
 
 func (n *jsiiProxy_NamedLocationCountryOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := n.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -328,6 +361,9 @@ func (n *jsiiProxy_NamedLocationCountryOutputReference) GetBooleanMapAttribute(t
 }
 
 func (n *jsiiProxy_NamedLocationCountryOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := n.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -341,6 +377,9 @@ func (n *jsiiProxy_NamedLocationCountryOutputReference) GetListAttribute(terrafo
 }
 
 func (n *jsiiProxy_NamedLocationCountryOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := n.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -354,6 +393,9 @@ func (n *jsiiProxy_NamedLocationCountryOutputReference) GetNumberAttribute(terra
 }
 
 func (n *jsiiProxy_NamedLocationCountryOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := n.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -367,6 +409,9 @@ func (n *jsiiProxy_NamedLocationCountryOutputReference) GetNumberListAttribute(t
 }
 
 func (n *jsiiProxy_NamedLocationCountryOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := n.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -380,6 +425,9 @@ func (n *jsiiProxy_NamedLocationCountryOutputReference) GetNumberMapAttribute(te
 }
 
 func (n *jsiiProxy_NamedLocationCountryOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := n.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -393,6 +441,9 @@ func (n *jsiiProxy_NamedLocationCountryOutputReference) GetStringAttribute(terra
 }
 
 func (n *jsiiProxy_NamedLocationCountryOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := n.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -419,6 +470,9 @@ func (n *jsiiProxy_NamedLocationCountryOutputReference) InterpolationAsList() cd
 }
 
 func (n *jsiiProxy_NamedLocationCountryOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := n.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -440,6 +494,9 @@ func (n *jsiiProxy_NamedLocationCountryOutputReference) ResetIncludeUnknownCount
 }
 
 func (n *jsiiProxy_NamedLocationCountryOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := n.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

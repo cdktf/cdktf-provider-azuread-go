@@ -99,6 +99,9 @@ func (j *jsiiProxy_DataAzureadApplicationOptionalClaimsSaml2TokenList) WrapsSet(
 func NewDataAzureadApplicationOptionalClaimsSaml2TokenList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzureadApplicationOptionalClaimsSaml2TokenList {
 	_init_.Initialize()
 
+	if err := validateNewDataAzureadApplicationOptionalClaimsSaml2TokenListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataAzureadApplicationOptionalClaimsSaml2TokenList{}
 
 	_jsii_.Create(
@@ -120,7 +123,10 @@ func NewDataAzureadApplicationOptionalClaimsSaml2TokenList_Override(d DataAzurea
 	)
 }
 
-func (j *jsiiProxy_DataAzureadApplicationOptionalClaimsSaml2TokenList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataAzureadApplicationOptionalClaimsSaml2TokenList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -128,7 +134,10 @@ func (j *jsiiProxy_DataAzureadApplicationOptionalClaimsSaml2TokenList) SetTerraf
 	)
 }
 
-func (j *jsiiProxy_DataAzureadApplicationOptionalClaimsSaml2TokenList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataAzureadApplicationOptionalClaimsSaml2TokenList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -136,7 +145,10 @@ func (j *jsiiProxy_DataAzureadApplicationOptionalClaimsSaml2TokenList) SetTerraf
 	)
 }
 
-func (j *jsiiProxy_DataAzureadApplicationOptionalClaimsSaml2TokenList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DataAzureadApplicationOptionalClaimsSaml2TokenList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -158,6 +170,9 @@ func (d *jsiiProxy_DataAzureadApplicationOptionalClaimsSaml2TokenList) ComputeFq
 }
 
 func (d *jsiiProxy_DataAzureadApplicationOptionalClaimsSaml2TokenList) Get(index *float64) DataAzureadApplicationOptionalClaimsSaml2TokenOutputReference {
+	if err := d.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns DataAzureadApplicationOptionalClaimsSaml2TokenOutputReference
 
 	_jsii_.Invoke(
@@ -171,6 +186,9 @@ func (d *jsiiProxy_DataAzureadApplicationOptionalClaimsSaml2TokenList) Get(index
 }
 
 func (d *jsiiProxy_DataAzureadApplicationOptionalClaimsSaml2TokenList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

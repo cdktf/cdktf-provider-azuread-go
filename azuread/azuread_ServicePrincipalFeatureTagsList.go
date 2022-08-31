@@ -111,6 +111,9 @@ func (j *jsiiProxy_ServicePrincipalFeatureTagsList) WrapsSet() *bool {
 func NewServicePrincipalFeatureTagsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ServicePrincipalFeatureTagsList {
 	_init_.Initialize()
 
+	if err := validateNewServicePrincipalFeatureTagsListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ServicePrincipalFeatureTagsList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewServicePrincipalFeatureTagsList_Override(s ServicePrincipalFeatureTagsLi
 	)
 }
 
-func (j *jsiiProxy_ServicePrincipalFeatureTagsList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ServicePrincipalFeatureTagsList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_ServicePrincipalFeatureTagsList) SetInternalValue(val interfa
 	)
 }
 
-func (j *jsiiProxy_ServicePrincipalFeatureTagsList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ServicePrincipalFeatureTagsList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_ServicePrincipalFeatureTagsList) SetTerraformAttribute(val *s
 	)
 }
 
-func (j *jsiiProxy_ServicePrincipalFeatureTagsList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ServicePrincipalFeatureTagsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_ServicePrincipalFeatureTagsList) SetTerraformResource(val cdk
 	)
 }
 
-func (j *jsiiProxy_ServicePrincipalFeatureTagsList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_ServicePrincipalFeatureTagsList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (s *jsiiProxy_ServicePrincipalFeatureTagsList) ComputeFqn() *string {
 }
 
 func (s *jsiiProxy_ServicePrincipalFeatureTagsList) Get(index *float64) ServicePrincipalFeatureTagsOutputReference {
+	if err := s.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns ServicePrincipalFeatureTagsOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (s *jsiiProxy_ServicePrincipalFeatureTagsList) Get(index *float64) ServiceP
 }
 
 func (s *jsiiProxy_ServicePrincipalFeatureTagsList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

@@ -247,6 +247,9 @@ func (j *jsiiProxy_UserTimeoutsOutputReference) UpdateInput() *string {
 func NewUserTimeoutsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) UserTimeoutsOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewUserTimeoutsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_UserTimeoutsOutputReference{}
 
 	_jsii_.Create(
@@ -268,7 +271,10 @@ func NewUserTimeoutsOutputReference_Override(u UserTimeoutsOutputReference, terr
 	)
 }
 
-func (j *jsiiProxy_UserTimeoutsOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_UserTimeoutsOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -276,7 +282,10 @@ func (j *jsiiProxy_UserTimeoutsOutputReference) SetComplexObjectIndex(val interf
 	)
 }
 
-func (j *jsiiProxy_UserTimeoutsOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_UserTimeoutsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -284,7 +293,10 @@ func (j *jsiiProxy_UserTimeoutsOutputReference) SetComplexObjectIsFromSet(val *b
 	)
 }
 
-func (j *jsiiProxy_UserTimeoutsOutputReference) SetCreate(val *string) {
+func (j *jsiiProxy_UserTimeoutsOutputReference)SetCreate(val *string) {
+	if err := j.validateSetCreateParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"create",
@@ -292,7 +304,10 @@ func (j *jsiiProxy_UserTimeoutsOutputReference) SetCreate(val *string) {
 	)
 }
 
-func (j *jsiiProxy_UserTimeoutsOutputReference) SetDelete(val *string) {
+func (j *jsiiProxy_UserTimeoutsOutputReference)SetDelete(val *string) {
+	if err := j.validateSetDeleteParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"delete",
@@ -300,7 +315,10 @@ func (j *jsiiProxy_UserTimeoutsOutputReference) SetDelete(val *string) {
 	)
 }
 
-func (j *jsiiProxy_UserTimeoutsOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_UserTimeoutsOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -308,7 +326,10 @@ func (j *jsiiProxy_UserTimeoutsOutputReference) SetInternalValue(val interface{}
 	)
 }
 
-func (j *jsiiProxy_UserTimeoutsOutputReference) SetRead(val *string) {
+func (j *jsiiProxy_UserTimeoutsOutputReference)SetRead(val *string) {
+	if err := j.validateSetReadParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"read",
@@ -316,7 +337,10 @@ func (j *jsiiProxy_UserTimeoutsOutputReference) SetRead(val *string) {
 	)
 }
 
-func (j *jsiiProxy_UserTimeoutsOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_UserTimeoutsOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -324,7 +348,10 @@ func (j *jsiiProxy_UserTimeoutsOutputReference) SetTerraformAttribute(val *strin
 	)
 }
 
-func (j *jsiiProxy_UserTimeoutsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_UserTimeoutsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -332,7 +359,10 @@ func (j *jsiiProxy_UserTimeoutsOutputReference) SetTerraformResource(val cdktf.I
 	)
 }
 
-func (j *jsiiProxy_UserTimeoutsOutputReference) SetUpdate(val *string) {
+func (j *jsiiProxy_UserTimeoutsOutputReference)SetUpdate(val *string) {
+	if err := j.validateSetUpdateParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"update",
@@ -354,6 +384,9 @@ func (u *jsiiProxy_UserTimeoutsOutputReference) ComputeFqn() *string {
 }
 
 func (u *jsiiProxy_UserTimeoutsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := u.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -367,6 +400,9 @@ func (u *jsiiProxy_UserTimeoutsOutputReference) GetAnyMapAttribute(terraformAttr
 }
 
 func (u *jsiiProxy_UserTimeoutsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := u.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -380,6 +416,9 @@ func (u *jsiiProxy_UserTimeoutsOutputReference) GetBooleanAttribute(terraformAtt
 }
 
 func (u *jsiiProxy_UserTimeoutsOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := u.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -393,6 +432,9 @@ func (u *jsiiProxy_UserTimeoutsOutputReference) GetBooleanMapAttribute(terraform
 }
 
 func (u *jsiiProxy_UserTimeoutsOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := u.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -406,6 +448,9 @@ func (u *jsiiProxy_UserTimeoutsOutputReference) GetListAttribute(terraformAttrib
 }
 
 func (u *jsiiProxy_UserTimeoutsOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := u.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -419,6 +464,9 @@ func (u *jsiiProxy_UserTimeoutsOutputReference) GetNumberAttribute(terraformAttr
 }
 
 func (u *jsiiProxy_UserTimeoutsOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := u.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -432,6 +480,9 @@ func (u *jsiiProxy_UserTimeoutsOutputReference) GetNumberListAttribute(terraform
 }
 
 func (u *jsiiProxy_UserTimeoutsOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := u.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -445,6 +496,9 @@ func (u *jsiiProxy_UserTimeoutsOutputReference) GetNumberMapAttribute(terraformA
 }
 
 func (u *jsiiProxy_UserTimeoutsOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := u.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -458,6 +512,9 @@ func (u *jsiiProxy_UserTimeoutsOutputReference) GetStringAttribute(terraformAttr
 }
 
 func (u *jsiiProxy_UserTimeoutsOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := u.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -484,6 +541,9 @@ func (u *jsiiProxy_UserTimeoutsOutputReference) InterpolationAsList() cdktf.IRes
 }
 
 func (u *jsiiProxy_UserTimeoutsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := u.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -529,6 +589,9 @@ func (u *jsiiProxy_UserTimeoutsOutputReference) ResetUpdate() {
 }
 
 func (u *jsiiProxy_UserTimeoutsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := u.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

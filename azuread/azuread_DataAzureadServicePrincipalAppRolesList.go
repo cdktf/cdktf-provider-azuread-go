@@ -99,6 +99,9 @@ func (j *jsiiProxy_DataAzureadServicePrincipalAppRolesList) WrapsSet() *bool {
 func NewDataAzureadServicePrincipalAppRolesList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzureadServicePrincipalAppRolesList {
 	_init_.Initialize()
 
+	if err := validateNewDataAzureadServicePrincipalAppRolesListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataAzureadServicePrincipalAppRolesList{}
 
 	_jsii_.Create(
@@ -120,7 +123,10 @@ func NewDataAzureadServicePrincipalAppRolesList_Override(d DataAzureadServicePri
 	)
 }
 
-func (j *jsiiProxy_DataAzureadServicePrincipalAppRolesList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataAzureadServicePrincipalAppRolesList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -128,7 +134,10 @@ func (j *jsiiProxy_DataAzureadServicePrincipalAppRolesList) SetTerraformAttribut
 	)
 }
 
-func (j *jsiiProxy_DataAzureadServicePrincipalAppRolesList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataAzureadServicePrincipalAppRolesList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -136,7 +145,10 @@ func (j *jsiiProxy_DataAzureadServicePrincipalAppRolesList) SetTerraformResource
 	)
 }
 
-func (j *jsiiProxy_DataAzureadServicePrincipalAppRolesList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DataAzureadServicePrincipalAppRolesList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -158,6 +170,9 @@ func (d *jsiiProxy_DataAzureadServicePrincipalAppRolesList) ComputeFqn() *string
 }
 
 func (d *jsiiProxy_DataAzureadServicePrincipalAppRolesList) Get(index *float64) DataAzureadServicePrincipalAppRolesOutputReference {
+	if err := d.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns DataAzureadServicePrincipalAppRolesOutputReference
 
 	_jsii_.Invoke(
@@ -171,6 +186,9 @@ func (d *jsiiProxy_DataAzureadServicePrincipalAppRolesList) Get(index *float64) 
 }
 
 func (d *jsiiProxy_DataAzureadServicePrincipalAppRolesList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

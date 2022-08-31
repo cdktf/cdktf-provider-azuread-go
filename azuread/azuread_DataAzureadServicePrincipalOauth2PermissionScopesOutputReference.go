@@ -239,6 +239,9 @@ func (j *jsiiProxy_DataAzureadServicePrincipalOauth2PermissionScopesOutputRefere
 func NewDataAzureadServicePrincipalOauth2PermissionScopesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataAzureadServicePrincipalOauth2PermissionScopesOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewDataAzureadServicePrincipalOauth2PermissionScopesOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataAzureadServicePrincipalOauth2PermissionScopesOutputReference{}
 
 	_jsii_.Create(
@@ -260,7 +263,10 @@ func NewDataAzureadServicePrincipalOauth2PermissionScopesOutputReference_Overrid
 	)
 }
 
-func (j *jsiiProxy_DataAzureadServicePrincipalOauth2PermissionScopesOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DataAzureadServicePrincipalOauth2PermissionScopesOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -268,7 +274,10 @@ func (j *jsiiProxy_DataAzureadServicePrincipalOauth2PermissionScopesOutputRefere
 	)
 }
 
-func (j *jsiiProxy_DataAzureadServicePrincipalOauth2PermissionScopesOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DataAzureadServicePrincipalOauth2PermissionScopesOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -276,7 +285,10 @@ func (j *jsiiProxy_DataAzureadServicePrincipalOauth2PermissionScopesOutputRefere
 	)
 }
 
-func (j *jsiiProxy_DataAzureadServicePrincipalOauth2PermissionScopesOutputReference) SetInternalValue(val *DataAzureadServicePrincipalOauth2PermissionScopes) {
+func (j *jsiiProxy_DataAzureadServicePrincipalOauth2PermissionScopesOutputReference)SetInternalValue(val *DataAzureadServicePrincipalOauth2PermissionScopes) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -284,7 +296,10 @@ func (j *jsiiProxy_DataAzureadServicePrincipalOauth2PermissionScopesOutputRefere
 	)
 }
 
-func (j *jsiiProxy_DataAzureadServicePrincipalOauth2PermissionScopesOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataAzureadServicePrincipalOauth2PermissionScopesOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -292,7 +307,10 @@ func (j *jsiiProxy_DataAzureadServicePrincipalOauth2PermissionScopesOutputRefere
 	)
 }
 
-func (j *jsiiProxy_DataAzureadServicePrincipalOauth2PermissionScopesOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataAzureadServicePrincipalOauth2PermissionScopesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -314,6 +332,9 @@ func (d *jsiiProxy_DataAzureadServicePrincipalOauth2PermissionScopesOutputRefere
 }
 
 func (d *jsiiProxy_DataAzureadServicePrincipalOauth2PermissionScopesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -327,6 +348,9 @@ func (d *jsiiProxy_DataAzureadServicePrincipalOauth2PermissionScopesOutputRefere
 }
 
 func (d *jsiiProxy_DataAzureadServicePrincipalOauth2PermissionScopesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -340,6 +364,9 @@ func (d *jsiiProxy_DataAzureadServicePrincipalOauth2PermissionScopesOutputRefere
 }
 
 func (d *jsiiProxy_DataAzureadServicePrincipalOauth2PermissionScopesOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -353,6 +380,9 @@ func (d *jsiiProxy_DataAzureadServicePrincipalOauth2PermissionScopesOutputRefere
 }
 
 func (d *jsiiProxy_DataAzureadServicePrincipalOauth2PermissionScopesOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -366,6 +396,9 @@ func (d *jsiiProxy_DataAzureadServicePrincipalOauth2PermissionScopesOutputRefere
 }
 
 func (d *jsiiProxy_DataAzureadServicePrincipalOauth2PermissionScopesOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -379,6 +412,9 @@ func (d *jsiiProxy_DataAzureadServicePrincipalOauth2PermissionScopesOutputRefere
 }
 
 func (d *jsiiProxy_DataAzureadServicePrincipalOauth2PermissionScopesOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -392,6 +428,9 @@ func (d *jsiiProxy_DataAzureadServicePrincipalOauth2PermissionScopesOutputRefere
 }
 
 func (d *jsiiProxy_DataAzureadServicePrincipalOauth2PermissionScopesOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -405,6 +444,9 @@ func (d *jsiiProxy_DataAzureadServicePrincipalOauth2PermissionScopesOutputRefere
 }
 
 func (d *jsiiProxy_DataAzureadServicePrincipalOauth2PermissionScopesOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -418,6 +460,9 @@ func (d *jsiiProxy_DataAzureadServicePrincipalOauth2PermissionScopesOutputRefere
 }
 
 func (d *jsiiProxy_DataAzureadServicePrincipalOauth2PermissionScopesOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -444,6 +489,9 @@ func (d *jsiiProxy_DataAzureadServicePrincipalOauth2PermissionScopesOutputRefere
 }
 
 func (d *jsiiProxy_DataAzureadServicePrincipalOauth2PermissionScopesOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -457,6 +505,9 @@ func (d *jsiiProxy_DataAzureadServicePrincipalOauth2PermissionScopesOutputRefere
 }
 
 func (d *jsiiProxy_DataAzureadServicePrincipalOauth2PermissionScopesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

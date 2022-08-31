@@ -111,6 +111,9 @@ func (j *jsiiProxy_ApplicationApiOauth2PermissionScopeList) WrapsSet() *bool {
 func NewApplicationApiOauth2PermissionScopeList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ApplicationApiOauth2PermissionScopeList {
 	_init_.Initialize()
 
+	if err := validateNewApplicationApiOauth2PermissionScopeListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ApplicationApiOauth2PermissionScopeList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewApplicationApiOauth2PermissionScopeList_Override(a ApplicationApiOauth2P
 	)
 }
 
-func (j *jsiiProxy_ApplicationApiOauth2PermissionScopeList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ApplicationApiOauth2PermissionScopeList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_ApplicationApiOauth2PermissionScopeList) SetInternalValue(val
 	)
 }
 
-func (j *jsiiProxy_ApplicationApiOauth2PermissionScopeList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ApplicationApiOauth2PermissionScopeList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_ApplicationApiOauth2PermissionScopeList) SetTerraformAttribut
 	)
 }
 
-func (j *jsiiProxy_ApplicationApiOauth2PermissionScopeList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ApplicationApiOauth2PermissionScopeList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_ApplicationApiOauth2PermissionScopeList) SetTerraformResource
 	)
 }
 
-func (j *jsiiProxy_ApplicationApiOauth2PermissionScopeList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_ApplicationApiOauth2PermissionScopeList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (a *jsiiProxy_ApplicationApiOauth2PermissionScopeList) ComputeFqn() *string
 }
 
 func (a *jsiiProxy_ApplicationApiOauth2PermissionScopeList) Get(index *float64) ApplicationApiOauth2PermissionScopeOutputReference {
+	if err := a.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns ApplicationApiOauth2PermissionScopeOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (a *jsiiProxy_ApplicationApiOauth2PermissionScopeList) Get(index *float64) 
 }
 
 func (a *jsiiProxy_ApplicationApiOauth2PermissionScopeList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := a.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

@@ -175,6 +175,9 @@ func (j *jsiiProxy_DataAzureadDirectoryObjectTimeoutsOutputReference) TerraformR
 func NewDataAzureadDirectoryObjectTimeoutsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataAzureadDirectoryObjectTimeoutsOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewDataAzureadDirectoryObjectTimeoutsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataAzureadDirectoryObjectTimeoutsOutputReference{}
 
 	_jsii_.Create(
@@ -196,7 +199,10 @@ func NewDataAzureadDirectoryObjectTimeoutsOutputReference_Override(d DataAzuread
 	)
 }
 
-func (j *jsiiProxy_DataAzureadDirectoryObjectTimeoutsOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DataAzureadDirectoryObjectTimeoutsOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -204,7 +210,10 @@ func (j *jsiiProxy_DataAzureadDirectoryObjectTimeoutsOutputReference) SetComplex
 	)
 }
 
-func (j *jsiiProxy_DataAzureadDirectoryObjectTimeoutsOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DataAzureadDirectoryObjectTimeoutsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -212,7 +221,10 @@ func (j *jsiiProxy_DataAzureadDirectoryObjectTimeoutsOutputReference) SetComplex
 	)
 }
 
-func (j *jsiiProxy_DataAzureadDirectoryObjectTimeoutsOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataAzureadDirectoryObjectTimeoutsOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -220,7 +232,10 @@ func (j *jsiiProxy_DataAzureadDirectoryObjectTimeoutsOutputReference) SetInterna
 	)
 }
 
-func (j *jsiiProxy_DataAzureadDirectoryObjectTimeoutsOutputReference) SetRead(val *string) {
+func (j *jsiiProxy_DataAzureadDirectoryObjectTimeoutsOutputReference)SetRead(val *string) {
+	if err := j.validateSetReadParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"read",
@@ -228,7 +243,10 @@ func (j *jsiiProxy_DataAzureadDirectoryObjectTimeoutsOutputReference) SetRead(va
 	)
 }
 
-func (j *jsiiProxy_DataAzureadDirectoryObjectTimeoutsOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataAzureadDirectoryObjectTimeoutsOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -236,7 +254,10 @@ func (j *jsiiProxy_DataAzureadDirectoryObjectTimeoutsOutputReference) SetTerrafo
 	)
 }
 
-func (j *jsiiProxy_DataAzureadDirectoryObjectTimeoutsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataAzureadDirectoryObjectTimeoutsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -258,6 +279,9 @@ func (d *jsiiProxy_DataAzureadDirectoryObjectTimeoutsOutputReference) ComputeFqn
 }
 
 func (d *jsiiProxy_DataAzureadDirectoryObjectTimeoutsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -271,6 +295,9 @@ func (d *jsiiProxy_DataAzureadDirectoryObjectTimeoutsOutputReference) GetAnyMapA
 }
 
 func (d *jsiiProxy_DataAzureadDirectoryObjectTimeoutsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -284,6 +311,9 @@ func (d *jsiiProxy_DataAzureadDirectoryObjectTimeoutsOutputReference) GetBoolean
 }
 
 func (d *jsiiProxy_DataAzureadDirectoryObjectTimeoutsOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -297,6 +327,9 @@ func (d *jsiiProxy_DataAzureadDirectoryObjectTimeoutsOutputReference) GetBoolean
 }
 
 func (d *jsiiProxy_DataAzureadDirectoryObjectTimeoutsOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -310,6 +343,9 @@ func (d *jsiiProxy_DataAzureadDirectoryObjectTimeoutsOutputReference) GetListAtt
 }
 
 func (d *jsiiProxy_DataAzureadDirectoryObjectTimeoutsOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -323,6 +359,9 @@ func (d *jsiiProxy_DataAzureadDirectoryObjectTimeoutsOutputReference) GetNumberA
 }
 
 func (d *jsiiProxy_DataAzureadDirectoryObjectTimeoutsOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -336,6 +375,9 @@ func (d *jsiiProxy_DataAzureadDirectoryObjectTimeoutsOutputReference) GetNumberL
 }
 
 func (d *jsiiProxy_DataAzureadDirectoryObjectTimeoutsOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -349,6 +391,9 @@ func (d *jsiiProxy_DataAzureadDirectoryObjectTimeoutsOutputReference) GetNumberM
 }
 
 func (d *jsiiProxy_DataAzureadDirectoryObjectTimeoutsOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -362,6 +407,9 @@ func (d *jsiiProxy_DataAzureadDirectoryObjectTimeoutsOutputReference) GetStringA
 }
 
 func (d *jsiiProxy_DataAzureadDirectoryObjectTimeoutsOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -388,6 +436,9 @@ func (d *jsiiProxy_DataAzureadDirectoryObjectTimeoutsOutputReference) Interpolat
 }
 
 func (d *jsiiProxy_DataAzureadDirectoryObjectTimeoutsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -409,6 +460,9 @@ func (d *jsiiProxy_DataAzureadDirectoryObjectTimeoutsOutputReference) ResetRead(
 }
 
 func (d *jsiiProxy_DataAzureadDirectoryObjectTimeoutsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

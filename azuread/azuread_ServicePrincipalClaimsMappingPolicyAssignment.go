@@ -337,6 +337,9 @@ func (j *jsiiProxy_ServicePrincipalClaimsMappingPolicyAssignment) TerraformResou
 func NewServicePrincipalClaimsMappingPolicyAssignment(scope constructs.Construct, id *string, config *ServicePrincipalClaimsMappingPolicyAssignmentConfig) ServicePrincipalClaimsMappingPolicyAssignment {
 	_init_.Initialize()
 
+	if err := validateNewServicePrincipalClaimsMappingPolicyAssignmentParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ServicePrincipalClaimsMappingPolicyAssignment{}
 
 	_jsii_.Create(
@@ -359,7 +362,10 @@ func NewServicePrincipalClaimsMappingPolicyAssignment_Override(s ServicePrincipa
 	)
 }
 
-func (j *jsiiProxy_ServicePrincipalClaimsMappingPolicyAssignment) SetClaimsMappingPolicyId(val *string) {
+func (j *jsiiProxy_ServicePrincipalClaimsMappingPolicyAssignment)SetClaimsMappingPolicyId(val *string) {
+	if err := j.validateSetClaimsMappingPolicyIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"claimsMappingPolicyId",
@@ -367,7 +373,10 @@ func (j *jsiiProxy_ServicePrincipalClaimsMappingPolicyAssignment) SetClaimsMappi
 	)
 }
 
-func (j *jsiiProxy_ServicePrincipalClaimsMappingPolicyAssignment) SetConnection(val interface{}) {
+func (j *jsiiProxy_ServicePrincipalClaimsMappingPolicyAssignment)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -375,7 +384,7 @@ func (j *jsiiProxy_ServicePrincipalClaimsMappingPolicyAssignment) SetConnection(
 	)
 }
 
-func (j *jsiiProxy_ServicePrincipalClaimsMappingPolicyAssignment) SetCount(val *float64) {
+func (j *jsiiProxy_ServicePrincipalClaimsMappingPolicyAssignment)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -383,7 +392,7 @@ func (j *jsiiProxy_ServicePrincipalClaimsMappingPolicyAssignment) SetCount(val *
 	)
 }
 
-func (j *jsiiProxy_ServicePrincipalClaimsMappingPolicyAssignment) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ServicePrincipalClaimsMappingPolicyAssignment)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -391,7 +400,7 @@ func (j *jsiiProxy_ServicePrincipalClaimsMappingPolicyAssignment) SetDependsOn(v
 	)
 }
 
-func (j *jsiiProxy_ServicePrincipalClaimsMappingPolicyAssignment) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ServicePrincipalClaimsMappingPolicyAssignment)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -399,7 +408,10 @@ func (j *jsiiProxy_ServicePrincipalClaimsMappingPolicyAssignment) SetForEach(val
 	)
 }
 
-func (j *jsiiProxy_ServicePrincipalClaimsMappingPolicyAssignment) SetId(val *string) {
+func (j *jsiiProxy_ServicePrincipalClaimsMappingPolicyAssignment)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -407,7 +419,10 @@ func (j *jsiiProxy_ServicePrincipalClaimsMappingPolicyAssignment) SetId(val *str
 	)
 }
 
-func (j *jsiiProxy_ServicePrincipalClaimsMappingPolicyAssignment) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ServicePrincipalClaimsMappingPolicyAssignment)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -415,7 +430,7 @@ func (j *jsiiProxy_ServicePrincipalClaimsMappingPolicyAssignment) SetLifecycle(v
 	)
 }
 
-func (j *jsiiProxy_ServicePrincipalClaimsMappingPolicyAssignment) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ServicePrincipalClaimsMappingPolicyAssignment)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -423,7 +438,10 @@ func (j *jsiiProxy_ServicePrincipalClaimsMappingPolicyAssignment) SetProvider(va
 	)
 }
 
-func (j *jsiiProxy_ServicePrincipalClaimsMappingPolicyAssignment) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ServicePrincipalClaimsMappingPolicyAssignment)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -431,7 +449,10 @@ func (j *jsiiProxy_ServicePrincipalClaimsMappingPolicyAssignment) SetProvisioner
 	)
 }
 
-func (j *jsiiProxy_ServicePrincipalClaimsMappingPolicyAssignment) SetServicePrincipalId(val *string) {
+func (j *jsiiProxy_ServicePrincipalClaimsMappingPolicyAssignment)SetServicePrincipalId(val *string) {
+	if err := j.validateSetServicePrincipalIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"servicePrincipalId",
@@ -459,6 +480,9 @@ func (j *jsiiProxy_ServicePrincipalClaimsMappingPolicyAssignment) SetServicePrin
 func ServicePrincipalClaimsMappingPolicyAssignment_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateServicePrincipalClaimsMappingPolicyAssignment_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -483,6 +507,9 @@ func ServicePrincipalClaimsMappingPolicyAssignment_TfResourceType() *string {
 }
 
 func (s *jsiiProxy_ServicePrincipalClaimsMappingPolicyAssignment) AddOverride(path *string, value interface{}) {
+	if err := s.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"addOverride",
@@ -491,6 +518,9 @@ func (s *jsiiProxy_ServicePrincipalClaimsMappingPolicyAssignment) AddOverride(pa
 }
 
 func (s *jsiiProxy_ServicePrincipalClaimsMappingPolicyAssignment) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -504,6 +534,9 @@ func (s *jsiiProxy_ServicePrincipalClaimsMappingPolicyAssignment) GetAnyMapAttri
 }
 
 func (s *jsiiProxy_ServicePrincipalClaimsMappingPolicyAssignment) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -517,6 +550,9 @@ func (s *jsiiProxy_ServicePrincipalClaimsMappingPolicyAssignment) GetBooleanAttr
 }
 
 func (s *jsiiProxy_ServicePrincipalClaimsMappingPolicyAssignment) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := s.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -530,6 +566,9 @@ func (s *jsiiProxy_ServicePrincipalClaimsMappingPolicyAssignment) GetBooleanMapA
 }
 
 func (s *jsiiProxy_ServicePrincipalClaimsMappingPolicyAssignment) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := s.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -543,6 +582,9 @@ func (s *jsiiProxy_ServicePrincipalClaimsMappingPolicyAssignment) GetListAttribu
 }
 
 func (s *jsiiProxy_ServicePrincipalClaimsMappingPolicyAssignment) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := s.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -556,6 +598,9 @@ func (s *jsiiProxy_ServicePrincipalClaimsMappingPolicyAssignment) GetNumberAttri
 }
 
 func (s *jsiiProxy_ServicePrincipalClaimsMappingPolicyAssignment) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := s.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -569,6 +614,9 @@ func (s *jsiiProxy_ServicePrincipalClaimsMappingPolicyAssignment) GetNumberListA
 }
 
 func (s *jsiiProxy_ServicePrincipalClaimsMappingPolicyAssignment) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := s.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -582,6 +630,9 @@ func (s *jsiiProxy_ServicePrincipalClaimsMappingPolicyAssignment) GetNumberMapAt
 }
 
 func (s *jsiiProxy_ServicePrincipalClaimsMappingPolicyAssignment) GetStringAttribute(terraformAttribute *string) *string {
+	if err := s.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -595,6 +646,9 @@ func (s *jsiiProxy_ServicePrincipalClaimsMappingPolicyAssignment) GetStringAttri
 }
 
 func (s *jsiiProxy_ServicePrincipalClaimsMappingPolicyAssignment) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := s.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -608,6 +662,9 @@ func (s *jsiiProxy_ServicePrincipalClaimsMappingPolicyAssignment) GetStringMapAt
 }
 
 func (s *jsiiProxy_ServicePrincipalClaimsMappingPolicyAssignment) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -621,6 +678,9 @@ func (s *jsiiProxy_ServicePrincipalClaimsMappingPolicyAssignment) InterpolationF
 }
 
 func (s *jsiiProxy_ServicePrincipalClaimsMappingPolicyAssignment) OverrideLogicalId(newLogicalId *string) {
+	if err := s.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"overrideLogicalId",

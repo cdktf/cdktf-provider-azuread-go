@@ -99,6 +99,9 @@ func (j *jsiiProxy_ServicePrincipalOauth2PermissionScopesList) WrapsSet() *bool 
 func NewServicePrincipalOauth2PermissionScopesList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ServicePrincipalOauth2PermissionScopesList {
 	_init_.Initialize()
 
+	if err := validateNewServicePrincipalOauth2PermissionScopesListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ServicePrincipalOauth2PermissionScopesList{}
 
 	_jsii_.Create(
@@ -120,7 +123,10 @@ func NewServicePrincipalOauth2PermissionScopesList_Override(s ServicePrincipalOa
 	)
 }
 
-func (j *jsiiProxy_ServicePrincipalOauth2PermissionScopesList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ServicePrincipalOauth2PermissionScopesList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -128,7 +134,10 @@ func (j *jsiiProxy_ServicePrincipalOauth2PermissionScopesList) SetTerraformAttri
 	)
 }
 
-func (j *jsiiProxy_ServicePrincipalOauth2PermissionScopesList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ServicePrincipalOauth2PermissionScopesList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -136,7 +145,10 @@ func (j *jsiiProxy_ServicePrincipalOauth2PermissionScopesList) SetTerraformResou
 	)
 }
 
-func (j *jsiiProxy_ServicePrincipalOauth2PermissionScopesList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_ServicePrincipalOauth2PermissionScopesList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -158,6 +170,9 @@ func (s *jsiiProxy_ServicePrincipalOauth2PermissionScopesList) ComputeFqn() *str
 }
 
 func (s *jsiiProxy_ServicePrincipalOauth2PermissionScopesList) Get(index *float64) ServicePrincipalOauth2PermissionScopesOutputReference {
+	if err := s.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns ServicePrincipalOauth2PermissionScopesOutputReference
 
 	_jsii_.Invoke(
@@ -171,6 +186,9 @@ func (s *jsiiProxy_ServicePrincipalOauth2PermissionScopesList) Get(index *float6
 }
 
 func (s *jsiiProxy_ServicePrincipalOauth2PermissionScopesList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

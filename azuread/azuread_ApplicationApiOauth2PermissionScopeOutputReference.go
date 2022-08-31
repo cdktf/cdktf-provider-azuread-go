@@ -342,6 +342,9 @@ func (j *jsiiProxy_ApplicationApiOauth2PermissionScopeOutputReference) ValueInpu
 func NewApplicationApiOauth2PermissionScopeOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ApplicationApiOauth2PermissionScopeOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewApplicationApiOauth2PermissionScopeOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ApplicationApiOauth2PermissionScopeOutputReference{}
 
 	_jsii_.Create(
@@ -363,7 +366,10 @@ func NewApplicationApiOauth2PermissionScopeOutputReference_Override(a Applicatio
 	)
 }
 
-func (j *jsiiProxy_ApplicationApiOauth2PermissionScopeOutputReference) SetAdminConsentDescription(val *string) {
+func (j *jsiiProxy_ApplicationApiOauth2PermissionScopeOutputReference)SetAdminConsentDescription(val *string) {
+	if err := j.validateSetAdminConsentDescriptionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"adminConsentDescription",
@@ -371,7 +377,10 @@ func (j *jsiiProxy_ApplicationApiOauth2PermissionScopeOutputReference) SetAdminC
 	)
 }
 
-func (j *jsiiProxy_ApplicationApiOauth2PermissionScopeOutputReference) SetAdminConsentDisplayName(val *string) {
+func (j *jsiiProxy_ApplicationApiOauth2PermissionScopeOutputReference)SetAdminConsentDisplayName(val *string) {
+	if err := j.validateSetAdminConsentDisplayNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"adminConsentDisplayName",
@@ -379,7 +388,10 @@ func (j *jsiiProxy_ApplicationApiOauth2PermissionScopeOutputReference) SetAdminC
 	)
 }
 
-func (j *jsiiProxy_ApplicationApiOauth2PermissionScopeOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ApplicationApiOauth2PermissionScopeOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -387,7 +399,10 @@ func (j *jsiiProxy_ApplicationApiOauth2PermissionScopeOutputReference) SetComple
 	)
 }
 
-func (j *jsiiProxy_ApplicationApiOauth2PermissionScopeOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ApplicationApiOauth2PermissionScopeOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -395,7 +410,10 @@ func (j *jsiiProxy_ApplicationApiOauth2PermissionScopeOutputReference) SetComple
 	)
 }
 
-func (j *jsiiProxy_ApplicationApiOauth2PermissionScopeOutputReference) SetEnabled(val interface{}) {
+func (j *jsiiProxy_ApplicationApiOauth2PermissionScopeOutputReference)SetEnabled(val interface{}) {
+	if err := j.validateSetEnabledParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"enabled",
@@ -403,7 +421,10 @@ func (j *jsiiProxy_ApplicationApiOauth2PermissionScopeOutputReference) SetEnable
 	)
 }
 
-func (j *jsiiProxy_ApplicationApiOauth2PermissionScopeOutputReference) SetId(val *string) {
+func (j *jsiiProxy_ApplicationApiOauth2PermissionScopeOutputReference)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -411,7 +432,10 @@ func (j *jsiiProxy_ApplicationApiOauth2PermissionScopeOutputReference) SetId(val
 	)
 }
 
-func (j *jsiiProxy_ApplicationApiOauth2PermissionScopeOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ApplicationApiOauth2PermissionScopeOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -419,7 +443,10 @@ func (j *jsiiProxy_ApplicationApiOauth2PermissionScopeOutputReference) SetIntern
 	)
 }
 
-func (j *jsiiProxy_ApplicationApiOauth2PermissionScopeOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ApplicationApiOauth2PermissionScopeOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -427,7 +454,10 @@ func (j *jsiiProxy_ApplicationApiOauth2PermissionScopeOutputReference) SetTerraf
 	)
 }
 
-func (j *jsiiProxy_ApplicationApiOauth2PermissionScopeOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ApplicationApiOauth2PermissionScopeOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -435,7 +465,10 @@ func (j *jsiiProxy_ApplicationApiOauth2PermissionScopeOutputReference) SetTerraf
 	)
 }
 
-func (j *jsiiProxy_ApplicationApiOauth2PermissionScopeOutputReference) SetType(val *string) {
+func (j *jsiiProxy_ApplicationApiOauth2PermissionScopeOutputReference)SetType(val *string) {
+	if err := j.validateSetTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"type",
@@ -443,7 +476,10 @@ func (j *jsiiProxy_ApplicationApiOauth2PermissionScopeOutputReference) SetType(v
 	)
 }
 
-func (j *jsiiProxy_ApplicationApiOauth2PermissionScopeOutputReference) SetUserConsentDescription(val *string) {
+func (j *jsiiProxy_ApplicationApiOauth2PermissionScopeOutputReference)SetUserConsentDescription(val *string) {
+	if err := j.validateSetUserConsentDescriptionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"userConsentDescription",
@@ -451,7 +487,10 @@ func (j *jsiiProxy_ApplicationApiOauth2PermissionScopeOutputReference) SetUserCo
 	)
 }
 
-func (j *jsiiProxy_ApplicationApiOauth2PermissionScopeOutputReference) SetUserConsentDisplayName(val *string) {
+func (j *jsiiProxy_ApplicationApiOauth2PermissionScopeOutputReference)SetUserConsentDisplayName(val *string) {
+	if err := j.validateSetUserConsentDisplayNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"userConsentDisplayName",
@@ -459,7 +498,10 @@ func (j *jsiiProxy_ApplicationApiOauth2PermissionScopeOutputReference) SetUserCo
 	)
 }
 
-func (j *jsiiProxy_ApplicationApiOauth2PermissionScopeOutputReference) SetValue(val *string) {
+func (j *jsiiProxy_ApplicationApiOauth2PermissionScopeOutputReference)SetValue(val *string) {
+	if err := j.validateSetValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"value",
@@ -481,6 +523,9 @@ func (a *jsiiProxy_ApplicationApiOauth2PermissionScopeOutputReference) ComputeFq
 }
 
 func (a *jsiiProxy_ApplicationApiOauth2PermissionScopeOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -494,6 +539,9 @@ func (a *jsiiProxy_ApplicationApiOauth2PermissionScopeOutputReference) GetAnyMap
 }
 
 func (a *jsiiProxy_ApplicationApiOauth2PermissionScopeOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := a.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -507,6 +555,9 @@ func (a *jsiiProxy_ApplicationApiOauth2PermissionScopeOutputReference) GetBoolea
 }
 
 func (a *jsiiProxy_ApplicationApiOauth2PermissionScopeOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := a.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -520,6 +571,9 @@ func (a *jsiiProxy_ApplicationApiOauth2PermissionScopeOutputReference) GetBoolea
 }
 
 func (a *jsiiProxy_ApplicationApiOauth2PermissionScopeOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := a.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -533,6 +587,9 @@ func (a *jsiiProxy_ApplicationApiOauth2PermissionScopeOutputReference) GetListAt
 }
 
 func (a *jsiiProxy_ApplicationApiOauth2PermissionScopeOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := a.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -546,6 +603,9 @@ func (a *jsiiProxy_ApplicationApiOauth2PermissionScopeOutputReference) GetNumber
 }
 
 func (a *jsiiProxy_ApplicationApiOauth2PermissionScopeOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := a.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -559,6 +619,9 @@ func (a *jsiiProxy_ApplicationApiOauth2PermissionScopeOutputReference) GetNumber
 }
 
 func (a *jsiiProxy_ApplicationApiOauth2PermissionScopeOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := a.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -572,6 +635,9 @@ func (a *jsiiProxy_ApplicationApiOauth2PermissionScopeOutputReference) GetNumber
 }
 
 func (a *jsiiProxy_ApplicationApiOauth2PermissionScopeOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := a.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -585,6 +651,9 @@ func (a *jsiiProxy_ApplicationApiOauth2PermissionScopeOutputReference) GetString
 }
 
 func (a *jsiiProxy_ApplicationApiOauth2PermissionScopeOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := a.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -611,6 +680,9 @@ func (a *jsiiProxy_ApplicationApiOauth2PermissionScopeOutputReference) Interpola
 }
 
 func (a *jsiiProxy_ApplicationApiOauth2PermissionScopeOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := a.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -680,6 +752,9 @@ func (a *jsiiProxy_ApplicationApiOauth2PermissionScopeOutputReference) ResetValu
 }
 
 func (a *jsiiProxy_ApplicationApiOauth2PermissionScopeOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := a.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

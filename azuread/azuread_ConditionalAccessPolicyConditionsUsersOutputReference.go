@@ -295,6 +295,9 @@ func (j *jsiiProxy_ConditionalAccessPolicyConditionsUsersOutputReference) Terraf
 func NewConditionalAccessPolicyConditionsUsersOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ConditionalAccessPolicyConditionsUsersOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewConditionalAccessPolicyConditionsUsersOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ConditionalAccessPolicyConditionsUsersOutputReference{}
 
 	_jsii_.Create(
@@ -316,7 +319,10 @@ func NewConditionalAccessPolicyConditionsUsersOutputReference_Override(c Conditi
 	)
 }
 
-func (j *jsiiProxy_ConditionalAccessPolicyConditionsUsersOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ConditionalAccessPolicyConditionsUsersOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -324,7 +330,10 @@ func (j *jsiiProxy_ConditionalAccessPolicyConditionsUsersOutputReference) SetCom
 	)
 }
 
-func (j *jsiiProxy_ConditionalAccessPolicyConditionsUsersOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ConditionalAccessPolicyConditionsUsersOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -332,7 +341,10 @@ func (j *jsiiProxy_ConditionalAccessPolicyConditionsUsersOutputReference) SetCom
 	)
 }
 
-func (j *jsiiProxy_ConditionalAccessPolicyConditionsUsersOutputReference) SetExcludedGroups(val *[]*string) {
+func (j *jsiiProxy_ConditionalAccessPolicyConditionsUsersOutputReference)SetExcludedGroups(val *[]*string) {
+	if err := j.validateSetExcludedGroupsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"excludedGroups",
@@ -340,7 +352,10 @@ func (j *jsiiProxy_ConditionalAccessPolicyConditionsUsersOutputReference) SetExc
 	)
 }
 
-func (j *jsiiProxy_ConditionalAccessPolicyConditionsUsersOutputReference) SetExcludedRoles(val *[]*string) {
+func (j *jsiiProxy_ConditionalAccessPolicyConditionsUsersOutputReference)SetExcludedRoles(val *[]*string) {
+	if err := j.validateSetExcludedRolesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"excludedRoles",
@@ -348,7 +363,10 @@ func (j *jsiiProxy_ConditionalAccessPolicyConditionsUsersOutputReference) SetExc
 	)
 }
 
-func (j *jsiiProxy_ConditionalAccessPolicyConditionsUsersOutputReference) SetExcludedUsers(val *[]*string) {
+func (j *jsiiProxy_ConditionalAccessPolicyConditionsUsersOutputReference)SetExcludedUsers(val *[]*string) {
+	if err := j.validateSetExcludedUsersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"excludedUsers",
@@ -356,7 +374,10 @@ func (j *jsiiProxy_ConditionalAccessPolicyConditionsUsersOutputReference) SetExc
 	)
 }
 
-func (j *jsiiProxy_ConditionalAccessPolicyConditionsUsersOutputReference) SetIncludedGroups(val *[]*string) {
+func (j *jsiiProxy_ConditionalAccessPolicyConditionsUsersOutputReference)SetIncludedGroups(val *[]*string) {
+	if err := j.validateSetIncludedGroupsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"includedGroups",
@@ -364,7 +385,10 @@ func (j *jsiiProxy_ConditionalAccessPolicyConditionsUsersOutputReference) SetInc
 	)
 }
 
-func (j *jsiiProxy_ConditionalAccessPolicyConditionsUsersOutputReference) SetIncludedRoles(val *[]*string) {
+func (j *jsiiProxy_ConditionalAccessPolicyConditionsUsersOutputReference)SetIncludedRoles(val *[]*string) {
+	if err := j.validateSetIncludedRolesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"includedRoles",
@@ -372,7 +396,10 @@ func (j *jsiiProxy_ConditionalAccessPolicyConditionsUsersOutputReference) SetInc
 	)
 }
 
-func (j *jsiiProxy_ConditionalAccessPolicyConditionsUsersOutputReference) SetIncludedUsers(val *[]*string) {
+func (j *jsiiProxy_ConditionalAccessPolicyConditionsUsersOutputReference)SetIncludedUsers(val *[]*string) {
+	if err := j.validateSetIncludedUsersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"includedUsers",
@@ -380,7 +407,10 @@ func (j *jsiiProxy_ConditionalAccessPolicyConditionsUsersOutputReference) SetInc
 	)
 }
 
-func (j *jsiiProxy_ConditionalAccessPolicyConditionsUsersOutputReference) SetInternalValue(val *ConditionalAccessPolicyConditionsUsers) {
+func (j *jsiiProxy_ConditionalAccessPolicyConditionsUsersOutputReference)SetInternalValue(val *ConditionalAccessPolicyConditionsUsers) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -388,7 +418,10 @@ func (j *jsiiProxy_ConditionalAccessPolicyConditionsUsersOutputReference) SetInt
 	)
 }
 
-func (j *jsiiProxy_ConditionalAccessPolicyConditionsUsersOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ConditionalAccessPolicyConditionsUsersOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -396,7 +429,10 @@ func (j *jsiiProxy_ConditionalAccessPolicyConditionsUsersOutputReference) SetTer
 	)
 }
 
-func (j *jsiiProxy_ConditionalAccessPolicyConditionsUsersOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ConditionalAccessPolicyConditionsUsersOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -418,6 +454,9 @@ func (c *jsiiProxy_ConditionalAccessPolicyConditionsUsersOutputReference) Comput
 }
 
 func (c *jsiiProxy_ConditionalAccessPolicyConditionsUsersOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -431,6 +470,9 @@ func (c *jsiiProxy_ConditionalAccessPolicyConditionsUsersOutputReference) GetAny
 }
 
 func (c *jsiiProxy_ConditionalAccessPolicyConditionsUsersOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -444,6 +486,9 @@ func (c *jsiiProxy_ConditionalAccessPolicyConditionsUsersOutputReference) GetBoo
 }
 
 func (c *jsiiProxy_ConditionalAccessPolicyConditionsUsersOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := c.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -457,6 +502,9 @@ func (c *jsiiProxy_ConditionalAccessPolicyConditionsUsersOutputReference) GetBoo
 }
 
 func (c *jsiiProxy_ConditionalAccessPolicyConditionsUsersOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := c.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -470,6 +518,9 @@ func (c *jsiiProxy_ConditionalAccessPolicyConditionsUsersOutputReference) GetLis
 }
 
 func (c *jsiiProxy_ConditionalAccessPolicyConditionsUsersOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := c.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -483,6 +534,9 @@ func (c *jsiiProxy_ConditionalAccessPolicyConditionsUsersOutputReference) GetNum
 }
 
 func (c *jsiiProxy_ConditionalAccessPolicyConditionsUsersOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := c.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -496,6 +550,9 @@ func (c *jsiiProxy_ConditionalAccessPolicyConditionsUsersOutputReference) GetNum
 }
 
 func (c *jsiiProxy_ConditionalAccessPolicyConditionsUsersOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := c.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -509,6 +566,9 @@ func (c *jsiiProxy_ConditionalAccessPolicyConditionsUsersOutputReference) GetNum
 }
 
 func (c *jsiiProxy_ConditionalAccessPolicyConditionsUsersOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := c.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -522,6 +582,9 @@ func (c *jsiiProxy_ConditionalAccessPolicyConditionsUsersOutputReference) GetStr
 }
 
 func (c *jsiiProxy_ConditionalAccessPolicyConditionsUsersOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := c.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -548,6 +611,9 @@ func (c *jsiiProxy_ConditionalAccessPolicyConditionsUsersOutputReference) Interp
 }
 
 func (c *jsiiProxy_ConditionalAccessPolicyConditionsUsersOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -609,6 +675,9 @@ func (c *jsiiProxy_ConditionalAccessPolicyConditionsUsersOutputReference) ResetI
 }
 
 func (c *jsiiProxy_ConditionalAccessPolicyConditionsUsersOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

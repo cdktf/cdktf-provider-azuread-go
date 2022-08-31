@@ -408,6 +408,9 @@ func (j *jsiiProxy_ServicePrincipalDelegatedPermissionGrant) UserObjectIdInput()
 func NewServicePrincipalDelegatedPermissionGrant(scope constructs.Construct, id *string, config *ServicePrincipalDelegatedPermissionGrantConfig) ServicePrincipalDelegatedPermissionGrant {
 	_init_.Initialize()
 
+	if err := validateNewServicePrincipalDelegatedPermissionGrantParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ServicePrincipalDelegatedPermissionGrant{}
 
 	_jsii_.Create(
@@ -430,7 +433,10 @@ func NewServicePrincipalDelegatedPermissionGrant_Override(s ServicePrincipalDele
 	)
 }
 
-func (j *jsiiProxy_ServicePrincipalDelegatedPermissionGrant) SetClaimValues(val *[]*string) {
+func (j *jsiiProxy_ServicePrincipalDelegatedPermissionGrant)SetClaimValues(val *[]*string) {
+	if err := j.validateSetClaimValuesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"claimValues",
@@ -438,7 +444,10 @@ func (j *jsiiProxy_ServicePrincipalDelegatedPermissionGrant) SetClaimValues(val 
 	)
 }
 
-func (j *jsiiProxy_ServicePrincipalDelegatedPermissionGrant) SetConnection(val interface{}) {
+func (j *jsiiProxy_ServicePrincipalDelegatedPermissionGrant)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -446,7 +455,7 @@ func (j *jsiiProxy_ServicePrincipalDelegatedPermissionGrant) SetConnection(val i
 	)
 }
 
-func (j *jsiiProxy_ServicePrincipalDelegatedPermissionGrant) SetCount(val *float64) {
+func (j *jsiiProxy_ServicePrincipalDelegatedPermissionGrant)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -454,7 +463,7 @@ func (j *jsiiProxy_ServicePrincipalDelegatedPermissionGrant) SetCount(val *float
 	)
 }
 
-func (j *jsiiProxy_ServicePrincipalDelegatedPermissionGrant) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ServicePrincipalDelegatedPermissionGrant)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -462,7 +471,7 @@ func (j *jsiiProxy_ServicePrincipalDelegatedPermissionGrant) SetDependsOn(val *[
 	)
 }
 
-func (j *jsiiProxy_ServicePrincipalDelegatedPermissionGrant) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ServicePrincipalDelegatedPermissionGrant)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -470,7 +479,10 @@ func (j *jsiiProxy_ServicePrincipalDelegatedPermissionGrant) SetForEach(val cdkt
 	)
 }
 
-func (j *jsiiProxy_ServicePrincipalDelegatedPermissionGrant) SetId(val *string) {
+func (j *jsiiProxy_ServicePrincipalDelegatedPermissionGrant)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -478,7 +490,10 @@ func (j *jsiiProxy_ServicePrincipalDelegatedPermissionGrant) SetId(val *string) 
 	)
 }
 
-func (j *jsiiProxy_ServicePrincipalDelegatedPermissionGrant) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ServicePrincipalDelegatedPermissionGrant)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -486,7 +501,7 @@ func (j *jsiiProxy_ServicePrincipalDelegatedPermissionGrant) SetLifecycle(val *c
 	)
 }
 
-func (j *jsiiProxy_ServicePrincipalDelegatedPermissionGrant) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ServicePrincipalDelegatedPermissionGrant)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -494,7 +509,10 @@ func (j *jsiiProxy_ServicePrincipalDelegatedPermissionGrant) SetProvider(val cdk
 	)
 }
 
-func (j *jsiiProxy_ServicePrincipalDelegatedPermissionGrant) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ServicePrincipalDelegatedPermissionGrant)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -502,7 +520,10 @@ func (j *jsiiProxy_ServicePrincipalDelegatedPermissionGrant) SetProvisioners(val
 	)
 }
 
-func (j *jsiiProxy_ServicePrincipalDelegatedPermissionGrant) SetResourceServicePrincipalObjectId(val *string) {
+func (j *jsiiProxy_ServicePrincipalDelegatedPermissionGrant)SetResourceServicePrincipalObjectId(val *string) {
+	if err := j.validateSetResourceServicePrincipalObjectIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"resourceServicePrincipalObjectId",
@@ -510,7 +531,10 @@ func (j *jsiiProxy_ServicePrincipalDelegatedPermissionGrant) SetResourceServiceP
 	)
 }
 
-func (j *jsiiProxy_ServicePrincipalDelegatedPermissionGrant) SetServicePrincipalObjectId(val *string) {
+func (j *jsiiProxy_ServicePrincipalDelegatedPermissionGrant)SetServicePrincipalObjectId(val *string) {
+	if err := j.validateSetServicePrincipalObjectIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"servicePrincipalObjectId",
@@ -518,7 +542,10 @@ func (j *jsiiProxy_ServicePrincipalDelegatedPermissionGrant) SetServicePrincipal
 	)
 }
 
-func (j *jsiiProxy_ServicePrincipalDelegatedPermissionGrant) SetUserObjectId(val *string) {
+func (j *jsiiProxy_ServicePrincipalDelegatedPermissionGrant)SetUserObjectId(val *string) {
+	if err := j.validateSetUserObjectIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"userObjectId",
@@ -546,6 +573,9 @@ func (j *jsiiProxy_ServicePrincipalDelegatedPermissionGrant) SetUserObjectId(val
 func ServicePrincipalDelegatedPermissionGrant_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateServicePrincipalDelegatedPermissionGrant_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -570,6 +600,9 @@ func ServicePrincipalDelegatedPermissionGrant_TfResourceType() *string {
 }
 
 func (s *jsiiProxy_ServicePrincipalDelegatedPermissionGrant) AddOverride(path *string, value interface{}) {
+	if err := s.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"addOverride",
@@ -578,6 +611,9 @@ func (s *jsiiProxy_ServicePrincipalDelegatedPermissionGrant) AddOverride(path *s
 }
 
 func (s *jsiiProxy_ServicePrincipalDelegatedPermissionGrant) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -591,6 +627,9 @@ func (s *jsiiProxy_ServicePrincipalDelegatedPermissionGrant) GetAnyMapAttribute(
 }
 
 func (s *jsiiProxy_ServicePrincipalDelegatedPermissionGrant) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -604,6 +643,9 @@ func (s *jsiiProxy_ServicePrincipalDelegatedPermissionGrant) GetBooleanAttribute
 }
 
 func (s *jsiiProxy_ServicePrincipalDelegatedPermissionGrant) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := s.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -617,6 +659,9 @@ func (s *jsiiProxy_ServicePrincipalDelegatedPermissionGrant) GetBooleanMapAttrib
 }
 
 func (s *jsiiProxy_ServicePrincipalDelegatedPermissionGrant) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := s.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -630,6 +675,9 @@ func (s *jsiiProxy_ServicePrincipalDelegatedPermissionGrant) GetListAttribute(te
 }
 
 func (s *jsiiProxy_ServicePrincipalDelegatedPermissionGrant) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := s.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -643,6 +691,9 @@ func (s *jsiiProxy_ServicePrincipalDelegatedPermissionGrant) GetNumberAttribute(
 }
 
 func (s *jsiiProxy_ServicePrincipalDelegatedPermissionGrant) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := s.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -656,6 +707,9 @@ func (s *jsiiProxy_ServicePrincipalDelegatedPermissionGrant) GetNumberListAttrib
 }
 
 func (s *jsiiProxy_ServicePrincipalDelegatedPermissionGrant) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := s.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -669,6 +723,9 @@ func (s *jsiiProxy_ServicePrincipalDelegatedPermissionGrant) GetNumberMapAttribu
 }
 
 func (s *jsiiProxy_ServicePrincipalDelegatedPermissionGrant) GetStringAttribute(terraformAttribute *string) *string {
+	if err := s.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -682,6 +739,9 @@ func (s *jsiiProxy_ServicePrincipalDelegatedPermissionGrant) GetStringAttribute(
 }
 
 func (s *jsiiProxy_ServicePrincipalDelegatedPermissionGrant) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := s.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -695,6 +755,9 @@ func (s *jsiiProxy_ServicePrincipalDelegatedPermissionGrant) GetStringMapAttribu
 }
 
 func (s *jsiiProxy_ServicePrincipalDelegatedPermissionGrant) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -708,6 +771,9 @@ func (s *jsiiProxy_ServicePrincipalDelegatedPermissionGrant) InterpolationForAtt
 }
 
 func (s *jsiiProxy_ServicePrincipalDelegatedPermissionGrant) OverrideLogicalId(newLogicalId *string) {
+	if err := s.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"overrideLogicalId",
@@ -716,6 +782,9 @@ func (s *jsiiProxy_ServicePrincipalDelegatedPermissionGrant) OverrideLogicalId(n
 }
 
 func (s *jsiiProxy_ServicePrincipalDelegatedPermissionGrant) PutTimeouts(value *ServicePrincipalDelegatedPermissionGrantTimeouts) {
+	if err := s.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"putTimeouts",

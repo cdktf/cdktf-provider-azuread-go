@@ -99,6 +99,9 @@ func (j *jsiiProxy_ServicePrincipalAppRolesList) WrapsSet() *bool {
 func NewServicePrincipalAppRolesList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ServicePrincipalAppRolesList {
 	_init_.Initialize()
 
+	if err := validateNewServicePrincipalAppRolesListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ServicePrincipalAppRolesList{}
 
 	_jsii_.Create(
@@ -120,7 +123,10 @@ func NewServicePrincipalAppRolesList_Override(s ServicePrincipalAppRolesList, te
 	)
 }
 
-func (j *jsiiProxy_ServicePrincipalAppRolesList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ServicePrincipalAppRolesList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -128,7 +134,10 @@ func (j *jsiiProxy_ServicePrincipalAppRolesList) SetTerraformAttribute(val *stri
 	)
 }
 
-func (j *jsiiProxy_ServicePrincipalAppRolesList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ServicePrincipalAppRolesList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -136,7 +145,10 @@ func (j *jsiiProxy_ServicePrincipalAppRolesList) SetTerraformResource(val cdktf.
 	)
 }
 
-func (j *jsiiProxy_ServicePrincipalAppRolesList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_ServicePrincipalAppRolesList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -158,6 +170,9 @@ func (s *jsiiProxy_ServicePrincipalAppRolesList) ComputeFqn() *string {
 }
 
 func (s *jsiiProxy_ServicePrincipalAppRolesList) Get(index *float64) ServicePrincipalAppRolesOutputReference {
+	if err := s.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns ServicePrincipalAppRolesOutputReference
 
 	_jsii_.Invoke(
@@ -171,6 +186,9 @@ func (s *jsiiProxy_ServicePrincipalAppRolesList) Get(index *float64) ServicePrin
 }
 
 func (s *jsiiProxy_ServicePrincipalAppRolesList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

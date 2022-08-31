@@ -247,6 +247,9 @@ func (j *jsiiProxy_ServicePrincipalCertificateTimeoutsOutputReference) UpdateInp
 func NewServicePrincipalCertificateTimeoutsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ServicePrincipalCertificateTimeoutsOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewServicePrincipalCertificateTimeoutsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ServicePrincipalCertificateTimeoutsOutputReference{}
 
 	_jsii_.Create(
@@ -268,7 +271,10 @@ func NewServicePrincipalCertificateTimeoutsOutputReference_Override(s ServicePri
 	)
 }
 
-func (j *jsiiProxy_ServicePrincipalCertificateTimeoutsOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ServicePrincipalCertificateTimeoutsOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -276,7 +282,10 @@ func (j *jsiiProxy_ServicePrincipalCertificateTimeoutsOutputReference) SetComple
 	)
 }
 
-func (j *jsiiProxy_ServicePrincipalCertificateTimeoutsOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ServicePrincipalCertificateTimeoutsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -284,7 +293,10 @@ func (j *jsiiProxy_ServicePrincipalCertificateTimeoutsOutputReference) SetComple
 	)
 }
 
-func (j *jsiiProxy_ServicePrincipalCertificateTimeoutsOutputReference) SetCreate(val *string) {
+func (j *jsiiProxy_ServicePrincipalCertificateTimeoutsOutputReference)SetCreate(val *string) {
+	if err := j.validateSetCreateParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"create",
@@ -292,7 +304,10 @@ func (j *jsiiProxy_ServicePrincipalCertificateTimeoutsOutputReference) SetCreate
 	)
 }
 
-func (j *jsiiProxy_ServicePrincipalCertificateTimeoutsOutputReference) SetDelete(val *string) {
+func (j *jsiiProxy_ServicePrincipalCertificateTimeoutsOutputReference)SetDelete(val *string) {
+	if err := j.validateSetDeleteParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"delete",
@@ -300,7 +315,10 @@ func (j *jsiiProxy_ServicePrincipalCertificateTimeoutsOutputReference) SetDelete
 	)
 }
 
-func (j *jsiiProxy_ServicePrincipalCertificateTimeoutsOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ServicePrincipalCertificateTimeoutsOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -308,7 +326,10 @@ func (j *jsiiProxy_ServicePrincipalCertificateTimeoutsOutputReference) SetIntern
 	)
 }
 
-func (j *jsiiProxy_ServicePrincipalCertificateTimeoutsOutputReference) SetRead(val *string) {
+func (j *jsiiProxy_ServicePrincipalCertificateTimeoutsOutputReference)SetRead(val *string) {
+	if err := j.validateSetReadParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"read",
@@ -316,7 +337,10 @@ func (j *jsiiProxy_ServicePrincipalCertificateTimeoutsOutputReference) SetRead(v
 	)
 }
 
-func (j *jsiiProxy_ServicePrincipalCertificateTimeoutsOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ServicePrincipalCertificateTimeoutsOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -324,7 +348,10 @@ func (j *jsiiProxy_ServicePrincipalCertificateTimeoutsOutputReference) SetTerraf
 	)
 }
 
-func (j *jsiiProxy_ServicePrincipalCertificateTimeoutsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ServicePrincipalCertificateTimeoutsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -332,7 +359,10 @@ func (j *jsiiProxy_ServicePrincipalCertificateTimeoutsOutputReference) SetTerraf
 	)
 }
 
-func (j *jsiiProxy_ServicePrincipalCertificateTimeoutsOutputReference) SetUpdate(val *string) {
+func (j *jsiiProxy_ServicePrincipalCertificateTimeoutsOutputReference)SetUpdate(val *string) {
+	if err := j.validateSetUpdateParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"update",
@@ -354,6 +384,9 @@ func (s *jsiiProxy_ServicePrincipalCertificateTimeoutsOutputReference) ComputeFq
 }
 
 func (s *jsiiProxy_ServicePrincipalCertificateTimeoutsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -367,6 +400,9 @@ func (s *jsiiProxy_ServicePrincipalCertificateTimeoutsOutputReference) GetAnyMap
 }
 
 func (s *jsiiProxy_ServicePrincipalCertificateTimeoutsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -380,6 +416,9 @@ func (s *jsiiProxy_ServicePrincipalCertificateTimeoutsOutputReference) GetBoolea
 }
 
 func (s *jsiiProxy_ServicePrincipalCertificateTimeoutsOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := s.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -393,6 +432,9 @@ func (s *jsiiProxy_ServicePrincipalCertificateTimeoutsOutputReference) GetBoolea
 }
 
 func (s *jsiiProxy_ServicePrincipalCertificateTimeoutsOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := s.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -406,6 +448,9 @@ func (s *jsiiProxy_ServicePrincipalCertificateTimeoutsOutputReference) GetListAt
 }
 
 func (s *jsiiProxy_ServicePrincipalCertificateTimeoutsOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := s.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -419,6 +464,9 @@ func (s *jsiiProxy_ServicePrincipalCertificateTimeoutsOutputReference) GetNumber
 }
 
 func (s *jsiiProxy_ServicePrincipalCertificateTimeoutsOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := s.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -432,6 +480,9 @@ func (s *jsiiProxy_ServicePrincipalCertificateTimeoutsOutputReference) GetNumber
 }
 
 func (s *jsiiProxy_ServicePrincipalCertificateTimeoutsOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := s.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -445,6 +496,9 @@ func (s *jsiiProxy_ServicePrincipalCertificateTimeoutsOutputReference) GetNumber
 }
 
 func (s *jsiiProxy_ServicePrincipalCertificateTimeoutsOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := s.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -458,6 +512,9 @@ func (s *jsiiProxy_ServicePrincipalCertificateTimeoutsOutputReference) GetString
 }
 
 func (s *jsiiProxy_ServicePrincipalCertificateTimeoutsOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := s.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -484,6 +541,9 @@ func (s *jsiiProxy_ServicePrincipalCertificateTimeoutsOutputReference) Interpola
 }
 
 func (s *jsiiProxy_ServicePrincipalCertificateTimeoutsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -529,6 +589,9 @@ func (s *jsiiProxy_ServicePrincipalCertificateTimeoutsOutputReference) ResetUpda
 }
 
 func (s *jsiiProxy_ServicePrincipalCertificateTimeoutsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

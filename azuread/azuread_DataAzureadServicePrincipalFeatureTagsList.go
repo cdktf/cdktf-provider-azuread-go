@@ -99,6 +99,9 @@ func (j *jsiiProxy_DataAzureadServicePrincipalFeatureTagsList) WrapsSet() *bool 
 func NewDataAzureadServicePrincipalFeatureTagsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzureadServicePrincipalFeatureTagsList {
 	_init_.Initialize()
 
+	if err := validateNewDataAzureadServicePrincipalFeatureTagsListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataAzureadServicePrincipalFeatureTagsList{}
 
 	_jsii_.Create(
@@ -120,7 +123,10 @@ func NewDataAzureadServicePrincipalFeatureTagsList_Override(d DataAzureadService
 	)
 }
 
-func (j *jsiiProxy_DataAzureadServicePrincipalFeatureTagsList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataAzureadServicePrincipalFeatureTagsList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -128,7 +134,10 @@ func (j *jsiiProxy_DataAzureadServicePrincipalFeatureTagsList) SetTerraformAttri
 	)
 }
 
-func (j *jsiiProxy_DataAzureadServicePrincipalFeatureTagsList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataAzureadServicePrincipalFeatureTagsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -136,7 +145,10 @@ func (j *jsiiProxy_DataAzureadServicePrincipalFeatureTagsList) SetTerraformResou
 	)
 }
 
-func (j *jsiiProxy_DataAzureadServicePrincipalFeatureTagsList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DataAzureadServicePrincipalFeatureTagsList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -158,6 +170,9 @@ func (d *jsiiProxy_DataAzureadServicePrincipalFeatureTagsList) ComputeFqn() *str
 }
 
 func (d *jsiiProxy_DataAzureadServicePrincipalFeatureTagsList) Get(index *float64) DataAzureadServicePrincipalFeatureTagsOutputReference {
+	if err := d.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns DataAzureadServicePrincipalFeatureTagsOutputReference
 
 	_jsii_.Invoke(
@@ -171,6 +186,9 @@ func (d *jsiiProxy_DataAzureadServicePrincipalFeatureTagsList) Get(index *float6
 }
 
 func (d *jsiiProxy_DataAzureadServicePrincipalFeatureTagsList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

@@ -174,6 +174,9 @@ func (j *jsiiProxy_CustomDirectoryRolePermissionsOutputReference) TerraformResou
 func NewCustomDirectoryRolePermissionsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) CustomDirectoryRolePermissionsOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewCustomDirectoryRolePermissionsOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_CustomDirectoryRolePermissionsOutputReference{}
 
 	_jsii_.Create(
@@ -195,7 +198,10 @@ func NewCustomDirectoryRolePermissionsOutputReference_Override(c CustomDirectory
 	)
 }
 
-func (j *jsiiProxy_CustomDirectoryRolePermissionsOutputReference) SetAllowedResourceActions(val *[]*string) {
+func (j *jsiiProxy_CustomDirectoryRolePermissionsOutputReference)SetAllowedResourceActions(val *[]*string) {
+	if err := j.validateSetAllowedResourceActionsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"allowedResourceActions",
@@ -203,7 +209,10 @@ func (j *jsiiProxy_CustomDirectoryRolePermissionsOutputReference) SetAllowedReso
 	)
 }
 
-func (j *jsiiProxy_CustomDirectoryRolePermissionsOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_CustomDirectoryRolePermissionsOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -211,7 +220,10 @@ func (j *jsiiProxy_CustomDirectoryRolePermissionsOutputReference) SetComplexObje
 	)
 }
 
-func (j *jsiiProxy_CustomDirectoryRolePermissionsOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_CustomDirectoryRolePermissionsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -219,7 +231,10 @@ func (j *jsiiProxy_CustomDirectoryRolePermissionsOutputReference) SetComplexObje
 	)
 }
 
-func (j *jsiiProxy_CustomDirectoryRolePermissionsOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_CustomDirectoryRolePermissionsOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -227,7 +242,10 @@ func (j *jsiiProxy_CustomDirectoryRolePermissionsOutputReference) SetInternalVal
 	)
 }
 
-func (j *jsiiProxy_CustomDirectoryRolePermissionsOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_CustomDirectoryRolePermissionsOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -235,7 +253,10 @@ func (j *jsiiProxy_CustomDirectoryRolePermissionsOutputReference) SetTerraformAt
 	)
 }
 
-func (j *jsiiProxy_CustomDirectoryRolePermissionsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CustomDirectoryRolePermissionsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -257,6 +278,9 @@ func (c *jsiiProxy_CustomDirectoryRolePermissionsOutputReference) ComputeFqn() *
 }
 
 func (c *jsiiProxy_CustomDirectoryRolePermissionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -270,6 +294,9 @@ func (c *jsiiProxy_CustomDirectoryRolePermissionsOutputReference) GetAnyMapAttri
 }
 
 func (c *jsiiProxy_CustomDirectoryRolePermissionsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -283,6 +310,9 @@ func (c *jsiiProxy_CustomDirectoryRolePermissionsOutputReference) GetBooleanAttr
 }
 
 func (c *jsiiProxy_CustomDirectoryRolePermissionsOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := c.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -296,6 +326,9 @@ func (c *jsiiProxy_CustomDirectoryRolePermissionsOutputReference) GetBooleanMapA
 }
 
 func (c *jsiiProxy_CustomDirectoryRolePermissionsOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := c.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -309,6 +342,9 @@ func (c *jsiiProxy_CustomDirectoryRolePermissionsOutputReference) GetListAttribu
 }
 
 func (c *jsiiProxy_CustomDirectoryRolePermissionsOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := c.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -322,6 +358,9 @@ func (c *jsiiProxy_CustomDirectoryRolePermissionsOutputReference) GetNumberAttri
 }
 
 func (c *jsiiProxy_CustomDirectoryRolePermissionsOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := c.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -335,6 +374,9 @@ func (c *jsiiProxy_CustomDirectoryRolePermissionsOutputReference) GetNumberListA
 }
 
 func (c *jsiiProxy_CustomDirectoryRolePermissionsOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := c.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -348,6 +390,9 @@ func (c *jsiiProxy_CustomDirectoryRolePermissionsOutputReference) GetNumberMapAt
 }
 
 func (c *jsiiProxy_CustomDirectoryRolePermissionsOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := c.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -361,6 +406,9 @@ func (c *jsiiProxy_CustomDirectoryRolePermissionsOutputReference) GetStringAttri
 }
 
 func (c *jsiiProxy_CustomDirectoryRolePermissionsOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := c.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -387,6 +435,9 @@ func (c *jsiiProxy_CustomDirectoryRolePermissionsOutputReference) InterpolationA
 }
 
 func (c *jsiiProxy_CustomDirectoryRolePermissionsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -400,6 +451,9 @@ func (c *jsiiProxy_CustomDirectoryRolePermissionsOutputReference) InterpolationF
 }
 
 func (c *jsiiProxy_CustomDirectoryRolePermissionsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

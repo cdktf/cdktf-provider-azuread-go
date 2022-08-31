@@ -184,6 +184,9 @@ func (j *jsiiProxy_DataAzureadApplicationOptionalClaimsOutputReference) Terrafor
 func NewDataAzureadApplicationOptionalClaimsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataAzureadApplicationOptionalClaimsOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewDataAzureadApplicationOptionalClaimsOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataAzureadApplicationOptionalClaimsOutputReference{}
 
 	_jsii_.Create(
@@ -205,7 +208,10 @@ func NewDataAzureadApplicationOptionalClaimsOutputReference_Override(d DataAzure
 	)
 }
 
-func (j *jsiiProxy_DataAzureadApplicationOptionalClaimsOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DataAzureadApplicationOptionalClaimsOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -213,7 +219,10 @@ func (j *jsiiProxy_DataAzureadApplicationOptionalClaimsOutputReference) SetCompl
 	)
 }
 
-func (j *jsiiProxy_DataAzureadApplicationOptionalClaimsOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DataAzureadApplicationOptionalClaimsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -221,7 +230,10 @@ func (j *jsiiProxy_DataAzureadApplicationOptionalClaimsOutputReference) SetCompl
 	)
 }
 
-func (j *jsiiProxy_DataAzureadApplicationOptionalClaimsOutputReference) SetInternalValue(val *DataAzureadApplicationOptionalClaims) {
+func (j *jsiiProxy_DataAzureadApplicationOptionalClaimsOutputReference)SetInternalValue(val *DataAzureadApplicationOptionalClaims) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -229,7 +241,10 @@ func (j *jsiiProxy_DataAzureadApplicationOptionalClaimsOutputReference) SetInter
 	)
 }
 
-func (j *jsiiProxy_DataAzureadApplicationOptionalClaimsOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataAzureadApplicationOptionalClaimsOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -237,7 +252,10 @@ func (j *jsiiProxy_DataAzureadApplicationOptionalClaimsOutputReference) SetTerra
 	)
 }
 
-func (j *jsiiProxy_DataAzureadApplicationOptionalClaimsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataAzureadApplicationOptionalClaimsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -259,6 +277,9 @@ func (d *jsiiProxy_DataAzureadApplicationOptionalClaimsOutputReference) ComputeF
 }
 
 func (d *jsiiProxy_DataAzureadApplicationOptionalClaimsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -272,6 +293,9 @@ func (d *jsiiProxy_DataAzureadApplicationOptionalClaimsOutputReference) GetAnyMa
 }
 
 func (d *jsiiProxy_DataAzureadApplicationOptionalClaimsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -285,6 +309,9 @@ func (d *jsiiProxy_DataAzureadApplicationOptionalClaimsOutputReference) GetBoole
 }
 
 func (d *jsiiProxy_DataAzureadApplicationOptionalClaimsOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -298,6 +325,9 @@ func (d *jsiiProxy_DataAzureadApplicationOptionalClaimsOutputReference) GetBoole
 }
 
 func (d *jsiiProxy_DataAzureadApplicationOptionalClaimsOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -311,6 +341,9 @@ func (d *jsiiProxy_DataAzureadApplicationOptionalClaimsOutputReference) GetListA
 }
 
 func (d *jsiiProxy_DataAzureadApplicationOptionalClaimsOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -324,6 +357,9 @@ func (d *jsiiProxy_DataAzureadApplicationOptionalClaimsOutputReference) GetNumbe
 }
 
 func (d *jsiiProxy_DataAzureadApplicationOptionalClaimsOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -337,6 +373,9 @@ func (d *jsiiProxy_DataAzureadApplicationOptionalClaimsOutputReference) GetNumbe
 }
 
 func (d *jsiiProxy_DataAzureadApplicationOptionalClaimsOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -350,6 +389,9 @@ func (d *jsiiProxy_DataAzureadApplicationOptionalClaimsOutputReference) GetNumbe
 }
 
 func (d *jsiiProxy_DataAzureadApplicationOptionalClaimsOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -363,6 +405,9 @@ func (d *jsiiProxy_DataAzureadApplicationOptionalClaimsOutputReference) GetStrin
 }
 
 func (d *jsiiProxy_DataAzureadApplicationOptionalClaimsOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -389,6 +434,9 @@ func (d *jsiiProxy_DataAzureadApplicationOptionalClaimsOutputReference) Interpol
 }
 
 func (d *jsiiProxy_DataAzureadApplicationOptionalClaimsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -402,6 +450,9 @@ func (d *jsiiProxy_DataAzureadApplicationOptionalClaimsOutputReference) Interpol
 }
 
 func (d *jsiiProxy_DataAzureadApplicationOptionalClaimsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

@@ -466,6 +466,9 @@ func (j *jsiiProxy_CustomDirectoryRole) VersionInput() *string {
 func NewCustomDirectoryRole(scope constructs.Construct, id *string, config *CustomDirectoryRoleConfig) CustomDirectoryRole {
 	_init_.Initialize()
 
+	if err := validateNewCustomDirectoryRoleParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_CustomDirectoryRole{}
 
 	_jsii_.Create(
@@ -488,7 +491,10 @@ func NewCustomDirectoryRole_Override(c CustomDirectoryRole, scope constructs.Con
 	)
 }
 
-func (j *jsiiProxy_CustomDirectoryRole) SetConnection(val interface{}) {
+func (j *jsiiProxy_CustomDirectoryRole)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -496,7 +502,7 @@ func (j *jsiiProxy_CustomDirectoryRole) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CustomDirectoryRole) SetCount(val *float64) {
+func (j *jsiiProxy_CustomDirectoryRole)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -504,7 +510,7 @@ func (j *jsiiProxy_CustomDirectoryRole) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_CustomDirectoryRole) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_CustomDirectoryRole)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -512,7 +518,10 @@ func (j *jsiiProxy_CustomDirectoryRole) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_CustomDirectoryRole) SetDescription(val *string) {
+func (j *jsiiProxy_CustomDirectoryRole)SetDescription(val *string) {
+	if err := j.validateSetDescriptionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"description",
@@ -520,7 +529,10 @@ func (j *jsiiProxy_CustomDirectoryRole) SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CustomDirectoryRole) SetDisplayName(val *string) {
+func (j *jsiiProxy_CustomDirectoryRole)SetDisplayName(val *string) {
+	if err := j.validateSetDisplayNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"displayName",
@@ -528,7 +540,10 @@ func (j *jsiiProxy_CustomDirectoryRole) SetDisplayName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CustomDirectoryRole) SetEnabled(val interface{}) {
+func (j *jsiiProxy_CustomDirectoryRole)SetEnabled(val interface{}) {
+	if err := j.validateSetEnabledParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"enabled",
@@ -536,7 +551,7 @@ func (j *jsiiProxy_CustomDirectoryRole) SetEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CustomDirectoryRole) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_CustomDirectoryRole)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -544,7 +559,10 @@ func (j *jsiiProxy_CustomDirectoryRole) SetForEach(val cdktf.ITerraformIterator)
 	)
 }
 
-func (j *jsiiProxy_CustomDirectoryRole) SetId(val *string) {
+func (j *jsiiProxy_CustomDirectoryRole)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -552,7 +570,10 @@ func (j *jsiiProxy_CustomDirectoryRole) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CustomDirectoryRole) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_CustomDirectoryRole)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -560,7 +581,7 @@ func (j *jsiiProxy_CustomDirectoryRole) SetLifecycle(val *cdktf.TerraformResourc
 	)
 }
 
-func (j *jsiiProxy_CustomDirectoryRole) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_CustomDirectoryRole)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -568,7 +589,10 @@ func (j *jsiiProxy_CustomDirectoryRole) SetProvider(val cdktf.TerraformProvider)
 	)
 }
 
-func (j *jsiiProxy_CustomDirectoryRole) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_CustomDirectoryRole)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -576,7 +600,10 @@ func (j *jsiiProxy_CustomDirectoryRole) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CustomDirectoryRole) SetTemplateId(val *string) {
+func (j *jsiiProxy_CustomDirectoryRole)SetTemplateId(val *string) {
+	if err := j.validateSetTemplateIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"templateId",
@@ -584,7 +611,10 @@ func (j *jsiiProxy_CustomDirectoryRole) SetTemplateId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CustomDirectoryRole) SetVersion(val *string) {
+func (j *jsiiProxy_CustomDirectoryRole)SetVersion(val *string) {
+	if err := j.validateSetVersionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"version",
@@ -612,6 +642,9 @@ func (j *jsiiProxy_CustomDirectoryRole) SetVersion(val *string) {
 func CustomDirectoryRole_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateCustomDirectoryRole_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -636,6 +669,9 @@ func CustomDirectoryRole_TfResourceType() *string {
 }
 
 func (c *jsiiProxy_CustomDirectoryRole) AddOverride(path *string, value interface{}) {
+	if err := c.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"addOverride",
@@ -644,6 +680,9 @@ func (c *jsiiProxy_CustomDirectoryRole) AddOverride(path *string, value interfac
 }
 
 func (c *jsiiProxy_CustomDirectoryRole) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -657,6 +696,9 @@ func (c *jsiiProxy_CustomDirectoryRole) GetAnyMapAttribute(terraformAttribute *s
 }
 
 func (c *jsiiProxy_CustomDirectoryRole) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -670,6 +712,9 @@ func (c *jsiiProxy_CustomDirectoryRole) GetBooleanAttribute(terraformAttribute *
 }
 
 func (c *jsiiProxy_CustomDirectoryRole) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := c.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -683,6 +728,9 @@ func (c *jsiiProxy_CustomDirectoryRole) GetBooleanMapAttribute(terraformAttribut
 }
 
 func (c *jsiiProxy_CustomDirectoryRole) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := c.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -696,6 +744,9 @@ func (c *jsiiProxy_CustomDirectoryRole) GetListAttribute(terraformAttribute *str
 }
 
 func (c *jsiiProxy_CustomDirectoryRole) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := c.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -709,6 +760,9 @@ func (c *jsiiProxy_CustomDirectoryRole) GetNumberAttribute(terraformAttribute *s
 }
 
 func (c *jsiiProxy_CustomDirectoryRole) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := c.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -722,6 +776,9 @@ func (c *jsiiProxy_CustomDirectoryRole) GetNumberListAttribute(terraformAttribut
 }
 
 func (c *jsiiProxy_CustomDirectoryRole) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := c.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -735,6 +792,9 @@ func (c *jsiiProxy_CustomDirectoryRole) GetNumberMapAttribute(terraformAttribute
 }
 
 func (c *jsiiProxy_CustomDirectoryRole) GetStringAttribute(terraformAttribute *string) *string {
+	if err := c.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -748,6 +808,9 @@ func (c *jsiiProxy_CustomDirectoryRole) GetStringAttribute(terraformAttribute *s
 }
 
 func (c *jsiiProxy_CustomDirectoryRole) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := c.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -761,6 +824,9 @@ func (c *jsiiProxy_CustomDirectoryRole) GetStringMapAttribute(terraformAttribute
 }
 
 func (c *jsiiProxy_CustomDirectoryRole) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -774,6 +840,9 @@ func (c *jsiiProxy_CustomDirectoryRole) InterpolationForAttribute(terraformAttri
 }
 
 func (c *jsiiProxy_CustomDirectoryRole) OverrideLogicalId(newLogicalId *string) {
+	if err := c.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"overrideLogicalId",
@@ -782,6 +851,9 @@ func (c *jsiiProxy_CustomDirectoryRole) OverrideLogicalId(newLogicalId *string) 
 }
 
 func (c *jsiiProxy_CustomDirectoryRole) PutPermissions(value interface{}) {
+	if err := c.validatePutPermissionsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"putPermissions",
@@ -790,6 +862,9 @@ func (c *jsiiProxy_CustomDirectoryRole) PutPermissions(value interface{}) {
 }
 
 func (c *jsiiProxy_CustomDirectoryRole) PutTimeouts(value *CustomDirectoryRoleTimeouts) {
+	if err := c.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"putTimeouts",

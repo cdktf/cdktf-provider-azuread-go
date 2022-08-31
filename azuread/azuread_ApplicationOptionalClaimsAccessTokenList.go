@@ -111,6 +111,9 @@ func (j *jsiiProxy_ApplicationOptionalClaimsAccessTokenList) WrapsSet() *bool {
 func NewApplicationOptionalClaimsAccessTokenList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ApplicationOptionalClaimsAccessTokenList {
 	_init_.Initialize()
 
+	if err := validateNewApplicationOptionalClaimsAccessTokenListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ApplicationOptionalClaimsAccessTokenList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewApplicationOptionalClaimsAccessTokenList_Override(a ApplicationOptionalC
 	)
 }
 
-func (j *jsiiProxy_ApplicationOptionalClaimsAccessTokenList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ApplicationOptionalClaimsAccessTokenList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_ApplicationOptionalClaimsAccessTokenList) SetInternalValue(va
 	)
 }
 
-func (j *jsiiProxy_ApplicationOptionalClaimsAccessTokenList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ApplicationOptionalClaimsAccessTokenList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_ApplicationOptionalClaimsAccessTokenList) SetTerraformAttribu
 	)
 }
 
-func (j *jsiiProxy_ApplicationOptionalClaimsAccessTokenList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ApplicationOptionalClaimsAccessTokenList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_ApplicationOptionalClaimsAccessTokenList) SetTerraformResourc
 	)
 }
 
-func (j *jsiiProxy_ApplicationOptionalClaimsAccessTokenList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_ApplicationOptionalClaimsAccessTokenList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (a *jsiiProxy_ApplicationOptionalClaimsAccessTokenList) ComputeFqn() *strin
 }
 
 func (a *jsiiProxy_ApplicationOptionalClaimsAccessTokenList) Get(index *float64) ApplicationOptionalClaimsAccessTokenOutputReference {
+	if err := a.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns ApplicationOptionalClaimsAccessTokenOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (a *jsiiProxy_ApplicationOptionalClaimsAccessTokenList) Get(index *float64)
 }
 
 func (a *jsiiProxy_ApplicationOptionalClaimsAccessTokenList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := a.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

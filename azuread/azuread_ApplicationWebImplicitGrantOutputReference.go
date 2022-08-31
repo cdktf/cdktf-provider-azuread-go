@@ -199,6 +199,9 @@ func (j *jsiiProxy_ApplicationWebImplicitGrantOutputReference) TerraformResource
 func NewApplicationWebImplicitGrantOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ApplicationWebImplicitGrantOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewApplicationWebImplicitGrantOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ApplicationWebImplicitGrantOutputReference{}
 
 	_jsii_.Create(
@@ -220,7 +223,10 @@ func NewApplicationWebImplicitGrantOutputReference_Override(a ApplicationWebImpl
 	)
 }
 
-func (j *jsiiProxy_ApplicationWebImplicitGrantOutputReference) SetAccessTokenIssuanceEnabled(val interface{}) {
+func (j *jsiiProxy_ApplicationWebImplicitGrantOutputReference)SetAccessTokenIssuanceEnabled(val interface{}) {
+	if err := j.validateSetAccessTokenIssuanceEnabledParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"accessTokenIssuanceEnabled",
@@ -228,7 +234,10 @@ func (j *jsiiProxy_ApplicationWebImplicitGrantOutputReference) SetAccessTokenIss
 	)
 }
 
-func (j *jsiiProxy_ApplicationWebImplicitGrantOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ApplicationWebImplicitGrantOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -236,7 +245,10 @@ func (j *jsiiProxy_ApplicationWebImplicitGrantOutputReference) SetComplexObjectI
 	)
 }
 
-func (j *jsiiProxy_ApplicationWebImplicitGrantOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ApplicationWebImplicitGrantOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -244,7 +256,10 @@ func (j *jsiiProxy_ApplicationWebImplicitGrantOutputReference) SetComplexObjectI
 	)
 }
 
-func (j *jsiiProxy_ApplicationWebImplicitGrantOutputReference) SetIdTokenIssuanceEnabled(val interface{}) {
+func (j *jsiiProxy_ApplicationWebImplicitGrantOutputReference)SetIdTokenIssuanceEnabled(val interface{}) {
+	if err := j.validateSetIdTokenIssuanceEnabledParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"idTokenIssuanceEnabled",
@@ -252,7 +267,10 @@ func (j *jsiiProxy_ApplicationWebImplicitGrantOutputReference) SetIdTokenIssuanc
 	)
 }
 
-func (j *jsiiProxy_ApplicationWebImplicitGrantOutputReference) SetInternalValue(val *ApplicationWebImplicitGrant) {
+func (j *jsiiProxy_ApplicationWebImplicitGrantOutputReference)SetInternalValue(val *ApplicationWebImplicitGrant) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -260,7 +278,10 @@ func (j *jsiiProxy_ApplicationWebImplicitGrantOutputReference) SetInternalValue(
 	)
 }
 
-func (j *jsiiProxy_ApplicationWebImplicitGrantOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ApplicationWebImplicitGrantOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -268,7 +289,10 @@ func (j *jsiiProxy_ApplicationWebImplicitGrantOutputReference) SetTerraformAttri
 	)
 }
 
-func (j *jsiiProxy_ApplicationWebImplicitGrantOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ApplicationWebImplicitGrantOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -290,6 +314,9 @@ func (a *jsiiProxy_ApplicationWebImplicitGrantOutputReference) ComputeFqn() *str
 }
 
 func (a *jsiiProxy_ApplicationWebImplicitGrantOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -303,6 +330,9 @@ func (a *jsiiProxy_ApplicationWebImplicitGrantOutputReference) GetAnyMapAttribut
 }
 
 func (a *jsiiProxy_ApplicationWebImplicitGrantOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := a.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -316,6 +346,9 @@ func (a *jsiiProxy_ApplicationWebImplicitGrantOutputReference) GetBooleanAttribu
 }
 
 func (a *jsiiProxy_ApplicationWebImplicitGrantOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := a.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -329,6 +362,9 @@ func (a *jsiiProxy_ApplicationWebImplicitGrantOutputReference) GetBooleanMapAttr
 }
 
 func (a *jsiiProxy_ApplicationWebImplicitGrantOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := a.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -342,6 +378,9 @@ func (a *jsiiProxy_ApplicationWebImplicitGrantOutputReference) GetListAttribute(
 }
 
 func (a *jsiiProxy_ApplicationWebImplicitGrantOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := a.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -355,6 +394,9 @@ func (a *jsiiProxy_ApplicationWebImplicitGrantOutputReference) GetNumberAttribut
 }
 
 func (a *jsiiProxy_ApplicationWebImplicitGrantOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := a.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -368,6 +410,9 @@ func (a *jsiiProxy_ApplicationWebImplicitGrantOutputReference) GetNumberListAttr
 }
 
 func (a *jsiiProxy_ApplicationWebImplicitGrantOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := a.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -381,6 +426,9 @@ func (a *jsiiProxy_ApplicationWebImplicitGrantOutputReference) GetNumberMapAttri
 }
 
 func (a *jsiiProxy_ApplicationWebImplicitGrantOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := a.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -394,6 +442,9 @@ func (a *jsiiProxy_ApplicationWebImplicitGrantOutputReference) GetStringAttribut
 }
 
 func (a *jsiiProxy_ApplicationWebImplicitGrantOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := a.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -420,6 +471,9 @@ func (a *jsiiProxy_ApplicationWebImplicitGrantOutputReference) InterpolationAsLi
 }
 
 func (a *jsiiProxy_ApplicationWebImplicitGrantOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := a.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -449,6 +503,9 @@ func (a *jsiiProxy_ApplicationWebImplicitGrantOutputReference) ResetIdTokenIssua
 }
 
 func (a *jsiiProxy_ApplicationWebImplicitGrantOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := a.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

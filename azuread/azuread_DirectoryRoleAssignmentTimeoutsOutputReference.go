@@ -247,6 +247,9 @@ func (j *jsiiProxy_DirectoryRoleAssignmentTimeoutsOutputReference) UpdateInput()
 func NewDirectoryRoleAssignmentTimeoutsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DirectoryRoleAssignmentTimeoutsOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewDirectoryRoleAssignmentTimeoutsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DirectoryRoleAssignmentTimeoutsOutputReference{}
 
 	_jsii_.Create(
@@ -268,7 +271,10 @@ func NewDirectoryRoleAssignmentTimeoutsOutputReference_Override(d DirectoryRoleA
 	)
 }
 
-func (j *jsiiProxy_DirectoryRoleAssignmentTimeoutsOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DirectoryRoleAssignmentTimeoutsOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -276,7 +282,10 @@ func (j *jsiiProxy_DirectoryRoleAssignmentTimeoutsOutputReference) SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_DirectoryRoleAssignmentTimeoutsOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DirectoryRoleAssignmentTimeoutsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -284,7 +293,10 @@ func (j *jsiiProxy_DirectoryRoleAssignmentTimeoutsOutputReference) SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_DirectoryRoleAssignmentTimeoutsOutputReference) SetCreate(val *string) {
+func (j *jsiiProxy_DirectoryRoleAssignmentTimeoutsOutputReference)SetCreate(val *string) {
+	if err := j.validateSetCreateParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"create",
@@ -292,7 +304,10 @@ func (j *jsiiProxy_DirectoryRoleAssignmentTimeoutsOutputReference) SetCreate(val
 	)
 }
 
-func (j *jsiiProxy_DirectoryRoleAssignmentTimeoutsOutputReference) SetDelete(val *string) {
+func (j *jsiiProxy_DirectoryRoleAssignmentTimeoutsOutputReference)SetDelete(val *string) {
+	if err := j.validateSetDeleteParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"delete",
@@ -300,7 +315,10 @@ func (j *jsiiProxy_DirectoryRoleAssignmentTimeoutsOutputReference) SetDelete(val
 	)
 }
 
-func (j *jsiiProxy_DirectoryRoleAssignmentTimeoutsOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DirectoryRoleAssignmentTimeoutsOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -308,7 +326,10 @@ func (j *jsiiProxy_DirectoryRoleAssignmentTimeoutsOutputReference) SetInternalVa
 	)
 }
 
-func (j *jsiiProxy_DirectoryRoleAssignmentTimeoutsOutputReference) SetRead(val *string) {
+func (j *jsiiProxy_DirectoryRoleAssignmentTimeoutsOutputReference)SetRead(val *string) {
+	if err := j.validateSetReadParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"read",
@@ -316,7 +337,10 @@ func (j *jsiiProxy_DirectoryRoleAssignmentTimeoutsOutputReference) SetRead(val *
 	)
 }
 
-func (j *jsiiProxy_DirectoryRoleAssignmentTimeoutsOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DirectoryRoleAssignmentTimeoutsOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -324,7 +348,10 @@ func (j *jsiiProxy_DirectoryRoleAssignmentTimeoutsOutputReference) SetTerraformA
 	)
 }
 
-func (j *jsiiProxy_DirectoryRoleAssignmentTimeoutsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DirectoryRoleAssignmentTimeoutsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -332,7 +359,10 @@ func (j *jsiiProxy_DirectoryRoleAssignmentTimeoutsOutputReference) SetTerraformR
 	)
 }
 
-func (j *jsiiProxy_DirectoryRoleAssignmentTimeoutsOutputReference) SetUpdate(val *string) {
+func (j *jsiiProxy_DirectoryRoleAssignmentTimeoutsOutputReference)SetUpdate(val *string) {
+	if err := j.validateSetUpdateParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"update",
@@ -354,6 +384,9 @@ func (d *jsiiProxy_DirectoryRoleAssignmentTimeoutsOutputReference) ComputeFqn() 
 }
 
 func (d *jsiiProxy_DirectoryRoleAssignmentTimeoutsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -367,6 +400,9 @@ func (d *jsiiProxy_DirectoryRoleAssignmentTimeoutsOutputReference) GetAnyMapAttr
 }
 
 func (d *jsiiProxy_DirectoryRoleAssignmentTimeoutsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -380,6 +416,9 @@ func (d *jsiiProxy_DirectoryRoleAssignmentTimeoutsOutputReference) GetBooleanAtt
 }
 
 func (d *jsiiProxy_DirectoryRoleAssignmentTimeoutsOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -393,6 +432,9 @@ func (d *jsiiProxy_DirectoryRoleAssignmentTimeoutsOutputReference) GetBooleanMap
 }
 
 func (d *jsiiProxy_DirectoryRoleAssignmentTimeoutsOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -406,6 +448,9 @@ func (d *jsiiProxy_DirectoryRoleAssignmentTimeoutsOutputReference) GetListAttrib
 }
 
 func (d *jsiiProxy_DirectoryRoleAssignmentTimeoutsOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -419,6 +464,9 @@ func (d *jsiiProxy_DirectoryRoleAssignmentTimeoutsOutputReference) GetNumberAttr
 }
 
 func (d *jsiiProxy_DirectoryRoleAssignmentTimeoutsOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -432,6 +480,9 @@ func (d *jsiiProxy_DirectoryRoleAssignmentTimeoutsOutputReference) GetNumberList
 }
 
 func (d *jsiiProxy_DirectoryRoleAssignmentTimeoutsOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -445,6 +496,9 @@ func (d *jsiiProxy_DirectoryRoleAssignmentTimeoutsOutputReference) GetNumberMapA
 }
 
 func (d *jsiiProxy_DirectoryRoleAssignmentTimeoutsOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -458,6 +512,9 @@ func (d *jsiiProxy_DirectoryRoleAssignmentTimeoutsOutputReference) GetStringAttr
 }
 
 func (d *jsiiProxy_DirectoryRoleAssignmentTimeoutsOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -484,6 +541,9 @@ func (d *jsiiProxy_DirectoryRoleAssignmentTimeoutsOutputReference) Interpolation
 }
 
 func (d *jsiiProxy_DirectoryRoleAssignmentTimeoutsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -529,6 +589,9 @@ func (d *jsiiProxy_DirectoryRoleAssignmentTimeoutsOutputReference) ResetUpdate()
 }
 
 func (d *jsiiProxy_DirectoryRoleAssignmentTimeoutsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

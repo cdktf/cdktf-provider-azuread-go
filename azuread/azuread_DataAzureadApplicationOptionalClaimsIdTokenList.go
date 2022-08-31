@@ -99,6 +99,9 @@ func (j *jsiiProxy_DataAzureadApplicationOptionalClaimsIdTokenList) WrapsSet() *
 func NewDataAzureadApplicationOptionalClaimsIdTokenList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzureadApplicationOptionalClaimsIdTokenList {
 	_init_.Initialize()
 
+	if err := validateNewDataAzureadApplicationOptionalClaimsIdTokenListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataAzureadApplicationOptionalClaimsIdTokenList{}
 
 	_jsii_.Create(
@@ -120,7 +123,10 @@ func NewDataAzureadApplicationOptionalClaimsIdTokenList_Override(d DataAzureadAp
 	)
 }
 
-func (j *jsiiProxy_DataAzureadApplicationOptionalClaimsIdTokenList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataAzureadApplicationOptionalClaimsIdTokenList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -128,7 +134,10 @@ func (j *jsiiProxy_DataAzureadApplicationOptionalClaimsIdTokenList) SetTerraform
 	)
 }
 
-func (j *jsiiProxy_DataAzureadApplicationOptionalClaimsIdTokenList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataAzureadApplicationOptionalClaimsIdTokenList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -136,7 +145,10 @@ func (j *jsiiProxy_DataAzureadApplicationOptionalClaimsIdTokenList) SetTerraform
 	)
 }
 
-func (j *jsiiProxy_DataAzureadApplicationOptionalClaimsIdTokenList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DataAzureadApplicationOptionalClaimsIdTokenList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -158,6 +170,9 @@ func (d *jsiiProxy_DataAzureadApplicationOptionalClaimsIdTokenList) ComputeFqn()
 }
 
 func (d *jsiiProxy_DataAzureadApplicationOptionalClaimsIdTokenList) Get(index *float64) DataAzureadApplicationOptionalClaimsIdTokenOutputReference {
+	if err := d.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns DataAzureadApplicationOptionalClaimsIdTokenOutputReference
 
 	_jsii_.Invoke(
@@ -171,6 +186,9 @@ func (d *jsiiProxy_DataAzureadApplicationOptionalClaimsIdTokenList) Get(index *f
 }
 
 func (d *jsiiProxy_DataAzureadApplicationOptionalClaimsIdTokenList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

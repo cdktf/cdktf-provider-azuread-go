@@ -99,6 +99,9 @@ func (j *jsiiProxy_DataAzureadApplicationWebImplicitGrantList) WrapsSet() *bool 
 func NewDataAzureadApplicationWebImplicitGrantList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzureadApplicationWebImplicitGrantList {
 	_init_.Initialize()
 
+	if err := validateNewDataAzureadApplicationWebImplicitGrantListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataAzureadApplicationWebImplicitGrantList{}
 
 	_jsii_.Create(
@@ -120,7 +123,10 @@ func NewDataAzureadApplicationWebImplicitGrantList_Override(d DataAzureadApplica
 	)
 }
 
-func (j *jsiiProxy_DataAzureadApplicationWebImplicitGrantList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataAzureadApplicationWebImplicitGrantList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -128,7 +134,10 @@ func (j *jsiiProxy_DataAzureadApplicationWebImplicitGrantList) SetTerraformAttri
 	)
 }
 
-func (j *jsiiProxy_DataAzureadApplicationWebImplicitGrantList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataAzureadApplicationWebImplicitGrantList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -136,7 +145,10 @@ func (j *jsiiProxy_DataAzureadApplicationWebImplicitGrantList) SetTerraformResou
 	)
 }
 
-func (j *jsiiProxy_DataAzureadApplicationWebImplicitGrantList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DataAzureadApplicationWebImplicitGrantList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -158,6 +170,9 @@ func (d *jsiiProxy_DataAzureadApplicationWebImplicitGrantList) ComputeFqn() *str
 }
 
 func (d *jsiiProxy_DataAzureadApplicationWebImplicitGrantList) Get(index *float64) DataAzureadApplicationWebImplicitGrantOutputReference {
+	if err := d.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns DataAzureadApplicationWebImplicitGrantOutputReference
 
 	_jsii_.Invoke(
@@ -171,6 +186,9 @@ func (d *jsiiProxy_DataAzureadApplicationWebImplicitGrantList) Get(index *float6
 }
 
 func (d *jsiiProxy_DataAzureadApplicationWebImplicitGrantList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(
