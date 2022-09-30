@@ -57,6 +57,10 @@ type AzureadProviderConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread#oidc_token AzureadProvider#oidc_token}
 	OidcToken *string `field:"optional" json:"oidcToken" yaml:"oidcToken"`
+	// The path to a file containing an ID token for use when authenticating as a Service Principal using OpenID Connect.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread#oidc_token_file_path AzureadProvider#oidc_token_file_path}
+	OidcTokenFilePath *string `field:"optional" json:"oidcTokenFilePath" yaml:"oidcTokenFilePath"`
 	// A GUID/UUID that is registered with Microsoft to facilitate partner resource usage attribution.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread#partner_id AzureadProvider#partner_id}

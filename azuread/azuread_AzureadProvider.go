@@ -60,6 +60,9 @@ type AzureadProvider interface {
 	OidcRequestUrlInput() *string
 	OidcToken() *string
 	SetOidcToken(val *string)
+	OidcTokenFilePath() *string
+	SetOidcTokenFilePath(val *string)
+	OidcTokenFilePathInput() *string
 	OidcTokenInput() *string
 	PartnerId() *string
 	SetPartnerId(val *string)
@@ -101,6 +104,7 @@ type AzureadProvider interface {
 	ResetOidcRequestToken()
 	ResetOidcRequestUrl()
 	ResetOidcToken()
+	ResetOidcTokenFilePath()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -414,6 +418,26 @@ func (j *jsiiProxy_AzureadProvider) OidcToken() *string {
 	return returns
 }
 
+func (j *jsiiProxy_AzureadProvider) OidcTokenFilePath() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"oidcTokenFilePath",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AzureadProvider) OidcTokenFilePathInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"oidcTokenFilePathInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AzureadProvider) OidcTokenInput() *string {
 	var returns *string
 	_jsii_.Get(
@@ -693,6 +717,14 @@ func (j *jsiiProxy_AzureadProvider)SetOidcToken(val *string) {
 	)
 }
 
+func (j *jsiiProxy_AzureadProvider)SetOidcTokenFilePath(val *string) {
+	_jsii_.Set(
+		j,
+		"oidcTokenFilePath",
+		val,
+	)
+}
+
 func (j *jsiiProxy_AzureadProvider)SetPartnerId(val *string) {
 	_jsii_.Set(
 		j,
@@ -902,6 +934,14 @@ func (a *jsiiProxy_AzureadProvider) ResetOidcToken() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetOidcToken",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AzureadProvider) ResetOidcTokenFilePath() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetOidcTokenFilePath",
 		nil, // no parameters
 	)
 }
