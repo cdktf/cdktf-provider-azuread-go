@@ -72,6 +72,14 @@ func validateConditionalAccessPolicy_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
+func validateConditionalAccessPolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateConditionalAccessPolicy_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ConditionalAccessPolicy) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

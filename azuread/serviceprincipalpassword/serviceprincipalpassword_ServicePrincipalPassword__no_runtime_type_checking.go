@@ -60,6 +60,14 @@ func validateServicePrincipalPassword_IsConstructParameters(x interface{}) error
 	return nil
 }
 
+func validateServicePrincipalPassword_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateServicePrincipalPassword_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ServicePrincipalPassword) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

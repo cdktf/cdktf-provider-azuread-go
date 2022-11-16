@@ -60,6 +60,14 @@ func validateGroupMember_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateGroupMember_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGroupMember_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GroupMember) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

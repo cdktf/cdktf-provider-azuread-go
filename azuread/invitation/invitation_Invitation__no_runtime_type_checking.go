@@ -64,6 +64,14 @@ func validateInvitation_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateInvitation_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateInvitation_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Invitation) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

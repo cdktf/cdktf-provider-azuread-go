@@ -2,10 +2,10 @@ package application
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azuread-go/azuread/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azuread-go/azuread/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azuread-go/azuread/v3/application/internal"
+	"github.com/cdktf/cdktf-provider-azuread-go/azuread/v4/application/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -1271,6 +1271,44 @@ func Application_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-azuread.application.Application",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func Application_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateApplication_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-azuread.application.Application",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func Application_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateApplication_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-azuread.application.Application",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

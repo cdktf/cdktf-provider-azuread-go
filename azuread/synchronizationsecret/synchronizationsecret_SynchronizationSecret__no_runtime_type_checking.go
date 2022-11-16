@@ -64,6 +64,14 @@ func validateSynchronizationSecret_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateSynchronizationSecret_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSynchronizationSecret_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SynchronizationSecret) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

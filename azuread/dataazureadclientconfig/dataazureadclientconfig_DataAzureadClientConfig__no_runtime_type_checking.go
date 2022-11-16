@@ -60,6 +60,14 @@ func validateDataAzureadClientConfig_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
+func validateDataAzureadClientConfig_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAzureadClientConfig_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzureadClientConfig) validateSetIdParameters(val *string) error {
 	return nil
 }

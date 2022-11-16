@@ -60,6 +60,14 @@ func validateAdministrativeUnitMember_IsConstructParameters(x interface{}) error
 	return nil
 }
 
+func validateAdministrativeUnitMember_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAdministrativeUnitMember_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AdministrativeUnitMember) validateSetAdministrativeUnitObjectIdParameters(val *string) error {
 	return nil
 }

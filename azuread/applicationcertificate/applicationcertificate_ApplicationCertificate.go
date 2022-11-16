@@ -2,10 +2,10 @@ package applicationcertificate
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azuread-go/azuread/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azuread-go/azuread/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azuread-go/azuread/v3/applicationcertificate/internal"
+	"github.com/cdktf/cdktf-provider-azuread-go/azuread/v4/applicationcertificate/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -721,6 +721,44 @@ func ApplicationCertificate_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-azuread.applicationCertificate.ApplicationCertificate",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func ApplicationCertificate_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateApplicationCertificate_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-azuread.applicationCertificate.ApplicationCertificate",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func ApplicationCertificate_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateApplicationCertificate_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-azuread.applicationCertificate.ApplicationCertificate",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

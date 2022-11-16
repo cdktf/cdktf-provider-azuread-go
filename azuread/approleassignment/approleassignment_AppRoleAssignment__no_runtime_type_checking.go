@@ -60,6 +60,14 @@ func validateAppRoleAssignment_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateAppRoleAssignment_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAppRoleAssignment_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppRoleAssignment) validateSetAppRoleIdParameters(val *string) error {
 	return nil
 }

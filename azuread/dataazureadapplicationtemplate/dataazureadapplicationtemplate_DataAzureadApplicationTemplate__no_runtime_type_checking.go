@@ -60,6 +60,14 @@ func validateDataAzureadApplicationTemplate_IsConstructParameters(x interface{})
 	return nil
 }
 
+func validateDataAzureadApplicationTemplate_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAzureadApplicationTemplate_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzureadApplicationTemplate) validateSetDisplayNameParameters(val *string) error {
 	return nil
 }

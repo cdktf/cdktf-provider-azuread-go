@@ -2,10 +2,10 @@ package dataazureadclientconfig
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azuread-go/azuread/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azuread-go/azuread/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azuread-go/azuread/v3/dataazureadclientconfig/internal"
+	"github.com/cdktf/cdktf-provider-azuread-go/azuread/v4/dataazureadclientconfig/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -426,6 +426,44 @@ func DataAzureadClientConfig_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-azuread.dataAzureadClientConfig.DataAzureadClientConfig",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DataAzureadClientConfig_IsTerraformDataSource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDataAzureadClientConfig_IsTerraformDataSourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-azuread.dataAzureadClientConfig.DataAzureadClientConfig",
+		"isTerraformDataSource",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DataAzureadClientConfig_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDataAzureadClientConfig_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-azuread.dataAzureadClientConfig.DataAzureadClientConfig",
+		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
 	)

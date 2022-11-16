@@ -56,6 +56,14 @@ func validateClaimsMappingPolicy_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateClaimsMappingPolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateClaimsMappingPolicy_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ClaimsMappingPolicy) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

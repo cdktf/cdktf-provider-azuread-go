@@ -72,6 +72,14 @@ func validateServicePrincipal_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateServicePrincipal_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateServicePrincipal_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ServicePrincipal) validateSetAccountEnabledParameters(val interface{}) error {
 	return nil
 }

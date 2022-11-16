@@ -130,6 +130,22 @@ func validateDataAzureadServicePrincipal_IsConstructParameters(x interface{}) er
 	return nil
 }
 
+func validateDataAzureadServicePrincipal_IsTerraformDataSourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateDataAzureadServicePrincipal_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataAzureadServicePrincipal) validateSetApplicationIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

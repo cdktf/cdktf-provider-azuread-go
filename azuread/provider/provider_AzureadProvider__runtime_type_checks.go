@@ -39,6 +39,22 @@ func validateAzureadProvider_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateAzureadProvider_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateAzureadProvider_IsTerraformProviderParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_AzureadProvider) validateSetDisableTerraformPartnerIdParameters(val interface{}) error {
 	switch val.(type) {
 	case *bool:

@@ -60,6 +60,14 @@ func validateDataAzureadAdministrativeUnit_IsConstructParameters(x interface{}) 
 	return nil
 }
 
+func validateDataAzureadAdministrativeUnit_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAzureadAdministrativeUnit_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzureadAdministrativeUnit) validateSetDisplayNameParameters(val *string) error {
 	return nil
 }

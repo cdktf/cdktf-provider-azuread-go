@@ -60,6 +60,14 @@ func validateServicePrincipalDelegatedPermissionGrant_IsConstructParameters(x in
 	return nil
 }
 
+func validateServicePrincipalDelegatedPermissionGrant_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateServicePrincipalDelegatedPermissionGrant_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ServicePrincipalDelegatedPermissionGrant) validateSetClaimValuesParameters(val *[]*string) error {
 	return nil
 }

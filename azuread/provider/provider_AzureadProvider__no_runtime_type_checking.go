@@ -16,6 +16,14 @@ func validateAzureadProvider_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateAzureadProvider_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAzureadProvider_IsTerraformProviderParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AzureadProvider) validateSetDisableTerraformPartnerIdParameters(val interface{}) error {
 	return nil
 }

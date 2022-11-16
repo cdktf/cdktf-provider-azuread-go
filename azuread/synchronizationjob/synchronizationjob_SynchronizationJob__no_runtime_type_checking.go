@@ -60,6 +60,14 @@ func validateSynchronizationJob_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateSynchronizationJob_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSynchronizationJob_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SynchronizationJob) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

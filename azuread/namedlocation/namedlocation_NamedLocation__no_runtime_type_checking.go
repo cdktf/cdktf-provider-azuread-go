@@ -68,6 +68,14 @@ func validateNamedLocation_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateNamedLocation_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateNamedLocation_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_NamedLocation) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

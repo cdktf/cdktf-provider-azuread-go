@@ -56,6 +56,14 @@ func validateServicePrincipalClaimsMappingPolicyAssignment_IsConstructParameters
 	return nil
 }
 
+func validateServicePrincipalClaimsMappingPolicyAssignment_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateServicePrincipalClaimsMappingPolicyAssignment_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ServicePrincipalClaimsMappingPolicyAssignment) validateSetClaimsMappingPolicyIdParameters(val *string) error {
 	return nil
 }

@@ -2,10 +2,10 @@ package serviceprincipalcertificate
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azuread-go/azuread/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azuread-go/azuread/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azuread-go/azuread/v3/serviceprincipalcertificate/internal"
+	"github.com/cdktf/cdktf-provider-azuread-go/azuread/v4/serviceprincipalcertificate/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -721,6 +721,44 @@ func ServicePrincipalCertificate_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-azuread.servicePrincipalCertificate.ServicePrincipalCertificate",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func ServicePrincipalCertificate_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateServicePrincipalCertificate_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-azuread.servicePrincipalCertificate.ServicePrincipalCertificate",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func ServicePrincipalCertificate_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateServicePrincipalCertificate_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-azuread.servicePrincipalCertificate.ServicePrincipalCertificate",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

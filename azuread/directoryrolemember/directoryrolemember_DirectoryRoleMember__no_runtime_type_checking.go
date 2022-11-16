@@ -60,6 +60,14 @@ func validateDirectoryRoleMember_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDirectoryRoleMember_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDirectoryRoleMember_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DirectoryRoleMember) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

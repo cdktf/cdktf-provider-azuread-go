@@ -60,6 +60,14 @@ func validateServicePrincipalCertificate_IsConstructParameters(x interface{}) er
 	return nil
 }
 
+func validateServicePrincipalCertificate_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateServicePrincipalCertificate_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ServicePrincipalCertificate) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -60,6 +60,14 @@ func validateDataAzureadDomains_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDataAzureadDomains_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAzureadDomains_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzureadDomains) validateSetAdminManagedParameters(val interface{}) error {
 	return nil
 }

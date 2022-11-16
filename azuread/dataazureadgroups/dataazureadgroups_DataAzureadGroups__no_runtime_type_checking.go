@@ -60,6 +60,14 @@ func validateDataAzureadGroups_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDataAzureadGroups_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAzureadGroups_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzureadGroups) validateSetDisplayNamePrefixParameters(val *string) error {
 	return nil
 }
