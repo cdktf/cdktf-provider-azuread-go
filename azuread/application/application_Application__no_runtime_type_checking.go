@@ -104,6 +104,10 @@ func (j *jsiiProxy_Application) validateSetConnectionParameters(val interface{})
 	return nil
 }
 
+func (j *jsiiProxy_Application) validateSetDescriptionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Application) validateSetDeviceOnlyAuthEnabledParameters(val interface{}) error {
 	return nil
 }

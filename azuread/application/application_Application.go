@@ -34,6 +34,9 @@ type Application interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Description() *string
+	SetDescription(val *string)
+	DescriptionInput() *string
 	DeviceOnlyAuthEnabled() interface{}
 	SetDeviceOnlyAuthEnabled(val interface{})
 	DeviceOnlyAuthEnabledInput() interface{}
@@ -170,6 +173,7 @@ type Application interface {
 	PutWeb(value *ApplicationWeb)
 	ResetApi()
 	ResetAppRole()
+	ResetDescription()
 	ResetDeviceOnlyAuthEnabled()
 	ResetFallbackPublicClientEnabled()
 	ResetFeatureTags()
@@ -316,6 +320,26 @@ func (j *jsiiProxy_Application) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Application) Description() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"description",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Application) DescriptionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"descriptionInput",
 		&returns,
 	)
 	return returns
@@ -1018,6 +1042,17 @@ func (j *jsiiProxy_Application)SetDependsOn(val *[]*string) {
 	)
 }
 
+func (j *jsiiProxy_Application)SetDescription(val *string) {
+	if err := j.validateSetDescriptionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"description",
+		val,
+	)
+}
+
 func (j *jsiiProxy_Application)SetDeviceOnlyAuthEnabled(val interface{}) {
 	if err := j.validateSetDeviceOnlyAuthEnabledParameters(val); err != nil {
 		panic(err)
@@ -1620,6 +1655,14 @@ func (a *jsiiProxy_Application) ResetAppRole() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetAppRole",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_Application) ResetDescription() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetDescription",
 		nil, // no parameters
 	)
 }

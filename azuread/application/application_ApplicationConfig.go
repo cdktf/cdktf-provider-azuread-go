@@ -31,6 +31,10 @@ type ApplicationConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#app_role Application#app_role}
 	AppRole interface{} `field:"optional" json:"appRole" yaml:"appRole"`
+	// Description of the application as shown to end users.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#description Application#description}
+	Description *string `field:"optional" json:"description" yaml:"description"`
 	// Specifies whether this application supports device authentication without a user.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#device_only_auth_enabled Application#device_only_auth_enabled}
