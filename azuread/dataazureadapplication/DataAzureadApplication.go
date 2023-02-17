@@ -30,6 +30,7 @@ type DataAzureadApplication interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Description() *string
 	DeviceOnlyAuthEnabled() cdktf.IResolvable
 	DisabledByMicrosoft() *string
 	DisplayName() *string
@@ -223,6 +224,16 @@ func (j *jsiiProxy_DataAzureadApplication) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzureadApplication) Description() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"description",
 		&returns,
 	)
 	return returns
