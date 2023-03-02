@@ -23,6 +23,12 @@ type GroupConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group#display_name Group#display_name}
 	DisplayName *string `field:"required" json:"displayName" yaml:"displayName"`
+	// The administrative unit IDs in which the group should be.
+	//
+	// If empty, the group will be created at the tenant level.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group#administrative_unit_ids Group#administrative_unit_ids}
+	AdministrativeUnitIds *[]*string `field:"optional" json:"administrativeUnitIds" yaml:"administrativeUnitIds"`
 	// Indicates whether this group can be assigned to an Azure Active Directory role.
 	//
 	// This property can only be `true` for security-enabled groups.

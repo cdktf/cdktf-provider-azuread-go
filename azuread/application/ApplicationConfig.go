@@ -70,6 +70,10 @@ type ApplicationConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#marketing_url Application#marketing_url}
 	MarketingUrl *string `field:"optional" json:"marketingUrl" yaml:"marketingUrl"`
+	// User-specified notes relevant for the management of the application.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#notes Application#notes}
+	Notes *string `field:"optional" json:"notes" yaml:"notes"`
 	// Specifies whether, as part of OAuth 2.0 token requests, Azure AD allows POST requests, as opposed to GET requests.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#oauth2_post_response_required Application#oauth2_post_response_required}

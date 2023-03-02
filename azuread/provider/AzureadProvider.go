@@ -46,6 +46,9 @@ type AzureadProvider interface {
 	FriendlyUniqueId() *string
 	// Experimental.
 	MetaAttributes() *map[string]interface{}
+	MetadataHost() *string
+	SetMetadataHost(val *string)
+	MetadataHostInput() *string
 	MsiEndpoint() *string
 	SetMsiEndpoint(val *string)
 	MsiEndpointInput() *string
@@ -99,6 +102,7 @@ type AzureadProvider interface {
 	ResetClientSecret()
 	ResetDisableTerraformPartnerId()
 	ResetEnvironment()
+	ResetMetadataHost()
 	ResetMsiEndpoint()
 	ResetOidcRequestToken()
 	ResetOidcRequestUrl()
@@ -332,6 +336,26 @@ func (j *jsiiProxy_AzureadProvider) MetaAttributes() *map[string]interface{} {
 	_jsii_.Get(
 		j,
 		"metaAttributes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AzureadProvider) MetadataHost() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"metadataHost",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AzureadProvider) MetadataHostInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"metadataHostInput",
 		&returns,
 	)
 	return returns
@@ -684,6 +708,14 @@ func (j *jsiiProxy_AzureadProvider)SetEnvironment(val *string) {
 	)
 }
 
+func (j *jsiiProxy_AzureadProvider)SetMetadataHost(val *string) {
+	_jsii_.Set(
+		j,
+		"metadataHost",
+		val,
+	)
+}
+
 func (j *jsiiProxy_AzureadProvider)SetMsiEndpoint(val *string) {
 	_jsii_.Set(
 		j,
@@ -939,6 +971,14 @@ func (a *jsiiProxy_AzureadProvider) ResetEnvironment() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetEnvironment",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AzureadProvider) ResetMetadataHost() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetMetadataHost",
 		nil, // no parameters
 	)
 }

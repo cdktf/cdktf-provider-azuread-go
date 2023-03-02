@@ -72,6 +72,10 @@ func validateGroup_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
+func (j *jsiiProxy_Group) validateSetAdministrativeUnitIdsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Group) validateSetAssignableToRoleParameters(val interface{}) error {
 	return nil
 }

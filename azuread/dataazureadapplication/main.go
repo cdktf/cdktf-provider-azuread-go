@@ -49,6 +49,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "logoUrl", GoGetter: "LogoUrl"},
 			_jsii_.MemberProperty{JsiiProperty: "marketingUrl", GoGetter: "MarketingUrl"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
+			_jsii_.MemberProperty{JsiiProperty: "notes", GoGetter: "Notes"},
 			_jsii_.MemberProperty{JsiiProperty: "oauth2PermissionScopeIds", GoGetter: "Oauth2PermissionScopeIds"},
 			_jsii_.MemberProperty{JsiiProperty: "oauth2PostResponseRequired", GoGetter: "Oauth2PostResponseRequired"},
 			_jsii_.MemberProperty{JsiiProperty: "objectId", GoGetter: "ObjectId"},

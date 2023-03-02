@@ -59,6 +59,7 @@ type DataAzureadApplication interface {
 	MarketingUrl() *string
 	// The tree node.
 	Node() constructs.Node
+	Notes() *string
 	Oauth2PermissionScopeIds() cdktf.StringMap
 	Oauth2PostResponseRequired() cdktf.IResolvable
 	ObjectId() *string
@@ -404,6 +405,16 @@ func (j *jsiiProxy_DataAzureadApplication) Node() constructs.Node {
 	_jsii_.Get(
 		j,
 		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzureadApplication) Notes() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"notes",
 		&returns,
 	)
 	return returns

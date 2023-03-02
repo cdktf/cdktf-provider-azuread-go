@@ -36,6 +36,10 @@ type AzureadProviderConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread#environment AzureadProvider#environment}
 	Environment *string `field:"optional" json:"environment" yaml:"environment"`
+	// The Hostname which should be used for the Azure Metadata Service.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread#metadata_host AzureadProvider#metadata_host}
+	MetadataHost *string `field:"optional" json:"metadataHost" yaml:"metadataHost"`
 	// The path to a custom endpoint for Managed Identity - in most circumstances this should be detected automatically.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread#msi_endpoint AzureadProvider#msi_endpoint}

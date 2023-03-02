@@ -49,6 +49,7 @@ type DataAzureadDirectoryRoles interface {
 	// Experimental.
 	RawOverrides() interface{}
 	Roles() DataAzureadDirectoryRolesRolesList
+	TemplateIds() *[]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -248,6 +249,16 @@ func (j *jsiiProxy_DataAzureadDirectoryRoles) Roles() DataAzureadDirectoryRolesR
 	_jsii_.Get(
 		j,
 		"roles",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzureadDirectoryRoles) TemplateIds() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"templateIds",
 		&returns,
 	)
 	return returns

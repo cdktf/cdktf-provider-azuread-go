@@ -12,6 +12,8 @@ func init() {
 		reflect.TypeOf((*Group)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
+			_jsii_.MemberProperty{JsiiProperty: "administrativeUnitIds", GoGetter: "AdministrativeUnitIds"},
+			_jsii_.MemberProperty{JsiiProperty: "administrativeUnitIdsInput", GoGetter: "AdministrativeUnitIdsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "assignableToRole", GoGetter: "AssignableToRole"},
 			_jsii_.MemberProperty{JsiiProperty: "assignableToRoleInput", GoGetter: "AssignableToRoleInput"},
 			_jsii_.MemberProperty{JsiiProperty: "autoSubscribeNewMembers", GoGetter: "AutoSubscribeNewMembers"},
@@ -79,6 +81,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putDynamicMembership", GoMethod: "PutDynamicMembership"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAdministrativeUnitIds", GoMethod: "ResetAdministrativeUnitIds"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAssignableToRole", GoMethod: "ResetAssignableToRole"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAutoSubscribeNewMembers", GoMethod: "ResetAutoSubscribeNewMembers"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBehaviors", GoMethod: "ResetBehaviors"},

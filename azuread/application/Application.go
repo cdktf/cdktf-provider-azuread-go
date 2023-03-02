@@ -79,6 +79,9 @@ type Application interface {
 	MarketingUrlInput() *string
 	// The tree node.
 	Node() constructs.Node
+	Notes() *string
+	SetNotes(val *string)
+	NotesInput() *string
 	Oauth2PermissionScopeIds() cdktf.StringMap
 	Oauth2PostResponseRequired() interface{}
 	SetOauth2PostResponseRequired(val interface{})
@@ -182,6 +185,7 @@ type Application interface {
 	ResetIdentifierUris()
 	ResetLogoImage()
 	ResetMarketingUrl()
+	ResetNotes()
 	ResetOauth2PostResponseRequired()
 	ResetOptionalClaims()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -590,6 +594,26 @@ func (j *jsiiProxy_Application) Node() constructs.Node {
 	_jsii_.Get(
 		j,
 		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Application) Notes() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"notes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Application) NotesInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"notesInput",
 		&returns,
 	)
 	return returns
@@ -1156,6 +1180,17 @@ func (j *jsiiProxy_Application)SetMarketingUrl(val *string) {
 	_jsii_.Set(
 		j,
 		"marketingUrl",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Application)SetNotes(val *string) {
+	if err := j.validateSetNotesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"notes",
 		val,
 	)
 }
@@ -1727,6 +1762,14 @@ func (a *jsiiProxy_Application) ResetMarketingUrl() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetMarketingUrl",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_Application) ResetNotes() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetNotes",
 		nil, // no parameters
 	)
 }

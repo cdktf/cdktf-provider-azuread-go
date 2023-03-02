@@ -12,6 +12,9 @@ import (
 // Represents a {@link https://www.terraform.io/docs/providers/azuread/r/group azuread_group}.
 type Group interface {
 	cdktf.TerraformResource
+	AdministrativeUnitIds() *[]*string
+	SetAdministrativeUnitIds(val *[]*string)
+	AdministrativeUnitIdsInput() *[]*string
 	AssignableToRole() interface{}
 	SetAssignableToRole(val interface{})
 	AssignableToRoleInput() interface{}
@@ -155,6 +158,7 @@ type Group interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutDynamicMembership(value *GroupDynamicMembership)
 	PutTimeouts(value *GroupTimeouts)
+	ResetAdministrativeUnitIds()
 	ResetAssignableToRole()
 	ResetAutoSubscribeNewMembers()
 	ResetBehaviors()
@@ -191,6 +195,26 @@ type Group interface {
 // The jsii proxy struct for Group
 type jsiiProxy_Group struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_Group) AdministrativeUnitIds() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"administrativeUnitIds",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Group) AdministrativeUnitIdsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"administrativeUnitIdsInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_Group) AssignableToRole() interface{} {
@@ -893,6 +917,17 @@ func NewGroup_Override(g Group, scope constructs.Construct, id *string, config *
 	)
 }
 
+func (j *jsiiProxy_Group)SetAdministrativeUnitIds(val *[]*string) {
+	if err := j.validateSetAdministrativeUnitIdsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"administrativeUnitIds",
+		val,
+	)
+}
+
 func (j *jsiiProxy_Group)SetAssignableToRole(val interface{}) {
 	if err := j.validateSetAssignableToRoleParameters(val); err != nil {
 		panic(err)
@@ -1452,6 +1487,14 @@ func (g *jsiiProxy_Group) PutTimeouts(value *GroupTimeouts) {
 		g,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_Group) ResetAdministrativeUnitIds() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAdministrativeUnitIds",
+		nil, // no parameters
 	)
 }
 
