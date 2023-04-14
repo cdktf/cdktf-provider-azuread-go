@@ -2,10 +2,10 @@ package group
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azuread-go/azuread/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azuread-go/azuread/v5/group/internal"
+	"github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/group/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -86,6 +86,9 @@ type Group interface {
 	Node() constructs.Node
 	ObjectId() *string
 	OnpremisesDomainName() *string
+	OnpremisesGroupType() *string
+	SetOnpremisesGroupType(val *string)
+	OnpremisesGroupTypeInput() *string
 	OnpremisesNetbiosName() *string
 	OnpremisesSamAccountName() *string
 	OnpremisesSecurityIdentifier() *string
@@ -131,6 +134,9 @@ type Group interface {
 	Visibility() *string
 	SetVisibility(val *string)
 	VisibilityInput() *string
+	WritebackEnabled() interface{}
+	SetWritebackEnabled(val interface{})
+	WritebackEnabledInput() interface{}
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -171,6 +177,7 @@ type Group interface {
 	ResetMailEnabled()
 	ResetMailNickname()
 	ResetMembers()
+	ResetOnpremisesGroupType()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -182,6 +189,7 @@ type Group interface {
 	ResetTimeouts()
 	ResetTypes()
 	ResetVisibility()
+	ResetWritebackEnabled()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -607,6 +615,26 @@ func (j *jsiiProxy_Group) OnpremisesDomainName() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Group) OnpremisesGroupType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"onpremisesGroupType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Group) OnpremisesGroupTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"onpremisesGroupTypeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Group) OnpremisesNetbiosName() *string {
 	var returns *string
 	_jsii_.Get(
@@ -887,6 +915,26 @@ func (j *jsiiProxy_Group) VisibilityInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Group) WritebackEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"writebackEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Group) WritebackEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"writebackEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
 
 // Create a new {@link https://www.terraform.io/docs/providers/azuread/r/group azuread_group} Resource.
 func NewGroup(scope constructs.Construct, id *string, config *GroupConfig) Group {
@@ -1106,6 +1154,17 @@ func (j *jsiiProxy_Group)SetMembers(val *[]*string) {
 	)
 }
 
+func (j *jsiiProxy_Group)SetOnpremisesGroupType(val *string) {
+	if err := j.validateSetOnpremisesGroupTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"onpremisesGroupType",
+		val,
+	)
+}
+
 func (j *jsiiProxy_Group)SetOwners(val *[]*string) {
 	if err := j.validateSetOwnersParameters(val); err != nil {
 		panic(err)
@@ -1198,6 +1257,17 @@ func (j *jsiiProxy_Group)SetVisibility(val *string) {
 	_jsii_.Set(
 		j,
 		"visibility",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Group)SetWritebackEnabled(val interface{}) {
+	if err := j.validateSetWritebackEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"writebackEnabled",
 		val,
 	)
 }
@@ -1594,6 +1664,14 @@ func (g *jsiiProxy_Group) ResetMembers() {
 	)
 }
 
+func (g *jsiiProxy_Group) ResetOnpremisesGroupType() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetOnpremisesGroupType",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_Group) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		g,
@@ -1662,6 +1740,14 @@ func (g *jsiiProxy_Group) ResetVisibility() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetVisibility",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_Group) ResetWritebackEnabled() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetWritebackEnabled",
 		nil, // no parameters
 	)
 }

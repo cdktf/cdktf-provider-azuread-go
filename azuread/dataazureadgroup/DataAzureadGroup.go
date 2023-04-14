@@ -2,10 +2,10 @@ package dataazureadgroup
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azuread-go/azuread/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azuread-go/azuread/v5/dataazureadgroup/internal"
+	"github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/dataazureadgroup/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -62,6 +62,7 @@ type DataAzureadGroup interface {
 	SetObjectId(val *string)
 	ObjectIdInput() *string
 	OnpremisesDomainName() *string
+	OnpremisesGroupType() *string
 	OnpremisesNetbiosName() *string
 	OnpremisesSamAccountName() *string
 	OnpremisesSecurityIdentifier() *string
@@ -90,6 +91,7 @@ type DataAzureadGroup interface {
 	TimeoutsInput() interface{}
 	Types() *[]*string
 	Visibility() *string
+	WritebackEnabled() cdktf.IResolvable
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -430,6 +432,16 @@ func (j *jsiiProxy_DataAzureadGroup) OnpremisesDomainName() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataAzureadGroup) OnpremisesGroupType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"onpremisesGroupType",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAzureadGroup) OnpremisesNetbiosName() *string {
 	var returns *string
 	_jsii_.Get(
@@ -625,6 +637,16 @@ func (j *jsiiProxy_DataAzureadGroup) Visibility() *string {
 	_jsii_.Get(
 		j,
 		"visibility",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzureadGroup) WritebackEnabled() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"writebackEnabled",
 		&returns,
 	)
 	return returns

@@ -84,6 +84,10 @@ type GroupConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group#members Group#members}
 	Members *[]*string `field:"optional" json:"members" yaml:"members"`
+	// Indicates the target on-premise group type the group will be written back as.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group#onpremises_group_type Group#onpremises_group_type}
+	OnpremisesGroupType *string `field:"optional" json:"onpremisesGroupType" yaml:"onpremisesGroupType"`
 	// A set of owners who own this group. Supported object types are Users or Service Principals.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group#owners Group#owners}
@@ -120,5 +124,9 @@ type GroupConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group#visibility Group#visibility}
 	Visibility *string `field:"optional" json:"visibility" yaml:"visibility"`
+	// Whether this group should be synced from Azure AD to the on-premises directory when Azure AD Connect is used.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group#writeback_enabled Group#writeback_enabled}
+	WritebackEnabled interface{} `field:"optional" json:"writebackEnabled" yaml:"writebackEnabled"`
 }
 

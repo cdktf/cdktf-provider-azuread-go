@@ -2,10 +2,10 @@ package application
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azuread-go/azuread/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azuread-go/azuread/v5/application/internal"
+	"github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/application/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -113,6 +113,9 @@ type Application interface {
 	RawOverrides() interface{}
 	RequiredResourceAccess() ApplicationRequiredResourceAccessList
 	RequiredResourceAccessInput() interface{}
+	ServiceManagementReference() *string
+	SetServiceManagementReference(val *string)
+	ServiceManagementReferenceInput() *string
 	SignInAudience() *string
 	SetSignInAudience(val *string)
 	SignInAudienceInput() *string
@@ -196,6 +199,7 @@ type Application interface {
 	ResetPrivacyStatementUrl()
 	ResetPublicClient()
 	ResetRequiredResourceAccess()
+	ResetServiceManagementReference()
 	ResetSignInAudience()
 	ResetSinglePageApplication()
 	ResetSupportUrl()
@@ -819,6 +823,26 @@ func (j *jsiiProxy_Application) RequiredResourceAccessInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_Application) ServiceManagementReference() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serviceManagementReference",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Application) ServiceManagementReferenceInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serviceManagementReferenceInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Application) SignInAudience() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1254,6 +1278,17 @@ func (j *jsiiProxy_Application)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Application)SetServiceManagementReference(val *string) {
+	if err := j.validateSetServiceManagementReferenceParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"serviceManagementReference",
 		val,
 	)
 }
@@ -1834,6 +1869,14 @@ func (a *jsiiProxy_Application) ResetRequiredResourceAccess() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetRequiredResourceAccess",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_Application) ResetServiceManagementReference() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetServiceManagementReference",
 		nil, // no parameters
 	)
 }

@@ -2,10 +2,10 @@ package dataazureaduser
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azuread-go/azuread/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azuread-go/azuread/v5/dataazureaduser/internal"
+	"github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/dataazureaduser/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -59,6 +59,8 @@ type DataAzureadUser interface {
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	Mail() *string
+	SetMail(val *string)
+	MailInput() *string
 	MailNickname() *string
 	SetMailNickname(val *string)
 	MailNicknameInput() *string
@@ -131,6 +133,7 @@ type DataAzureadUser interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *DataAzureadUserTimeouts)
 	ResetId()
+	ResetMail()
 	ResetMailNickname()
 	ResetObjectId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -448,6 +451,16 @@ func (j *jsiiProxy_DataAzureadUser) Mail() *string {
 	_jsii_.Get(
 		j,
 		"mail",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzureadUser) MailInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"mailInput",
 		&returns,
 	)
 	return returns
@@ -869,6 +882,17 @@ func (j *jsiiProxy_DataAzureadUser)SetLifecycle(val *cdktf.TerraformResourceLife
 	)
 }
 
+func (j *jsiiProxy_DataAzureadUser)SetMail(val *string) {
+	if err := j.validateSetMailParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"mail",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DataAzureadUser)SetMailNickname(val *string) {
 	if err := j.validateSetMailNicknameParameters(val); err != nil {
 		panic(err)
@@ -1191,6 +1215,14 @@ func (d *jsiiProxy_DataAzureadUser) ResetId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAzureadUser) ResetMail() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetMail",
 		nil, // no parameters
 	)
 }

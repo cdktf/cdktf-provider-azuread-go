@@ -70,6 +70,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetObjectId", GoMethod: "ResetObjectId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTimeouts", GoMethod: "ResetTimeouts"},
+			_jsii_.MemberProperty{JsiiProperty: "serviceManagementReference", GoGetter: "ServiceManagementReference"},
 			_jsii_.MemberProperty{JsiiProperty: "signInAudience", GoGetter: "SignInAudience"},
 			_jsii_.MemberProperty{JsiiProperty: "singlePageApplication", GoGetter: "SinglePageApplication"},
 			_jsii_.MemberProperty{JsiiProperty: "supportUrl", GoGetter: "SupportUrl"},

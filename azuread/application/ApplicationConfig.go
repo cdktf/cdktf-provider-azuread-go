@@ -102,6 +102,10 @@ type ApplicationConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#required_resource_access Application#required_resource_access}
 	RequiredResourceAccess interface{} `field:"optional" json:"requiredResourceAccess" yaml:"requiredResourceAccess"`
+	// References application or service contact information from a Service or Asset Management database.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#service_management_reference Application#service_management_reference}
+	ServiceManagementReference *string `field:"optional" json:"serviceManagementReference" yaml:"serviceManagementReference"`
 	// The Microsoft account types that are supported for the current application.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#sign_in_audience Application#sign_in_audience}

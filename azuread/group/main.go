@@ -63,6 +63,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
 			_jsii_.MemberProperty{JsiiProperty: "objectId", GoGetter: "ObjectId"},
 			_jsii_.MemberProperty{JsiiProperty: "onpremisesDomainName", GoGetter: "OnpremisesDomainName"},
+			_jsii_.MemberProperty{JsiiProperty: "onpremisesGroupType", GoGetter: "OnpremisesGroupType"},
+			_jsii_.MemberProperty{JsiiProperty: "onpremisesGroupTypeInput", GoGetter: "OnpremisesGroupTypeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "onpremisesNetbiosName", GoGetter: "OnpremisesNetbiosName"},
 			_jsii_.MemberProperty{JsiiProperty: "onpremisesSamAccountName", GoGetter: "OnpremisesSamAccountName"},
 			_jsii_.MemberProperty{JsiiProperty: "onpremisesSecurityIdentifier", GoGetter: "OnpremisesSecurityIdentifier"},
@@ -94,6 +96,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetMailEnabled", GoMethod: "ResetMailEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMailNickname", GoMethod: "ResetMailNickname"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMembers", GoMethod: "ResetMembers"},
+			_jsii_.MemberMethod{JsiiMethod: "resetOnpremisesGroupType", GoMethod: "ResetOnpremisesGroupType"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOwners", GoMethod: "ResetOwners"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPreventDuplicateNames", GoMethod: "ResetPreventDuplicateNames"},
@@ -103,6 +106,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetTimeouts", GoMethod: "ResetTimeouts"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTypes", GoMethod: "ResetTypes"},
 			_jsii_.MemberMethod{JsiiMethod: "resetVisibility", GoMethod: "ResetVisibility"},
+			_jsii_.MemberMethod{JsiiMethod: "resetWritebackEnabled", GoMethod: "ResetWritebackEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "securityEnabled", GoGetter: "SecurityEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "securityEnabledInput", GoGetter: "SecurityEnabledInput"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
@@ -120,6 +124,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "typesInput", GoGetter: "TypesInput"},
 			_jsii_.MemberProperty{JsiiProperty: "visibility", GoGetter: "Visibility"},
 			_jsii_.MemberProperty{JsiiProperty: "visibilityInput", GoGetter: "VisibilityInput"},
+			_jsii_.MemberProperty{JsiiProperty: "writebackEnabled", GoGetter: "WritebackEnabled"},
+			_jsii_.MemberProperty{JsiiProperty: "writebackEnabledInput", GoGetter: "WritebackEnabledInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_Group{}

@@ -51,6 +51,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "objectId", GoGetter: "ObjectId"},
 			_jsii_.MemberProperty{JsiiProperty: "objectIdInput", GoGetter: "ObjectIdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "onpremisesDomainName", GoGetter: "OnpremisesDomainName"},
+			_jsii_.MemberProperty{JsiiProperty: "onpremisesGroupType", GoGetter: "OnpremisesGroupType"},
 			_jsii_.MemberProperty{JsiiProperty: "onpremisesNetbiosName", GoGetter: "OnpremisesNetbiosName"},
 			_jsii_.MemberProperty{JsiiProperty: "onpremisesSamAccountName", GoGetter: "OnpremisesSamAccountName"},
 			_jsii_.MemberProperty{JsiiProperty: "onpremisesSecurityIdentifier", GoGetter: "OnpremisesSecurityIdentifier"},
@@ -84,6 +85,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "types", GoGetter: "Types"},
 			_jsii_.MemberProperty{JsiiProperty: "visibility", GoGetter: "Visibility"},
+			_jsii_.MemberProperty{JsiiProperty: "writebackEnabled", GoGetter: "WritebackEnabled"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DataAzureadGroup{}

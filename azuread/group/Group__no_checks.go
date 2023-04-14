@@ -132,6 +132,10 @@ func (j *jsiiProxy_Group) validateSetMembersParameters(val *[]*string) error {
 	return nil
 }
 
+func (j *jsiiProxy_Group) validateSetOnpremisesGroupTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Group) validateSetOwnersParameters(val *[]*string) error {
 	return nil
 }
@@ -161,6 +165,10 @@ func (j *jsiiProxy_Group) validateSetTypesParameters(val *[]*string) error {
 }
 
 func (j *jsiiProxy_Group) validateSetVisibilityParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_Group) validateSetWritebackEnabledParameters(val interface{}) error {
 	return nil
 }
 

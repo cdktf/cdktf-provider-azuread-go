@@ -168,6 +168,10 @@ func (j *jsiiProxy_Application) validateSetProvisionersParameters(val *[]interfa
 	return nil
 }
 
+func (j *jsiiProxy_Application) validateSetServiceManagementReferenceParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Application) validateSetSignInAudienceParameters(val *string) error {
 	return nil
 }

@@ -76,6 +76,10 @@ func (j *jsiiProxy_DataAzureadUser) validateSetLifecycleParameters(val *cdktf.Te
 	return nil
 }
 
+func (j *jsiiProxy_DataAzureadUser) validateSetMailParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzureadUser) validateSetMailNicknameParameters(val *string) error {
 	return nil
 }

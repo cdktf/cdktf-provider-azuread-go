@@ -1,0 +1,12 @@
+package accesspackageresourcecatalogassociation
+
+
+type AccessPackageResourceCatalogAssociationTimeouts struct {
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/access_package_resource_catalog_association#create AccessPackageResourceCatalogAssociation#create}.
+	Create *string `field:"optional" json:"create" yaml:"create"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/access_package_resource_catalog_association#delete AccessPackageResourceCatalogAssociation#delete}.
+	Delete *string `field:"optional" json:"delete" yaml:"delete"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/access_package_resource_catalog_association#read AccessPackageResourceCatalogAssociation#read}.
+	Read *string `field:"optional" json:"read" yaml:"read"`
+}
+
