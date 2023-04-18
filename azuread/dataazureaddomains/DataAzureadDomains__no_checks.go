@@ -72,6 +72,10 @@ func (j *jsiiProxy_DataAzureadDomains) validateSetAdminManagedParameters(val int
 	return nil
 }
 
+func (j *jsiiProxy_DataAzureadDomains) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzureadDomains) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -72,6 +72,10 @@ func (j *jsiiProxy_SynchronizationJob) validateSetConnectionParameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_SynchronizationJob) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SynchronizationJob) validateSetEnabledParameters(val interface{}) error {
 	return nil
 }

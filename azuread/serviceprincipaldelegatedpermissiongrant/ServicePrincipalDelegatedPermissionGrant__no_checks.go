@@ -76,6 +76,10 @@ func (j *jsiiProxy_ServicePrincipalDelegatedPermissionGrant) validateSetConnecti
 	return nil
 }
 
+func (j *jsiiProxy_ServicePrincipalDelegatedPermissionGrant) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ServicePrincipalDelegatedPermissionGrant) validateSetIdParameters(val *string) error {
 	return nil
 }

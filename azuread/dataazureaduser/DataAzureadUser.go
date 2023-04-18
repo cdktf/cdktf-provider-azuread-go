@@ -2,14 +2,14 @@ package dataazureaduser
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azuread-go/azuread/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/dataazureaduser/internal"
+	"github.com/cdktf/cdktf-provider-azuread-go/azuread/v7/dataazureaduser/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azuread/d/user azuread_user}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/data-sources/user azuread_user}.
 type DataAzureadUser interface {
 	cdktf.TerraformDataSource
 	AccountEnabled() cdktf.IResolvable
@@ -24,9 +24,9 @@ type DataAzureadUser interface {
 	ConstructNodeMetadata() *map[string]interface{}
 	CostCenter() *string
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	Country() *string
 	CreationType() *string
 	Department() *string
@@ -246,8 +246,8 @@ func (j *jsiiProxy_DataAzureadUser) CostCenter() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataAzureadUser) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAzureadUser) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -807,7 +807,7 @@ func (j *jsiiProxy_DataAzureadUser) UserType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azuread/d/user azuread_user} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/data-sources/user azuread_user} Data Source.
 func NewDataAzureadUser(scope constructs.Construct, id *string, config *DataAzureadUserConfig) DataAzureadUser {
 	_init_.Initialize()
 
@@ -825,7 +825,7 @@ func NewDataAzureadUser(scope constructs.Construct, id *string, config *DataAzur
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azuread/d/user azuread_user} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/data-sources/user azuread_user} Data Source.
 func NewDataAzureadUser_Override(d DataAzureadUser, scope constructs.Construct, id *string, config *DataAzureadUserConfig) {
 	_init_.Initialize()
 
@@ -836,7 +836,10 @@ func NewDataAzureadUser_Override(d DataAzureadUser, scope constructs.Construct, 
 	)
 }
 
-func (j *jsiiProxy_DataAzureadUser)SetCount(val *float64) {
+func (j *jsiiProxy_DataAzureadUser)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -92,6 +92,10 @@ func (j *jsiiProxy_AccessPackageAssignmentPolicy) validateSetConnectionParameter
 	return nil
 }
 
+func (j *jsiiProxy_AccessPackageAssignmentPolicy) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AccessPackageAssignmentPolicy) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

@@ -2,14 +2,14 @@ package administrativeunitrolemember
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azuread-go/azuread/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/administrativeunitrolemember/internal"
+	"github.com/cdktf/cdktf-provider-azuread-go/azuread/v7/administrativeunitrolemember/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azuread/r/administrative_unit_role_member azuread_administrative_unit_role_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/administrative_unit_role_member azuread_administrative_unit_role_member}.
 type AdministrativeUnitRoleMember interface {
 	cdktf.TerraformResource
 	AdministrativeUnitObjectId() *string
@@ -24,9 +24,9 @@ type AdministrativeUnitRoleMember interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -168,8 +168,8 @@ func (j *jsiiProxy_AdministrativeUnitRoleMember) ConstructNodeMetadata() *map[st
 	return returns
 }
 
-func (j *jsiiProxy_AdministrativeUnitRoleMember) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_AdministrativeUnitRoleMember) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -379,7 +379,7 @@ func (j *jsiiProxy_AdministrativeUnitRoleMember) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azuread/r/administrative_unit_role_member azuread_administrative_unit_role_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/administrative_unit_role_member azuread_administrative_unit_role_member} Resource.
 func NewAdministrativeUnitRoleMember(scope constructs.Construct, id *string, config *AdministrativeUnitRoleMemberConfig) AdministrativeUnitRoleMember {
 	_init_.Initialize()
 
@@ -397,7 +397,7 @@ func NewAdministrativeUnitRoleMember(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azuread/r/administrative_unit_role_member azuread_administrative_unit_role_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/administrative_unit_role_member azuread_administrative_unit_role_member} Resource.
 func NewAdministrativeUnitRoleMember_Override(a AdministrativeUnitRoleMember, scope constructs.Construct, id *string, config *AdministrativeUnitRoleMemberConfig) {
 	_init_.Initialize()
 
@@ -430,7 +430,10 @@ func (j *jsiiProxy_AdministrativeUnitRoleMember)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AdministrativeUnitRoleMember)SetCount(val *float64) {
+func (j *jsiiProxy_AdministrativeUnitRoleMember)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -2,14 +2,14 @@ package serviceprincipal
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azuread-go/azuread/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/serviceprincipal/internal"
+	"github.com/cdktf/cdktf-provider-azuread-go/azuread/v7/serviceprincipal/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azuread/r/service_principal azuread_service_principal}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/service_principal azuread_service_principal}.
 type ServicePrincipal interface {
 	cdktf.TerraformResource
 	AccountEnabled() interface{}
@@ -36,9 +36,9 @@ type ServicePrincipal interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -322,8 +322,8 @@ func (j *jsiiProxy_ServicePrincipal) ConstructNodeMetadata() *map[string]interfa
 	return returns
 }
 
-func (j *jsiiProxy_ServicePrincipal) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_ServicePrincipal) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -823,7 +823,7 @@ func (j *jsiiProxy_ServicePrincipal) UseExistingInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azuread/r/service_principal azuread_service_principal} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/service_principal azuread_service_principal} Resource.
 func NewServicePrincipal(scope constructs.Construct, id *string, config *ServicePrincipalConfig) ServicePrincipal {
 	_init_.Initialize()
 
@@ -841,7 +841,7 @@ func NewServicePrincipal(scope constructs.Construct, id *string, config *Service
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azuread/r/service_principal azuread_service_principal} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/service_principal azuread_service_principal} Resource.
 func NewServicePrincipal_Override(s ServicePrincipal, scope constructs.Construct, id *string, config *ServicePrincipalConfig) {
 	_init_.Initialize()
 
@@ -907,7 +907,10 @@ func (j *jsiiProxy_ServicePrincipal)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ServicePrincipal)SetCount(val *float64) {
+func (j *jsiiProxy_ServicePrincipal)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

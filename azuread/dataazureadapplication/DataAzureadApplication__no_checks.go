@@ -72,6 +72,10 @@ func (j *jsiiProxy_DataAzureadApplication) validateSetApplicationIdParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_DataAzureadApplication) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzureadApplication) validateSetDisplayNameParameters(val *string) error {
 	return nil
 }

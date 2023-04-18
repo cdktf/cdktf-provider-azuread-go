@@ -2,7 +2,7 @@ package dataazureadserviceprincipal
 
 
 type DataAzureadServicePrincipalTimeouts struct {
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/service_principal#read DataAzureadServicePrincipal#read}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/data-sources/service_principal#read DataAzureadServicePrincipal#read}.
 	Read *string `field:"optional" json:"read" yaml:"read"`
 }
 

@@ -2,14 +2,14 @@ package customdirectoryrole
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azuread-go/azuread/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/customdirectoryrole/internal"
+	"github.com/cdktf/cdktf-provider-azuread-go/azuread/v7/customdirectoryrole/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azuread/r/custom_directory_role azuread_custom_directory_role}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/custom_directory_role azuread_custom_directory_role}.
 type CustomDirectoryRole interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type CustomDirectoryRole interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -160,8 +160,8 @@ func (j *jsiiProxy_CustomDirectoryRole) ConstructNodeMetadata() *map[string]inte
 	return returns
 }
 
-func (j *jsiiProxy_CustomDirectoryRole) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_CustomDirectoryRole) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -461,7 +461,7 @@ func (j *jsiiProxy_CustomDirectoryRole) VersionInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azuread/r/custom_directory_role azuread_custom_directory_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/custom_directory_role azuread_custom_directory_role} Resource.
 func NewCustomDirectoryRole(scope constructs.Construct, id *string, config *CustomDirectoryRoleConfig) CustomDirectoryRole {
 	_init_.Initialize()
 
@@ -479,7 +479,7 @@ func NewCustomDirectoryRole(scope constructs.Construct, id *string, config *Cust
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azuread/r/custom_directory_role azuread_custom_directory_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/custom_directory_role azuread_custom_directory_role} Resource.
 func NewCustomDirectoryRole_Override(c CustomDirectoryRole, scope constructs.Construct, id *string, config *CustomDirectoryRoleConfig) {
 	_init_.Initialize()
 
@@ -501,7 +501,10 @@ func (j *jsiiProxy_CustomDirectoryRole)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CustomDirectoryRole)SetCount(val *float64) {
+func (j *jsiiProxy_CustomDirectoryRole)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -2,14 +2,14 @@ package provider
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azuread-go/azuread/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/provider/internal"
+	"github.com/cdktf/cdktf-provider-azuread-go/azuread/v7/provider/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azuread azuread}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs azuread}.
 type AzureadProvider interface {
 	cdktf.TerraformProvider
 	Alias() *string
@@ -612,7 +612,7 @@ func (j *jsiiProxy_AzureadProvider) UseOidcInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azuread azuread} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs azuread} Resource.
 func NewAzureadProvider(scope constructs.Construct, id *string, config *AzureadProviderConfig) AzureadProvider {
 	_init_.Initialize()
 
@@ -630,7 +630,7 @@ func NewAzureadProvider(scope constructs.Construct, id *string, config *AzureadP
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azuread azuread} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs azuread} Resource.
 func NewAzureadProvider_Override(a AzureadProvider, scope constructs.Construct, id *string, config *AzureadProviderConfig) {
 	_init_.Initialize()
 

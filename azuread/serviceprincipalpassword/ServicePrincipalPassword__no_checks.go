@@ -72,6 +72,10 @@ func (j *jsiiProxy_ServicePrincipalPassword) validateSetConnectionParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_ServicePrincipalPassword) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ServicePrincipalPassword) validateSetDisplayNameParameters(val *string) error {
 	return nil
 }

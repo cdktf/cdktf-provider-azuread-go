@@ -72,6 +72,10 @@ func (j *jsiiProxy_ServicePrincipalTokenSigningCertificate) validateSetConnectio
 	return nil
 }
 
+func (j *jsiiProxy_ServicePrincipalTokenSigningCertificate) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ServicePrincipalTokenSigningCertificate) validateSetDisplayNameParameters(val *string) error {
 	return nil
 }

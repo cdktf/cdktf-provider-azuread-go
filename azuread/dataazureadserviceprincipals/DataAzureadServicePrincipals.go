@@ -2,14 +2,14 @@ package dataazureadserviceprincipals
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azuread-go/azuread/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/dataazureadserviceprincipals/internal"
+	"github.com/cdktf/cdktf-provider-azuread-go/azuread/v7/dataazureadserviceprincipals/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azuread/d/service_principals azuread_service_principals}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/data-sources/service_principals azuread_service_principals}.
 type DataAzureadServicePrincipals interface {
 	cdktf.TerraformDataSource
 	ApplicationIds() *[]*string
@@ -20,9 +20,9 @@ type DataAzureadServicePrincipals interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -162,8 +162,8 @@ func (j *jsiiProxy_DataAzureadServicePrincipals) ConstructNodeMetadata() *map[st
 	return returns
 }
 
-func (j *jsiiProxy_DataAzureadServicePrincipals) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAzureadServicePrincipals) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -413,7 +413,7 @@ func (j *jsiiProxy_DataAzureadServicePrincipals) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azuread/d/service_principals azuread_service_principals} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/data-sources/service_principals azuread_service_principals} Data Source.
 func NewDataAzureadServicePrincipals(scope constructs.Construct, id *string, config *DataAzureadServicePrincipalsConfig) DataAzureadServicePrincipals {
 	_init_.Initialize()
 
@@ -431,7 +431,7 @@ func NewDataAzureadServicePrincipals(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azuread/d/service_principals azuread_service_principals} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/data-sources/service_principals azuread_service_principals} Data Source.
 func NewDataAzureadServicePrincipals_Override(d DataAzureadServicePrincipals, scope constructs.Construct, id *string, config *DataAzureadServicePrincipalsConfig) {
 	_init_.Initialize()
 
@@ -453,7 +453,10 @@ func (j *jsiiProxy_DataAzureadServicePrincipals)SetApplicationIds(val *[]*string
 	)
 }
 
-func (j *jsiiProxy_DataAzureadServicePrincipals)SetCount(val *float64) {
+func (j *jsiiProxy_DataAzureadServicePrincipals)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

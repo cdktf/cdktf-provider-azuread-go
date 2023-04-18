@@ -2,14 +2,14 @@ package userflowattribute
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azuread-go/azuread/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/userflowattribute/internal"
+	"github.com/cdktf/cdktf-provider-azuread-go/azuread/v7/userflowattribute/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azuread/r/user_flow_attribute azuread_user_flow_attribute}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/user_flow_attribute azuread_user_flow_attribute}.
 type UserFlowAttribute interface {
 	cdktf.TerraformResource
 	AttributeType() *string
@@ -22,9 +22,9 @@ type UserFlowAttribute interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	DataType() *string
 	SetDataType(val *string)
 	DataTypeInput() *string
@@ -159,8 +159,8 @@ func (j *jsiiProxy_UserFlowAttribute) ConstructNodeMetadata() *map[string]interf
 	return returns
 }
 
-func (j *jsiiProxy_UserFlowAttribute) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_UserFlowAttribute) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -390,7 +390,7 @@ func (j *jsiiProxy_UserFlowAttribute) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azuread/r/user_flow_attribute azuread_user_flow_attribute} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/user_flow_attribute azuread_user_flow_attribute} Resource.
 func NewUserFlowAttribute(scope constructs.Construct, id *string, config *UserFlowAttributeConfig) UserFlowAttribute {
 	_init_.Initialize()
 
@@ -408,7 +408,7 @@ func NewUserFlowAttribute(scope constructs.Construct, id *string, config *UserFl
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azuread/r/user_flow_attribute azuread_user_flow_attribute} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/user_flow_attribute azuread_user_flow_attribute} Resource.
 func NewUserFlowAttribute_Override(u UserFlowAttribute, scope constructs.Construct, id *string, config *UserFlowAttributeConfig) {
 	_init_.Initialize()
 
@@ -430,7 +430,10 @@ func (j *jsiiProxy_UserFlowAttribute)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_UserFlowAttribute)SetCount(val *float64) {
+func (j *jsiiProxy_UserFlowAttribute)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

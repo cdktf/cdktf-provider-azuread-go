@@ -80,6 +80,10 @@ func (j *jsiiProxy_ApplicationFederatedIdentityCredential) validateSetConnection
 	return nil
 }
 
+func (j *jsiiProxy_ApplicationFederatedIdentityCredential) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApplicationFederatedIdentityCredential) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

@@ -2,14 +2,14 @@ package dataazureadclientconfig
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azuread-go/azuread/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/dataazureadclientconfig/internal"
+	"github.com/cdktf/cdktf-provider-azuread-go/azuread/v7/dataazureadclientconfig/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azuread/d/client_config azuread_client_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/data-sources/client_config azuread_client_config}.
 type DataAzureadClientConfig interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -18,9 +18,9 @@ type DataAzureadClientConfig interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -134,8 +134,8 @@ func (j *jsiiProxy_DataAzureadClientConfig) ConstructNodeMetadata() *map[string]
 	return returns
 }
 
-func (j *jsiiProxy_DataAzureadClientConfig) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAzureadClientConfig) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -315,7 +315,7 @@ func (j *jsiiProxy_DataAzureadClientConfig) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azuread/d/client_config azuread_client_config} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/data-sources/client_config azuread_client_config} Data Source.
 func NewDataAzureadClientConfig(scope constructs.Construct, id *string, config *DataAzureadClientConfigConfig) DataAzureadClientConfig {
 	_init_.Initialize()
 
@@ -333,7 +333,7 @@ func NewDataAzureadClientConfig(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azuread/d/client_config azuread_client_config} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/data-sources/client_config azuread_client_config} Data Source.
 func NewDataAzureadClientConfig_Override(d DataAzureadClientConfig, scope constructs.Construct, id *string, config *DataAzureadClientConfigConfig) {
 	_init_.Initialize()
 
@@ -344,7 +344,10 @@ func NewDataAzureadClientConfig_Override(d DataAzureadClientConfig, scope constr
 	)
 }
 
-func (j *jsiiProxy_DataAzureadClientConfig)SetCount(val *float64) {
+func (j *jsiiProxy_DataAzureadClientConfig)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -68,6 +68,10 @@ func validateDataAzureadGroup_IsTerraformElementParameters(x interface{}) error 
 	return nil
 }
 
+func (j *jsiiProxy_DataAzureadGroup) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzureadGroup) validateSetDisplayNameParameters(val *string) error {
 	return nil
 }

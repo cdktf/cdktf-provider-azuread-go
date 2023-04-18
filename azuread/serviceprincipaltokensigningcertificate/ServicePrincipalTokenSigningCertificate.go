@@ -2,14 +2,14 @@ package serviceprincipaltokensigningcertificate
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azuread-go/azuread/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/serviceprincipaltokensigningcertificate/internal"
+	"github.com/cdktf/cdktf-provider-azuread-go/azuread/v7/serviceprincipaltokensigningcertificate/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_token_signing_certificate azuread_service_principal_token_signing_certificate}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/service_principal_token_signing_certificate azuread_service_principal_token_signing_certificate}.
 type ServicePrincipalTokenSigningCertificate interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type ServicePrincipalTokenSigningCertificate interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -154,8 +154,8 @@ func (j *jsiiProxy_ServicePrincipalTokenSigningCertificate) ConstructNodeMetadat
 	return returns
 }
 
-func (j *jsiiProxy_ServicePrincipalTokenSigningCertificate) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_ServicePrincipalTokenSigningCertificate) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -425,7 +425,7 @@ func (j *jsiiProxy_ServicePrincipalTokenSigningCertificate) Value() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_token_signing_certificate azuread_service_principal_token_signing_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/service_principal_token_signing_certificate azuread_service_principal_token_signing_certificate} Resource.
 func NewServicePrincipalTokenSigningCertificate(scope constructs.Construct, id *string, config *ServicePrincipalTokenSigningCertificateConfig) ServicePrincipalTokenSigningCertificate {
 	_init_.Initialize()
 
@@ -443,7 +443,7 @@ func NewServicePrincipalTokenSigningCertificate(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_token_signing_certificate azuread_service_principal_token_signing_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/service_principal_token_signing_certificate azuread_service_principal_token_signing_certificate} Resource.
 func NewServicePrincipalTokenSigningCertificate_Override(s ServicePrincipalTokenSigningCertificate, scope constructs.Construct, id *string, config *ServicePrincipalTokenSigningCertificateConfig) {
 	_init_.Initialize()
 
@@ -465,7 +465,10 @@ func (j *jsiiProxy_ServicePrincipalTokenSigningCertificate)SetConnection(val int
 	)
 }
 
-func (j *jsiiProxy_ServicePrincipalTokenSigningCertificate)SetCount(val *float64) {
+func (j *jsiiProxy_ServicePrincipalTokenSigningCertificate)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

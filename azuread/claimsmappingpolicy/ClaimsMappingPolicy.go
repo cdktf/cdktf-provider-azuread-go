@@ -2,14 +2,14 @@ package claimsmappingpolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azuread-go/azuread/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/claimsmappingpolicy/internal"
+	"github.com/cdktf/cdktf-provider-azuread-go/azuread/v7/claimsmappingpolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azuread/r/claims_mapping_policy azuread_claims_mapping_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/claims_mapping_policy azuread_claims_mapping_policy}.
 type ClaimsMappingPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type ClaimsMappingPolicy interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	Definition() *[]*string
 	SetDefinition(val *[]*string)
 	DefinitionInput() *[]*string
@@ -141,8 +141,8 @@ func (j *jsiiProxy_ClaimsMappingPolicy) ConstructNodeMetadata() *map[string]inte
 	return returns
 }
 
-func (j *jsiiProxy_ClaimsMappingPolicy) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_ClaimsMappingPolicy) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -332,7 +332,7 @@ func (j *jsiiProxy_ClaimsMappingPolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azuread/r/claims_mapping_policy azuread_claims_mapping_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/claims_mapping_policy azuread_claims_mapping_policy} Resource.
 func NewClaimsMappingPolicy(scope constructs.Construct, id *string, config *ClaimsMappingPolicyConfig) ClaimsMappingPolicy {
 	_init_.Initialize()
 
@@ -350,7 +350,7 @@ func NewClaimsMappingPolicy(scope constructs.Construct, id *string, config *Clai
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azuread/r/claims_mapping_policy azuread_claims_mapping_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/claims_mapping_policy azuread_claims_mapping_policy} Resource.
 func NewClaimsMappingPolicy_Override(c ClaimsMappingPolicy, scope constructs.Construct, id *string, config *ClaimsMappingPolicyConfig) {
 	_init_.Initialize()
 
@@ -372,7 +372,10 @@ func (j *jsiiProxy_ClaimsMappingPolicy)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ClaimsMappingPolicy)SetCount(val *float64) {
+func (j *jsiiProxy_ClaimsMappingPolicy)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

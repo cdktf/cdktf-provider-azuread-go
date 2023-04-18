@@ -68,6 +68,10 @@ func validateDataAzureadAdministrativeUnit_IsTerraformElementParameters(x interf
 	return nil
 }
 
+func (j *jsiiProxy_DataAzureadAdministrativeUnit) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzureadAdministrativeUnit) validateSetDisplayNameParameters(val *string) error {
 	return nil
 }

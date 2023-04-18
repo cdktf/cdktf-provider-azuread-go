@@ -68,6 +68,10 @@ func validateDataAzureadDirectoryObject_IsTerraformElementParameters(x interface
 	return nil
 }
 
+func (j *jsiiProxy_DataAzureadDirectoryObject) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzureadDirectoryObject) validateSetIdParameters(val *string) error {
 	return nil
 }

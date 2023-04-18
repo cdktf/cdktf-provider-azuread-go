@@ -72,6 +72,10 @@ func (j *jsiiProxy_DirectoryRoleMember) validateSetConnectionParameters(val inte
 	return nil
 }
 
+func (j *jsiiProxy_DirectoryRoleMember) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DirectoryRoleMember) validateSetIdParameters(val *string) error {
 	return nil
 }

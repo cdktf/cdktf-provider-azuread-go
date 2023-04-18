@@ -2,14 +2,14 @@ package applicationfederatedidentitycredential
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azuread-go/azuread/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/applicationfederatedidentitycredential/internal"
+	"github.com/cdktf/cdktf-provider-azuread-go/azuread/v7/applicationfederatedidentitycredential/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azuread/r/application_federated_identity_credential azuread_application_federated_identity_credential}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/application_federated_identity_credential azuread_application_federated_identity_credential}.
 type ApplicationFederatedIdentityCredential interface {
 	cdktf.TerraformResource
 	ApplicationObjectId() *string
@@ -27,9 +27,9 @@ type ApplicationFederatedIdentityCredential interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CredentialId() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -199,8 +199,8 @@ func (j *jsiiProxy_ApplicationFederatedIdentityCredential) ConstructNodeMetadata
 	return returns
 }
 
-func (j *jsiiProxy_ApplicationFederatedIdentityCredential) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_ApplicationFederatedIdentityCredential) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -460,7 +460,7 @@ func (j *jsiiProxy_ApplicationFederatedIdentityCredential) TimeoutsInput() inter
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azuread/r/application_federated_identity_credential azuread_application_federated_identity_credential} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/application_federated_identity_credential azuread_application_federated_identity_credential} Resource.
 func NewApplicationFederatedIdentityCredential(scope constructs.Construct, id *string, config *ApplicationFederatedIdentityCredentialConfig) ApplicationFederatedIdentityCredential {
 	_init_.Initialize()
 
@@ -478,7 +478,7 @@ func NewApplicationFederatedIdentityCredential(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azuread/r/application_federated_identity_credential azuread_application_federated_identity_credential} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/application_federated_identity_credential azuread_application_federated_identity_credential} Resource.
 func NewApplicationFederatedIdentityCredential_Override(a ApplicationFederatedIdentityCredential, scope constructs.Construct, id *string, config *ApplicationFederatedIdentityCredentialConfig) {
 	_init_.Initialize()
 
@@ -522,7 +522,10 @@ func (j *jsiiProxy_ApplicationFederatedIdentityCredential)SetConnection(val inte
 	)
 }
 
-func (j *jsiiProxy_ApplicationFederatedIdentityCredential)SetCount(val *float64) {
+func (j *jsiiProxy_ApplicationFederatedIdentityCredential)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

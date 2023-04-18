@@ -68,6 +68,10 @@ func (j *jsiiProxy_ClaimsMappingPolicy) validateSetConnectionParameters(val inte
 	return nil
 }
 
+func (j *jsiiProxy_ClaimsMappingPolicy) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ClaimsMappingPolicy) validateSetDefinitionParameters(val *[]*string) error {
 	return nil
 }

@@ -2,14 +2,14 @@ package administrativeunitmember
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azuread-go/azuread/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/administrativeunitmember/internal"
+	"github.com/cdktf/cdktf-provider-azuread-go/azuread/v7/administrativeunitmember/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azuread/r/administrative_unit_member azuread_administrative_unit_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/administrative_unit_member azuread_administrative_unit_member}.
 type AdministrativeUnitMember interface {
 	cdktf.TerraformResource
 	AdministrativeUnitObjectId() *string
@@ -24,9 +24,9 @@ type AdministrativeUnitMember interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -167,8 +167,8 @@ func (j *jsiiProxy_AdministrativeUnitMember) ConstructNodeMetadata() *map[string
 	return returns
 }
 
-func (j *jsiiProxy_AdministrativeUnitMember) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_AdministrativeUnitMember) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -358,7 +358,7 @@ func (j *jsiiProxy_AdministrativeUnitMember) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azuread/r/administrative_unit_member azuread_administrative_unit_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/administrative_unit_member azuread_administrative_unit_member} Resource.
 func NewAdministrativeUnitMember(scope constructs.Construct, id *string, config *AdministrativeUnitMemberConfig) AdministrativeUnitMember {
 	_init_.Initialize()
 
@@ -376,7 +376,7 @@ func NewAdministrativeUnitMember(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azuread/r/administrative_unit_member azuread_administrative_unit_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/administrative_unit_member azuread_administrative_unit_member} Resource.
 func NewAdministrativeUnitMember_Override(a AdministrativeUnitMember, scope constructs.Construct, id *string, config *AdministrativeUnitMemberConfig) {
 	_init_.Initialize()
 
@@ -409,7 +409,10 @@ func (j *jsiiProxy_AdministrativeUnitMember)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AdministrativeUnitMember)SetCount(val *float64) {
+func (j *jsiiProxy_AdministrativeUnitMember)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

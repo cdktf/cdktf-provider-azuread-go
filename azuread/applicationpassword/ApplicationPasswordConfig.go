@@ -8,7 +8,7 @@ type ApplicationPasswordConfig struct {
 	// Experimental.
 	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count *float64 `field:"optional" json:"count" yaml:"count"`
+	Count interface{} `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -21,38 +21,38 @@ type ApplicationPasswordConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The object ID of the application for which this password should be created.
 	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_password#application_object_id ApplicationPassword#application_object_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/application_password#application_object_id ApplicationPassword#application_object_id}
 	ApplicationObjectId *string `field:"required" json:"applicationObjectId" yaml:"applicationObjectId"`
 	// A display name for the password.
 	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_password#display_name ApplicationPassword#display_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/application_password#display_name ApplicationPassword#display_name}
 	DisplayName *string `field:"optional" json:"displayName" yaml:"displayName"`
 	// The end date until which the password is valid, formatted as an RFC3339 date string (e.g. `2018-01-01T01:02:03Z`).
 	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_password#end_date ApplicationPassword#end_date}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/application_password#end_date ApplicationPassword#end_date}
 	EndDate *string `field:"optional" json:"endDate" yaml:"endDate"`
 	// A relative duration for which the password is valid until, for example `240h` (10 days) or `2400h30m`.
 	//
 	// Changing this field forces a new resource to be created
 	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_password#end_date_relative ApplicationPassword#end_date_relative}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/application_password#end_date_relative ApplicationPassword#end_date_relative}
 	EndDateRelative *string `field:"optional" json:"endDateRelative" yaml:"endDateRelative"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_password#id ApplicationPassword#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/application_password#id ApplicationPassword#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// Arbitrary map of values that, when changed, will trigger rotation of the password.
 	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_password#rotate_when_changed ApplicationPassword#rotate_when_changed}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/application_password#rotate_when_changed ApplicationPassword#rotate_when_changed}
 	RotateWhenChanged *map[string]*string `field:"optional" json:"rotateWhenChanged" yaml:"rotateWhenChanged"`
 	// The start date from which the password is valid, formatted as an RFC3339 date string (e.g. `2018-01-01T01:02:03Z`). If this isn't specified, the current date is used.
 	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_password#start_date ApplicationPassword#start_date}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/application_password#start_date ApplicationPassword#start_date}
 	StartDate *string `field:"optional" json:"startDate" yaml:"startDate"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_password#timeouts ApplicationPassword#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/application_password#timeouts ApplicationPassword#timeouts}
 	Timeouts *ApplicationPasswordTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

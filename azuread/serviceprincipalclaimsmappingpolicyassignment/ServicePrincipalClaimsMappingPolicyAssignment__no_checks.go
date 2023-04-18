@@ -72,6 +72,10 @@ func (j *jsiiProxy_ServicePrincipalClaimsMappingPolicyAssignment) validateSetCon
 	return nil
 }
 
+func (j *jsiiProxy_ServicePrincipalClaimsMappingPolicyAssignment) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ServicePrincipalClaimsMappingPolicyAssignment) validateSetIdParameters(val *string) error {
 	return nil
 }

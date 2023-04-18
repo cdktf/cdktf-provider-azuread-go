@@ -84,6 +84,10 @@ func (j *jsiiProxy_AccessPackageResourcePackageAssociation) validateSetConnectio
 	return nil
 }
 
+func (j *jsiiProxy_AccessPackageResourcePackageAssociation) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AccessPackageResourcePackageAssociation) validateSetIdParameters(val *string) error {
 	return nil
 }

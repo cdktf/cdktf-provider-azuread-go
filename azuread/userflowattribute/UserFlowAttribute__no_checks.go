@@ -72,6 +72,10 @@ func (j *jsiiProxy_UserFlowAttribute) validateSetConnectionParameters(val interf
 	return nil
 }
 
+func (j *jsiiProxy_UserFlowAttribute) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_UserFlowAttribute) validateSetDataTypeParameters(val *string) error {
 	return nil
 }

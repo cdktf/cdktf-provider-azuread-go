@@ -2,14 +2,14 @@ package conditionalaccesspolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azuread-go/azuread/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/conditionalaccesspolicy/internal"
+	"github.com/cdktf/cdktf-provider-azuread-go/azuread/v7/conditionalaccesspolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azuread/r/conditional_access_policy azuread_conditional_access_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/conditional_access_policy azuread_conditional_access_policy}.
 type ConditionalAccessPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -23,9 +23,9 @@ type ConditionalAccessPolicy interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -175,8 +175,8 @@ func (j *jsiiProxy_ConditionalAccessPolicy) ConstructNodeMetadata() *map[string]
 	return returns
 }
 
-func (j *jsiiProxy_ConditionalAccessPolicy) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_ConditionalAccessPolicy) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -426,7 +426,7 @@ func (j *jsiiProxy_ConditionalAccessPolicy) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azuread/r/conditional_access_policy azuread_conditional_access_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/conditional_access_policy azuread_conditional_access_policy} Resource.
 func NewConditionalAccessPolicy(scope constructs.Construct, id *string, config *ConditionalAccessPolicyConfig) ConditionalAccessPolicy {
 	_init_.Initialize()
 
@@ -444,7 +444,7 @@ func NewConditionalAccessPolicy(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azuread/r/conditional_access_policy azuread_conditional_access_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/conditional_access_policy azuread_conditional_access_policy} Resource.
 func NewConditionalAccessPolicy_Override(c ConditionalAccessPolicy, scope constructs.Construct, id *string, config *ConditionalAccessPolicyConfig) {
 	_init_.Initialize()
 
@@ -466,7 +466,10 @@ func (j *jsiiProxy_ConditionalAccessPolicy)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ConditionalAccessPolicy)SetCount(val *float64) {
+func (j *jsiiProxy_ConditionalAccessPolicy)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -80,6 +80,10 @@ func (j *jsiiProxy_DirectoryRoleAssignment) validateSetConnectionParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_DirectoryRoleAssignment) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DirectoryRoleAssignment) validateSetDirectoryScopeIdParameters(val *string) error {
 	return nil
 }

@@ -2,14 +2,14 @@ package dataazureadaccesspackage
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azuread-go/azuread/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/dataazureadaccesspackage/internal"
+	"github.com/cdktf/cdktf-provider-azuread-go/azuread/v7/dataazureadaccesspackage/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azuread/d/access_package azuread_access_package}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/data-sources/access_package azuread_access_package}.
 type DataAzureadAccessPackage interface {
 	cdktf.TerraformDataSource
 	CatalogId() *string
@@ -20,9 +20,9 @@ type DataAzureadAccessPackage interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -155,8 +155,8 @@ func (j *jsiiProxy_DataAzureadAccessPackage) ConstructNodeMetadata() *map[string
 	return returns
 }
 
-func (j *jsiiProxy_DataAzureadAccessPackage) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAzureadAccessPackage) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -376,7 +376,7 @@ func (j *jsiiProxy_DataAzureadAccessPackage) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azuread/d/access_package azuread_access_package} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/data-sources/access_package azuread_access_package} Data Source.
 func NewDataAzureadAccessPackage(scope constructs.Construct, id *string, config *DataAzureadAccessPackageConfig) DataAzureadAccessPackage {
 	_init_.Initialize()
 
@@ -394,7 +394,7 @@ func NewDataAzureadAccessPackage(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azuread/d/access_package azuread_access_package} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/data-sources/access_package azuread_access_package} Data Source.
 func NewDataAzureadAccessPackage_Override(d DataAzureadAccessPackage, scope constructs.Construct, id *string, config *DataAzureadAccessPackageConfig) {
 	_init_.Initialize()
 
@@ -416,7 +416,10 @@ func (j *jsiiProxy_DataAzureadAccessPackage)SetCatalogId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAzureadAccessPackage)SetCount(val *float64) {
+func (j *jsiiProxy_DataAzureadAccessPackage)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

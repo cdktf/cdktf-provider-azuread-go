@@ -2,14 +2,14 @@ package applicationpreauthorized
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azuread-go/azuread/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/applicationpreauthorized/internal"
+	"github.com/cdktf/cdktf-provider-azuread-go/azuread/v7/applicationpreauthorized/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azuread/r/application_pre_authorized azuread_application_pre_authorized}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/application_pre_authorized azuread_application_pre_authorized}.
 type ApplicationPreAuthorized interface {
 	cdktf.TerraformResource
 	ApplicationObjectId() *string
@@ -27,9 +27,9 @@ type ApplicationPreAuthorized interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -188,8 +188,8 @@ func (j *jsiiProxy_ApplicationPreAuthorized) ConstructNodeMetadata() *map[string
 	return returns
 }
 
-func (j *jsiiProxy_ApplicationPreAuthorized) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_ApplicationPreAuthorized) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -379,7 +379,7 @@ func (j *jsiiProxy_ApplicationPreAuthorized) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azuread/r/application_pre_authorized azuread_application_pre_authorized} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/application_pre_authorized azuread_application_pre_authorized} Resource.
 func NewApplicationPreAuthorized(scope constructs.Construct, id *string, config *ApplicationPreAuthorizedConfig) ApplicationPreAuthorized {
 	_init_.Initialize()
 
@@ -397,7 +397,7 @@ func NewApplicationPreAuthorized(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azuread/r/application_pre_authorized azuread_application_pre_authorized} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/application_pre_authorized azuread_application_pre_authorized} Resource.
 func NewApplicationPreAuthorized_Override(a ApplicationPreAuthorized, scope constructs.Construct, id *string, config *ApplicationPreAuthorizedConfig) {
 	_init_.Initialize()
 
@@ -441,7 +441,10 @@ func (j *jsiiProxy_ApplicationPreAuthorized)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ApplicationPreAuthorized)SetCount(val *float64) {
+func (j *jsiiProxy_ApplicationPreAuthorized)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

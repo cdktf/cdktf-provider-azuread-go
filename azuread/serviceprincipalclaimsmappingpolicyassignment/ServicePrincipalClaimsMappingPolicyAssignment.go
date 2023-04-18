@@ -2,14 +2,14 @@ package serviceprincipalclaimsmappingpolicyassignment
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azuread-go/azuread/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/serviceprincipalclaimsmappingpolicyassignment/internal"
+	"github.com/cdktf/cdktf-provider-azuread-go/azuread/v7/serviceprincipalclaimsmappingpolicyassignment/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_claims_mapping_policy_assignment azuread_service_principal_claims_mapping_policy_assignment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/service_principal_claims_mapping_policy_assignment azuread_service_principal_claims_mapping_policy_assignment}.
 type ServicePrincipalClaimsMappingPolicyAssignment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -24,9 +24,9 @@ type ServicePrincipalClaimsMappingPolicyAssignment interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -161,8 +161,8 @@ func (j *jsiiProxy_ServicePrincipalClaimsMappingPolicyAssignment) ConstructNodeM
 	return returns
 }
 
-func (j *jsiiProxy_ServicePrincipalClaimsMappingPolicyAssignment) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_ServicePrincipalClaimsMappingPolicyAssignment) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -332,7 +332,7 @@ func (j *jsiiProxy_ServicePrincipalClaimsMappingPolicyAssignment) TerraformResou
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_claims_mapping_policy_assignment azuread_service_principal_claims_mapping_policy_assignment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/service_principal_claims_mapping_policy_assignment azuread_service_principal_claims_mapping_policy_assignment} Resource.
 func NewServicePrincipalClaimsMappingPolicyAssignment(scope constructs.Construct, id *string, config *ServicePrincipalClaimsMappingPolicyAssignmentConfig) ServicePrincipalClaimsMappingPolicyAssignment {
 	_init_.Initialize()
 
@@ -350,7 +350,7 @@ func NewServicePrincipalClaimsMappingPolicyAssignment(scope constructs.Construct
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_claims_mapping_policy_assignment azuread_service_principal_claims_mapping_policy_assignment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/service_principal_claims_mapping_policy_assignment azuread_service_principal_claims_mapping_policy_assignment} Resource.
 func NewServicePrincipalClaimsMappingPolicyAssignment_Override(s ServicePrincipalClaimsMappingPolicyAssignment, scope constructs.Construct, id *string, config *ServicePrincipalClaimsMappingPolicyAssignmentConfig) {
 	_init_.Initialize()
 
@@ -383,7 +383,10 @@ func (j *jsiiProxy_ServicePrincipalClaimsMappingPolicyAssignment)SetConnection(v
 	)
 }
 
-func (j *jsiiProxy_ServicePrincipalClaimsMappingPolicyAssignment)SetCount(val *float64) {
+func (j *jsiiProxy_ServicePrincipalClaimsMappingPolicyAssignment)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

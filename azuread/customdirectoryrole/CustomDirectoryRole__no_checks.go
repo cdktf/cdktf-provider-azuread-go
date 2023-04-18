@@ -76,6 +76,10 @@ func (j *jsiiProxy_CustomDirectoryRole) validateSetConnectionParameters(val inte
 	return nil
 }
 
+func (j *jsiiProxy_CustomDirectoryRole) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CustomDirectoryRole) validateSetDescriptionParameters(val *string) error {
 	return nil
 }
