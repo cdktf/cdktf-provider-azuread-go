@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/invitation azuread_invitation}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.2/docs/resources/invitation azuread_invitation}.
 type Invitation interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -450,7 +450,7 @@ func (j *jsiiProxy_Invitation) UserTypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/invitation azuread_invitation} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.2/docs/resources/invitation azuread_invitation} Resource.
 func NewInvitation(scope constructs.Construct, id *string, config *InvitationConfig) Invitation {
 	_init_.Initialize()
 
@@ -468,7 +468,7 @@ func NewInvitation(scope constructs.Construct, id *string, config *InvitationCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/invitation azuread_invitation} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.2/docs/resources/invitation azuread_invitation} Resource.
 func NewInvitation_Override(i Invitation, scope constructs.Construct, id *string, config *InvitationConfig) {
 	_init_.Initialize()
 
