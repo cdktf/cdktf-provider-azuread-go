@@ -21,24 +21,24 @@ type DataAzureadServicePrincipalConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The application ID (client ID) of the application associated with this service principal.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/data-sources/service_principal#application_id DataAzureadServicePrincipal#application_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/data-sources/service_principal#application_id DataAzureadServicePrincipal#application_id}
 	ApplicationId *string `field:"optional" json:"applicationId" yaml:"applicationId"`
 	// The display name of the application associated with this service principal.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/data-sources/service_principal#display_name DataAzureadServicePrincipal#display_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/data-sources/service_principal#display_name DataAzureadServicePrincipal#display_name}
 	DisplayName *string `field:"optional" json:"displayName" yaml:"displayName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/data-sources/service_principal#id DataAzureadServicePrincipal#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/data-sources/service_principal#id DataAzureadServicePrincipal#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// The object ID of the service principal.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/data-sources/service_principal#object_id DataAzureadServicePrincipal#object_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/data-sources/service_principal#object_id DataAzureadServicePrincipal#object_id}
 	ObjectId *string `field:"optional" json:"objectId" yaml:"objectId"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/data-sources/service_principal#timeouts DataAzureadServicePrincipal#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/data-sources/service_principal#timeouts DataAzureadServicePrincipal#timeouts}
 	Timeouts *DataAzureadServicePrincipalTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 
