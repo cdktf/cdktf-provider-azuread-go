@@ -2,10 +2,10 @@ package dataazureadgroup
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azuread-go/azuread/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azuread-go/azuread/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azuread-go/azuread/v7/dataazureadgroup/internal"
+	"github.com/cdktf/cdktf-provider-azuread-go/azuread/v8/dataazureadgroup/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
