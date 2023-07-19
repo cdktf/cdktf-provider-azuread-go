@@ -2,14 +2,14 @@ package administrativeunitmember
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azuread-go/azuread/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azuread-go/azuread/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azuread-go/azuread/v8/administrativeunitmember/internal"
+	"github.com/cdktf/cdktf-provider-azuread-go/azuread/v9/administrativeunitmember/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/resources/administrative_unit_member azuread_administrative_unit_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/administrative_unit_member azuread_administrative_unit_member}.
 type AdministrativeUnitMember interface {
 	cdktf.TerraformResource
 	AdministrativeUnitObjectId() *string
@@ -358,7 +358,7 @@ func (j *jsiiProxy_AdministrativeUnitMember) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/resources/administrative_unit_member azuread_administrative_unit_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/administrative_unit_member azuread_administrative_unit_member} Resource.
 func NewAdministrativeUnitMember(scope constructs.Construct, id *string, config *AdministrativeUnitMemberConfig) AdministrativeUnitMember {
 	_init_.Initialize()
 
@@ -376,7 +376,7 @@ func NewAdministrativeUnitMember(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/resources/administrative_unit_member azuread_administrative_unit_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/administrative_unit_member azuread_administrative_unit_member} Resource.
 func NewAdministrativeUnitMember_Override(a AdministrativeUnitMember, scope constructs.Construct, id *string, config *AdministrativeUnitMemberConfig) {
 	_init_.Initialize()
 

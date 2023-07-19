@@ -2,14 +2,14 @@ package accesspackagecatalogroleassignment
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azuread-go/azuread/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azuread-go/azuread/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azuread-go/azuread/v8/accesspackagecatalogroleassignment/internal"
+	"github.com/cdktf/cdktf-provider-azuread-go/azuread/v9/accesspackagecatalogroleassignment/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/resources/access_package_catalog_role_assignment azuread_access_package_catalog_role_assignment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/access_package_catalog_role_assignment azuread_access_package_catalog_role_assignment}.
 type AccessPackageCatalogRoleAssignment interface {
 	cdktf.TerraformResource
 	CatalogId() *string
@@ -379,7 +379,7 @@ func (j *jsiiProxy_AccessPackageCatalogRoleAssignment) TimeoutsInput() interface
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/resources/access_package_catalog_role_assignment azuread_access_package_catalog_role_assignment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/access_package_catalog_role_assignment azuread_access_package_catalog_role_assignment} Resource.
 func NewAccessPackageCatalogRoleAssignment(scope constructs.Construct, id *string, config *AccessPackageCatalogRoleAssignmentConfig) AccessPackageCatalogRoleAssignment {
 	_init_.Initialize()
 
@@ -397,7 +397,7 @@ func NewAccessPackageCatalogRoleAssignment(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/resources/access_package_catalog_role_assignment azuread_access_package_catalog_role_assignment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/access_package_catalog_role_assignment azuread_access_package_catalog_role_assignment} Resource.
 func NewAccessPackageCatalogRoleAssignment_Override(a AccessPackageCatalogRoleAssignment, scope constructs.Construct, id *string, config *AccessPackageCatalogRoleAssignmentConfig) {
 	_init_.Initialize()
 

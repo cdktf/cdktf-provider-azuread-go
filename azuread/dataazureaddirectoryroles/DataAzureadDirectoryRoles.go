@@ -2,14 +2,14 @@ package dataazureaddirectoryroles
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azuread-go/azuread/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azuread-go/azuread/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azuread-go/azuread/v8/dataazureaddirectoryroles/internal"
+	"github.com/cdktf/cdktf-provider-azuread-go/azuread/v9/dataazureaddirectoryroles/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/data-sources/directory_roles azuread_directory_roles}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/data-sources/directory_roles azuread_directory_roles}.
 type DataAzureadDirectoryRoles interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -315,7 +315,7 @@ func (j *jsiiProxy_DataAzureadDirectoryRoles) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/data-sources/directory_roles azuread_directory_roles} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/data-sources/directory_roles azuread_directory_roles} Data Source.
 func NewDataAzureadDirectoryRoles(scope constructs.Construct, id *string, config *DataAzureadDirectoryRolesConfig) DataAzureadDirectoryRoles {
 	_init_.Initialize()
 
@@ -333,7 +333,7 @@ func NewDataAzureadDirectoryRoles(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/data-sources/directory_roles azuread_directory_roles} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/data-sources/directory_roles azuread_directory_roles} Data Source.
 func NewDataAzureadDirectoryRoles_Override(d DataAzureadDirectoryRoles, scope constructs.Construct, id *string, config *DataAzureadDirectoryRolesConfig) {
 	_init_.Initialize()
 

@@ -203,6 +203,14 @@ func (j *jsiiProxy_DataAzureadUsers) validateSetCountParameters(val interface{})
 	return nil
 }
 
+func (j *jsiiProxy_DataAzureadUsers) validateSetEmployeeIdsParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataAzureadUsers) validateSetIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

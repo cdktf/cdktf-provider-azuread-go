@@ -122,6 +122,48 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
+		"@cdktf/provider-azuread.conditionalAccessPolicy.ConditionalAccessPolicyConditionsClientApplications",
+		reflect.TypeOf((*ConditionalAccessPolicyConditionsClientApplications)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-azuread.conditionalAccessPolicy.ConditionalAccessPolicyConditionsClientApplicationsOutputReference",
+		reflect.TypeOf((*ConditionalAccessPolicyConditionsClientApplicationsOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "excludedServicePrincipals", GoGetter: "ExcludedServicePrincipals"},
+			_jsii_.MemberProperty{JsiiProperty: "excludedServicePrincipalsInput", GoGetter: "ExcludedServicePrincipalsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "includedServicePrincipals", GoGetter: "IncludedServicePrincipals"},
+			_jsii_.MemberProperty{JsiiProperty: "includedServicePrincipalsInput", GoGetter: "IncludedServicePrincipalsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetExcludedServicePrincipals", GoMethod: "ResetExcludedServicePrincipals"},
+			_jsii_.MemberMethod{JsiiMethod: "resetIncludedServicePrincipals", GoMethod: "ResetIncludedServicePrincipals"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_ConditionalAccessPolicyConditionsClientApplicationsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
 		"@cdktf/provider-azuread.conditionalAccessPolicy.ConditionalAccessPolicyConditionsDevices",
 		reflect.TypeOf((*ConditionalAccessPolicyConditionsDevices)(nil)).Elem(),
 	)
@@ -248,6 +290,8 @@ func init() {
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "applications", GoGetter: "Applications"},
 			_jsii_.MemberProperty{JsiiProperty: "applicationsInput", GoGetter: "ApplicationsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "clientApplications", GoGetter: "ClientApplications"},
+			_jsii_.MemberProperty{JsiiProperty: "clientApplicationsInput", GoGetter: "ClientApplicationsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "clientAppTypes", GoGetter: "ClientAppTypes"},
 			_jsii_.MemberProperty{JsiiProperty: "clientAppTypesInput", GoGetter: "ClientAppTypesInput"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -274,10 +318,12 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "platforms", GoGetter: "Platforms"},
 			_jsii_.MemberProperty{JsiiProperty: "platformsInput", GoGetter: "PlatformsInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putApplications", GoMethod: "PutApplications"},
+			_jsii_.MemberMethod{JsiiMethod: "putClientApplications", GoMethod: "PutClientApplications"},
 			_jsii_.MemberMethod{JsiiMethod: "putDevices", GoMethod: "PutDevices"},
 			_jsii_.MemberMethod{JsiiMethod: "putLocations", GoMethod: "PutLocations"},
 			_jsii_.MemberMethod{JsiiMethod: "putPlatforms", GoMethod: "PutPlatforms"},
 			_jsii_.MemberMethod{JsiiMethod: "putUsers", GoMethod: "PutUsers"},
+			_jsii_.MemberMethod{JsiiMethod: "resetClientApplications", GoMethod: "ResetClientApplications"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDevices", GoMethod: "ResetDevices"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLocations", GoMethod: "ResetLocations"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPlatforms", GoMethod: "ResetPlatforms"},
@@ -461,6 +507,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "disableResilienceDefaults", GoGetter: "DisableResilienceDefaults"},
+			_jsii_.MemberProperty{JsiiProperty: "disableResilienceDefaultsInput", GoGetter: "DisableResilienceDefaultsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
 			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
@@ -478,6 +526,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "persistentBrowserModeInput", GoGetter: "PersistentBrowserModeInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetApplicationEnforcedRestrictionsEnabled", GoMethod: "ResetApplicationEnforcedRestrictionsEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCloudAppSecurityPolicy", GoMethod: "ResetCloudAppSecurityPolicy"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDisableResilienceDefaults", GoMethod: "ResetDisableResilienceDefaults"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPersistentBrowserMode", GoMethod: "ResetPersistentBrowserMode"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSignInFrequency", GoMethod: "ResetSignInFrequency"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSignInFrequencyPeriod", GoMethod: "ResetSignInFrequencyPeriod"},

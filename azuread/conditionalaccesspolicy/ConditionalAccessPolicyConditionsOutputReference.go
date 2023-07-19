@@ -2,9 +2,9 @@ package conditionalaccesspolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azuread-go/azuread/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azuread-go/azuread/v9/jsii"
 
-	"github.com/cdktf/cdktf-provider-azuread-go/azuread/v8/conditionalaccesspolicy/internal"
+	"github.com/cdktf/cdktf-provider-azuread-go/azuread/v9/conditionalaccesspolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -12,6 +12,8 @@ type ConditionalAccessPolicyConditionsOutputReference interface {
 	cdktf.ComplexObject
 	Applications() ConditionalAccessPolicyConditionsApplicationsOutputReference
 	ApplicationsInput() *ConditionalAccessPolicyConditionsApplications
+	ClientApplications() ConditionalAccessPolicyConditionsClientApplicationsOutputReference
+	ClientApplicationsInput() *ConditionalAccessPolicyConditionsClientApplications
 	ClientAppTypes() *[]*string
 	SetClientAppTypes(val *[]*string)
 	ClientAppTypesInput() *[]*string
@@ -81,10 +83,12 @@ type ConditionalAccessPolicyConditionsOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutApplications(value *ConditionalAccessPolicyConditionsApplications)
+	PutClientApplications(value *ConditionalAccessPolicyConditionsClientApplications)
 	PutDevices(value *ConditionalAccessPolicyConditionsDevices)
 	PutLocations(value *ConditionalAccessPolicyConditionsLocations)
 	PutPlatforms(value *ConditionalAccessPolicyConditionsPlatforms)
 	PutUsers(value *ConditionalAccessPolicyConditionsUsers)
+	ResetClientApplications()
 	ResetDevices()
 	ResetLocations()
 	ResetPlatforms()
@@ -120,6 +124,26 @@ func (j *jsiiProxy_ConditionalAccessPolicyConditionsOutputReference) Application
 	_jsii_.Get(
 		j,
 		"applicationsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConditionalAccessPolicyConditionsOutputReference) ClientApplications() ConditionalAccessPolicyConditionsClientApplicationsOutputReference {
+	var returns ConditionalAccessPolicyConditionsClientApplicationsOutputReference
+	_jsii_.Get(
+		j,
+		"clientApplications",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConditionalAccessPolicyConditionsOutputReference) ClientApplicationsInput() *ConditionalAccessPolicyConditionsClientApplications {
+	var returns *ConditionalAccessPolicyConditionsClientApplications
+	_jsii_.Get(
+		j,
+		"clientApplicationsInput",
 		&returns,
 	)
 	return returns
@@ -648,6 +672,17 @@ func (c *jsiiProxy_ConditionalAccessPolicyConditionsOutputReference) PutApplicat
 	)
 }
 
+func (c *jsiiProxy_ConditionalAccessPolicyConditionsOutputReference) PutClientApplications(value *ConditionalAccessPolicyConditionsClientApplications) {
+	if err := c.validatePutClientApplicationsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putClientApplications",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ConditionalAccessPolicyConditionsOutputReference) PutDevices(value *ConditionalAccessPolicyConditionsDevices) {
 	if err := c.validatePutDevicesParameters(value); err != nil {
 		panic(err)
@@ -689,6 +724,14 @@ func (c *jsiiProxy_ConditionalAccessPolicyConditionsOutputReference) PutUsers(va
 		c,
 		"putUsers",
 		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_ConditionalAccessPolicyConditionsOutputReference) ResetClientApplications() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetClientApplications",
+		nil, // no parameters
 	)
 }
 

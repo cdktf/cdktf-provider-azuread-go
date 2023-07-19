@@ -173,6 +173,8 @@ func (j *jsiiProxy_AccessPackageAssignmentPolicyQuestionChoiceDisplayValueLocali
 
 func (j *jsiiProxy_AccessPackageAssignmentPolicyQuestionChoiceDisplayValueLocalizedTextOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *AccessPackageAssignmentPolicyQuestionChoiceDisplayValueLocalizedText:
 		val := val.(*AccessPackageAssignmentPolicyQuestionChoiceDisplayValueLocalizedText)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -184,11 +186,9 @@ func (j *jsiiProxy_AccessPackageAssignmentPolicyQuestionChoiceDisplayValueLocali
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *AccessPackageAssignmentPolicyQuestionChoiceDisplayValueLocalizedText, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *AccessPackageAssignmentPolicyQuestionChoiceDisplayValueLocalizedText; received %#v (a %T)", val, val)
 		}
 	}
 

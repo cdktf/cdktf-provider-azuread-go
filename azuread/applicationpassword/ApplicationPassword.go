@@ -2,14 +2,14 @@ package applicationpassword
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azuread-go/azuread/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azuread-go/azuread/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azuread-go/azuread/v8/applicationpassword/internal"
+	"github.com/cdktf/cdktf-provider-azuread-go/azuread/v9/applicationpassword/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/resources/application_password azuread_application_password}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/application_password azuread_application_password}.
 type ApplicationPassword interface {
 	cdktf.TerraformResource
 	ApplicationObjectId() *string
@@ -475,7 +475,7 @@ func (j *jsiiProxy_ApplicationPassword) Value() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/resources/application_password azuread_application_password} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/application_password azuread_application_password} Resource.
 func NewApplicationPassword(scope constructs.Construct, id *string, config *ApplicationPasswordConfig) ApplicationPassword {
 	_init_.Initialize()
 
@@ -493,7 +493,7 @@ func NewApplicationPassword(scope constructs.Construct, id *string, config *Appl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/resources/application_password azuread_application_password} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/application_password azuread_application_password} Resource.
 func NewApplicationPassword_Override(a ApplicationPassword, scope constructs.Construct, id *string, config *ApplicationPasswordConfig) {
 	_init_.Initialize()
 

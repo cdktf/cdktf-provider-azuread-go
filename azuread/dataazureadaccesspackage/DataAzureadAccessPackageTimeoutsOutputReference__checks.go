@@ -165,6 +165,8 @@ func (j *jsiiProxy_DataAzureadAccessPackageTimeoutsOutputReference) validateSetC
 
 func (j *jsiiProxy_DataAzureadAccessPackageTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *DataAzureadAccessPackageTimeouts:
 		val := val.(*DataAzureadAccessPackageTimeouts)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -176,11 +178,9 @@ func (j *jsiiProxy_DataAzureadAccessPackageTimeoutsOutputReference) validateSetI
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *DataAzureadAccessPackageTimeouts, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *DataAzureadAccessPackageTimeouts; received %#v (a %T)", val, val)
 		}
 	}
 

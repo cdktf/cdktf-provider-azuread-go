@@ -4,9 +4,9 @@ package application
 type ApplicationRequiredResourceAccess struct {
 	// resource_access block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/resources/application#resource_access Application#resource_access}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/application#resource_access Application#resource_access}
 	ResourceAccess interface{} `field:"required" json:"resourceAccess" yaml:"resourceAccess"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/resources/application#resource_app_id Application#resource_app_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/application#resource_app_id Application#resource_app_id}.
 	ResourceAppId *string `field:"required" json:"resourceAppId" yaml:"resourceAppId"`
 }
 

@@ -2,9 +2,9 @@ package conditionalaccesspolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azuread-go/azuread/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azuread-go/azuread/v9/jsii"
 
-	"github.com/cdktf/cdktf-provider-azuread-go/azuread/v8/conditionalaccesspolicy/internal"
+	"github.com/cdktf/cdktf-provider-azuread-go/azuread/v9/conditionalaccesspolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -31,6 +31,9 @@ type ConditionalAccessPolicySessionControlsOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DisableResilienceDefaults() interface{}
+	SetDisableResilienceDefaults(val interface{})
+	DisableResilienceDefaultsInput() interface{}
 	// Experimental.
 	Fqn() *string
 	InternalValue() *ConditionalAccessPolicySessionControls
@@ -78,6 +81,7 @@ type ConditionalAccessPolicySessionControlsOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetApplicationEnforcedRestrictionsEnabled()
 	ResetCloudAppSecurityPolicy()
+	ResetDisableResilienceDefaults()
 	ResetPersistentBrowserMode()
 	ResetSignInFrequency()
 	ResetSignInFrequencyPeriod()
@@ -161,6 +165,26 @@ func (j *jsiiProxy_ConditionalAccessPolicySessionControlsOutputReference) Creati
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConditionalAccessPolicySessionControlsOutputReference) DisableResilienceDefaults() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableResilienceDefaults",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConditionalAccessPolicySessionControlsOutputReference) DisableResilienceDefaultsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableResilienceDefaultsInput",
 		&returns,
 	)
 	return returns
@@ -334,6 +358,17 @@ func (j *jsiiProxy_ConditionalAccessPolicySessionControlsOutputReference)SetComp
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ConditionalAccessPolicySessionControlsOutputReference)SetDisableResilienceDefaults(val interface{}) {
+	if err := j.validateSetDisableResilienceDefaultsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"disableResilienceDefaults",
 		val,
 	)
 }
@@ -602,6 +637,14 @@ func (c *jsiiProxy_ConditionalAccessPolicySessionControlsOutputReference) ResetC
 	_jsii_.InvokeVoid(
 		c,
 		"resetCloudAppSecurityPolicy",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ConditionalAccessPolicySessionControlsOutputReference) ResetDisableResilienceDefaults() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetDisableResilienceDefaults",
 		nil, // no parameters
 	)
 }

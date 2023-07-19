@@ -48,6 +48,10 @@ func (c *jsiiProxy_ConditionalAccessPolicyConditionsOutputReference) validatePut
 	return nil
 }
 
+func (c *jsiiProxy_ConditionalAccessPolicyConditionsOutputReference) validatePutClientApplicationsParameters(value *ConditionalAccessPolicyConditionsClientApplications) error {
+	return nil
+}
+
 func (c *jsiiProxy_ConditionalAccessPolicyConditionsOutputReference) validatePutDevicesParameters(value *ConditionalAccessPolicyConditionsDevices) error {
 	return nil
 }

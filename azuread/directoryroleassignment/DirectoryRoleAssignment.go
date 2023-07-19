@@ -2,14 +2,14 @@ package directoryroleassignment
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azuread-go/azuread/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azuread-go/azuread/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azuread-go/azuread/v8/directoryroleassignment/internal"
+	"github.com/cdktf/cdktf-provider-azuread-go/azuread/v9/directoryroleassignment/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/resources/directory_role_assignment azuread_directory_role_assignment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/directory_role_assignment azuread_directory_role_assignment}.
 type DirectoryRoleAssignment interface {
 	cdktf.TerraformResource
 	AppScopeId() *string
@@ -452,7 +452,7 @@ func (j *jsiiProxy_DirectoryRoleAssignment) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/resources/directory_role_assignment azuread_directory_role_assignment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/directory_role_assignment azuread_directory_role_assignment} Resource.
 func NewDirectoryRoleAssignment(scope constructs.Construct, id *string, config *DirectoryRoleAssignmentConfig) DirectoryRoleAssignment {
 	_init_.Initialize()
 
@@ -470,7 +470,7 @@ func NewDirectoryRoleAssignment(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/resources/directory_role_assignment azuread_directory_role_assignment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/directory_role_assignment azuread_directory_role_assignment} Resource.
 func NewDirectoryRoleAssignment_Override(d DirectoryRoleAssignment, scope constructs.Construct, id *string, config *DirectoryRoleAssignmentConfig) {
 	_init_.Initialize()
 

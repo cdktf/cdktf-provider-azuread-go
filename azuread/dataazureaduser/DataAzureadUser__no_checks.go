@@ -72,6 +72,10 @@ func (j *jsiiProxy_DataAzureadUser) validateSetCountParameters(val interface{}) 
 	return nil
 }
 
+func (j *jsiiProxy_DataAzureadUser) validateSetEmployeeIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzureadUser) validateSetIdParameters(val *string) error {
 	return nil
 }

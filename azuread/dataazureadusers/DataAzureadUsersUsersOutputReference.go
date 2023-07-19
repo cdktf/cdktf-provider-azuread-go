@@ -2,9 +2,9 @@ package dataazureadusers
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azuread-go/azuread/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azuread-go/azuread/v9/jsii"
 
-	"github.com/cdktf/cdktf-provider-azuread-go/azuread/v8/dataazureadusers/internal"
+	"github.com/cdktf/cdktf-provider-azuread-go/azuread/v9/dataazureadusers/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -27,6 +27,7 @@ type DataAzureadUsersUsersOutputReference interface {
 	// Experimental.
 	CreationStack() *[]*string
 	DisplayName() *string
+	EmployeeId() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() *DataAzureadUsersUsers
@@ -131,6 +132,16 @@ func (j *jsiiProxy_DataAzureadUsersUsersOutputReference) DisplayName() *string {
 	_jsii_.Get(
 		j,
 		"displayName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzureadUsersUsersOutputReference) EmployeeId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"employeeId",
 		&returns,
 	)
 	return returns

@@ -2,14 +2,14 @@ package dataazureadserviceprincipal
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azuread-go/azuread/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azuread-go/azuread/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azuread-go/azuread/v8/dataazureadserviceprincipal/internal"
+	"github.com/cdktf/cdktf-provider-azuread-go/azuread/v9/dataazureadserviceprincipal/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/data-sources/service_principal azuread_service_principal}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/data-sources/service_principal azuread_service_principal}.
 type DataAzureadServicePrincipal interface {
 	cdktf.TerraformDataSource
 	AccountEnabled() cdktf.IResolvable
@@ -618,7 +618,7 @@ func (j *jsiiProxy_DataAzureadServicePrincipal) Type() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/data-sources/service_principal azuread_service_principal} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/data-sources/service_principal azuread_service_principal} Data Source.
 func NewDataAzureadServicePrincipal(scope constructs.Construct, id *string, config *DataAzureadServicePrincipalConfig) DataAzureadServicePrincipal {
 	_init_.Initialize()
 
@@ -636,7 +636,7 @@ func NewDataAzureadServicePrincipal(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/data-sources/service_principal azuread_service_principal} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/data-sources/service_principal azuread_service_principal} Data Source.
 func NewDataAzureadServicePrincipal_Override(d DataAzureadServicePrincipal, scope constructs.Construct, id *string, config *DataAzureadServicePrincipalConfig) {
 	_init_.Initialize()
 

@@ -2,14 +2,14 @@ package dataazureadusers
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azuread-go/azuread/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azuread-go/azuread/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azuread-go/azuread/v8/dataazureadusers/internal"
+	"github.com/cdktf/cdktf-provider-azuread-go/azuread/v9/dataazureadusers/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/data-sources/users azuread_users}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/data-sources/users azuread_users}.
 type DataAzureadUsers interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -24,6 +24,9 @@ type DataAzureadUsers interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	EmployeeIds() *[]*string
+	SetEmployeeIds(val *[]*string)
+	EmployeeIdsInput() *[]*string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -97,6 +100,7 @@ type DataAzureadUsers interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *DataAzureadUsersTimeouts)
+	ResetEmployeeIds()
 	ResetId()
 	ResetIgnoreMissing()
 	ResetMailNicknames()
@@ -157,6 +161,26 @@ func (j *jsiiProxy_DataAzureadUsers) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzureadUsers) EmployeeIds() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"employeeIds",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzureadUsers) EmployeeIdsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"employeeIdsInput",
 		&returns,
 	)
 	return returns
@@ -413,7 +437,7 @@ func (j *jsiiProxy_DataAzureadUsers) Users() DataAzureadUsersUsersList {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/data-sources/users azuread_users} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/data-sources/users azuread_users} Data Source.
 func NewDataAzureadUsers(scope constructs.Construct, id *string, config *DataAzureadUsersConfig) DataAzureadUsers {
 	_init_.Initialize()
 
@@ -431,7 +455,7 @@ func NewDataAzureadUsers(scope constructs.Construct, id *string, config *DataAzu
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/data-sources/users azuread_users} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/data-sources/users azuread_users} Data Source.
 func NewDataAzureadUsers_Override(d DataAzureadUsers, scope constructs.Construct, id *string, config *DataAzureadUsersConfig) {
 	_init_.Initialize()
 
@@ -457,6 +481,17 @@ func (j *jsiiProxy_DataAzureadUsers)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAzureadUsers)SetEmployeeIds(val *[]*string) {
+	if err := j.validateSetEmployeeIdsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"employeeIds",
 		val,
 	)
 }
@@ -828,6 +863,14 @@ func (d *jsiiProxy_DataAzureadUsers) PutTimeouts(value *DataAzureadUsersTimeouts
 		d,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataAzureadUsers) ResetEmployeeIds() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetEmployeeIds",
+		nil, // no parameters
 	)
 }
 

@@ -2,14 +2,14 @@ package accesspackageassignmentpolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azuread-go/azuread/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azuread-go/azuread/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azuread-go/azuread/v8/accesspackageassignmentpolicy/internal"
+	"github.com/cdktf/cdktf-provider-azuread-go/azuread/v9/accesspackageassignmentpolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/resources/access_package_assignment_policy azuread_access_package_assignment_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/access_package_assignment_policy azuread_access_package_assignment_policy}.
 type AccessPackageAssignmentPolicy interface {
 	cdktf.TerraformResource
 	AccessPackageId() *string
@@ -547,7 +547,7 @@ func (j *jsiiProxy_AccessPackageAssignmentPolicy) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/resources/access_package_assignment_policy azuread_access_package_assignment_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/access_package_assignment_policy azuread_access_package_assignment_policy} Resource.
 func NewAccessPackageAssignmentPolicy(scope constructs.Construct, id *string, config *AccessPackageAssignmentPolicyConfig) AccessPackageAssignmentPolicy {
 	_init_.Initialize()
 
@@ -565,7 +565,7 @@ func NewAccessPackageAssignmentPolicy(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/resources/access_package_assignment_policy azuread_access_package_assignment_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/access_package_assignment_policy azuread_access_package_assignment_policy} Resource.
 func NewAccessPackageAssignmentPolicy_Override(a AccessPackageAssignmentPolicy, scope constructs.Construct, id *string, config *AccessPackageAssignmentPolicyConfig) {
 	_init_.Initialize()
 

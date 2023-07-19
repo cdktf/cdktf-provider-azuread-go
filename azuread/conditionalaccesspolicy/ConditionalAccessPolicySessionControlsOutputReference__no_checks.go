@@ -64,6 +64,10 @@ func (j *jsiiProxy_ConditionalAccessPolicySessionControlsOutputReference) valida
 	return nil
 }
 
+func (j *jsiiProxy_ConditionalAccessPolicySessionControlsOutputReference) validateSetDisableResilienceDefaultsParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ConditionalAccessPolicySessionControlsOutputReference) validateSetInternalValueParameters(val *ConditionalAccessPolicySessionControls) error {
 	return nil
 }

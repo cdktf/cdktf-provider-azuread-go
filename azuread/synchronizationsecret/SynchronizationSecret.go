@@ -2,14 +2,14 @@ package synchronizationsecret
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azuread-go/azuread/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azuread-go/azuread/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azuread-go/azuread/v8/synchronizationsecret/internal"
+	"github.com/cdktf/cdktf-provider-azuread-go/azuread/v9/synchronizationsecret/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/resources/synchronization_secret azuread_synchronization_secret}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/synchronization_secret azuread_synchronization_secret}.
 type SynchronizationSecret interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -357,7 +357,7 @@ func (j *jsiiProxy_SynchronizationSecret) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/resources/synchronization_secret azuread_synchronization_secret} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/synchronization_secret azuread_synchronization_secret} Resource.
 func NewSynchronizationSecret(scope constructs.Construct, id *string, config *SynchronizationSecretConfig) SynchronizationSecret {
 	_init_.Initialize()
 
@@ -375,7 +375,7 @@ func NewSynchronizationSecret(scope constructs.Construct, id *string, config *Sy
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/resources/synchronization_secret azuread_synchronization_secret} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/synchronization_secret azuread_synchronization_secret} Resource.
 func NewSynchronizationSecret_Override(s SynchronizationSecret, scope constructs.Construct, id *string, config *SynchronizationSecretConfig) {
 	_init_.Initialize()
 
