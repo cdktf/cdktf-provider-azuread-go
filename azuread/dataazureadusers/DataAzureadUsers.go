@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/data-sources/users azuread_users}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs/data-sources/users azuread_users}.
 type DataAzureadUsers interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -437,7 +437,7 @@ func (j *jsiiProxy_DataAzureadUsers) Users() DataAzureadUsersUsersList {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/data-sources/users azuread_users} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs/data-sources/users azuread_users} Data Source.
 func NewDataAzureadUsers(scope constructs.Construct, id *string, config *DataAzureadUsersConfig) DataAzureadUsers {
 	_init_.Initialize()
 
@@ -455,7 +455,7 @@ func NewDataAzureadUsers(scope constructs.Construct, id *string, config *DataAzu
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/data-sources/users azuread_users} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs/data-sources/users azuread_users} Data Source.
 func NewDataAzureadUsers_Override(d DataAzureadUsers, scope constructs.Construct, id *string, config *DataAzureadUsersConfig) {
 	_init_.Initialize()
 

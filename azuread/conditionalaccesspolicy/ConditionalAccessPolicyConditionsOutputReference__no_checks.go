@@ -88,6 +88,10 @@ func (j *jsiiProxy_ConditionalAccessPolicyConditionsOutputReference) validateSet
 	return nil
 }
 
+func (j *jsiiProxy_ConditionalAccessPolicyConditionsOutputReference) validateSetServicePrincipalRiskLevelsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ConditionalAccessPolicyConditionsOutputReference) validateSetSignInRiskLevelsParameters(val *[]*string) error {
 	return nil
 }

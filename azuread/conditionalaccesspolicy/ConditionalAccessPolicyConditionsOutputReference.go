@@ -42,6 +42,9 @@ type ConditionalAccessPolicyConditionsOutputReference interface {
 	LocationsInput() *ConditionalAccessPolicyConditionsLocations
 	Platforms() ConditionalAccessPolicyConditionsPlatformsOutputReference
 	PlatformsInput() *ConditionalAccessPolicyConditionsPlatforms
+	ServicePrincipalRiskLevels() *[]*string
+	SetServicePrincipalRiskLevels(val *[]*string)
+	ServicePrincipalRiskLevelsInput() *[]*string
 	SignInRiskLevels() *[]*string
 	SetSignInRiskLevels(val *[]*string)
 	SignInRiskLevelsInput() *[]*string
@@ -92,6 +95,7 @@ type ConditionalAccessPolicyConditionsOutputReference interface {
 	ResetDevices()
 	ResetLocations()
 	ResetPlatforms()
+	ResetServicePrincipalRiskLevels()
 	ResetSignInRiskLevels()
 	ResetUserRiskLevels()
 	// Produce the Token's value at resolution time.
@@ -279,6 +283,26 @@ func (j *jsiiProxy_ConditionalAccessPolicyConditionsOutputReference) PlatformsIn
 	return returns
 }
 
+func (j *jsiiProxy_ConditionalAccessPolicyConditionsOutputReference) ServicePrincipalRiskLevels() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"servicePrincipalRiskLevels",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConditionalAccessPolicyConditionsOutputReference) ServicePrincipalRiskLevelsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"servicePrincipalRiskLevelsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ConditionalAccessPolicyConditionsOutputReference) SignInRiskLevels() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -427,6 +451,17 @@ func (j *jsiiProxy_ConditionalAccessPolicyConditionsOutputReference)SetInternalV
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ConditionalAccessPolicyConditionsOutputReference)SetServicePrincipalRiskLevels(val *[]*string) {
+	if err := j.validateSetServicePrincipalRiskLevelsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"servicePrincipalRiskLevels",
 		val,
 	)
 }
@@ -755,6 +790,14 @@ func (c *jsiiProxy_ConditionalAccessPolicyConditionsOutputReference) ResetPlatfo
 	_jsii_.InvokeVoid(
 		c,
 		"resetPlatforms",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ConditionalAccessPolicyConditionsOutputReference) ResetServicePrincipalRiskLevels() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetServicePrincipalRiskLevels",
 		nil, // no parameters
 	)
 }
