@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs/data-sources/administrative_unit azuread_administrative_unit}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/data-sources/administrative_unit azuread_administrative_unit}.
 type DataAzureadAdministrativeUnit interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -366,7 +366,7 @@ func (j *jsiiProxy_DataAzureadAdministrativeUnit) Visibility() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs/data-sources/administrative_unit azuread_administrative_unit} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/data-sources/administrative_unit azuread_administrative_unit} Data Source.
 func NewDataAzureadAdministrativeUnit(scope constructs.Construct, id *string, config *DataAzureadAdministrativeUnitConfig) DataAzureadAdministrativeUnit {
 	_init_.Initialize()
 
@@ -384,7 +384,7 @@ func NewDataAzureadAdministrativeUnit(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs/data-sources/administrative_unit azuread_administrative_unit} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/data-sources/administrative_unit azuread_administrative_unit} Data Source.
 func NewDataAzureadAdministrativeUnit_Override(d DataAzureadAdministrativeUnit, scope constructs.Construct, id *string, config *DataAzureadAdministrativeUnitConfig) {
 	_init_.Initialize()
 

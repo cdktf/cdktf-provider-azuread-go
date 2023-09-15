@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs azuread}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs azuread}.
 type AzureadProvider interface {
 	cdktf.TerraformProvider
 	Alias() *string
@@ -31,9 +31,15 @@ type AzureadProvider interface {
 	ClientCertificatePathInput() *string
 	ClientId() *string
 	SetClientId(val *string)
+	ClientIdFilePath() *string
+	SetClientIdFilePath(val *string)
+	ClientIdFilePathInput() *string
 	ClientIdInput() *string
 	ClientSecret() *string
 	SetClientSecret(val *string)
+	ClientSecretFilePath() *string
+	SetClientSecretFilePath(val *string)
+	ClientSecretFilePathInput() *string
 	ClientSecretInput() *string
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
@@ -102,7 +108,9 @@ type AzureadProvider interface {
 	ResetClientCertificatePassword()
 	ResetClientCertificatePath()
 	ResetClientId()
+	ResetClientIdFilePath()
 	ResetClientSecret()
+	ResetClientSecretFilePath()
 	ResetDisableTerraformPartnerId()
 	ResetEnvironment()
 	ResetMetadataHost()
@@ -234,6 +242,26 @@ func (j *jsiiProxy_AzureadProvider) ClientId() *string {
 	return returns
 }
 
+func (j *jsiiProxy_AzureadProvider) ClientIdFilePath() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clientIdFilePath",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AzureadProvider) ClientIdFilePathInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clientIdFilePathInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AzureadProvider) ClientIdInput() *string {
 	var returns *string
 	_jsii_.Get(
@@ -249,6 +277,26 @@ func (j *jsiiProxy_AzureadProvider) ClientSecret() *string {
 	_jsii_.Get(
 		j,
 		"clientSecret",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AzureadProvider) ClientSecretFilePath() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clientSecretFilePath",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AzureadProvider) ClientSecretFilePathInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clientSecretFilePathInput",
 		&returns,
 	)
 	return returns
@@ -615,7 +663,7 @@ func (j *jsiiProxy_AzureadProvider) UseOidcInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs azuread} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs azuread} Resource.
 func NewAzureadProvider(scope constructs.Construct, id *string, config *AzureadProviderConfig) AzureadProvider {
 	_init_.Initialize()
 
@@ -633,7 +681,7 @@ func NewAzureadProvider(scope constructs.Construct, id *string, config *AzureadP
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs azuread} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs azuread} Resource.
 func NewAzureadProvider_Override(a AzureadProvider, scope constructs.Construct, id *string, config *AzureadProviderConfig) {
 	_init_.Initialize()
 
@@ -684,10 +732,26 @@ func (j *jsiiProxy_AzureadProvider)SetClientId(val *string) {
 	)
 }
 
+func (j *jsiiProxy_AzureadProvider)SetClientIdFilePath(val *string) {
+	_jsii_.Set(
+		j,
+		"clientIdFilePath",
+		val,
+	)
+}
+
 func (j *jsiiProxy_AzureadProvider)SetClientSecret(val *string) {
 	_jsii_.Set(
 		j,
 		"clientSecret",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AzureadProvider)SetClientSecretFilePath(val *string) {
+	_jsii_.Set(
+		j,
+		"clientSecretFilePath",
 		val,
 	)
 }
@@ -954,10 +1018,26 @@ func (a *jsiiProxy_AzureadProvider) ResetClientId() {
 	)
 }
 
+func (a *jsiiProxy_AzureadProvider) ResetClientIdFilePath() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetClientIdFilePath",
+		nil, // no parameters
+	)
+}
+
 func (a *jsiiProxy_AzureadProvider) ResetClientSecret() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetClientSecret",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AzureadProvider) ResetClientSecretFilePath() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetClientSecretFilePath",
 		nil, // no parameters
 	)
 }

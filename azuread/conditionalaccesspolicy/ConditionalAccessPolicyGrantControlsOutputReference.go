@@ -76,6 +76,7 @@ type ConditionalAccessPolicyGrantControlsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetBuiltInControls()
 	ResetCustomAuthenticationFactors()
 	ResetTermsOfUse()
 	// Produce the Token's value at resolution time.
@@ -554,6 +555,14 @@ func (c *jsiiProxy_ConditionalAccessPolicyGrantControlsOutputReference) Interpol
 	)
 
 	return returns
+}
+
+func (c *jsiiProxy_ConditionalAccessPolicyGrantControlsOutputReference) ResetBuiltInControls() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetBuiltInControls",
+		nil, // no parameters
+	)
 }
 
 func (c *jsiiProxy_ConditionalAccessPolicyGrantControlsOutputReference) ResetCustomAuthenticationFactors() {

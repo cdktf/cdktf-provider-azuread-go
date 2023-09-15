@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs/resources/service_principal_claims_mapping_policy_assignment azuread_service_principal_claims_mapping_policy_assignment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/resources/service_principal_claims_mapping_policy_assignment azuread_service_principal_claims_mapping_policy_assignment}.
 type ServicePrincipalClaimsMappingPolicyAssignment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -335,7 +335,7 @@ func (j *jsiiProxy_ServicePrincipalClaimsMappingPolicyAssignment) TerraformResou
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs/resources/service_principal_claims_mapping_policy_assignment azuread_service_principal_claims_mapping_policy_assignment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/resources/service_principal_claims_mapping_policy_assignment azuread_service_principal_claims_mapping_policy_assignment} Resource.
 func NewServicePrincipalClaimsMappingPolicyAssignment(scope constructs.Construct, id *string, config *ServicePrincipalClaimsMappingPolicyAssignmentConfig) ServicePrincipalClaimsMappingPolicyAssignment {
 	_init_.Initialize()
 
@@ -353,7 +353,7 @@ func NewServicePrincipalClaimsMappingPolicyAssignment(scope constructs.Construct
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs/resources/service_principal_claims_mapping_policy_assignment azuread_service_principal_claims_mapping_policy_assignment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/resources/service_principal_claims_mapping_policy_assignment azuread_service_principal_claims_mapping_policy_assignment} Resource.
 func NewServicePrincipalClaimsMappingPolicyAssignment_Override(s ServicePrincipalClaimsMappingPolicyAssignment, scope constructs.Construct, id *string, config *ServicePrincipalClaimsMappingPolicyAssignmentConfig) {
 	_init_.Initialize()
 

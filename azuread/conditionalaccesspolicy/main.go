@@ -483,6 +483,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "operator", GoGetter: "Operator"},
 			_jsii_.MemberProperty{JsiiProperty: "operatorInput", GoGetter: "OperatorInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetBuiltInControls", GoMethod: "ResetBuiltInControls"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCustomAuthenticationFactors", GoMethod: "ResetCustomAuthenticationFactors"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTermsOfUse", GoMethod: "ResetTermsOfUse"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},

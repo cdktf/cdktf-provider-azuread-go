@@ -91,6 +91,10 @@ func (j *jsiiProxy_DataAzureadGroup) validateSetMailEnabledParameters(val interf
 	return nil
 }
 
+func (j *jsiiProxy_DataAzureadGroup) validateSetMailNicknameParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzureadGroup) validateSetObjectIdParameters(val *string) error {
 	return nil
 }

@@ -250,6 +250,14 @@ func (j *jsiiProxy_DataAzureadGroup) validateSetMailEnabledParameters(val interf
 	return nil
 }
 
+func (j *jsiiProxy_DataAzureadGroup) validateSetMailNicknameParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataAzureadGroup) validateSetObjectIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

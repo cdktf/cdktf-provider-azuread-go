@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs/data-sources/application_template azuread_application_template}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/data-sources/application_template azuread_application_template}.
 type DataAzureadApplicationTemplate interface {
 	cdktf.TerraformDataSource
 	Categories() *[]*string
@@ -399,7 +399,7 @@ func (j *jsiiProxy_DataAzureadApplicationTemplate) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs/data-sources/application_template azuread_application_template} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/data-sources/application_template azuread_application_template} Data Source.
 func NewDataAzureadApplicationTemplate(scope constructs.Construct, id *string, config *DataAzureadApplicationTemplateConfig) DataAzureadApplicationTemplate {
 	_init_.Initialize()
 
@@ -417,7 +417,7 @@ func NewDataAzureadApplicationTemplate(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs/data-sources/application_template azuread_application_template} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/data-sources/application_template azuread_application_template} Data Source.
 func NewDataAzureadApplicationTemplate_Override(d DataAzureadApplicationTemplate, scope constructs.Construct, id *string, config *DataAzureadApplicationTemplateConfig) {
 	_init_.Initialize()
 

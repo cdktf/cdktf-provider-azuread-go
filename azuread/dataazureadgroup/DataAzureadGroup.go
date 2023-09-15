@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs/data-sources/group azuread_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/data-sources/group azuread_group}.
 type DataAzureadGroup interface {
 	cdktf.TerraformDataSource
 	AssignableToRole() cdktf.IResolvable
@@ -58,6 +58,8 @@ type DataAzureadGroup interface {
 	SetMailEnabled(val interface{})
 	MailEnabledInput() interface{}
 	MailNickname() *string
+	SetMailNickname(val *string)
+	MailNicknameInput() *string
 	Members() *[]*string
 	// The tree node.
 	Node() constructs.Node
@@ -124,6 +126,7 @@ type DataAzureadGroup interface {
 	ResetDisplayName()
 	ResetId()
 	ResetMailEnabled()
+	ResetMailNickname()
 	ResetObjectId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -380,6 +383,16 @@ func (j *jsiiProxy_DataAzureadGroup) MailNickname() *string {
 	_jsii_.Get(
 		j,
 		"mailNickname",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzureadGroup) MailNicknameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"mailNicknameInput",
 		&returns,
 	)
 	return returns
@@ -656,7 +669,7 @@ func (j *jsiiProxy_DataAzureadGroup) WritebackEnabled() cdktf.IResolvable {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs/data-sources/group azuread_group} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/data-sources/group azuread_group} Data Source.
 func NewDataAzureadGroup(scope constructs.Construct, id *string, config *DataAzureadGroupConfig) DataAzureadGroup {
 	_init_.Initialize()
 
@@ -674,7 +687,7 @@ func NewDataAzureadGroup(scope constructs.Construct, id *string, config *DataAzu
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs/data-sources/group azuread_group} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/data-sources/group azuread_group} Data Source.
 func NewDataAzureadGroup_Override(d DataAzureadGroup, scope constructs.Construct, id *string, config *DataAzureadGroupConfig) {
 	_init_.Initialize()
 
@@ -752,6 +765,17 @@ func (j *jsiiProxy_DataAzureadGroup)SetMailEnabled(val interface{}) {
 	_jsii_.Set(
 		j,
 		"mailEnabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAzureadGroup)SetMailNickname(val *string) {
+	if err := j.validateSetMailNicknameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"mailNickname",
 		val,
 	)
 }
@@ -1083,6 +1107,14 @@ func (d *jsiiProxy_DataAzureadGroup) ResetMailEnabled() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetMailEnabled",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAzureadGroup) ResetMailNickname() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetMailNickname",
 		nil, // no parameters
 	)
 }
