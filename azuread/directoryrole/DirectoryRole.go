@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/resources/directory_role azuread_directory_role}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/directory_role azuread_directory_role}.
 type DirectoryRole interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -383,7 +383,7 @@ func (j *jsiiProxy_DirectoryRole) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/resources/directory_role azuread_directory_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/directory_role azuread_directory_role} Resource.
 func NewDirectoryRole(scope constructs.Construct, id *string, config *DirectoryRoleConfig) DirectoryRole {
 	_init_.Initialize()
 
@@ -401,7 +401,7 @@ func NewDirectoryRole(scope constructs.Construct, id *string, config *DirectoryR
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/resources/directory_role azuread_directory_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/directory_role azuread_directory_role} Resource.
 func NewDirectoryRole_Override(d DirectoryRole, scope constructs.Construct, id *string, config *DirectoryRoleConfig) {
 	_init_.Initialize()
 
