@@ -7,6 +7,10 @@ package serviceprincipalclaimsmappingpolicyassignment
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_ServicePrincipalClaimsMappingPolicyAssignment) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_ServicePrincipalClaimsMappingPolicyAssignment) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (s *jsiiProxy_ServicePrincipalClaimsMappingPolicyAssignment) validateGetStr
 	return nil
 }
 
+func (s *jsiiProxy_ServicePrincipalClaimsMappingPolicyAssignment) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_ServicePrincipalClaimsMappingPolicyAssignment) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (s *jsiiProxy_ServicePrincipalClaimsMappingPolicyAssignment) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_ServicePrincipalClaimsMappingPolicyAssignment) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateServicePrincipalClaimsMappingPolicyAssignment_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataAzureadDirectoryRoleTemplates) validatePutTimeoutsParamet
 	return nil
 }
 
+func validateDataAzureadDirectoryRoleTemplates_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAzureadDirectoryRoleTemplates_IsConstructParameters(x interface{}) error {
 	return nil
 }

@@ -7,6 +7,10 @@ package synchronizationsecret
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SynchronizationSecret) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SynchronizationSecret) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_SynchronizationSecret) validateGetStringMapAttributeParameter
 	return nil
 }
 
+func (s *jsiiProxy_SynchronizationSecret) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SynchronizationSecret) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SynchronizationSecret) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (s *jsiiProxy_SynchronizationSecret) validatePutCredentialParameters(value 
 }
 
 func (s *jsiiProxy_SynchronizationSecret) validatePutTimeoutsParameters(value *SynchronizationSecretTimeouts) error {
+	return nil
+}
+
+func validateSynchronizationSecret_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

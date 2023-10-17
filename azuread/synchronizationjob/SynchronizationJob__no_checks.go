@@ -7,6 +7,10 @@ package synchronizationjob
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SynchronizationJob) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SynchronizationJob) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_SynchronizationJob) validateGetStringMapAttributeParameters(t
 	return nil
 }
 
+func (s *jsiiProxy_SynchronizationJob) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SynchronizationJob) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SynchronizationJob) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (s *jsiiProxy_SynchronizationJob) validateOverrideLogicalIdParameters(newLo
 }
 
 func (s *jsiiProxy_SynchronizationJob) validatePutTimeoutsParameters(value *SynchronizationJobTimeouts) error {
+	return nil
+}
+
+func validateSynchronizationJob_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

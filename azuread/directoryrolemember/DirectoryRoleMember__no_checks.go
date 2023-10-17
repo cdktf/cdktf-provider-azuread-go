@@ -7,6 +7,10 @@ package directoryrolemember
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DirectoryRoleMember) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DirectoryRoleMember) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (d *jsiiProxy_DirectoryRoleMember) validateGetStringMapAttributeParameters(
 	return nil
 }
 
+func (d *jsiiProxy_DirectoryRoleMember) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DirectoryRoleMember) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DirectoryRoleMember) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (d *jsiiProxy_DirectoryRoleMember) validateOverrideLogicalIdParameters(newL
 }
 
 func (d *jsiiProxy_DirectoryRoleMember) validatePutTimeoutsParameters(value *DirectoryRoleMemberTimeouts) error {
+	return nil
+}
+
+func validateDirectoryRoleMember_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

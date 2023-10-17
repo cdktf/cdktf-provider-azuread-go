@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataAzureadApplicationTemplate) validatePutTimeoutsParameters
 	return nil
 }
 
+func validateDataAzureadApplicationTemplate_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAzureadApplicationTemplate_IsConstructParameters(x interface{}) error {
 	return nil
 }

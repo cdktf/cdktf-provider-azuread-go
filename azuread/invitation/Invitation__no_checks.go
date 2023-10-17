@@ -7,6 +7,10 @@ package invitation
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (i *jsiiProxy_Invitation) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_Invitation) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (i *jsiiProxy_Invitation) validateGetStringMapAttributeParameters(terraform
 	return nil
 }
 
+func (i *jsiiProxy_Invitation) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_Invitation) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (i *jsiiProxy_Invitation) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (i *jsiiProxy_Invitation) validatePutMessageParameters(value *InvitationMes
 }
 
 func (i *jsiiProxy_Invitation) validatePutTimeoutsParameters(value *InvitationTimeouts) error {
+	return nil
+}
+
+func validateInvitation_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

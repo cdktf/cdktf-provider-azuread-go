@@ -7,6 +7,10 @@ package serviceprincipalpassword
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_ServicePrincipalPassword) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_ServicePrincipalPassword) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_ServicePrincipalPassword) validateGetStringMapAttributeParame
 	return nil
 }
 
+func (s *jsiiProxy_ServicePrincipalPassword) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_ServicePrincipalPassword) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_ServicePrincipalPassword) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (s *jsiiProxy_ServicePrincipalPassword) validateOverrideLogicalIdParameters
 }
 
 func (s *jsiiProxy_ServicePrincipalPassword) validatePutTimeoutsParameters(value *ServicePrincipalPasswordTimeouts) error {
+	return nil
+}
+
+func validateServicePrincipalPassword_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataAzureadAdministrativeUnit) validatePutTimeoutsParameters(
 	return nil
 }
 
+func validateDataAzureadAdministrativeUnit_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAzureadAdministrativeUnit_IsConstructParameters(x interface{}) error {
 	return nil
 }

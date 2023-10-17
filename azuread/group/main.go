@@ -14,6 +14,7 @@ func init() {
 		"@cdktf/provider-azuread.group.Group",
 		reflect.TypeOf((*Group)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "administrativeUnitIds", GoGetter: "AdministrativeUnitIds"},
 			_jsii_.MemberProperty{JsiiProperty: "administrativeUnitIdsInput", GoGetter: "AdministrativeUnitIdsInput"},
@@ -54,6 +55,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "hideFromOutlookClientsInput", GoGetter: "HideFromOutlookClientsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
 			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "mail", GoGetter: "Mail"},
@@ -63,6 +65,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "mailNicknameInput", GoGetter: "MailNicknameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "members", GoGetter: "Members"},
 			_jsii_.MemberProperty{JsiiProperty: "membersInput", GoGetter: "MembersInput"},
+			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
 			_jsii_.MemberProperty{JsiiProperty: "objectId", GoGetter: "ObjectId"},
 			_jsii_.MemberProperty{JsiiProperty: "onpremisesDomainName", GoGetter: "OnpremisesDomainName"},

@@ -7,6 +7,10 @@ package applicationpassword
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_ApplicationPassword) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApplicationPassword) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (a *jsiiProxy_ApplicationPassword) validateGetStringMapAttributeParameters(
 	return nil
 }
 
+func (a *jsiiProxy_ApplicationPassword) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApplicationPassword) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_ApplicationPassword) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (a *jsiiProxy_ApplicationPassword) validateOverrideLogicalIdParameters(newL
 }
 
 func (a *jsiiProxy_ApplicationPassword) validatePutTimeoutsParameters(value *ApplicationPasswordTimeouts) error {
+	return nil
+}
+
+func validateApplicationPassword_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

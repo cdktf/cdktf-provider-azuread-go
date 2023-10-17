@@ -7,6 +7,10 @@ package namedlocation
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (n *jsiiProxy_NamedLocation) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NamedLocation) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (n *jsiiProxy_NamedLocation) validateGetStringMapAttributeParameters(terraf
 	return nil
 }
 
+func (n *jsiiProxy_NamedLocation) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NamedLocation) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (n *jsiiProxy_NamedLocation) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (n *jsiiProxy_NamedLocation) validatePutIpParameters(value *NamedLocationIp
 }
 
 func (n *jsiiProxy_NamedLocation) validatePutTimeoutsParameters(value *NamedLocationTimeouts) error {
+	return nil
+}
+
+func validateNamedLocation_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

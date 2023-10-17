@@ -14,6 +14,7 @@ func init() {
 		"@cdktf/provider-azuread.application.Application",
 		reflect.TypeOf((*Application)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "api", GoGetter: "Api"},
 			_jsii_.MemberProperty{JsiiProperty: "apiInput", GoGetter: "ApiInput"},
@@ -55,6 +56,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "identifierUris", GoGetter: "IdentifierUris"},
 			_jsii_.MemberProperty{JsiiProperty: "identifierUrisInput", GoGetter: "IdentifierUrisInput"},
 			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "logoImage", GoGetter: "LogoImage"},
@@ -62,6 +64,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "logoUrl", GoGetter: "LogoUrl"},
 			_jsii_.MemberProperty{JsiiProperty: "marketingUrl", GoGetter: "MarketingUrl"},
 			_jsii_.MemberProperty{JsiiProperty: "marketingUrlInput", GoGetter: "MarketingUrlInput"},
+			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
 			_jsii_.MemberProperty{JsiiProperty: "notes", GoGetter: "Notes"},
 			_jsii_.MemberProperty{JsiiProperty: "notesInput", GoGetter: "NotesInput"},

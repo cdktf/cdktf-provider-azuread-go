@@ -7,6 +7,10 @@ package serviceprincipalcertificate
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_ServicePrincipalCertificate) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_ServicePrincipalCertificate) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_ServicePrincipalCertificate) validateGetStringMapAttributePar
 	return nil
 }
 
+func (s *jsiiProxy_ServicePrincipalCertificate) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_ServicePrincipalCertificate) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_ServicePrincipalCertificate) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (s *jsiiProxy_ServicePrincipalCertificate) validateOverrideLogicalIdParamet
 }
 
 func (s *jsiiProxy_ServicePrincipalCertificate) validatePutTimeoutsParameters(value *ServicePrincipalCertificateTimeouts) error {
+	return nil
+}
+
+func validateServicePrincipalCertificate_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

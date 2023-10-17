@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataAzureadAccessPackageCatalogRole) validatePutTimeoutsParam
 	return nil
 }
 
+func validateDataAzureadAccessPackageCatalogRole_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAzureadAccessPackageCatalogRole_IsConstructParameters(x interface{}) error {
 	return nil
 }

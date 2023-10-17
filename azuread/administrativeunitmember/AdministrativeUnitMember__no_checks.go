@@ -7,6 +7,10 @@ package administrativeunitmember
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_AdministrativeUnitMember) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AdministrativeUnitMember) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (a *jsiiProxy_AdministrativeUnitMember) validateGetStringMapAttributeParame
 	return nil
 }
 
+func (a *jsiiProxy_AdministrativeUnitMember) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AdministrativeUnitMember) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AdministrativeUnitMember) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (a *jsiiProxy_AdministrativeUnitMember) validateOverrideLogicalIdParameters
 }
 
 func (a *jsiiProxy_AdministrativeUnitMember) validatePutTimeoutsParameters(value *AdministrativeUnitMemberTimeouts) error {
+	return nil
+}
+
+func validateAdministrativeUnitMember_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataAzureadGroup) validatePutTimeoutsParameters(value *DataAz
 	return nil
 }
 
+func validateDataAzureadGroup_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAzureadGroup_IsConstructParameters(x interface{}) error {
 	return nil
 }

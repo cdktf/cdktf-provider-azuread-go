@@ -7,6 +7,10 @@ package directoryroleeligibilityschedulerequest
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DirectoryRoleEligibilityScheduleRequest) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DirectoryRoleEligibilityScheduleRequest) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (d *jsiiProxy_DirectoryRoleEligibilityScheduleRequest) validateGetStringMap
 	return nil
 }
 
+func (d *jsiiProxy_DirectoryRoleEligibilityScheduleRequest) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DirectoryRoleEligibilityScheduleRequest) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DirectoryRoleEligibilityScheduleRequest) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (d *jsiiProxy_DirectoryRoleEligibilityScheduleRequest) validateOverrideLogi
 }
 
 func (d *jsiiProxy_DirectoryRoleEligibilityScheduleRequest) validatePutTimeoutsParameters(value *DirectoryRoleEligibilityScheduleRequestTimeouts) error {
+	return nil
+}
+
+func validateDirectoryRoleEligibilityScheduleRequest_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

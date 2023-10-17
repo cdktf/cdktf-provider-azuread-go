@@ -7,6 +7,10 @@ package conditionalaccesspolicy
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ConditionalAccessPolicy) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ConditionalAccessPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_ConditionalAccessPolicy) validateGetStringMapAttributeParamet
 	return nil
 }
 
+func (c *jsiiProxy_ConditionalAccessPolicy) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ConditionalAccessPolicy) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ConditionalAccessPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -68,6 +80,10 @@ func (c *jsiiProxy_ConditionalAccessPolicy) validatePutSessionControlsParameters
 }
 
 func (c *jsiiProxy_ConditionalAccessPolicy) validatePutTimeoutsParameters(value *ConditionalAccessPolicyTimeouts) error {
+	return nil
+}
+
+func validateConditionalAccessPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

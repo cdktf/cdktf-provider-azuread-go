@@ -7,6 +7,10 @@ package serviceprincipal
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_ServicePrincipal) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_ServicePrincipal) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_ServicePrincipal) validateGetStringMapAttributeParameters(ter
 	return nil
 }
 
+func (s *jsiiProxy_ServicePrincipal) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_ServicePrincipal) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_ServicePrincipal) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -68,6 +80,10 @@ func (s *jsiiProxy_ServicePrincipal) validatePutSamlSingleSignOnParameters(value
 }
 
 func (s *jsiiProxy_ServicePrincipal) validatePutTimeoutsParameters(value *ServicePrincipalTimeouts) error {
+	return nil
+}
+
+func validateServicePrincipal_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

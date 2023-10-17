@@ -7,6 +7,10 @@ package accesspackageresourcepackageassociation
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_AccessPackageResourcePackageAssociation) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AccessPackageResourcePackageAssociation) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (a *jsiiProxy_AccessPackageResourcePackageAssociation) validateGetStringMap
 	return nil
 }
 
+func (a *jsiiProxy_AccessPackageResourcePackageAssociation) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AccessPackageResourcePackageAssociation) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AccessPackageResourcePackageAssociation) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (a *jsiiProxy_AccessPackageResourcePackageAssociation) validateOverrideLogi
 }
 
 func (a *jsiiProxy_AccessPackageResourcePackageAssociation) validatePutTimeoutsParameters(value *AccessPackageResourcePackageAssociationTimeouts) error {
+	return nil
+}
+
+func validateAccessPackageResourcePackageAssociation_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

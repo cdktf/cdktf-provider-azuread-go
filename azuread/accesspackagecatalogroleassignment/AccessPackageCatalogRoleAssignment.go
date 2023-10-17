@@ -5,10 +5,10 @@ package accesspackagecatalogroleassignment
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azuread-go/azuread/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azuread-go/azuread/v10/accesspackagecatalogroleassignment/internal"
+	"github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/accesspackagecatalogroleassignment/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -75,6 +75,9 @@ type AccessPackageCatalogRoleAssignment interface {
 	TerraformResourceType() *string
 	Timeouts() AccessPackageCatalogRoleAssignmentTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -96,7 +99,12 @@ type AccessPackageCatalogRoleAssignment interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -523,6 +531,25 @@ func (j *jsiiProxy_AccessPackageCatalogRoleAssignment)SetRoleId(val *string) {
 	)
 }
 
+// Generates CDKTF code for importing a AccessPackageCatalogRoleAssignment resource upon running "cdktf plan <stack-name>".
+func AccessPackageCatalogRoleAssignment_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateAccessPackageCatalogRoleAssignment_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-azuread.accessPackageCatalogRoleAssignment.AccessPackageCatalogRoleAssignment",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -605,6 +632,17 @@ func AccessPackageCatalogRoleAssignment_TfResourceType() *string {
 		&returns,
 	)
 	return returns
+}
+
+func (a *jsiiProxy_AccessPackageCatalogRoleAssignment) AddMoveTarget(moveTarget *string) {
+	if err := a.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (a *jsiiProxy_AccessPackageCatalogRoleAssignment) AddOverride(path *string, value interface{}) {
@@ -762,6 +800,17 @@ func (a *jsiiProxy_AccessPackageCatalogRoleAssignment) GetStringMapAttribute(ter
 	return returns
 }
 
+func (a *jsiiProxy_AccessPackageCatalogRoleAssignment) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := a.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (a *jsiiProxy_AccessPackageCatalogRoleAssignment) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := a.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -776,6 +825,17 @@ func (a *jsiiProxy_AccessPackageCatalogRoleAssignment) InterpolationForAttribute
 	)
 
 	return returns
+}
+
+func (a *jsiiProxy_AccessPackageCatalogRoleAssignment) MoveTo(moveTarget *string, index interface{}) {
+	if err := a.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
 }
 
 func (a *jsiiProxy_AccessPackageCatalogRoleAssignment) OverrideLogicalId(newLogicalId *string) {
