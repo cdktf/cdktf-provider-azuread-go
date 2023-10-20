@@ -87,6 +87,10 @@ func validateApplicationFederatedIdentityCredential_IsTerraformResourceParameter
 	return nil
 }
 
+func (j *jsiiProxy_ApplicationFederatedIdentityCredential) validateSetApplicationIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApplicationFederatedIdentityCredential) validateSetApplicationObjectIdParameters(val *string) error {
 	return nil
 }

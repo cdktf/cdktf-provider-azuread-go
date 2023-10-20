@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/claims_mapping_policy azuread_claims_mapping_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/claims_mapping_policy azuread_claims_mapping_policy}.
 type ClaimsMappingPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -343,7 +343,7 @@ func (j *jsiiProxy_ClaimsMappingPolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/claims_mapping_policy azuread_claims_mapping_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/claims_mapping_policy azuread_claims_mapping_policy} Resource.
 func NewClaimsMappingPolicy(scope constructs.Construct, id *string, config *ClaimsMappingPolicyConfig) ClaimsMappingPolicy {
 	_init_.Initialize()
 
@@ -361,7 +361,7 @@ func NewClaimsMappingPolicy(scope constructs.Construct, id *string, config *Clai
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/claims_mapping_policy azuread_claims_mapping_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/claims_mapping_policy azuread_claims_mapping_policy} Resource.
 func NewClaimsMappingPolicy_Override(c ClaimsMappingPolicy, scope constructs.Construct, id *string, config *ClaimsMappingPolicyConfig) {
 	_init_.Initialize()
 

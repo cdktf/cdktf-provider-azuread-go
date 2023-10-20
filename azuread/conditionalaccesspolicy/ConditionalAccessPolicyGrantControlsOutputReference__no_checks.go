@@ -51,6 +51,10 @@ func (c *jsiiProxy_ConditionalAccessPolicyGrantControlsOutputReference) validate
 	return nil
 }
 
+func (j *jsiiProxy_ConditionalAccessPolicyGrantControlsOutputReference) validateSetAuthenticationStrengthPolicyIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ConditionalAccessPolicyGrantControlsOutputReference) validateSetBuiltInControlsParameters(val *[]*string) error {
 	return nil
 }

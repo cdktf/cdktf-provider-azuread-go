@@ -12,9 +12,12 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/application_certificate azuread_application_certificate}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/application_certificate azuread_application_certificate}.
 type ApplicationCertificate interface {
 	cdktf.TerraformResource
+	ApplicationId() *string
+	SetApplicationId(val *string)
+	ApplicationIdInput() *string
 	ApplicationObjectId() *string
 	SetApplicationObjectId(val *string)
 	ApplicationObjectIdInput() *string
@@ -124,6 +127,8 @@ type ApplicationCertificate interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *ApplicationCertificateTimeouts)
+	ResetApplicationId()
+	ResetApplicationObjectId()
 	ResetEncoding()
 	ResetEndDate()
 	ResetEndDateRelative()
@@ -148,6 +153,26 @@ type ApplicationCertificate interface {
 // The jsii proxy struct for ApplicationCertificate
 type jsiiProxy_ApplicationCertificate struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_ApplicationCertificate) ApplicationId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"applicationId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationCertificate) ApplicationIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"applicationIdInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_ApplicationCertificate) ApplicationObjectId() *string {
@@ -511,7 +536,7 @@ func (j *jsiiProxy_ApplicationCertificate) ValueInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/application_certificate azuread_application_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/application_certificate azuread_application_certificate} Resource.
 func NewApplicationCertificate(scope constructs.Construct, id *string, config *ApplicationCertificateConfig) ApplicationCertificate {
 	_init_.Initialize()
 
@@ -529,7 +554,7 @@ func NewApplicationCertificate(scope constructs.Construct, id *string, config *A
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/application_certificate azuread_application_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/application_certificate azuread_application_certificate} Resource.
 func NewApplicationCertificate_Override(a ApplicationCertificate, scope constructs.Construct, id *string, config *ApplicationCertificateConfig) {
 	_init_.Initialize()
 
@@ -537,6 +562,17 @@ func NewApplicationCertificate_Override(a ApplicationCertificate, scope construc
 		"@cdktf/provider-azuread.applicationCertificate.ApplicationCertificate",
 		[]interface{}{scope, id, config},
 		a,
+	)
+}
+
+func (j *jsiiProxy_ApplicationCertificate)SetApplicationId(val *string) {
+	if err := j.validateSetApplicationIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"applicationId",
+		val,
 	)
 }
 
@@ -1033,6 +1069,22 @@ func (a *jsiiProxy_ApplicationCertificate) PutTimeouts(value *ApplicationCertifi
 		a,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_ApplicationCertificate) ResetApplicationId() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetApplicationId",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ApplicationCertificate) ResetApplicationObjectId() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetApplicationObjectId",
+		nil, // no parameters
 	)
 }
 

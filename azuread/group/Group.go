@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/group azuread_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/group azuread_group}.
 type Group interface {
 	cdktf.TerraformResource
 	AdministrativeUnitIds() *[]*string
@@ -947,7 +947,7 @@ func (j *jsiiProxy_Group) WritebackEnabledInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/group azuread_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/group azuread_group} Resource.
 func NewGroup(scope constructs.Construct, id *string, config *GroupConfig) Group {
 	_init_.Initialize()
 
@@ -965,7 +965,7 @@ func NewGroup(scope constructs.Construct, id *string, config *GroupConfig) Group
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/group azuread_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/group azuread_group} Resource.
 func NewGroup_Override(g Group, scope constructs.Construct, id *string, config *GroupConfig) {
 	_init_.Initialize()
 

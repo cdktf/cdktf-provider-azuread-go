@@ -87,6 +87,10 @@ func validateApplicationCertificate_IsTerraformResourceParameters(x interface{})
 	return nil
 }
 
+func (j *jsiiProxy_ApplicationCertificate) validateSetApplicationIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApplicationCertificate) validateSetApplicationObjectIdParameters(val *string) error {
 	return nil
 }

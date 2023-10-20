@@ -242,6 +242,14 @@ func validateApplicationPreAuthorized_IsTerraformResourceParameters(x interface{
 	return nil
 }
 
+func (j *jsiiProxy_ApplicationPreAuthorized) validateSetApplicationIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ApplicationPreAuthorized) validateSetApplicationObjectIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -251,6 +259,14 @@ func (j *jsiiProxy_ApplicationPreAuthorized) validateSetApplicationObjectIdParam
 }
 
 func (j *jsiiProxy_ApplicationPreAuthorized) validateSetAuthorizedAppIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ApplicationPreAuthorized) validateSetAuthorizedClientIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

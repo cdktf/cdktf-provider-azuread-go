@@ -87,6 +87,10 @@ func validateApplicationPassword_IsTerraformResourceParameters(x interface{}) er
 	return nil
 }
 
+func (j *jsiiProxy_ApplicationPassword) validateSetApplicationIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApplicationPassword) validateSetApplicationObjectIdParameters(val *string) error {
 	return nil
 }

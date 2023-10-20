@@ -13,6 +13,9 @@ import (
 
 type ConditionalAccessPolicyGrantControlsOutputReference interface {
 	cdktf.ComplexObject
+	AuthenticationStrengthPolicyId() *string
+	SetAuthenticationStrengthPolicyId(val *string)
+	AuthenticationStrengthPolicyIdInput() *string
 	BuiltInControls() *[]*string
 	SetBuiltInControls(val *[]*string)
 	BuiltInControlsInput() *[]*string
@@ -76,6 +79,7 @@ type ConditionalAccessPolicyGrantControlsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetAuthenticationStrengthPolicyId()
 	ResetBuiltInControls()
 	ResetCustomAuthenticationFactors()
 	ResetTermsOfUse()
@@ -92,6 +96,26 @@ type ConditionalAccessPolicyGrantControlsOutputReference interface {
 // The jsii proxy struct for ConditionalAccessPolicyGrantControlsOutputReference
 type jsiiProxy_ConditionalAccessPolicyGrantControlsOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_ConditionalAccessPolicyGrantControlsOutputReference) AuthenticationStrengthPolicyId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"authenticationStrengthPolicyId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConditionalAccessPolicyGrantControlsOutputReference) AuthenticationStrengthPolicyIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"authenticationStrengthPolicyIdInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_ConditionalAccessPolicyGrantControlsOutputReference) BuiltInControls() *[]*string {
@@ -269,6 +293,17 @@ func NewConditionalAccessPolicyGrantControlsOutputReference_Override(c Condition
 		"@cdktf/provider-azuread.conditionalAccessPolicy.ConditionalAccessPolicyGrantControlsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
+	)
+}
+
+func (j *jsiiProxy_ConditionalAccessPolicyGrantControlsOutputReference)SetAuthenticationStrengthPolicyId(val *string) {
+	if err := j.validateSetAuthenticationStrengthPolicyIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"authenticationStrengthPolicyId",
+		val,
 	)
 }
 
@@ -555,6 +590,14 @@ func (c *jsiiProxy_ConditionalAccessPolicyGrantControlsOutputReference) Interpol
 	)
 
 	return returns
+}
+
+func (c *jsiiProxy_ConditionalAccessPolicyGrantControlsOutputReference) ResetAuthenticationStrengthPolicyId() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetAuthenticationStrengthPolicyId",
+		nil, // no parameters
+	)
 }
 
 func (c *jsiiProxy_ConditionalAccessPolicyGrantControlsOutputReference) ResetBuiltInControls() {

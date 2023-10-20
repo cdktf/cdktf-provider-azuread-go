@@ -463,6 +463,8 @@ func init() {
 		"@cdktf/provider-azuread.conditionalAccessPolicy.ConditionalAccessPolicyGrantControlsOutputReference",
 		reflect.TypeOf((*ConditionalAccessPolicyGrantControlsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "authenticationStrengthPolicyId", GoGetter: "AuthenticationStrengthPolicyId"},
+			_jsii_.MemberProperty{JsiiProperty: "authenticationStrengthPolicyIdInput", GoGetter: "AuthenticationStrengthPolicyIdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "builtInControls", GoGetter: "BuiltInControls"},
 			_jsii_.MemberProperty{JsiiProperty: "builtInControlsInput", GoGetter: "BuiltInControlsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -486,6 +488,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "operator", GoGetter: "Operator"},
 			_jsii_.MemberProperty{JsiiProperty: "operatorInput", GoGetter: "OperatorInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAuthenticationStrengthPolicyId", GoMethod: "ResetAuthenticationStrengthPolicyId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBuiltInControls", GoMethod: "ResetBuiltInControls"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCustomAuthenticationFactors", GoMethod: "ResetCustomAuthenticationFactors"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTermsOfUse", GoMethod: "ResetTermsOfUse"},

@@ -87,11 +87,19 @@ func validateApplicationPreAuthorized_IsTerraformResourceParameters(x interface{
 	return nil
 }
 
+func (j *jsiiProxy_ApplicationPreAuthorized) validateSetApplicationIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApplicationPreAuthorized) validateSetApplicationObjectIdParameters(val *string) error {
 	return nil
 }
 
 func (j *jsiiProxy_ApplicationPreAuthorized) validateSetAuthorizedAppIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ApplicationPreAuthorized) validateSetAuthorizedClientIdParameters(val *string) error {
 	return nil
 }
 

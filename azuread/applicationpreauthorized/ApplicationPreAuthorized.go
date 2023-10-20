@@ -12,15 +12,21 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/application_pre_authorized azuread_application_pre_authorized}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/application_pre_authorized azuread_application_pre_authorized}.
 type ApplicationPreAuthorized interface {
 	cdktf.TerraformResource
+	ApplicationId() *string
+	SetApplicationId(val *string)
+	ApplicationIdInput() *string
 	ApplicationObjectId() *string
 	SetApplicationObjectId(val *string)
 	ApplicationObjectIdInput() *string
 	AuthorizedAppId() *string
 	SetAuthorizedAppId(val *string)
 	AuthorizedAppIdInput() *string
+	AuthorizedClientId() *string
+	SetAuthorizedClientId(val *string)
+	AuthorizedClientIdInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -109,6 +115,10 @@ type ApplicationPreAuthorized interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *ApplicationPreAuthorizedTimeouts)
+	ResetApplicationId()
+	ResetApplicationObjectId()
+	ResetAuthorizedAppId()
+	ResetAuthorizedClientId()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -127,6 +137,26 @@ type ApplicationPreAuthorized interface {
 // The jsii proxy struct for ApplicationPreAuthorized
 type jsiiProxy_ApplicationPreAuthorized struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_ApplicationPreAuthorized) ApplicationId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"applicationId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationPreAuthorized) ApplicationIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"applicationIdInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_ApplicationPreAuthorized) ApplicationObjectId() *string {
@@ -164,6 +194,26 @@ func (j *jsiiProxy_ApplicationPreAuthorized) AuthorizedAppIdInput() *string {
 	_jsii_.Get(
 		j,
 		"authorizedAppIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationPreAuthorized) AuthorizedClientId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"authorizedClientId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationPreAuthorized) AuthorizedClientIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"authorizedClientIdInput",
 		&returns,
 	)
 	return returns
@@ -390,7 +440,7 @@ func (j *jsiiProxy_ApplicationPreAuthorized) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/application_pre_authorized azuread_application_pre_authorized} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/application_pre_authorized azuread_application_pre_authorized} Resource.
 func NewApplicationPreAuthorized(scope constructs.Construct, id *string, config *ApplicationPreAuthorizedConfig) ApplicationPreAuthorized {
 	_init_.Initialize()
 
@@ -408,7 +458,7 @@ func NewApplicationPreAuthorized(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/application_pre_authorized azuread_application_pre_authorized} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/application_pre_authorized azuread_application_pre_authorized} Resource.
 func NewApplicationPreAuthorized_Override(a ApplicationPreAuthorized, scope constructs.Construct, id *string, config *ApplicationPreAuthorizedConfig) {
 	_init_.Initialize()
 
@@ -416,6 +466,17 @@ func NewApplicationPreAuthorized_Override(a ApplicationPreAuthorized, scope cons
 		"@cdktf/provider-azuread.applicationPreAuthorized.ApplicationPreAuthorized",
 		[]interface{}{scope, id, config},
 		a,
+	)
+}
+
+func (j *jsiiProxy_ApplicationPreAuthorized)SetApplicationId(val *string) {
+	if err := j.validateSetApplicationIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"applicationId",
+		val,
 	)
 }
 
@@ -437,6 +498,17 @@ func (j *jsiiProxy_ApplicationPreAuthorized)SetAuthorizedAppId(val *string) {
 	_jsii_.Set(
 		j,
 		"authorizedAppId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ApplicationPreAuthorized)SetAuthorizedClientId(val *string) {
+	if err := j.validateSetAuthorizedClientIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"authorizedClientId",
 		val,
 	)
 }
@@ -857,6 +929,38 @@ func (a *jsiiProxy_ApplicationPreAuthorized) PutTimeouts(value *ApplicationPreAu
 		a,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_ApplicationPreAuthorized) ResetApplicationId() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetApplicationId",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ApplicationPreAuthorized) ResetApplicationObjectId() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetApplicationObjectId",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ApplicationPreAuthorized) ResetAuthorizedAppId() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetAuthorizedAppId",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ApplicationPreAuthorized) ResetAuthorizedClientId() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetAuthorizedClientId",
+		nil, // no parameters
 	)
 }
 

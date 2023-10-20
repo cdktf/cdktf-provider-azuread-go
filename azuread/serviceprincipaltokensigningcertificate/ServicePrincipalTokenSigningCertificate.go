@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/service_principal_token_signing_certificate azuread_service_principal_token_signing_certificate}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/service_principal_token_signing_certificate azuread_service_principal_token_signing_certificate}.
 type ServicePrincipalTokenSigningCertificate interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -436,7 +436,7 @@ func (j *jsiiProxy_ServicePrincipalTokenSigningCertificate) Value() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/service_principal_token_signing_certificate azuread_service_principal_token_signing_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/service_principal_token_signing_certificate azuread_service_principal_token_signing_certificate} Resource.
 func NewServicePrincipalTokenSigningCertificate(scope constructs.Construct, id *string, config *ServicePrincipalTokenSigningCertificateConfig) ServicePrincipalTokenSigningCertificate {
 	_init_.Initialize()
 
@@ -454,7 +454,7 @@ func NewServicePrincipalTokenSigningCertificate(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/service_principal_token_signing_certificate azuread_service_principal_token_signing_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/service_principal_token_signing_certificate azuread_service_principal_token_signing_certificate} Resource.
 func NewServicePrincipalTokenSigningCertificate_Override(s ServicePrincipalTokenSigningCertificate, scope constructs.Construct, id *string, config *ServicePrincipalTokenSigningCertificateConfig) {
 	_init_.Initialize()
 

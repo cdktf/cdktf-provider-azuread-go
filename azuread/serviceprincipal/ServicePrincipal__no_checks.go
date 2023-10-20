@@ -115,6 +115,10 @@ func (j *jsiiProxy_ServicePrincipal) validateSetAppRoleAssignmentRequiredParamet
 	return nil
 }
 
+func (j *jsiiProxy_ServicePrincipal) validateSetClientIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ServicePrincipal) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

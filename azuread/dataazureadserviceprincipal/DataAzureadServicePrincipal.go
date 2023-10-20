@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/data-sources/service_principal azuread_service_principal}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/data-sources/service_principal azuread_service_principal}.
 type DataAzureadServicePrincipal interface {
 	cdktf.TerraformDataSource
 	AccountEnabled() cdktf.IResolvable
@@ -26,6 +26,9 @@ type DataAzureadServicePrincipal interface {
 	AppRoles() DataAzureadServicePrincipalAppRolesList
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	ClientId() *string
+	SetClientId(val *string)
+	ClientIdInput() *string
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
@@ -118,6 +121,7 @@ type DataAzureadServicePrincipal interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *DataAzureadServicePrincipalTimeouts)
 	ResetApplicationId()
+	ResetClientId()
 	ResetDisplayName()
 	ResetId()
 	ResetObjectId()
@@ -225,6 +229,26 @@ func (j *jsiiProxy_DataAzureadServicePrincipal) CdktfStack() cdktf.TerraformStac
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzureadServicePrincipal) ClientId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clientId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzureadServicePrincipal) ClientIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clientIdInput",
 		&returns,
 	)
 	return returns
@@ -621,7 +645,7 @@ func (j *jsiiProxy_DataAzureadServicePrincipal) Type() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/data-sources/service_principal azuread_service_principal} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/data-sources/service_principal azuread_service_principal} Data Source.
 func NewDataAzureadServicePrincipal(scope constructs.Construct, id *string, config *DataAzureadServicePrincipalConfig) DataAzureadServicePrincipal {
 	_init_.Initialize()
 
@@ -639,7 +663,7 @@ func NewDataAzureadServicePrincipal(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/data-sources/service_principal azuread_service_principal} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/data-sources/service_principal azuread_service_principal} Data Source.
 func NewDataAzureadServicePrincipal_Override(d DataAzureadServicePrincipal, scope constructs.Construct, id *string, config *DataAzureadServicePrincipalConfig) {
 	_init_.Initialize()
 
@@ -657,6 +681,17 @@ func (j *jsiiProxy_DataAzureadServicePrincipal)SetApplicationId(val *string) {
 	_jsii_.Set(
 		j,
 		"applicationId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAzureadServicePrincipal)SetClientId(val *string) {
+	if err := j.validateSetClientIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"clientId",
 		val,
 	)
 }
@@ -1040,6 +1075,14 @@ func (d *jsiiProxy_DataAzureadServicePrincipal) ResetApplicationId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetApplicationId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAzureadServicePrincipal) ResetClientId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetClientId",
 		nil, // no parameters
 	)
 }

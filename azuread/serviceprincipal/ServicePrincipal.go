@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/service_principal azuread_service_principal}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/service_principal azuread_service_principal}.
 type ServicePrincipal interface {
 	cdktf.TerraformResource
 	AccountEnabled() interface{}
@@ -32,6 +32,9 @@ type ServicePrincipal interface {
 	AppRoles() ServicePrincipalAppRolesList
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	ClientId() *string
+	SetClientId(val *string)
+	ClientIdInput() *string
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -161,7 +164,9 @@ type ServicePrincipal interface {
 	PutTimeouts(value *ServicePrincipalTimeouts)
 	ResetAccountEnabled()
 	ResetAlternativeNames()
+	ResetApplicationId()
 	ResetAppRoleAssignmentRequired()
+	ResetClientId()
 	ResetDescription()
 	ResetFeatures()
 	ResetFeatureTags()
@@ -308,6 +313,26 @@ func (j *jsiiProxy_ServicePrincipal) CdktfStack() cdktf.TerraformStack {
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ServicePrincipal) ClientId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clientId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ServicePrincipal) ClientIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clientIdInput",
 		&returns,
 	)
 	return returns
@@ -834,7 +859,7 @@ func (j *jsiiProxy_ServicePrincipal) UseExistingInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/service_principal azuread_service_principal} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/service_principal azuread_service_principal} Resource.
 func NewServicePrincipal(scope constructs.Construct, id *string, config *ServicePrincipalConfig) ServicePrincipal {
 	_init_.Initialize()
 
@@ -852,7 +877,7 @@ func NewServicePrincipal(scope constructs.Construct, id *string, config *Service
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/service_principal azuread_service_principal} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/service_principal azuread_service_principal} Resource.
 func NewServicePrincipal_Override(s ServicePrincipal, scope constructs.Construct, id *string, config *ServicePrincipalConfig) {
 	_init_.Initialize()
 
@@ -903,6 +928,17 @@ func (j *jsiiProxy_ServicePrincipal)SetAppRoleAssignmentRequired(val interface{}
 	_jsii_.Set(
 		j,
 		"appRoleAssignmentRequired",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ServicePrincipal)SetClientId(val *string) {
+	if err := j.validateSetClientIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"clientId",
 		val,
 	)
 }
@@ -1452,10 +1488,26 @@ func (s *jsiiProxy_ServicePrincipal) ResetAlternativeNames() {
 	)
 }
 
+func (s *jsiiProxy_ServicePrincipal) ResetApplicationId() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetApplicationId",
+		nil, // no parameters
+	)
+}
+
 func (s *jsiiProxy_ServicePrincipal) ResetAppRoleAssignmentRequired() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetAppRoleAssignmentRequired",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_ServicePrincipal) ResetClientId() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetClientId",
 		nil, // no parameters
 	)
 }

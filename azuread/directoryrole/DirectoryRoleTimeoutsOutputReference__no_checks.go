@@ -83,10 +83,6 @@ func (j *jsiiProxy_DirectoryRoleTimeoutsOutputReference) validateSetTerraformRes
 	return nil
 }
 
-func (j *jsiiProxy_DirectoryRoleTimeoutsOutputReference) validateSetUpdateParameters(val *string) error {
-	return nil
-}
-
 func validateNewDirectoryRoleTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }

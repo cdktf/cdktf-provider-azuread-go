@@ -17,6 +17,7 @@ type DataAzureadServicePrincipalsServicePrincipalsOutputReference interface {
 	ApplicationId() *string
 	ApplicationTenantId() *string
 	AppRoleAssignmentRequired() cdktf.IResolvable
+	ClientId() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -126,6 +127,16 @@ func (j *jsiiProxy_DataAzureadServicePrincipalsServicePrincipalsOutputReference)
 	_jsii_.Get(
 		j,
 		"appRoleAssignmentRequired",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzureadServicePrincipalsServicePrincipalsOutputReference) ClientId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clientId",
 		&returns,
 	)
 	return returns
