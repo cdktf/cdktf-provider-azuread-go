@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/access_package_resource_package_association azuread_access_package_resource_package_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.1/docs/resources/access_package_resource_package_association azuread_access_package_resource_package_association}.
 type AccessPackageResourcePackageAssociation interface {
 	cdktf.TerraformResource
 	AccessPackageId() *string
@@ -391,7 +391,7 @@ func (j *jsiiProxy_AccessPackageResourcePackageAssociation) TimeoutsInput() inte
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/access_package_resource_package_association azuread_access_package_resource_package_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.1/docs/resources/access_package_resource_package_association azuread_access_package_resource_package_association} Resource.
 func NewAccessPackageResourcePackageAssociation(scope constructs.Construct, id *string, config *AccessPackageResourcePackageAssociationConfig) AccessPackageResourcePackageAssociation {
 	_init_.Initialize()
 
@@ -409,7 +409,7 @@ func NewAccessPackageResourcePackageAssociation(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/access_package_resource_package_association azuread_access_package_resource_package_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.1/docs/resources/access_package_resource_package_association azuread_access_package_resource_package_association} Resource.
 func NewAccessPackageResourcePackageAssociation_Override(a AccessPackageResourcePackageAssociation, scope constructs.Construct, id *string, config *AccessPackageResourcePackageAssociationConfig) {
 	_init_.Initialize()
 

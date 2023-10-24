@@ -5,7 +5,7 @@ package dataazureadapplication
 
 
 type DataAzureadApplicationTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/data-sources/application#read DataAzureadApplication#read}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.1/docs/data-sources/application#read DataAzureadApplication#read}.
 	Read *string `field:"optional" json:"read" yaml:"read"`
 }
 

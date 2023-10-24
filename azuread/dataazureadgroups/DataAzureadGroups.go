@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/data-sources/groups azuread_groups}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.1/docs/data-sources/groups azuread_groups}.
 type DataAzureadGroups interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -453,7 +453,7 @@ func (j *jsiiProxy_DataAzureadGroups) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/data-sources/groups azuread_groups} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.1/docs/data-sources/groups azuread_groups} Data Source.
 func NewDataAzureadGroups(scope constructs.Construct, id *string, config *DataAzureadGroupsConfig) DataAzureadGroups {
 	_init_.Initialize()
 
@@ -471,7 +471,7 @@ func NewDataAzureadGroups(scope constructs.Construct, id *string, config *DataAz
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/data-sources/groups azuread_groups} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.1/docs/data-sources/groups azuread_groups} Data Source.
 func NewDataAzureadGroups_Override(d DataAzureadGroups, scope constructs.Construct, id *string, config *DataAzureadGroupsConfig) {
 	_init_.Initialize()
 

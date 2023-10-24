@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/named_location azuread_named_location}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.1/docs/resources/named_location azuread_named_location}.
 type NamedLocation interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -392,7 +392,7 @@ func (j *jsiiProxy_NamedLocation) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/named_location azuread_named_location} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.1/docs/resources/named_location azuread_named_location} Resource.
 func NewNamedLocation(scope constructs.Construct, id *string, config *NamedLocationConfig) NamedLocation {
 	_init_.Initialize()
 
@@ -410,7 +410,7 @@ func NewNamedLocation(scope constructs.Construct, id *string, config *NamedLocat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/named_location azuread_named_location} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.1/docs/resources/named_location azuread_named_location} Resource.
 func NewNamedLocation_Override(n NamedLocation, scope constructs.Construct, id *string, config *NamedLocationConfig) {
 	_init_.Initialize()
 

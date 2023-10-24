@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/application_federated_identity_credential azuread_application_federated_identity_credential}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.1/docs/resources/application_federated_identity_credential azuread_application_federated_identity_credential}.
 type ApplicationFederatedIdentityCredential interface {
 	cdktf.TerraformResource
 	ApplicationId() *string
@@ -496,7 +496,7 @@ func (j *jsiiProxy_ApplicationFederatedIdentityCredential) TimeoutsInput() inter
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/application_federated_identity_credential azuread_application_federated_identity_credential} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.1/docs/resources/application_federated_identity_credential azuread_application_federated_identity_credential} Resource.
 func NewApplicationFederatedIdentityCredential(scope constructs.Construct, id *string, config *ApplicationFederatedIdentityCredentialConfig) ApplicationFederatedIdentityCredential {
 	_init_.Initialize()
 
@@ -514,7 +514,7 @@ func NewApplicationFederatedIdentityCredential(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/application_federated_identity_credential azuread_application_federated_identity_credential} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.1/docs/resources/application_federated_identity_credential azuread_application_federated_identity_credential} Resource.
 func NewApplicationFederatedIdentityCredential_Override(a ApplicationFederatedIdentityCredential, scope constructs.Construct, id *string, config *ApplicationFederatedIdentityCredentialConfig) {
 	_init_.Initialize()
 
