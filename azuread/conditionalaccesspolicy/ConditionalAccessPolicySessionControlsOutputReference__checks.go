@@ -238,6 +238,22 @@ func (j *jsiiProxy_ConditionalAccessPolicySessionControlsOutputReference) valida
 	return nil
 }
 
+func (j *jsiiProxy_ConditionalAccessPolicySessionControlsOutputReference) validateSetSignInFrequencyAuthenticationTypeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ConditionalAccessPolicySessionControlsOutputReference) validateSetSignInFrequencyIntervalParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ConditionalAccessPolicySessionControlsOutputReference) validateSetSignInFrequencyPeriodParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.1/docs/resources/service_principal_password azuread_service_principal_password}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.45.0/docs/resources/service_principal_password azuread_service_principal_password}.
 type ServicePrincipalPassword interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -486,7 +486,7 @@ func (j *jsiiProxy_ServicePrincipalPassword) Value() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.1/docs/resources/service_principal_password azuread_service_principal_password} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.45.0/docs/resources/service_principal_password azuread_service_principal_password} Resource.
 func NewServicePrincipalPassword(scope constructs.Construct, id *string, config *ServicePrincipalPasswordConfig) ServicePrincipalPassword {
 	_init_.Initialize()
 
@@ -504,7 +504,7 @@ func NewServicePrincipalPassword(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.1/docs/resources/service_principal_password azuread_service_principal_password} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.45.0/docs/resources/service_principal_password azuread_service_principal_password} Resource.
 func NewServicePrincipalPassword_Override(s ServicePrincipalPassword, scope constructs.Construct, id *string, config *ServicePrincipalPasswordConfig) {
 	_init_.Initialize()
 

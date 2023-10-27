@@ -31,6 +31,8 @@ type ConditionalAccessPolicyConditionsUsersOutputReference interface {
 	ExcludedGroups() *[]*string
 	SetExcludedGroups(val *[]*string)
 	ExcludedGroupsInput() *[]*string
+	ExcludedGuestsOrExternalUsers() ConditionalAccessPolicyConditionsUsersExcludedGuestsOrExternalUsersList
+	ExcludedGuestsOrExternalUsersInput() interface{}
 	ExcludedRoles() *[]*string
 	SetExcludedRoles(val *[]*string)
 	ExcludedRolesInput() *[]*string
@@ -42,6 +44,8 @@ type ConditionalAccessPolicyConditionsUsersOutputReference interface {
 	IncludedGroups() *[]*string
 	SetIncludedGroups(val *[]*string)
 	IncludedGroupsInput() *[]*string
+	IncludedGuestsOrExternalUsers() ConditionalAccessPolicyConditionsUsersIncludedGuestsOrExternalUsersList
+	IncludedGuestsOrExternalUsersInput() interface{}
 	IncludedRoles() *[]*string
 	SetIncludedRoles(val *[]*string)
 	IncludedRolesInput() *[]*string
@@ -82,10 +86,14 @@ type ConditionalAccessPolicyConditionsUsersOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutExcludedGuestsOrExternalUsers(value interface{})
+	PutIncludedGuestsOrExternalUsers(value interface{})
 	ResetExcludedGroups()
+	ResetExcludedGuestsOrExternalUsers()
 	ResetExcludedRoles()
 	ResetExcludedUsers()
 	ResetIncludedGroups()
+	ResetIncludedGuestsOrExternalUsers()
 	ResetIncludedRoles()
 	ResetIncludedUsers()
 	// Produce the Token's value at resolution time.
@@ -148,6 +156,26 @@ func (j *jsiiProxy_ConditionalAccessPolicyConditionsUsersOutputReference) Exclud
 	_jsii_.Get(
 		j,
 		"excludedGroupsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConditionalAccessPolicyConditionsUsersOutputReference) ExcludedGuestsOrExternalUsers() ConditionalAccessPolicyConditionsUsersExcludedGuestsOrExternalUsersList {
+	var returns ConditionalAccessPolicyConditionsUsersExcludedGuestsOrExternalUsersList
+	_jsii_.Get(
+		j,
+		"excludedGuestsOrExternalUsers",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConditionalAccessPolicyConditionsUsersOutputReference) ExcludedGuestsOrExternalUsersInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"excludedGuestsOrExternalUsersInput",
 		&returns,
 	)
 	return returns
@@ -218,6 +246,26 @@ func (j *jsiiProxy_ConditionalAccessPolicyConditionsUsersOutputReference) Includ
 	_jsii_.Get(
 		j,
 		"includedGroupsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConditionalAccessPolicyConditionsUsersOutputReference) IncludedGuestsOrExternalUsers() ConditionalAccessPolicyConditionsUsersIncludedGuestsOrExternalUsersList {
+	var returns ConditionalAccessPolicyConditionsUsersIncludedGuestsOrExternalUsersList
+	_jsii_.Get(
+		j,
+		"includedGuestsOrExternalUsers",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConditionalAccessPolicyConditionsUsersOutputReference) IncludedGuestsOrExternalUsersInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"includedGuestsOrExternalUsersInput",
 		&returns,
 	)
 	return returns
@@ -628,10 +676,40 @@ func (c *jsiiProxy_ConditionalAccessPolicyConditionsUsersOutputReference) Interp
 	return returns
 }
 
+func (c *jsiiProxy_ConditionalAccessPolicyConditionsUsersOutputReference) PutExcludedGuestsOrExternalUsers(value interface{}) {
+	if err := c.validatePutExcludedGuestsOrExternalUsersParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putExcludedGuestsOrExternalUsers",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_ConditionalAccessPolicyConditionsUsersOutputReference) PutIncludedGuestsOrExternalUsers(value interface{}) {
+	if err := c.validatePutIncludedGuestsOrExternalUsersParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putIncludedGuestsOrExternalUsers",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ConditionalAccessPolicyConditionsUsersOutputReference) ResetExcludedGroups() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetExcludedGroups",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ConditionalAccessPolicyConditionsUsersOutputReference) ResetExcludedGuestsOrExternalUsers() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetExcludedGuestsOrExternalUsers",
 		nil, // no parameters
 	)
 }
@@ -656,6 +734,14 @@ func (c *jsiiProxy_ConditionalAccessPolicyConditionsUsersOutputReference) ResetI
 	_jsii_.InvokeVoid(
 		c,
 		"resetIncludedGroups",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ConditionalAccessPolicyConditionsUsersOutputReference) ResetIncludedGuestsOrExternalUsers() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetIncludedGuestsOrExternalUsers",
 		nil, // no parameters
 	)
 }

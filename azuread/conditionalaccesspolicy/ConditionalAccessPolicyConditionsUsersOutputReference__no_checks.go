@@ -47,6 +47,14 @@ func (c *jsiiProxy_ConditionalAccessPolicyConditionsUsersOutputReference) valida
 	return nil
 }
 
+func (c *jsiiProxy_ConditionalAccessPolicyConditionsUsersOutputReference) validatePutExcludedGuestsOrExternalUsersParameters(value interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_ConditionalAccessPolicyConditionsUsersOutputReference) validatePutIncludedGuestsOrExternalUsersParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_ConditionalAccessPolicyConditionsUsersOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

@@ -46,7 +46,13 @@ type ConditionalAccessPolicySessionControlsOutputReference interface {
 	PersistentBrowserModeInput() *string
 	SignInFrequency() *float64
 	SetSignInFrequency(val *float64)
+	SignInFrequencyAuthenticationType() *string
+	SetSignInFrequencyAuthenticationType(val *string)
+	SignInFrequencyAuthenticationTypeInput() *string
 	SignInFrequencyInput() *float64
+	SignInFrequencyInterval() *string
+	SetSignInFrequencyInterval(val *string)
+	SignInFrequencyIntervalInput() *string
 	SignInFrequencyPeriod() *string
 	SetSignInFrequencyPeriod(val *string)
 	SignInFrequencyPeriodInput() *string
@@ -87,6 +93,8 @@ type ConditionalAccessPolicySessionControlsOutputReference interface {
 	ResetDisableResilienceDefaults()
 	ResetPersistentBrowserMode()
 	ResetSignInFrequency()
+	ResetSignInFrequencyAuthenticationType()
+	ResetSignInFrequencyInterval()
 	ResetSignInFrequencyPeriod()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -243,11 +251,51 @@ func (j *jsiiProxy_ConditionalAccessPolicySessionControlsOutputReference) SignIn
 	return returns
 }
 
+func (j *jsiiProxy_ConditionalAccessPolicySessionControlsOutputReference) SignInFrequencyAuthenticationType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"signInFrequencyAuthenticationType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConditionalAccessPolicySessionControlsOutputReference) SignInFrequencyAuthenticationTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"signInFrequencyAuthenticationTypeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ConditionalAccessPolicySessionControlsOutputReference) SignInFrequencyInput() *float64 {
 	var returns *float64
 	_jsii_.Get(
 		j,
 		"signInFrequencyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConditionalAccessPolicySessionControlsOutputReference) SignInFrequencyInterval() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"signInFrequencyInterval",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConditionalAccessPolicySessionControlsOutputReference) SignInFrequencyIntervalInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"signInFrequencyIntervalInput",
 		&returns,
 	)
 	return returns
@@ -405,6 +453,28 @@ func (j *jsiiProxy_ConditionalAccessPolicySessionControlsOutputReference)SetSign
 	_jsii_.Set(
 		j,
 		"signInFrequency",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ConditionalAccessPolicySessionControlsOutputReference)SetSignInFrequencyAuthenticationType(val *string) {
+	if err := j.validateSetSignInFrequencyAuthenticationTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"signInFrequencyAuthenticationType",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ConditionalAccessPolicySessionControlsOutputReference)SetSignInFrequencyInterval(val *string) {
+	if err := j.validateSetSignInFrequencyIntervalParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"signInFrequencyInterval",
 		val,
 	)
 }
@@ -664,6 +734,22 @@ func (c *jsiiProxy_ConditionalAccessPolicySessionControlsOutputReference) ResetS
 	_jsii_.InvokeVoid(
 		c,
 		"resetSignInFrequency",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ConditionalAccessPolicySessionControlsOutputReference) ResetSignInFrequencyAuthenticationType() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetSignInFrequencyAuthenticationType",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ConditionalAccessPolicySessionControlsOutputReference) ResetSignInFrequencyInterval() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetSignInFrequencyInterval",
 		nil, // no parameters
 	)
 }

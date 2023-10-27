@@ -83,6 +83,14 @@ func (j *jsiiProxy_ConditionalAccessPolicySessionControlsOutputReference) valida
 	return nil
 }
 
+func (j *jsiiProxy_ConditionalAccessPolicySessionControlsOutputReference) validateSetSignInFrequencyAuthenticationTypeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ConditionalAccessPolicySessionControlsOutputReference) validateSetSignInFrequencyIntervalParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ConditionalAccessPolicySessionControlsOutputReference) validateSetSignInFrequencyPeriodParameters(val *string) error {
 	return nil
 }

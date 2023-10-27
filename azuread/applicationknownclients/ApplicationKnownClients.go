@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.1/docs/resources/application_known_clients azuread_application_known_clients}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.45.0/docs/resources/application_known_clients azuread_application_known_clients}.
 type ApplicationKnownClients interface {
 	cdktf.TerraformResource
 	ApplicationId() *string
@@ -367,7 +367,7 @@ func (j *jsiiProxy_ApplicationKnownClients) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.1/docs/resources/application_known_clients azuread_application_known_clients} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.45.0/docs/resources/application_known_clients azuread_application_known_clients} Resource.
 func NewApplicationKnownClients(scope constructs.Construct, id *string, config *ApplicationKnownClientsConfig) ApplicationKnownClients {
 	_init_.Initialize()
 
@@ -385,7 +385,7 @@ func NewApplicationKnownClients(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.1/docs/resources/application_known_clients azuread_application_known_clients} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.45.0/docs/resources/application_known_clients azuread_application_known_clients} Resource.
 func NewApplicationKnownClients_Override(a ApplicationKnownClients, scope constructs.Construct, id *string, config *ApplicationKnownClientsConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.1/docs/resources/application_fallback_public_client azuread_application_fallback_public_client}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.45.0/docs/resources/application_fallback_public_client azuread_application_fallback_public_client}.
 type ApplicationFallbackPublicClient interface {
 	cdktf.TerraformResource
 	ApplicationId() *string
@@ -368,7 +368,7 @@ func (j *jsiiProxy_ApplicationFallbackPublicClient) TimeoutsInput() interface{} 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.1/docs/resources/application_fallback_public_client azuread_application_fallback_public_client} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.45.0/docs/resources/application_fallback_public_client azuread_application_fallback_public_client} Resource.
 func NewApplicationFallbackPublicClient(scope constructs.Construct, id *string, config *ApplicationFallbackPublicClientConfig) ApplicationFallbackPublicClient {
 	_init_.Initialize()
 
@@ -386,7 +386,7 @@ func NewApplicationFallbackPublicClient(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.1/docs/resources/application_fallback_public_client azuread_application_fallback_public_client} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.45.0/docs/resources/application_fallback_public_client azuread_application_fallback_public_client} Resource.
 func NewApplicationFallbackPublicClient_Override(a ApplicationFallbackPublicClient, scope constructs.Construct, id *string, config *ApplicationFallbackPublicClientConfig) {
 	_init_.Initialize()
 
