@@ -5,7 +5,7 @@ package dataazureadnamedlocation
 
 
 type DataAzureadNamedLocationTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.45.0/docs/data-sources/named_location#read DataAzureadNamedLocation#read}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/data-sources/named_location#read DataAzureadNamedLocation#read}.
 	Read *string `field:"optional" json:"read" yaml:"read"`
 }
 

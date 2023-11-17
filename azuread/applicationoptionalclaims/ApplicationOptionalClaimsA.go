@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.45.0/docs/resources/application_optional_claims azuread_application_optional_claims}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/application_optional_claims azuread_application_optional_claims}.
 type ApplicationOptionalClaimsA interface {
 	cdktf.TerraformResource
 	AccessToken() ApplicationOptionalClaimsAccessTokenAList
@@ -416,7 +416,7 @@ func (j *jsiiProxy_ApplicationOptionalClaimsA) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.45.0/docs/resources/application_optional_claims azuread_application_optional_claims} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/application_optional_claims azuread_application_optional_claims} Resource.
 func NewApplicationOptionalClaimsA(scope constructs.Construct, id *string, config *ApplicationOptionalClaimsAConfig) ApplicationOptionalClaimsA {
 	_init_.Initialize()
 
@@ -434,7 +434,7 @@ func NewApplicationOptionalClaimsA(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.45.0/docs/resources/application_optional_claims azuread_application_optional_claims} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/application_optional_claims azuread_application_optional_claims} Resource.
 func NewApplicationOptionalClaimsA_Override(a ApplicationOptionalClaimsA, scope constructs.Construct, id *string, config *ApplicationOptionalClaimsAConfig) {
 	_init_.Initialize()
 

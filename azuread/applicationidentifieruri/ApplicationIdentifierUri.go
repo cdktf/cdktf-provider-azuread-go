@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.45.0/docs/resources/application_identifier_uri azuread_application_identifier_uri}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/application_identifier_uri azuread_application_identifier_uri}.
 type ApplicationIdentifierUri interface {
 	cdktf.TerraformResource
 	ApplicationId() *string
@@ -367,7 +367,7 @@ func (j *jsiiProxy_ApplicationIdentifierUri) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.45.0/docs/resources/application_identifier_uri azuread_application_identifier_uri} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/application_identifier_uri azuread_application_identifier_uri} Resource.
 func NewApplicationIdentifierUri(scope constructs.Construct, id *string, config *ApplicationIdentifierUriConfig) ApplicationIdentifierUri {
 	_init_.Initialize()
 
@@ -385,7 +385,7 @@ func NewApplicationIdentifierUri(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.45.0/docs/resources/application_identifier_uri azuread_application_identifier_uri} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/application_identifier_uri azuread_application_identifier_uri} Resource.
 func NewApplicationIdentifierUri_Override(a ApplicationIdentifierUri, scope constructs.Construct, id *string, config *ApplicationIdentifierUriConfig) {
 	_init_.Initialize()
 

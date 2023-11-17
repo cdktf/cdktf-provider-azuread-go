@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.45.0/docs/resources/synchronization_secret azuread_synchronization_secret}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/synchronization_secret azuread_synchronization_secret}.
 type SynchronizationSecret interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -368,7 +368,7 @@ func (j *jsiiProxy_SynchronizationSecret) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.45.0/docs/resources/synchronization_secret azuread_synchronization_secret} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/synchronization_secret azuread_synchronization_secret} Resource.
 func NewSynchronizationSecret(scope constructs.Construct, id *string, config *SynchronizationSecretConfig) SynchronizationSecret {
 	_init_.Initialize()
 
@@ -386,7 +386,7 @@ func NewSynchronizationSecret(scope constructs.Construct, id *string, config *Sy
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.45.0/docs/resources/synchronization_secret azuread_synchronization_secret} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/synchronization_secret azuread_synchronization_secret} Resource.
 func NewSynchronizationSecret_Override(s SynchronizationSecret, scope constructs.Construct, id *string, config *SynchronizationSecretConfig) {
 	_init_.Initialize()
 

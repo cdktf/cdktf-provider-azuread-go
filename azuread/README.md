@@ -1,6 +1,8 @@
-# Terraform CDK azuread Provider ~> 2.0
+# Terraform CDK azuread Provider tracks ~> 2.0
 
 This repo builds and publishes the Terraform azuread Provider bindings for [CDK for Terraform](https://cdk.tf).
+
+Is based directly on azuread 2.46.0
 
 ## Available Packages
 
@@ -59,7 +61,7 @@ This project is explicitly not tracking the Terraform azuread Provider version 1
 These are the upstream dependencies:
 
 * [Terraform CDK](https://cdk.tf)
-* [Terraform azuread Provider](https://registry.terraform.io/providers/hashicorp/azuread/2.0.0)
+* [Terraform azuread Provider](https://registry.terraform.io/providers/hashicorp/azuread/2.46.0)
 
   * This links to the minimum version being tracked, you can find the latest released version [in our releases](https://github.com/cdktf/cdktf-provider-azuread/releases)
 * [Terraform Engine](https://terraform.io)
