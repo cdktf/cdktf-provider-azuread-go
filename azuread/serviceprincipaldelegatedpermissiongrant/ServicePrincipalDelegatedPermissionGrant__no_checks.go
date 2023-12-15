@@ -59,7 +59,15 @@ func (s *jsiiProxy_ServicePrincipalDelegatedPermissionGrant) validateInterpolati
 	return nil
 }
 
+func (s *jsiiProxy_ServicePrincipalDelegatedPermissionGrant) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_ServicePrincipalDelegatedPermissionGrant) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_ServicePrincipalDelegatedPermissionGrant) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

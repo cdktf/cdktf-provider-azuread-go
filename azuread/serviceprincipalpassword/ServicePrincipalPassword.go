@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/service_principal_password azuread_service_principal_password}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/service_principal_password azuread_service_principal_password}.
 type ServicePrincipalPassword interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -110,12 +110,22 @@ type ServicePrincipalPassword interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -486,7 +496,7 @@ func (j *jsiiProxy_ServicePrincipalPassword) Value() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/service_principal_password azuread_service_principal_password} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/service_principal_password azuread_service_principal_password} Resource.
 func NewServicePrincipalPassword(scope constructs.Construct, id *string, config *ServicePrincipalPasswordConfig) ServicePrincipalPassword {
 	_init_.Initialize()
 
@@ -504,7 +514,7 @@ func NewServicePrincipalPassword(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/service_principal_password azuread_service_principal_password} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/service_principal_password azuread_service_principal_password} Resource.
 func NewServicePrincipalPassword_Override(s ServicePrincipalPassword, scope constructs.Construct, id *string, config *ServicePrincipalPasswordConfig) {
 	_init_.Initialize()
 
@@ -929,6 +939,19 @@ func (s *jsiiProxy_ServicePrincipalPassword) GetStringMapAttribute(terraformAttr
 	return returns
 }
 
+func (s *jsiiProxy_ServicePrincipalPassword) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		s,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (s *jsiiProxy_ServicePrincipalPassword) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := s.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -956,6 +979,17 @@ func (s *jsiiProxy_ServicePrincipalPassword) InterpolationForAttribute(terraform
 	return returns
 }
 
+func (s *jsiiProxy_ServicePrincipalPassword) MoveFromId(id *string) {
+	if err := s.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (s *jsiiProxy_ServicePrincipalPassword) MoveTo(moveTarget *string, index interface{}) {
 	if err := s.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -964,6 +998,17 @@ func (s *jsiiProxy_ServicePrincipalPassword) MoveTo(moveTarget *string, index in
 		s,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (s *jsiiProxy_ServicePrincipalPassword) MoveToId(id *string) {
+	if err := s.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

@@ -59,7 +59,15 @@ func (c *jsiiProxy_ClaimsMappingPolicy) validateInterpolationForAttributeParamet
 	return nil
 }
 
+func (c *jsiiProxy_ClaimsMappingPolicy) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ClaimsMappingPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_ClaimsMappingPolicy) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

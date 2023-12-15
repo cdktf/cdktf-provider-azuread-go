@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/directory_role_assignment azuread_directory_role_assignment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/directory_role_assignment azuread_directory_role_assignment}.
 type DirectoryRoleAssignment interface {
 	cdktf.TerraformResource
 	AppScopeId() *string
@@ -108,12 +108,22 @@ type DirectoryRoleAssignment interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -463,7 +473,7 @@ func (j *jsiiProxy_DirectoryRoleAssignment) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/directory_role_assignment azuread_directory_role_assignment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/directory_role_assignment azuread_directory_role_assignment} Resource.
 func NewDirectoryRoleAssignment(scope constructs.Construct, id *string, config *DirectoryRoleAssignmentConfig) DirectoryRoleAssignment {
 	_init_.Initialize()
 
@@ -481,7 +491,7 @@ func NewDirectoryRoleAssignment(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/directory_role_assignment azuread_directory_role_assignment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/directory_role_assignment azuread_directory_role_assignment} Resource.
 func NewDirectoryRoleAssignment_Override(d DirectoryRoleAssignment, scope constructs.Construct, id *string, config *DirectoryRoleAssignmentConfig) {
 	_init_.Initialize()
 
@@ -906,6 +916,19 @@ func (d *jsiiProxy_DirectoryRoleAssignment) GetStringMapAttribute(terraformAttri
 	return returns
 }
 
+func (d *jsiiProxy_DirectoryRoleAssignment) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		d,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (d *jsiiProxy_DirectoryRoleAssignment) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := d.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -933,6 +956,17 @@ func (d *jsiiProxy_DirectoryRoleAssignment) InterpolationForAttribute(terraformA
 	return returns
 }
 
+func (d *jsiiProxy_DirectoryRoleAssignment) MoveFromId(id *string) {
+	if err := d.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (d *jsiiProxy_DirectoryRoleAssignment) MoveTo(moveTarget *string, index interface{}) {
 	if err := d.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -941,6 +975,17 @@ func (d *jsiiProxy_DirectoryRoleAssignment) MoveTo(moveTarget *string, index int
 		d,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (d *jsiiProxy_DirectoryRoleAssignment) MoveToId(id *string) {
+	if err := d.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

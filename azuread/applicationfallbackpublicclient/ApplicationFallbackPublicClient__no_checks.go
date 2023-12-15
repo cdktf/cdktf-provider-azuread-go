@@ -59,7 +59,15 @@ func (a *jsiiProxy_ApplicationFallbackPublicClient) validateInterpolationForAttr
 	return nil
 }
 
+func (a *jsiiProxy_ApplicationFallbackPublicClient) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApplicationFallbackPublicClient) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_ApplicationFallbackPublicClient) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

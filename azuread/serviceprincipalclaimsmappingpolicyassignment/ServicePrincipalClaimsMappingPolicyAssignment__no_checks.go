@@ -59,7 +59,15 @@ func (s *jsiiProxy_ServicePrincipalClaimsMappingPolicyAssignment) validateInterp
 	return nil
 }
 
+func (s *jsiiProxy_ServicePrincipalClaimsMappingPolicyAssignment) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_ServicePrincipalClaimsMappingPolicyAssignment) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_ServicePrincipalClaimsMappingPolicyAssignment) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

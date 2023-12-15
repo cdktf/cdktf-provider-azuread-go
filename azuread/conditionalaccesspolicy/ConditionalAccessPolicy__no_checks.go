@@ -59,7 +59,15 @@ func (c *jsiiProxy_ConditionalAccessPolicy) validateInterpolationForAttributePar
 	return nil
 }
 
+func (c *jsiiProxy_ConditionalAccessPolicy) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ConditionalAccessPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_ConditionalAccessPolicy) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

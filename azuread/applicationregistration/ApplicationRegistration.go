@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/application_registration azuread_application_registration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/application_registration azuread_application_registration}.
 type ApplicationRegistration interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -139,12 +139,22 @@ type ApplicationRegistration interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -724,7 +734,7 @@ func (j *jsiiProxy_ApplicationRegistration) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/application_registration azuread_application_registration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/application_registration azuread_application_registration} Resource.
 func NewApplicationRegistration(scope constructs.Construct, id *string, config *ApplicationRegistrationConfig) ApplicationRegistration {
 	_init_.Initialize()
 
@@ -742,7 +752,7 @@ func NewApplicationRegistration(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/application_registration azuread_application_registration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/application_registration azuread_application_registration} Resource.
 func NewApplicationRegistration_Override(a ApplicationRegistration, scope constructs.Construct, id *string, config *ApplicationRegistrationConfig) {
 	_init_.Initialize()
 
@@ -1266,6 +1276,19 @@ func (a *jsiiProxy_ApplicationRegistration) GetStringMapAttribute(terraformAttri
 	return returns
 }
 
+func (a *jsiiProxy_ApplicationRegistration) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		a,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (a *jsiiProxy_ApplicationRegistration) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := a.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -1293,6 +1316,17 @@ func (a *jsiiProxy_ApplicationRegistration) InterpolationForAttribute(terraformA
 	return returns
 }
 
+func (a *jsiiProxy_ApplicationRegistration) MoveFromId(id *string) {
+	if err := a.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (a *jsiiProxy_ApplicationRegistration) MoveTo(moveTarget *string, index interface{}) {
 	if err := a.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -1301,6 +1335,17 @@ func (a *jsiiProxy_ApplicationRegistration) MoveTo(moveTarget *string, index int
 		a,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (a *jsiiProxy_ApplicationRegistration) MoveToId(id *string) {
+	if err := a.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 
