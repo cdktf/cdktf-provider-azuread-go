@@ -7,6 +7,10 @@ package applicationoptionalclaims
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_ApplicationOptionalClaimsSaml2TokenAList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApplicationOptionalClaimsSaml2TokenAList) validateGetParameters(index *float64) error {
 	return nil
 }

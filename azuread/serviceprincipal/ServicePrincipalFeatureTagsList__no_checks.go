@@ -7,6 +7,10 @@ package serviceprincipal
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_ServicePrincipalFeatureTagsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_ServicePrincipalFeatureTagsList) validateGetParameters(index *float64) error {
 	return nil
 }

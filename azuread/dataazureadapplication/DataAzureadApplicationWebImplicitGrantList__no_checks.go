@@ -7,6 +7,10 @@ package dataazureadapplication
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataAzureadApplicationWebImplicitGrantList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataAzureadApplicationWebImplicitGrantList) validateGetParameters(index *float64) error {
 	return nil
 }

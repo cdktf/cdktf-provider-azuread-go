@@ -7,6 +7,10 @@ package application
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_ApplicationApiOauth2PermissionScopeList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApplicationApiOauth2PermissionScopeList) validateGetParameters(index *float64) error {
 	return nil
 }

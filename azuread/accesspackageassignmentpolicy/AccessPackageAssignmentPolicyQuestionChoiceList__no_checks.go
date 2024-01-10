@@ -7,6 +7,10 @@ package accesspackageassignmentpolicy
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_AccessPackageAssignmentPolicyQuestionChoiceList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AccessPackageAssignmentPolicyQuestionChoiceList) validateGetParameters(index *float64) error {
 	return nil
 }

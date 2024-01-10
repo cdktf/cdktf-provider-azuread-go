@@ -5,9 +5,9 @@ package dataazureaddirectoryroles
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/jsii"
 
-	"github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/dataazureaddirectoryroles/internal"
+	"github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/dataazureaddirectoryroles/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 

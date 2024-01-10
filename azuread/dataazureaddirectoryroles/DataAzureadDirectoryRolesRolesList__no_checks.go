@@ -7,6 +7,10 @@ package dataazureaddirectoryroles
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataAzureadDirectoryRolesRolesList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataAzureadDirectoryRolesRolesList) validateGetParameters(index *float64) error {
 	return nil
 }
