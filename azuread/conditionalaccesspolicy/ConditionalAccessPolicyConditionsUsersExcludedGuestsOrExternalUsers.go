@@ -5,11 +5,11 @@ package conditionalaccesspolicy
 
 
 type ConditionalAccessPolicyConditionsUsersExcludedGuestsOrExternalUsers struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/conditional_access_policy#guest_or_external_user_types ConditionalAccessPolicy#guest_or_external_user_types}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.48.0/docs/resources/conditional_access_policy#guest_or_external_user_types ConditionalAccessPolicy#guest_or_external_user_types}.
 	GuestOrExternalUserTypes *[]*string `field:"required" json:"guestOrExternalUserTypes" yaml:"guestOrExternalUserTypes"`
 	// external_tenants block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/conditional_access_policy#external_tenants ConditionalAccessPolicy#external_tenants}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.48.0/docs/resources/conditional_access_policy#external_tenants ConditionalAccessPolicy#external_tenants}
 	ExternalTenants interface{} `field:"optional" json:"externalTenants" yaml:"externalTenants"`
 }
 

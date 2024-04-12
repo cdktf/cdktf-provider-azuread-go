@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs azuread}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.48.0/docs azuread}.
 type AzureadProvider interface {
 	cdktf.TerraformProvider
 	Alias() *string
@@ -89,6 +89,9 @@ type AzureadProvider interface {
 	TerraformProviderSource() *string
 	// Experimental.
 	TerraformResourceType() *string
+	UseAksWorkloadIdentity() interface{}
+	SetUseAksWorkloadIdentity(val interface{})
+	UseAksWorkloadIdentityInput() interface{}
 	UseCli() interface{}
 	SetUseCli(val interface{})
 	UseCliInput() interface{}
@@ -124,6 +127,7 @@ type AzureadProvider interface {
 	ResetOverrideLogicalId()
 	ResetPartnerId()
 	ResetTenantId()
+	ResetUseAksWorkloadIdentity()
 	ResetUseCli()
 	ResetUseMsi()
 	ResetUseOidc()
@@ -605,6 +609,26 @@ func (j *jsiiProxy_AzureadProvider) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_AzureadProvider) UseAksWorkloadIdentity() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"useAksWorkloadIdentity",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AzureadProvider) UseAksWorkloadIdentityInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"useAksWorkloadIdentityInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AzureadProvider) UseCli() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -666,7 +690,7 @@ func (j *jsiiProxy_AzureadProvider) UseOidcInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs azuread} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.48.0/docs azuread} Resource.
 func NewAzureadProvider(scope constructs.Construct, id *string, config *AzureadProviderConfig) AzureadProvider {
 	_init_.Initialize()
 
@@ -684,7 +708,7 @@ func NewAzureadProvider(scope constructs.Construct, id *string, config *AzureadP
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs azuread} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.48.0/docs azuread} Resource.
 func NewAzureadProvider_Override(a AzureadProvider, scope constructs.Construct, id *string, config *AzureadProviderConfig) {
 	_init_.Initialize()
 
@@ -838,6 +862,17 @@ func (j *jsiiProxy_AzureadProvider)SetTenantId(val *string) {
 	_jsii_.Set(
 		j,
 		"tenantId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AzureadProvider)SetUseAksWorkloadIdentity(val interface{}) {
+	if err := j.validateSetUseAksWorkloadIdentityParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"useAksWorkloadIdentity",
 		val,
 	)
 }
@@ -1148,6 +1183,14 @@ func (a *jsiiProxy_AzureadProvider) ResetTenantId() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetTenantId",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AzureadProvider) ResetUseAksWorkloadIdentity() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetUseAksWorkloadIdentity",
 		nil, // no parameters
 	)
 }

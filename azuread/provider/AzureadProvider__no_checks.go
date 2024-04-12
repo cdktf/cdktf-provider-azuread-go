@@ -35,6 +35,10 @@ func (j *jsiiProxy_AzureadProvider) validateSetDisableTerraformPartnerIdParamete
 	return nil
 }
 
+func (j *jsiiProxy_AzureadProvider) validateSetUseAksWorkloadIdentityParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AzureadProvider) validateSetUseCliParameters(val interface{}) error {
 	return nil
 }
