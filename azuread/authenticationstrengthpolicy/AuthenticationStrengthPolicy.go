@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.48.0/docs/resources/authentication_strength_policy azuread_authentication_strength_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.0/docs/resources/authentication_strength_policy azuread_authentication_strength_policy}.
 type AuthenticationStrengthPolicy interface {
 	cdktf.TerraformResource
 	AllowedCombinations() *[]*string
@@ -404,7 +404,7 @@ func (j *jsiiProxy_AuthenticationStrengthPolicy) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.48.0/docs/resources/authentication_strength_policy azuread_authentication_strength_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.0/docs/resources/authentication_strength_policy azuread_authentication_strength_policy} Resource.
 func NewAuthenticationStrengthPolicy(scope constructs.Construct, id *string, config *AuthenticationStrengthPolicyConfig) AuthenticationStrengthPolicy {
 	_init_.Initialize()
 
@@ -422,7 +422,7 @@ func NewAuthenticationStrengthPolicy(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.48.0/docs/resources/authentication_strength_policy azuread_authentication_strength_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.0/docs/resources/authentication_strength_policy azuread_authentication_strength_policy} Resource.
 func NewAuthenticationStrengthPolicy_Override(a AuthenticationStrengthPolicy, scope constructs.Construct, id *string, config *AuthenticationStrengthPolicyConfig) {
 	_init_.Initialize()
 

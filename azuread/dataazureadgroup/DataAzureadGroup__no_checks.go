@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataAzureadGroup) validateSetIdParameters(val *string) error 
 	return nil
 }
 
+func (j *jsiiProxy_DataAzureadGroup) validateSetIncludeTransitiveMembersParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzureadGroup) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

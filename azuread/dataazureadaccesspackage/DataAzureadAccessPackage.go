@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.48.0/docs/data-sources/access_package azuread_access_package}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.0/docs/data-sources/access_package azuread_access_package}.
 type DataAzureadAccessPackage interface {
 	cdktf.TerraformDataSource
 	CatalogId() *string
@@ -383,7 +383,7 @@ func (j *jsiiProxy_DataAzureadAccessPackage) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.48.0/docs/data-sources/access_package azuread_access_package} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.0/docs/data-sources/access_package azuread_access_package} Data Source.
 func NewDataAzureadAccessPackage(scope constructs.Construct, id *string, config *DataAzureadAccessPackageConfig) DataAzureadAccessPackage {
 	_init_.Initialize()
 
@@ -401,7 +401,7 @@ func NewDataAzureadAccessPackage(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.48.0/docs/data-sources/access_package azuread_access_package} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.0/docs/data-sources/access_package azuread_access_package} Data Source.
 func NewDataAzureadAccessPackage_Override(d DataAzureadAccessPackage, scope constructs.Construct, id *string, config *DataAzureadAccessPackageConfig) {
 	_init_.Initialize()
 

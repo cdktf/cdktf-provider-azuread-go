@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.48.0/docs/data-sources/group azuread_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.0/docs/data-sources/group azuread_group}.
 type DataAzureadGroup interface {
 	cdktf.TerraformDataSource
 	AssignableToRole() cdktf.IResolvable
@@ -49,6 +49,9 @@ type DataAzureadGroup interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	IncludeTransitiveMembers() interface{}
+	SetIncludeTransitiveMembers(val interface{})
+	IncludeTransitiveMembersInput() interface{}
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -125,6 +128,7 @@ type DataAzureadGroup interface {
 	PutTimeouts(value *DataAzureadGroupTimeouts)
 	ResetDisplayName()
 	ResetId()
+	ResetIncludeTransitiveMembers()
 	ResetMailEnabled()
 	ResetMailNickname()
 	ResetObjectId()
@@ -337,6 +341,26 @@ func (j *jsiiProxy_DataAzureadGroup) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzureadGroup) IncludeTransitiveMembers() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"includeTransitiveMembers",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzureadGroup) IncludeTransitiveMembersInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"includeTransitiveMembersInput",
 		&returns,
 	)
 	return returns
@@ -673,7 +697,7 @@ func (j *jsiiProxy_DataAzureadGroup) WritebackEnabled() cdktf.IResolvable {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.48.0/docs/data-sources/group azuread_group} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.0/docs/data-sources/group azuread_group} Data Source.
 func NewDataAzureadGroup(scope constructs.Construct, id *string, config *DataAzureadGroupConfig) DataAzureadGroup {
 	_init_.Initialize()
 
@@ -691,7 +715,7 @@ func NewDataAzureadGroup(scope constructs.Construct, id *string, config *DataAzu
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.48.0/docs/data-sources/group azuread_group} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.0/docs/data-sources/group azuread_group} Data Source.
 func NewDataAzureadGroup_Override(d DataAzureadGroup, scope constructs.Construct, id *string, config *DataAzureadGroupConfig) {
 	_init_.Initialize()
 
@@ -747,6 +771,17 @@ func (j *jsiiProxy_DataAzureadGroup)SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAzureadGroup)SetIncludeTransitiveMembers(val interface{}) {
+	if err := j.validateSetIncludeTransitiveMembersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"includeTransitiveMembers",
 		val,
 	)
 }
@@ -1122,6 +1157,14 @@ func (d *jsiiProxy_DataAzureadGroup) ResetId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAzureadGroup) ResetIncludeTransitiveMembers() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetIncludeTransitiveMembers",
 		nil, // no parameters
 	)
 }
