@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.0/docs/resources/conditional_access_policy azuread_conditional_access_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/resources/conditional_access_policy azuread_conditional_access_policy}.
 type ConditionalAccessPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -451,7 +451,7 @@ func (j *jsiiProxy_ConditionalAccessPolicy) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.0/docs/resources/conditional_access_policy azuread_conditional_access_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/resources/conditional_access_policy azuread_conditional_access_policy} Resource.
 func NewConditionalAccessPolicy(scope constructs.Construct, id *string, config *ConditionalAccessPolicyConfig) ConditionalAccessPolicy {
 	_init_.Initialize()
 
@@ -469,7 +469,7 @@ func NewConditionalAccessPolicy(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.0/docs/resources/conditional_access_policy azuread_conditional_access_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/resources/conditional_access_policy azuread_conditional_access_policy} Resource.
 func NewConditionalAccessPolicy_Override(c ConditionalAccessPolicy, scope constructs.Construct, id *string, config *ConditionalAccessPolicyConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.0/docs/resources/administrative_unit_role_member azuread_administrative_unit_role_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/resources/administrative_unit_role_member azuread_administrative_unit_role_member}.
 type AdministrativeUnitRoleMember interface {
 	cdktf.TerraformResource
 	AdministrativeUnitObjectId() *string
@@ -403,7 +403,7 @@ func (j *jsiiProxy_AdministrativeUnitRoleMember) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.0/docs/resources/administrative_unit_role_member azuread_administrative_unit_role_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/resources/administrative_unit_role_member azuread_administrative_unit_role_member} Resource.
 func NewAdministrativeUnitRoleMember(scope constructs.Construct, id *string, config *AdministrativeUnitRoleMemberConfig) AdministrativeUnitRoleMember {
 	_init_.Initialize()
 
@@ -421,7 +421,7 @@ func NewAdministrativeUnitRoleMember(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.0/docs/resources/administrative_unit_role_member azuread_administrative_unit_role_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/resources/administrative_unit_role_member azuread_administrative_unit_role_member} Resource.
 func NewAdministrativeUnitRoleMember_Override(a AdministrativeUnitRoleMember, scope constructs.Construct, id *string, config *AdministrativeUnitRoleMemberConfig) {
 	_init_.Initialize()
 

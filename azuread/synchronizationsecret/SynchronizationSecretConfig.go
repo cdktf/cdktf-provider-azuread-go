@@ -24,20 +24,20 @@ type SynchronizationSecretConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The object ID of the service principal for which this synchronization secret should be created.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.0/docs/resources/synchronization_secret#service_principal_id SynchronizationSecret#service_principal_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/resources/synchronization_secret#service_principal_id SynchronizationSecret#service_principal_id}
 	ServicePrincipalId *string `field:"required" json:"servicePrincipalId" yaml:"servicePrincipalId"`
 	// credential block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.0/docs/resources/synchronization_secret#credential SynchronizationSecret#credential}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/resources/synchronization_secret#credential SynchronizationSecret#credential}
 	Credential interface{} `field:"optional" json:"credential" yaml:"credential"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.0/docs/resources/synchronization_secret#id SynchronizationSecret#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/resources/synchronization_secret#id SynchronizationSecret#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.0/docs/resources/synchronization_secret#timeouts SynchronizationSecret#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/resources/synchronization_secret#timeouts SynchronizationSecret#timeouts}
 	Timeouts *SynchronizationSecretTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

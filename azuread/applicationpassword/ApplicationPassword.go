@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.0/docs/resources/application_password azuread_application_password}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/resources/application_password azuread_application_password}.
 type ApplicationPassword interface {
 	cdktf.TerraformResource
 	ApplicationId() *string
@@ -524,7 +524,7 @@ func (j *jsiiProxy_ApplicationPassword) Value() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.0/docs/resources/application_password azuread_application_password} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/resources/application_password azuread_application_password} Resource.
 func NewApplicationPassword(scope constructs.Construct, id *string, config *ApplicationPasswordConfig) ApplicationPassword {
 	_init_.Initialize()
 
@@ -542,7 +542,7 @@ func NewApplicationPassword(scope constructs.Construct, id *string, config *Appl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.0/docs/resources/application_password azuread_application_password} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/resources/application_password azuread_application_password} Resource.
 func NewApplicationPassword_Override(a ApplicationPassword, scope constructs.Construct, id *string, config *ApplicationPasswordConfig) {
 	_init_.Initialize()
 
