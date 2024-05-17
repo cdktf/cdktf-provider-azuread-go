@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/resources/application_api_access azuread_application_api_access}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/resources/application_api_access azuread_application_api_access}.
 type ApplicationApiAccess interface {
 	cdktf.TerraformResource
 	ApiClientId() *string
@@ -428,7 +428,7 @@ func (j *jsiiProxy_ApplicationApiAccess) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/resources/application_api_access azuread_application_api_access} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/resources/application_api_access azuread_application_api_access} Resource.
 func NewApplicationApiAccess(scope constructs.Construct, id *string, config *ApplicationApiAccessConfig) ApplicationApiAccess {
 	_init_.Initialize()
 
@@ -446,7 +446,7 @@ func NewApplicationApiAccess(scope constructs.Construct, id *string, config *App
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/resources/application_api_access azuread_application_api_access} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/resources/application_api_access azuread_application_api_access} Resource.
 func NewApplicationApiAccess_Override(a ApplicationApiAccess, scope constructs.Construct, id *string, config *ApplicationApiAccessConfig) {
 	_init_.Initialize()
 

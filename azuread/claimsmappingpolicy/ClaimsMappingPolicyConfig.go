@@ -24,13 +24,13 @@ type ClaimsMappingPolicyConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// A string collection containing a JSON string that defines the rules and settings for this policy.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/resources/claims_mapping_policy#definition ClaimsMappingPolicy#definition}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/resources/claims_mapping_policy#definition ClaimsMappingPolicy#definition}
 	Definition *[]*string `field:"required" json:"definition" yaml:"definition"`
 	// Display name for this policy.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/resources/claims_mapping_policy#display_name ClaimsMappingPolicy#display_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/resources/claims_mapping_policy#display_name ClaimsMappingPolicy#display_name}
 	DisplayName *string `field:"required" json:"displayName" yaml:"displayName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/resources/claims_mapping_policy#id ClaimsMappingPolicy#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/resources/claims_mapping_policy#id ClaimsMappingPolicy#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

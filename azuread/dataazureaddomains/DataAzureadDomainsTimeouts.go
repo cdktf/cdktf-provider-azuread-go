@@ -5,7 +5,7 @@ package dataazureaddomains
 
 
 type DataAzureadDomainsTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/data-sources/domains#read DataAzureadDomains#read}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/data-sources/domains#read DataAzureadDomains#read}.
 	Read *string `field:"optional" json:"read" yaml:"read"`
 }
 

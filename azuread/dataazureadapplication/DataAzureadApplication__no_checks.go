@@ -95,6 +95,10 @@ func (j *jsiiProxy_DataAzureadApplication) validateSetIdParameters(val *string) 
 	return nil
 }
 
+func (j *jsiiProxy_DataAzureadApplication) validateSetIdentifierUriParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzureadApplication) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }
