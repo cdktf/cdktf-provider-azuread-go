@@ -274,6 +274,14 @@ func (j *jsiiProxy_DataAzureadUsers) validateSetMailNicknamesParameters(val *[]*
 	return nil
 }
 
+func (j *jsiiProxy_DataAzureadUsers) validateSetMailsParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataAzureadUsers) validateSetObjectIdsParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

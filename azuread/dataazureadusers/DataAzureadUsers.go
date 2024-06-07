@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/data-sources/users azuread_users}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.51.0/docs/data-sources/users azuread_users}.
 type DataAzureadUsers interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -51,6 +51,9 @@ type DataAzureadUsers interface {
 	MailNicknames() *[]*string
 	SetMailNicknames(val *[]*string)
 	MailNicknamesInput() *[]*string
+	Mails() *[]*string
+	SetMails(val *[]*string)
+	MailsInput() *[]*string
 	// The tree node.
 	Node() constructs.Node
 	ObjectIds() *[]*string
@@ -107,6 +110,7 @@ type DataAzureadUsers interface {
 	ResetId()
 	ResetIgnoreMissing()
 	ResetMailNicknames()
+	ResetMails()
 	ResetObjectIds()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -293,6 +297,26 @@ func (j *jsiiProxy_DataAzureadUsers) MailNicknamesInput() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_DataAzureadUsers) Mails() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"mails",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzureadUsers) MailsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"mailsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAzureadUsers) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
@@ -444,7 +468,7 @@ func (j *jsiiProxy_DataAzureadUsers) Users() DataAzureadUsersUsersList {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/data-sources/users azuread_users} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.51.0/docs/data-sources/users azuread_users} Data Source.
 func NewDataAzureadUsers(scope constructs.Construct, id *string, config *DataAzureadUsersConfig) DataAzureadUsers {
 	_init_.Initialize()
 
@@ -462,7 +486,7 @@ func NewDataAzureadUsers(scope constructs.Construct, id *string, config *DataAzu
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/data-sources/users azuread_users} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.51.0/docs/data-sources/users azuread_users} Data Source.
 func NewDataAzureadUsers_Override(d DataAzureadUsers, scope constructs.Construct, id *string, config *DataAzureadUsersConfig) {
 	_init_.Initialize()
 
@@ -551,6 +575,17 @@ func (j *jsiiProxy_DataAzureadUsers)SetMailNicknames(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"mailNicknames",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAzureadUsers)SetMails(val *[]*string) {
+	if err := j.validateSetMailsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"mails",
 		val,
 	)
 }
@@ -920,6 +955,14 @@ func (d *jsiiProxy_DataAzureadUsers) ResetMailNicknames() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetMailNicknames",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAzureadUsers) ResetMails() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetMails",
 		nil, // no parameters
 	)
 }

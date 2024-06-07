@@ -24,20 +24,20 @@ type ApplicationFromTemplateConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The display name for the application.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/resources/application_from_template#display_name ApplicationFromTemplate#display_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.51.0/docs/resources/application_from_template#display_name ApplicationFromTemplate#display_name}
 	DisplayName *string `field:"required" json:"displayName" yaml:"displayName"`
 	// The UUID of the template to instantiate for this application.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/resources/application_from_template#template_id ApplicationFromTemplate#template_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.51.0/docs/resources/application_from_template#template_id ApplicationFromTemplate#template_id}
 	TemplateId *string `field:"required" json:"templateId" yaml:"templateId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/resources/application_from_template#id ApplicationFromTemplate#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.51.0/docs/resources/application_from_template#id ApplicationFromTemplate#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/resources/application_from_template#timeouts ApplicationFromTemplate#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.51.0/docs/resources/application_from_template#timeouts ApplicationFromTemplate#timeouts}
 	Timeouts *ApplicationFromTemplateTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

@@ -99,6 +99,10 @@ func (j *jsiiProxy_DataAzureadUsers) validateSetMailNicknamesParameters(val *[]*
 	return nil
 }
 
+func (j *jsiiProxy_DataAzureadUsers) validateSetMailsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzureadUsers) validateSetObjectIdsParameters(val *[]*string) error {
 	return nil
 }

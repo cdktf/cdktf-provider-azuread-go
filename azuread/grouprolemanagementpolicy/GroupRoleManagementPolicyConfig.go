@@ -24,36 +24,36 @@ type GroupRoleManagementPolicyConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// ID of the group to which this policy is assigned.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/resources/group_role_management_policy#group_id GroupRoleManagementPolicy#group_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.51.0/docs/resources/group_role_management_policy#group_id GroupRoleManagementPolicy#group_id}
 	GroupId *string `field:"required" json:"groupId" yaml:"groupId"`
 	// The ID of the role of this policy to the group.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/resources/group_role_management_policy#role_id GroupRoleManagementPolicy#role_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.51.0/docs/resources/group_role_management_policy#role_id GroupRoleManagementPolicy#role_id}
 	RoleId *string `field:"required" json:"roleId" yaml:"roleId"`
 	// activation_rules block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/resources/group_role_management_policy#activation_rules GroupRoleManagementPolicy#activation_rules}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.51.0/docs/resources/group_role_management_policy#activation_rules GroupRoleManagementPolicy#activation_rules}
 	ActivationRules *GroupRoleManagementPolicyActivationRules `field:"optional" json:"activationRules" yaml:"activationRules"`
 	// active_assignment_rules block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/resources/group_role_management_policy#active_assignment_rules GroupRoleManagementPolicy#active_assignment_rules}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.51.0/docs/resources/group_role_management_policy#active_assignment_rules GroupRoleManagementPolicy#active_assignment_rules}
 	ActiveAssignmentRules *GroupRoleManagementPolicyActiveAssignmentRules `field:"optional" json:"activeAssignmentRules" yaml:"activeAssignmentRules"`
 	// eligible_assignment_rules block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/resources/group_role_management_policy#eligible_assignment_rules GroupRoleManagementPolicy#eligible_assignment_rules}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.51.0/docs/resources/group_role_management_policy#eligible_assignment_rules GroupRoleManagementPolicy#eligible_assignment_rules}
 	EligibleAssignmentRules *GroupRoleManagementPolicyEligibleAssignmentRules `field:"optional" json:"eligibleAssignmentRules" yaml:"eligibleAssignmentRules"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/resources/group_role_management_policy#id GroupRoleManagementPolicy#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.51.0/docs/resources/group_role_management_policy#id GroupRoleManagementPolicy#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// notification_rules block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/resources/group_role_management_policy#notification_rules GroupRoleManagementPolicy#notification_rules}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.51.0/docs/resources/group_role_management_policy#notification_rules GroupRoleManagementPolicy#notification_rules}
 	NotificationRules *GroupRoleManagementPolicyNotificationRules `field:"optional" json:"notificationRules" yaml:"notificationRules"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/resources/group_role_management_policy#timeouts GroupRoleManagementPolicy#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.51.0/docs/resources/group_role_management_policy#timeouts GroupRoleManagementPolicy#timeouts}
 	Timeouts *GroupRoleManagementPolicyTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

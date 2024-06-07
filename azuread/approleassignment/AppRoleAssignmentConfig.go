@@ -24,24 +24,24 @@ type AppRoleAssignmentConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The ID of the app role to be assigned.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/resources/app_role_assignment#app_role_id AppRoleAssignment#app_role_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.51.0/docs/resources/app_role_assignment#app_role_id AppRoleAssignment#app_role_id}
 	AppRoleId *string `field:"required" json:"appRoleId" yaml:"appRoleId"`
 	// The object ID of the user, group or service principal to be assigned this app role.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/resources/app_role_assignment#principal_object_id AppRoleAssignment#principal_object_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.51.0/docs/resources/app_role_assignment#principal_object_id AppRoleAssignment#principal_object_id}
 	PrincipalObjectId *string `field:"required" json:"principalObjectId" yaml:"principalObjectId"`
 	// The object ID of the service principal representing the resource.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/resources/app_role_assignment#resource_object_id AppRoleAssignment#resource_object_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.51.0/docs/resources/app_role_assignment#resource_object_id AppRoleAssignment#resource_object_id}
 	ResourceObjectId *string `field:"required" json:"resourceObjectId" yaml:"resourceObjectId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/resources/app_role_assignment#id AppRoleAssignment#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.51.0/docs/resources/app_role_assignment#id AppRoleAssignment#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/resources/app_role_assignment#timeouts AppRoleAssignment#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.51.0/docs/resources/app_role_assignment#timeouts AppRoleAssignment#timeouts}
 	Timeouts *AppRoleAssignmentTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 
