@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.51.0/docs/resources/privileged_access_group_eligibility_schedule azuread_privileged_access_group_eligibility_schedule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/privileged_access_group_eligibility_schedule azuread_privileged_access_group_eligibility_schedule}.
 type PrivilegedAccessGroupEligibilitySchedule interface {
 	cdktf.TerraformResource
 	AssignmentType() *string
@@ -582,7 +582,7 @@ func (j *jsiiProxy_PrivilegedAccessGroupEligibilitySchedule) TimeoutsInput() int
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.51.0/docs/resources/privileged_access_group_eligibility_schedule azuread_privileged_access_group_eligibility_schedule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/privileged_access_group_eligibility_schedule azuread_privileged_access_group_eligibility_schedule} Resource.
 func NewPrivilegedAccessGroupEligibilitySchedule(scope constructs.Construct, id *string, config *PrivilegedAccessGroupEligibilityScheduleConfig) PrivilegedAccessGroupEligibilitySchedule {
 	_init_.Initialize()
 
@@ -600,7 +600,7 @@ func NewPrivilegedAccessGroupEligibilitySchedule(scope constructs.Construct, id 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.51.0/docs/resources/privileged_access_group_eligibility_schedule azuread_privileged_access_group_eligibility_schedule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/privileged_access_group_eligibility_schedule azuread_privileged_access_group_eligibility_schedule} Resource.
 func NewPrivilegedAccessGroupEligibilitySchedule_Override(p PrivilegedAccessGroupEligibilitySchedule, scope constructs.Construct, id *string, config *PrivilegedAccessGroupEligibilityScheduleConfig) {
 	_init_.Initialize()
 

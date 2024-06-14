@@ -24,28 +24,28 @@ type ConditionalAccessPolicyConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// conditions block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.51.0/docs/resources/conditional_access_policy#conditions ConditionalAccessPolicy#conditions}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/conditional_access_policy#conditions ConditionalAccessPolicy#conditions}
 	Conditions *ConditionalAccessPolicyConditions `field:"required" json:"conditions" yaml:"conditions"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.51.0/docs/resources/conditional_access_policy#display_name ConditionalAccessPolicy#display_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/conditional_access_policy#display_name ConditionalAccessPolicy#display_name}.
 	DisplayName *string `field:"required" json:"displayName" yaml:"displayName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.51.0/docs/resources/conditional_access_policy#state ConditionalAccessPolicy#state}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/conditional_access_policy#state ConditionalAccessPolicy#state}.
 	State *string `field:"required" json:"state" yaml:"state"`
 	// grant_controls block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.51.0/docs/resources/conditional_access_policy#grant_controls ConditionalAccessPolicy#grant_controls}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/conditional_access_policy#grant_controls ConditionalAccessPolicy#grant_controls}
 	GrantControls *ConditionalAccessPolicyGrantControls `field:"optional" json:"grantControls" yaml:"grantControls"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.51.0/docs/resources/conditional_access_policy#id ConditionalAccessPolicy#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/conditional_access_policy#id ConditionalAccessPolicy#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// session_controls block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.51.0/docs/resources/conditional_access_policy#session_controls ConditionalAccessPolicy#session_controls}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/conditional_access_policy#session_controls ConditionalAccessPolicy#session_controls}
 	SessionControls *ConditionalAccessPolicySessionControls `field:"optional" json:"sessionControls" yaml:"sessionControls"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.51.0/docs/resources/conditional_access_policy#timeouts ConditionalAccessPolicy#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/conditional_access_policy#timeouts ConditionalAccessPolicy#timeouts}
 	Timeouts *ConditionalAccessPolicyTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 
