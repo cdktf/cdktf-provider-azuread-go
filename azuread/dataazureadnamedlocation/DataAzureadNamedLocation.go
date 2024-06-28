@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/data-sources/named_location azuread_named_location}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/data-sources/named_location azuread_named_location}.
 type DataAzureadNamedLocation interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -334,7 +334,7 @@ func (j *jsiiProxy_DataAzureadNamedLocation) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/data-sources/named_location azuread_named_location} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/data-sources/named_location azuread_named_location} Data Source.
 func NewDataAzureadNamedLocation(scope constructs.Construct, id *string, config *DataAzureadNamedLocationConfig) DataAzureadNamedLocation {
 	_init_.Initialize()
 
@@ -352,7 +352,7 @@ func NewDataAzureadNamedLocation(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/data-sources/named_location azuread_named_location} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/data-sources/named_location azuread_named_location} Data Source.
 func NewDataAzureadNamedLocation_Override(d DataAzureadNamedLocation, scope constructs.Construct, id *string, config *DataAzureadNamedLocationConfig) {
 	_init_.Initialize()
 

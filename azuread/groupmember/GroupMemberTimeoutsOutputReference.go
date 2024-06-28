@@ -49,9 +49,6 @@ type GroupMemberTimeoutsOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
-	Update() *string
-	SetUpdate(val *string)
-	UpdateInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -79,7 +76,6 @@ type GroupMemberTimeoutsOutputReference interface {
 	ResetCreate()
 	ResetDelete()
 	ResetRead()
-	ResetUpdate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -225,26 +221,6 @@ func (j *jsiiProxy_GroupMemberTimeoutsOutputReference) TerraformResource() cdktf
 	return returns
 }
 
-func (j *jsiiProxy_GroupMemberTimeoutsOutputReference) Update() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"update",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_GroupMemberTimeoutsOutputReference) UpdateInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"updateInput",
-		&returns,
-	)
-	return returns
-}
-
 
 func NewGroupMemberTimeoutsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GroupMemberTimeoutsOutputReference {
 	_init_.Initialize()
@@ -357,17 +333,6 @@ func (j *jsiiProxy_GroupMemberTimeoutsOutputReference)SetTerraformResource(val c
 	_jsii_.Set(
 		j,
 		"terraformResource",
-		val,
-	)
-}
-
-func (j *jsiiProxy_GroupMemberTimeoutsOutputReference)SetUpdate(val *string) {
-	if err := j.validateSetUpdateParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"update",
 		val,
 	)
 }
@@ -578,14 +543,6 @@ func (g *jsiiProxy_GroupMemberTimeoutsOutputReference) ResetRead() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetRead",
-		nil, // no parameters
-	)
-}
-
-func (g *jsiiProxy_GroupMemberTimeoutsOutputReference) ResetUpdate() {
-	_jsii_.InvokeVoid(
-		g,
-		"resetUpdate",
 		nil, // no parameters
 	)
 }

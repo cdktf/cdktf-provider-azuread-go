@@ -75,6 +75,10 @@ func (c *jsiiProxy_ClaimsMappingPolicy) validateOverrideLogicalIdParameters(newL
 	return nil
 }
 
+func (c *jsiiProxy_ClaimsMappingPolicy) validatePutTimeoutsParameters(value *ClaimsMappingPolicyTimeouts) error {
+	return nil
+}
+
 func validateClaimsMappingPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

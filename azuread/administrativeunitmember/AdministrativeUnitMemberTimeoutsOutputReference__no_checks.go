@@ -83,10 +83,6 @@ func (j *jsiiProxy_AdministrativeUnitMemberTimeoutsOutputReference) validateSetT
 	return nil
 }
 
-func (j *jsiiProxy_AdministrativeUnitMemberTimeoutsOutputReference) validateSetUpdateParameters(val *string) error {
-	return nil
-}
-
 func validateNewAdministrativeUnitMemberTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }

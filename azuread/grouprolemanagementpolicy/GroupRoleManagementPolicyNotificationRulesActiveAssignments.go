@@ -7,15 +7,15 @@ package grouprolemanagementpolicy
 type GroupRoleManagementPolicyNotificationRulesActiveAssignments struct {
 	// admin_notifications block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/group_role_management_policy#admin_notifications GroupRoleManagementPolicy#admin_notifications}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/group_role_management_policy#admin_notifications GroupRoleManagementPolicy#admin_notifications}
 	AdminNotifications *GroupRoleManagementPolicyNotificationRulesActiveAssignmentsAdminNotifications `field:"optional" json:"adminNotifications" yaml:"adminNotifications"`
 	// approver_notifications block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/group_role_management_policy#approver_notifications GroupRoleManagementPolicy#approver_notifications}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/group_role_management_policy#approver_notifications GroupRoleManagementPolicy#approver_notifications}
 	ApproverNotifications *GroupRoleManagementPolicyNotificationRulesActiveAssignmentsApproverNotifications `field:"optional" json:"approverNotifications" yaml:"approverNotifications"`
 	// assignee_notifications block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/group_role_management_policy#assignee_notifications GroupRoleManagementPolicy#assignee_notifications}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/group_role_management_policy#assignee_notifications GroupRoleManagementPolicy#assignee_notifications}
 	AssigneeNotifications *GroupRoleManagementPolicyNotificationRulesActiveAssignmentsAssigneeNotifications `field:"optional" json:"assigneeNotifications" yaml:"assigneeNotifications"`
 }
 

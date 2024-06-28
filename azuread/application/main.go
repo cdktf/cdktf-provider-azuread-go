@@ -81,6 +81,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
 			_jsii_.MemberProperty{JsiiProperty: "owners", GoGetter: "Owners"},
 			_jsii_.MemberProperty{JsiiProperty: "ownersInput", GoGetter: "OwnersInput"},
+			_jsii_.MemberProperty{JsiiProperty: "password", GoGetter: "Password"},
+			_jsii_.MemberProperty{JsiiProperty: "passwordInput", GoGetter: "PasswordInput"},
 			_jsii_.MemberProperty{JsiiProperty: "preventDuplicateNames", GoGetter: "PreventDuplicateNames"},
 			_jsii_.MemberProperty{JsiiProperty: "preventDuplicateNamesInput", GoGetter: "PreventDuplicateNamesInput"},
 			_jsii_.MemberProperty{JsiiProperty: "privacyStatementUrl", GoGetter: "PrivacyStatementUrl"},
@@ -94,6 +96,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putAppRole", GoMethod: "PutAppRole"},
 			_jsii_.MemberMethod{JsiiMethod: "putFeatureTags", GoMethod: "PutFeatureTags"},
 			_jsii_.MemberMethod{JsiiMethod: "putOptionalClaims", GoMethod: "PutOptionalClaims"},
+			_jsii_.MemberMethod{JsiiMethod: "putPassword", GoMethod: "PutPassword"},
 			_jsii_.MemberMethod{JsiiMethod: "putPublicClient", GoMethod: "PutPublicClient"},
 			_jsii_.MemberMethod{JsiiMethod: "putRequiredResourceAccess", GoMethod: "PutRequiredResourceAccess"},
 			_jsii_.MemberMethod{JsiiMethod: "putSinglePageApplication", GoMethod: "PutSinglePageApplication"},
@@ -118,6 +121,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetOptionalClaims", GoMethod: "ResetOptionalClaims"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOwners", GoMethod: "ResetOwners"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPassword", GoMethod: "ResetPassword"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPreventDuplicateNames", GoMethod: "ResetPreventDuplicateNames"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPrivacyStatementUrl", GoMethod: "ResetPrivacyStatementUrl"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPublicClient", GoMethod: "ResetPublicClient"},
@@ -692,6 +696,52 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ApplicationOptionalClaimsSaml2TokenOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-azuread.application.ApplicationPassword",
+		reflect.TypeOf((*ApplicationPassword)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-azuread.application.ApplicationPasswordOutputReference",
+		reflect.TypeOf((*ApplicationPasswordOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "displayName", GoGetter: "DisplayName"},
+			_jsii_.MemberProperty{JsiiProperty: "displayNameInput", GoGetter: "DisplayNameInput"},
+			_jsii_.MemberProperty{JsiiProperty: "endDate", GoGetter: "EndDate"},
+			_jsii_.MemberProperty{JsiiProperty: "endDateInput", GoGetter: "EndDateInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "keyId", GoGetter: "KeyId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetEndDate", GoMethod: "ResetEndDate"},
+			_jsii_.MemberMethod{JsiiMethod: "resetStartDate", GoMethod: "ResetStartDate"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "startDate", GoGetter: "StartDate"},
+			_jsii_.MemberProperty{JsiiProperty: "startDateInput", GoGetter: "StartDateInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
+		},
+		func() interface{} {
+			j := jsiiProxy_ApplicationPasswordOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

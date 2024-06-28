@@ -75,6 +75,10 @@ func (s *jsiiProxy_ServicePrincipalClaimsMappingPolicyAssignment) validateOverri
 	return nil
 }
 
+func (s *jsiiProxy_ServicePrincipalClaimsMappingPolicyAssignment) validatePutTimeoutsParameters(value *ServicePrincipalClaimsMappingPolicyAssignmentTimeouts) error {
+	return nil
+}
+
 func validateServicePrincipalClaimsMappingPolicyAssignment_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

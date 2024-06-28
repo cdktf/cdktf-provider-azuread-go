@@ -83,10 +83,6 @@ func (j *jsiiProxy_InvitationTimeoutsOutputReference) validateSetTerraformResour
 	return nil
 }
 
-func (j *jsiiProxy_InvitationTimeoutsOutputReference) validateSetUpdateParameters(val *string) error {
-	return nil
-}
-
 func validateNewInvitationTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }

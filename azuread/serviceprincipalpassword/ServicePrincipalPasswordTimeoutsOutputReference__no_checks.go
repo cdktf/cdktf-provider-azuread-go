@@ -83,10 +83,6 @@ func (j *jsiiProxy_ServicePrincipalPasswordTimeoutsOutputReference) validateSetT
 	return nil
 }
 
-func (j *jsiiProxy_ServicePrincipalPasswordTimeoutsOutputReference) validateSetUpdateParameters(val *string) error {
-	return nil
-}
-
 func validateNewServicePrincipalPasswordTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }

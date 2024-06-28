@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/claims_mapping_policy azuread_claims_mapping_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/claims_mapping_policy azuread_claims_mapping_policy}.
 type ClaimsMappingPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -70,6 +70,8 @@ type ClaimsMappingPolicy interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Timeouts() ClaimsMappingPolicyTimeoutsOutputReference
+	TimeoutsInput() interface{}
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -113,10 +115,12 @@ type ClaimsMappingPolicy interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutTimeouts(value *ClaimsMappingPolicyTimeouts)
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -355,8 +359,28 @@ func (j *jsiiProxy_ClaimsMappingPolicy) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ClaimsMappingPolicy) Timeouts() ClaimsMappingPolicyTimeoutsOutputReference {
+	var returns ClaimsMappingPolicyTimeoutsOutputReference
+	_jsii_.Get(
+		j,
+		"timeouts",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/claims_mapping_policy azuread_claims_mapping_policy} Resource.
+func (j *jsiiProxy_ClaimsMappingPolicy) TimeoutsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"timeoutsInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/claims_mapping_policy azuread_claims_mapping_policy} Resource.
 func NewClaimsMappingPolicy(scope constructs.Construct, id *string, config *ClaimsMappingPolicyConfig) ClaimsMappingPolicy {
 	_init_.Initialize()
 
@@ -374,7 +398,7 @@ func NewClaimsMappingPolicy(scope constructs.Construct, id *string, config *Clai
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/claims_mapping_policy azuread_claims_mapping_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/claims_mapping_policy azuread_claims_mapping_policy} Resource.
 func NewClaimsMappingPolicy_Override(c ClaimsMappingPolicy, scope constructs.Construct, id *string, config *ClaimsMappingPolicyConfig) {
 	_init_.Initialize()
 
@@ -839,6 +863,17 @@ func (c *jsiiProxy_ClaimsMappingPolicy) OverrideLogicalId(newLogicalId *string) 
 	)
 }
 
+func (c *jsiiProxy_ClaimsMappingPolicy) PutTimeouts(value *ClaimsMappingPolicyTimeouts) {
+	if err := c.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putTimeouts",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ClaimsMappingPolicy) ResetId() {
 	_jsii_.InvokeVoid(
 		c,
@@ -851,6 +886,14 @@ func (c *jsiiProxy_ClaimsMappingPolicy) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ClaimsMappingPolicy) ResetTimeouts() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetTimeouts",
 		nil, // no parameters
 	)
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/custom_directory_role azuread_custom_directory_role}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/custom_directory_role azuread_custom_directory_role}.
 type CustomDirectoryRole interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -485,7 +485,7 @@ func (j *jsiiProxy_CustomDirectoryRole) VersionInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/custom_directory_role azuread_custom_directory_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/custom_directory_role azuread_custom_directory_role} Resource.
 func NewCustomDirectoryRole(scope constructs.Construct, id *string, config *CustomDirectoryRoleConfig) CustomDirectoryRole {
 	_init_.Initialize()
 
@@ -503,7 +503,7 @@ func NewCustomDirectoryRole(scope constructs.Construct, id *string, config *Cust
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/custom_directory_role azuread_custom_directory_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/custom_directory_role azuread_custom_directory_role} Resource.
 func NewCustomDirectoryRole_Override(c CustomDirectoryRole, scope constructs.Construct, id *string, config *CustomDirectoryRoleConfig) {
 	_init_.Initialize()
 

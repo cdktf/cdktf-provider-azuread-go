@@ -14,7 +14,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (a *jsiiProxy_ApplicationPassword) validateAddMoveTargetParameters(moveTarget *string) error {
+func (a *jsiiProxy_ApplicationPasswordA) validateAddMoveTargetParameters(moveTarget *string) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -22,7 +22,7 @@ func (a *jsiiProxy_ApplicationPassword) validateAddMoveTargetParameters(moveTarg
 	return nil
 }
 
-func (a *jsiiProxy_ApplicationPassword) validateAddOverrideParameters(path *string, value interface{}) error {
+func (a *jsiiProxy_ApplicationPasswordA) validateAddOverrideParameters(path *string, value interface{}) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -34,7 +34,7 @@ func (a *jsiiProxy_ApplicationPassword) validateAddOverrideParameters(path *stri
 	return nil
 }
 
-func (a *jsiiProxy_ApplicationPassword) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
+func (a *jsiiProxy_ApplicationPasswordA) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -42,7 +42,7 @@ func (a *jsiiProxy_ApplicationPassword) validateGetAnyMapAttributeParameters(ter
 	return nil
 }
 
-func (a *jsiiProxy_ApplicationPassword) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
+func (a *jsiiProxy_ApplicationPasswordA) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -50,7 +50,7 @@ func (a *jsiiProxy_ApplicationPassword) validateGetBooleanAttributeParameters(te
 	return nil
 }
 
-func (a *jsiiProxy_ApplicationPassword) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
+func (a *jsiiProxy_ApplicationPasswordA) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -58,7 +58,7 @@ func (a *jsiiProxy_ApplicationPassword) validateGetBooleanMapAttributeParameters
 	return nil
 }
 
-func (a *jsiiProxy_ApplicationPassword) validateGetListAttributeParameters(terraformAttribute *string) error {
+func (a *jsiiProxy_ApplicationPasswordA) validateGetListAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -66,7 +66,7 @@ func (a *jsiiProxy_ApplicationPassword) validateGetListAttributeParameters(terra
 	return nil
 }
 
-func (a *jsiiProxy_ApplicationPassword) validateGetNumberAttributeParameters(terraformAttribute *string) error {
+func (a *jsiiProxy_ApplicationPasswordA) validateGetNumberAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -74,7 +74,7 @@ func (a *jsiiProxy_ApplicationPassword) validateGetNumberAttributeParameters(ter
 	return nil
 }
 
-func (a *jsiiProxy_ApplicationPassword) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
+func (a *jsiiProxy_ApplicationPasswordA) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -82,7 +82,7 @@ func (a *jsiiProxy_ApplicationPassword) validateGetNumberListAttributeParameters
 	return nil
 }
 
-func (a *jsiiProxy_ApplicationPassword) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
+func (a *jsiiProxy_ApplicationPasswordA) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -90,7 +90,7 @@ func (a *jsiiProxy_ApplicationPassword) validateGetNumberMapAttributeParameters(
 	return nil
 }
 
-func (a *jsiiProxy_ApplicationPassword) validateGetStringAttributeParameters(terraformAttribute *string) error {
+func (a *jsiiProxy_ApplicationPasswordA) validateGetStringAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -98,7 +98,7 @@ func (a *jsiiProxy_ApplicationPassword) validateGetStringAttributeParameters(ter
 	return nil
 }
 
-func (a *jsiiProxy_ApplicationPassword) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
+func (a *jsiiProxy_ApplicationPasswordA) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -106,7 +106,7 @@ func (a *jsiiProxy_ApplicationPassword) validateGetStringMapAttributeParameters(
 	return nil
 }
 
-func (a *jsiiProxy_ApplicationPassword) validateImportFromParameters(id *string) error {
+func (a *jsiiProxy_ApplicationPasswordA) validateImportFromParameters(id *string) error {
 	if id == nil {
 		return fmt.Errorf("parameter id is required, but nil was provided")
 	}
@@ -114,7 +114,7 @@ func (a *jsiiProxy_ApplicationPassword) validateImportFromParameters(id *string)
 	return nil
 }
 
-func (a *jsiiProxy_ApplicationPassword) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+func (a *jsiiProxy_ApplicationPasswordA) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -122,7 +122,7 @@ func (a *jsiiProxy_ApplicationPassword) validateInterpolationForAttributeParamet
 	return nil
 }
 
-func (a *jsiiProxy_ApplicationPassword) validateMoveFromIdParameters(id *string) error {
+func (a *jsiiProxy_ApplicationPasswordA) validateMoveFromIdParameters(id *string) error {
 	if id == nil {
 		return fmt.Errorf("parameter id is required, but nil was provided")
 	}
@@ -130,7 +130,7 @@ func (a *jsiiProxy_ApplicationPassword) validateMoveFromIdParameters(id *string)
 	return nil
 }
 
-func (a *jsiiProxy_ApplicationPassword) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (a *jsiiProxy_ApplicationPasswordA) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -191,7 +191,7 @@ func (a *jsiiProxy_ApplicationPassword) validateMoveToParameters(moveTarget *str
 	return nil
 }
 
-func (a *jsiiProxy_ApplicationPassword) validateMoveToIdParameters(id *string) error {
+func (a *jsiiProxy_ApplicationPasswordA) validateMoveToIdParameters(id *string) error {
 	if id == nil {
 		return fmt.Errorf("parameter id is required, but nil was provided")
 	}
@@ -199,7 +199,7 @@ func (a *jsiiProxy_ApplicationPassword) validateMoveToIdParameters(id *string) e
 	return nil
 }
 
-func (a *jsiiProxy_ApplicationPassword) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+func (a *jsiiProxy_ApplicationPasswordA) validateOverrideLogicalIdParameters(newLogicalId *string) error {
 	if newLogicalId == nil {
 		return fmt.Errorf("parameter newLogicalId is required, but nil was provided")
 	}
@@ -207,7 +207,7 @@ func (a *jsiiProxy_ApplicationPassword) validateOverrideLogicalIdParameters(newL
 	return nil
 }
 
-func (a *jsiiProxy_ApplicationPassword) validatePutTimeoutsParameters(value *ApplicationPasswordTimeouts) error {
+func (a *jsiiProxy_ApplicationPasswordA) validatePutTimeoutsParameters(value *ApplicationPasswordTimeouts) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -218,7 +218,7 @@ func (a *jsiiProxy_ApplicationPassword) validatePutTimeoutsParameters(value *App
 	return nil
 }
 
-func validateApplicationPassword_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+func validateApplicationPasswordA_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")
 	}
@@ -234,7 +234,7 @@ func validateApplicationPassword_GenerateConfigForImportParameters(scope constru
 	return nil
 }
 
-func validateApplicationPassword_IsConstructParameters(x interface{}) error {
+func validateApplicationPasswordA_IsConstructParameters(x interface{}) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -242,7 +242,7 @@ func validateApplicationPassword_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateApplicationPassword_IsTerraformElementParameters(x interface{}) error {
+func validateApplicationPasswordA_IsTerraformElementParameters(x interface{}) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -250,7 +250,7 @@ func validateApplicationPassword_IsTerraformElementParameters(x interface{}) err
 	return nil
 }
 
-func validateApplicationPassword_IsTerraformResourceParameters(x interface{}) error {
+func validateApplicationPasswordA_IsTerraformResourceParameters(x interface{}) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -258,7 +258,7 @@ func validateApplicationPassword_IsTerraformResourceParameters(x interface{}) er
 	return nil
 }
 
-func (j *jsiiProxy_ApplicationPassword) validateSetApplicationIdParameters(val *string) error {
+func (j *jsiiProxy_ApplicationPasswordA) validateSetApplicationIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -266,7 +266,7 @@ func (j *jsiiProxy_ApplicationPassword) validateSetApplicationIdParameters(val *
 	return nil
 }
 
-func (j *jsiiProxy_ApplicationPassword) validateSetApplicationObjectIdParameters(val *string) error {
+func (j *jsiiProxy_ApplicationPasswordA) validateSetApplicationObjectIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -274,7 +274,7 @@ func (j *jsiiProxy_ApplicationPassword) validateSetApplicationObjectIdParameters
 	return nil
 }
 
-func (j *jsiiProxy_ApplicationPassword) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_ApplicationPasswordA) validateSetConnectionParameters(val interface{}) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -307,7 +307,7 @@ func (j *jsiiProxy_ApplicationPassword) validateSetConnectionParameters(val inte
 	return nil
 }
 
-func (j *jsiiProxy_ApplicationPassword) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_ApplicationPasswordA) validateSetCountParameters(val interface{}) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -364,7 +364,7 @@ func (j *jsiiProxy_ApplicationPassword) validateSetCountParameters(val interface
 	return nil
 }
 
-func (j *jsiiProxy_ApplicationPassword) validateSetDisplayNameParameters(val *string) error {
+func (j *jsiiProxy_ApplicationPasswordA) validateSetDisplayNameParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -372,7 +372,7 @@ func (j *jsiiProxy_ApplicationPassword) validateSetDisplayNameParameters(val *st
 	return nil
 }
 
-func (j *jsiiProxy_ApplicationPassword) validateSetEndDateParameters(val *string) error {
+func (j *jsiiProxy_ApplicationPasswordA) validateSetEndDateParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -380,7 +380,7 @@ func (j *jsiiProxy_ApplicationPassword) validateSetEndDateParameters(val *string
 	return nil
 }
 
-func (j *jsiiProxy_ApplicationPassword) validateSetEndDateRelativeParameters(val *string) error {
+func (j *jsiiProxy_ApplicationPasswordA) validateSetEndDateRelativeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -388,7 +388,7 @@ func (j *jsiiProxy_ApplicationPassword) validateSetEndDateRelativeParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_ApplicationPassword) validateSetIdParameters(val *string) error {
+func (j *jsiiProxy_ApplicationPasswordA) validateSetIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -396,7 +396,7 @@ func (j *jsiiProxy_ApplicationPassword) validateSetIdParameters(val *string) err
 	return nil
 }
 
-func (j *jsiiProxy_ApplicationPassword) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_ApplicationPasswordA) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err
 	}
@@ -404,7 +404,7 @@ func (j *jsiiProxy_ApplicationPassword) validateSetLifecycleParameters(val *cdkt
 	return nil
 }
 
-func (j *jsiiProxy_ApplicationPassword) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_ApplicationPasswordA) validateSetProvisionersParameters(val *[]interface{}) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -450,7 +450,7 @@ func (j *jsiiProxy_ApplicationPassword) validateSetProvisionersParameters(val *[
 	return nil
 }
 
-func (j *jsiiProxy_ApplicationPassword) validateSetRotateWhenChangedParameters(val *map[string]*string) error {
+func (j *jsiiProxy_ApplicationPasswordA) validateSetRotateWhenChangedParameters(val *map[string]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -458,7 +458,7 @@ func (j *jsiiProxy_ApplicationPassword) validateSetRotateWhenChangedParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_ApplicationPassword) validateSetStartDateParameters(val *string) error {
+func (j *jsiiProxy_ApplicationPasswordA) validateSetStartDateParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -466,7 +466,7 @@ func (j *jsiiProxy_ApplicationPassword) validateSetStartDateParameters(val *stri
 	return nil
 }
 
-func validateNewApplicationPasswordParameters(scope constructs.Construct, id *string, config *ApplicationPasswordConfig) error {
+func validateNewApplicationPasswordAParameters(scope constructs.Construct, id *string, config *ApplicationPasswordAConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")
 	}

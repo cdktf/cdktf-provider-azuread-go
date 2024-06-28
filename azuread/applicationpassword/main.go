@@ -11,8 +11,8 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-azuread.applicationPassword.ApplicationPassword",
-		reflect.TypeOf((*ApplicationPassword)(nil)).Elem(),
+		"@cdktf/provider-azuread.applicationPassword.ApplicationPasswordA",
+		reflect.TypeOf((*ApplicationPasswordA)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -87,14 +87,14 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 		},
 		func() interface{} {
-			j := jsiiProxy_ApplicationPassword{}
+			j := jsiiProxy_ApplicationPasswordA{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-azuread.applicationPassword.ApplicationPasswordConfig",
-		reflect.TypeOf((*ApplicationPasswordConfig)(nil)).Elem(),
+		"@cdktf/provider-azuread.applicationPassword.ApplicationPasswordAConfig",
+		reflect.TypeOf((*ApplicationPasswordAConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-azuread.applicationPassword.ApplicationPasswordTimeouts",

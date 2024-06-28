@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/application azuread_application}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application azuread_application}.
 type Application interface {
 	cdktf.TerraformResource
 	Api() ApplicationApiOutputReference
@@ -96,6 +96,8 @@ type Application interface {
 	Owners() *[]*string
 	SetOwners(val *[]*string)
 	OwnersInput() *[]*string
+	Password() ApplicationPasswordOutputReference
+	PasswordInput() *ApplicationPassword
 	PreventDuplicateNames() interface{}
 	SetPreventDuplicateNames(val interface{})
 	PreventDuplicateNamesInput() interface{}
@@ -194,6 +196,7 @@ type Application interface {
 	PutAppRole(value interface{})
 	PutFeatureTags(value interface{})
 	PutOptionalClaims(value *ApplicationOptionalClaims)
+	PutPassword(value *ApplicationPassword)
 	PutPublicClient(value *ApplicationPublicClient)
 	PutRequiredResourceAccess(value interface{})
 	PutSinglePageApplication(value *ApplicationSinglePageApplication)
@@ -217,6 +220,7 @@ type Application interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetOwners()
+	ResetPassword()
 	ResetPreventDuplicateNames()
 	ResetPrivacyStatementUrl()
 	ResetPublicClient()
@@ -738,6 +742,26 @@ func (j *jsiiProxy_Application) OwnersInput() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_Application) Password() ApplicationPasswordOutputReference {
+	var returns ApplicationPasswordOutputReference
+	_jsii_.Get(
+		j,
+		"password",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Application) PasswordInput() *ApplicationPassword {
+	var returns *ApplicationPassword
+	_jsii_.Get(
+		j,
+		"passwordInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Application) PreventDuplicateNames() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -1069,7 +1093,7 @@ func (j *jsiiProxy_Application) WebInput() *ApplicationWeb {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/application azuread_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application azuread_application} Resource.
 func NewApplication(scope constructs.Construct, id *string, config *ApplicationConfig) Application {
 	_init_.Initialize()
 
@@ -1087,7 +1111,7 @@ func NewApplication(scope constructs.Construct, id *string, config *ApplicationC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/application azuread_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application azuread_application} Resource.
 func NewApplication_Override(a Application, scope constructs.Construct, id *string, config *ApplicationConfig) {
 	_init_.Initialize()
 
@@ -1783,6 +1807,17 @@ func (a *jsiiProxy_Application) PutOptionalClaims(value *ApplicationOptionalClai
 	)
 }
 
+func (a *jsiiProxy_Application) PutPassword(value *ApplicationPassword) {
+	if err := a.validatePutPasswordParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putPassword",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_Application) PutPublicClient(value *ApplicationPublicClient) {
 	if err := a.validatePutPublicClientParameters(value); err != nil {
 		panic(err)
@@ -1962,6 +1997,14 @@ func (a *jsiiProxy_Application) ResetOwners() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetOwners",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_Application) ResetPassword() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetPassword",
 		nil, // no parameters
 	)
 }

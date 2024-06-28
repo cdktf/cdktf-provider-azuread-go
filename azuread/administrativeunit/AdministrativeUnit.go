@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/administrative_unit azuread_administrative_unit}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/administrative_unit azuread_administrative_unit}.
 type AdministrativeUnit interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -464,7 +464,7 @@ func (j *jsiiProxy_AdministrativeUnit) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/administrative_unit azuread_administrative_unit} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/administrative_unit azuread_administrative_unit} Resource.
 func NewAdministrativeUnit(scope constructs.Construct, id *string, config *AdministrativeUnitConfig) AdministrativeUnit {
 	_init_.Initialize()
 
@@ -482,7 +482,7 @@ func NewAdministrativeUnit(scope constructs.Construct, id *string, config *Admin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/administrative_unit azuread_administrative_unit} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/administrative_unit azuread_administrative_unit} Resource.
 func NewAdministrativeUnit_Override(a AdministrativeUnit, scope constructs.Construct, id *string, config *AdministrativeUnitConfig) {
 	_init_.Initialize()
 

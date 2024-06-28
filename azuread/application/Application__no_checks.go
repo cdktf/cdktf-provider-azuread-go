@@ -91,6 +91,10 @@ func (a *jsiiProxy_Application) validatePutOptionalClaimsParameters(value *Appli
 	return nil
 }
 
+func (a *jsiiProxy_Application) validatePutPasswordParameters(value *ApplicationPassword) error {
+	return nil
+}
+
 func (a *jsiiProxy_Application) validatePutPublicClientParameters(value *ApplicationPublicClient) error {
 	return nil
 }
