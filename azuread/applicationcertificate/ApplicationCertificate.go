@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application_certificate azuread_application_certificate}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/application_certificate azuread_application_certificate}.
 type ApplicationCertificate interface {
 	cdktf.TerraformResource
 	ApplicationId() *string
@@ -549,7 +549,7 @@ func (j *jsiiProxy_ApplicationCertificate) ValueInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application_certificate azuread_application_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/application_certificate azuread_application_certificate} Resource.
 func NewApplicationCertificate(scope constructs.Construct, id *string, config *ApplicationCertificateConfig) ApplicationCertificate {
 	_init_.Initialize()
 
@@ -567,7 +567,7 @@ func NewApplicationCertificate(scope constructs.Construct, id *string, config *A
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application_certificate azuread_application_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/application_certificate azuread_application_certificate} Resource.
 func NewApplicationCertificate_Override(a ApplicationCertificate, scope constructs.Construct, id *string, config *ApplicationCertificateConfig) {
 	_init_.Initialize()
 

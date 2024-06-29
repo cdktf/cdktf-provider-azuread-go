@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/group_member azuread_group_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/group_member azuread_group_member}.
 type GroupMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -380,7 +380,7 @@ func (j *jsiiProxy_GroupMember) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/group_member azuread_group_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/group_member azuread_group_member} Resource.
 func NewGroupMember(scope constructs.Construct, id *string, config *GroupMemberConfig) GroupMember {
 	_init_.Initialize()
 
@@ -398,7 +398,7 @@ func NewGroupMember(scope constructs.Construct, id *string, config *GroupMemberC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/group_member azuread_group_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/group_member azuread_group_member} Resource.
 func NewGroupMember_Override(g GroupMember, scope constructs.Construct, id *string, config *GroupMemberConfig) {
 	_init_.Initialize()
 

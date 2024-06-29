@@ -24,20 +24,20 @@ type ApplicationIdentifierUriConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The resource ID of the application to which the identifier URI should be added.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application_identifier_uri#application_id ApplicationIdentifierUri#application_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/application_identifier_uri#application_id ApplicationIdentifierUri#application_id}
 	ApplicationId *string `field:"required" json:"applicationId" yaml:"applicationId"`
 	// The user-defined URI or URI-like string that uniquely identifies an application within its Azure AD tenant, or within a verified custom domain if the application is multi-tenant.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application_identifier_uri#identifier_uri ApplicationIdentifierUri#identifier_uri}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/application_identifier_uri#identifier_uri ApplicationIdentifierUri#identifier_uri}
 	IdentifierUri *string `field:"required" json:"identifierUri" yaml:"identifierUri"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application_identifier_uri#id ApplicationIdentifierUri#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/application_identifier_uri#id ApplicationIdentifierUri#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application_identifier_uri#timeouts ApplicationIdentifierUri#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/application_identifier_uri#timeouts ApplicationIdentifierUri#timeouts}
 	Timeouts *ApplicationIdentifierUriTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

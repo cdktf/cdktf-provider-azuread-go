@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/access_package_resource_catalog_association azuread_access_package_resource_catalog_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/access_package_resource_catalog_association azuread_access_package_resource_catalog_association}.
 type AccessPackageResourceCatalogAssociation interface {
 	cdktf.TerraformResource
 	CatalogId() *string
@@ -403,7 +403,7 @@ func (j *jsiiProxy_AccessPackageResourceCatalogAssociation) TimeoutsInput() inte
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/access_package_resource_catalog_association azuread_access_package_resource_catalog_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/access_package_resource_catalog_association azuread_access_package_resource_catalog_association} Resource.
 func NewAccessPackageResourceCatalogAssociation(scope constructs.Construct, id *string, config *AccessPackageResourceCatalogAssociationConfig) AccessPackageResourceCatalogAssociation {
 	_init_.Initialize()
 
@@ -421,7 +421,7 @@ func NewAccessPackageResourceCatalogAssociation(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/access_package_resource_catalog_association azuread_access_package_resource_catalog_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/access_package_resource_catalog_association azuread_access_package_resource_catalog_association} Resource.
 func NewAccessPackageResourceCatalogAssociation_Override(a AccessPackageResourceCatalogAssociation, scope constructs.Construct, id *string, config *AccessPackageResourceCatalogAssociationConfig) {
 	_init_.Initialize()
 
