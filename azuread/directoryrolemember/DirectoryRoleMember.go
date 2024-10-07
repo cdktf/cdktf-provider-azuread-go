@@ -5,14 +5,14 @@ package directoryrolemember
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azuread-go/azuread/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/directoryrolemember/internal"
+	"github.com/cdktf/cdktf-provider-azuread-go/azuread/v13/directoryrolemember/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/directory_role_member azuread_directory_role_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/directory_role_member azuread_directory_role_member}.
 type DirectoryRoleMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -382,7 +382,7 @@ func (j *jsiiProxy_DirectoryRoleMember) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/directory_role_member azuread_directory_role_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/directory_role_member azuread_directory_role_member} Resource.
 func NewDirectoryRoleMember(scope constructs.Construct, id *string, config *DirectoryRoleMemberConfig) DirectoryRoleMember {
 	_init_.Initialize()
 
@@ -400,7 +400,7 @@ func NewDirectoryRoleMember(scope constructs.Construct, id *string, config *Dire
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/directory_role_member azuread_directory_role_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/directory_role_member azuread_directory_role_member} Resource.
 func NewDirectoryRoleMember_Override(d DirectoryRoleMember, scope constructs.Construct, id *string, config *DirectoryRoleMemberConfig) {
 	_init_.Initialize()
 

@@ -5,14 +5,14 @@ package applicationapiaccess
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azuread-go/azuread/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/applicationapiaccess/internal"
+	"github.com/cdktf/cdktf-provider-azuread-go/azuread/v13/applicationapiaccess/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/application_api_access azuread_application_api_access}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/application_api_access azuread_application_api_access}.
 type ApplicationApiAccess interface {
 	cdktf.TerraformResource
 	ApiClientId() *string
@@ -428,7 +428,7 @@ func (j *jsiiProxy_ApplicationApiAccess) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/application_api_access azuread_application_api_access} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/application_api_access azuread_application_api_access} Resource.
 func NewApplicationApiAccess(scope constructs.Construct, id *string, config *ApplicationApiAccessConfig) ApplicationApiAccess {
 	_init_.Initialize()
 
@@ -446,7 +446,7 @@ func NewApplicationApiAccess(scope constructs.Construct, id *string, config *App
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/application_api_access azuread_application_api_access} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/application_api_access azuread_application_api_access} Resource.
 func NewApplicationApiAccess_Override(a ApplicationApiAccess, scope constructs.Construct, id *string, config *ApplicationApiAccessConfig) {
 	_init_.Initialize()
 

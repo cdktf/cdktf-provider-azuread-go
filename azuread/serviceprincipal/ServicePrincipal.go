@@ -5,14 +5,14 @@ package serviceprincipal
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azuread-go/azuread/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/serviceprincipal/internal"
+	"github.com/cdktf/cdktf-provider-azuread-go/azuread/v13/serviceprincipal/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/service_principal azuread_service_principal}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/service_principal azuread_service_principal}.
 type ServicePrincipal interface {
 	cdktf.TerraformResource
 	AccountEnabled() interface{}
@@ -21,9 +21,6 @@ type ServicePrincipal interface {
 	AlternativeNames() *[]*string
 	SetAlternativeNames(val *[]*string)
 	AlternativeNamesInput() *[]*string
-	ApplicationId() *string
-	SetApplicationId(val *string)
-	ApplicationIdInput() *string
 	ApplicationTenantId() *string
 	AppRoleAssignmentRequired() interface{}
 	SetAppRoleAssignmentRequired(val interface{})
@@ -174,9 +171,7 @@ type ServicePrincipal interface {
 	PutTimeouts(value *ServicePrincipalTimeouts)
 	ResetAccountEnabled()
 	ResetAlternativeNames()
-	ResetApplicationId()
 	ResetAppRoleAssignmentRequired()
-	ResetClientId()
 	ResetDescription()
 	ResetFeatures()
 	ResetFeatureTags()
@@ -246,26 +241,6 @@ func (j *jsiiProxy_ServicePrincipal) AlternativeNamesInput() *[]*string {
 	_jsii_.Get(
 		j,
 		"alternativeNamesInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ServicePrincipal) ApplicationId() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"applicationId",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ServicePrincipal) ApplicationIdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"applicationIdInput",
 		&returns,
 	)
 	return returns
@@ -872,7 +847,7 @@ func (j *jsiiProxy_ServicePrincipal) UseExistingInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/service_principal azuread_service_principal} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/service_principal azuread_service_principal} Resource.
 func NewServicePrincipal(scope constructs.Construct, id *string, config *ServicePrincipalConfig) ServicePrincipal {
 	_init_.Initialize()
 
@@ -890,7 +865,7 @@ func NewServicePrincipal(scope constructs.Construct, id *string, config *Service
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/service_principal azuread_service_principal} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/service_principal azuread_service_principal} Resource.
 func NewServicePrincipal_Override(s ServicePrincipal, scope constructs.Construct, id *string, config *ServicePrincipalConfig) {
 	_init_.Initialize()
 
@@ -919,17 +894,6 @@ func (j *jsiiProxy_ServicePrincipal)SetAlternativeNames(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"alternativeNames",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ServicePrincipal)SetApplicationId(val *string) {
-	if err := j.validateSetApplicationIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"applicationId",
 		val,
 	)
 }
@@ -1536,26 +1500,10 @@ func (s *jsiiProxy_ServicePrincipal) ResetAlternativeNames() {
 	)
 }
 
-func (s *jsiiProxy_ServicePrincipal) ResetApplicationId() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetApplicationId",
-		nil, // no parameters
-	)
-}
-
 func (s *jsiiProxy_ServicePrincipal) ResetAppRoleAssignmentRequired() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetAppRoleAssignmentRequired",
-		nil, // no parameters
-	)
-}
-
-func (s *jsiiProxy_ServicePrincipal) ResetClientId() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetClientId",
 		nil, // no parameters
 	)
 }

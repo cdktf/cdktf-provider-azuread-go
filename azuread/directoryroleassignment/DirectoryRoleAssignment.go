@@ -5,22 +5,19 @@ package directoryroleassignment
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azuread-go/azuread/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/directoryroleassignment/internal"
+	"github.com/cdktf/cdktf-provider-azuread-go/azuread/v13/directoryroleassignment/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/directory_role_assignment azuread_directory_role_assignment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/directory_role_assignment azuread_directory_role_assignment}.
 type DirectoryRoleAssignment interface {
 	cdktf.TerraformResource
 	AppScopeId() *string
 	SetAppScopeId(val *string)
 	AppScopeIdInput() *string
-	AppScopeObjectId() *string
-	SetAppScopeObjectId(val *string)
-	AppScopeObjectIdInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -40,9 +37,6 @@ type DirectoryRoleAssignment interface {
 	DirectoryScopeId() *string
 	SetDirectoryScopeId(val *string)
 	DirectoryScopeIdInput() *string
-	DirectoryScopeObjectId() *string
-	SetDirectoryScopeObjectId(val *string)
-	DirectoryScopeObjectIdInput() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -129,9 +123,7 @@ type DirectoryRoleAssignment interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *DirectoryRoleAssignmentTimeouts)
 	ResetAppScopeId()
-	ResetAppScopeObjectId()
 	ResetDirectoryScopeId()
-	ResetDirectoryScopeObjectId()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -170,26 +162,6 @@ func (j *jsiiProxy_DirectoryRoleAssignment) AppScopeIdInput() *string {
 	_jsii_.Get(
 		j,
 		"appScopeIdInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DirectoryRoleAssignment) AppScopeObjectId() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"appScopeObjectId",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DirectoryRoleAssignment) AppScopeObjectIdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"appScopeObjectIdInput",
 		&returns,
 	)
 	return returns
@@ -260,26 +232,6 @@ func (j *jsiiProxy_DirectoryRoleAssignment) DirectoryScopeIdInput() *string {
 	_jsii_.Get(
 		j,
 		"directoryScopeIdInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DirectoryRoleAssignment) DirectoryScopeObjectId() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"directoryScopeObjectId",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DirectoryRoleAssignment) DirectoryScopeObjectIdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"directoryScopeObjectIdInput",
 		&returns,
 	)
 	return returns
@@ -476,7 +428,7 @@ func (j *jsiiProxy_DirectoryRoleAssignment) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/directory_role_assignment azuread_directory_role_assignment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/directory_role_assignment azuread_directory_role_assignment} Resource.
 func NewDirectoryRoleAssignment(scope constructs.Construct, id *string, config *DirectoryRoleAssignmentConfig) DirectoryRoleAssignment {
 	_init_.Initialize()
 
@@ -494,7 +446,7 @@ func NewDirectoryRoleAssignment(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/directory_role_assignment azuread_directory_role_assignment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/directory_role_assignment azuread_directory_role_assignment} Resource.
 func NewDirectoryRoleAssignment_Override(d DirectoryRoleAssignment, scope constructs.Construct, id *string, config *DirectoryRoleAssignmentConfig) {
 	_init_.Initialize()
 
@@ -512,17 +464,6 @@ func (j *jsiiProxy_DirectoryRoleAssignment)SetAppScopeId(val *string) {
 	_jsii_.Set(
 		j,
 		"appScopeId",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DirectoryRoleAssignment)SetAppScopeObjectId(val *string) {
-	if err := j.validateSetAppScopeObjectIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"appScopeObjectId",
 		val,
 	)
 }
@@ -564,17 +505,6 @@ func (j *jsiiProxy_DirectoryRoleAssignment)SetDirectoryScopeId(val *string) {
 	_jsii_.Set(
 		j,
 		"directoryScopeId",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DirectoryRoleAssignment)SetDirectoryScopeObjectId(val *string) {
-	if err := j.validateSetDirectoryScopeObjectIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"directoryScopeObjectId",
 		val,
 	)
 }
@@ -1022,26 +952,10 @@ func (d *jsiiProxy_DirectoryRoleAssignment) ResetAppScopeId() {
 	)
 }
 
-func (d *jsiiProxy_DirectoryRoleAssignment) ResetAppScopeObjectId() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetAppScopeObjectId",
-		nil, // no parameters
-	)
-}
-
 func (d *jsiiProxy_DirectoryRoleAssignment) ResetDirectoryScopeId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetDirectoryScopeId",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DirectoryRoleAssignment) ResetDirectoryScopeObjectId() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetDirectoryScopeObjectId",
 		nil, // no parameters
 	)
 }

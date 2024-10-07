@@ -5,22 +5,19 @@ package applicationpassword
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azuread-go/azuread/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/applicationpassword/internal"
+	"github.com/cdktf/cdktf-provider-azuread-go/azuread/v13/applicationpassword/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/application_password azuread_application_password}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/application_password azuread_application_password}.
 type ApplicationPasswordA interface {
 	cdktf.TerraformResource
 	ApplicationId() *string
 	SetApplicationId(val *string)
 	ApplicationIdInput() *string
-	ApplicationObjectId() *string
-	SetApplicationObjectId(val *string)
-	ApplicationObjectIdInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -133,8 +130,6 @@ type ApplicationPasswordA interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *ApplicationPasswordTimeouts)
-	ResetApplicationId()
-	ResetApplicationObjectId()
 	ResetDisplayName()
 	ResetEndDate()
 	ResetEndDateRelative()
@@ -178,26 +173,6 @@ func (j *jsiiProxy_ApplicationPasswordA) ApplicationIdInput() *string {
 	_jsii_.Get(
 		j,
 		"applicationIdInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ApplicationPasswordA) ApplicationObjectId() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"applicationObjectId",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ApplicationPasswordA) ApplicationObjectIdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"applicationObjectIdInput",
 		&returns,
 	)
 	return returns
@@ -524,7 +499,7 @@ func (j *jsiiProxy_ApplicationPasswordA) Value() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/application_password azuread_application_password} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/application_password azuread_application_password} Resource.
 func NewApplicationPasswordA(scope constructs.Construct, id *string, config *ApplicationPasswordAConfig) ApplicationPasswordA {
 	_init_.Initialize()
 
@@ -542,7 +517,7 @@ func NewApplicationPasswordA(scope constructs.Construct, id *string, config *App
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/application_password azuread_application_password} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/application_password azuread_application_password} Resource.
 func NewApplicationPasswordA_Override(a ApplicationPasswordA, scope constructs.Construct, id *string, config *ApplicationPasswordAConfig) {
 	_init_.Initialize()
 
@@ -560,17 +535,6 @@ func (j *jsiiProxy_ApplicationPasswordA)SetApplicationId(val *string) {
 	_jsii_.Set(
 		j,
 		"applicationId",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ApplicationPasswordA)SetApplicationObjectId(val *string) {
-	if err := j.validateSetApplicationObjectIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"applicationObjectId",
 		val,
 	)
 }
@@ -1070,22 +1034,6 @@ func (a *jsiiProxy_ApplicationPasswordA) PutTimeouts(value *ApplicationPasswordT
 		a,
 		"putTimeouts",
 		[]interface{}{value},
-	)
-}
-
-func (a *jsiiProxy_ApplicationPasswordA) ResetApplicationId() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetApplicationId",
-		nil, // no parameters
-	)
-}
-
-func (a *jsiiProxy_ApplicationPasswordA) ResetApplicationObjectId() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetApplicationObjectId",
-		nil, // no parameters
 	)
 }
 

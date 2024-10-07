@@ -5,14 +5,14 @@ package dataazureadgrouprolemanagementpolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azuread-go/azuread/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/dataazureadgrouprolemanagementpolicy/internal"
+	"github.com/cdktf/cdktf-provider-azuread-go/azuread/v13/dataazureadgrouprolemanagementpolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/data-sources/group_role_management_policy azuread_group_role_management_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/data-sources/group_role_management_policy azuread_group_role_management_policy}.
 type DataAzureadGroupRoleManagementPolicy interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -357,7 +357,7 @@ func (j *jsiiProxy_DataAzureadGroupRoleManagementPolicy) TimeoutsInput() interfa
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/data-sources/group_role_management_policy azuread_group_role_management_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/data-sources/group_role_management_policy azuread_group_role_management_policy} Data Source.
 func NewDataAzureadGroupRoleManagementPolicy(scope constructs.Construct, id *string, config *DataAzureadGroupRoleManagementPolicyConfig) DataAzureadGroupRoleManagementPolicy {
 	_init_.Initialize()
 
@@ -375,7 +375,7 @@ func NewDataAzureadGroupRoleManagementPolicy(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/data-sources/group_role_management_policy azuread_group_role_management_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/data-sources/group_role_management_policy azuread_group_role_management_policy} Data Source.
 func NewDataAzureadGroupRoleManagementPolicy_Override(d DataAzureadGroupRoleManagementPolicy, scope constructs.Construct, id *string, config *DataAzureadGroupRoleManagementPolicyConfig) {
 	_init_.Initialize()
 

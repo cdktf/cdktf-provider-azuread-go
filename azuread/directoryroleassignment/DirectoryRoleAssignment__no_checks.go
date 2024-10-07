@@ -99,10 +99,6 @@ func (j *jsiiProxy_DirectoryRoleAssignment) validateSetAppScopeIdParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_DirectoryRoleAssignment) validateSetAppScopeObjectIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_DirectoryRoleAssignment) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }
@@ -112,10 +108,6 @@ func (j *jsiiProxy_DirectoryRoleAssignment) validateSetCountParameters(val inter
 }
 
 func (j *jsiiProxy_DirectoryRoleAssignment) validateSetDirectoryScopeIdParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DirectoryRoleAssignment) validateSetDirectoryScopeObjectIdParameters(val *string) error {
 	return nil
 }
 

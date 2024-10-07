@@ -5,20 +5,17 @@ package dataazureadapplication
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azuread-go/azuread/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/dataazureadapplication/internal"
+	"github.com/cdktf/cdktf-provider-azuread-go/azuread/v13/dataazureadapplication/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/data-sources/application azuread_application}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/data-sources/application azuread_application}.
 type DataAzureadApplication interface {
 	cdktf.TerraformDataSource
 	Api() DataAzureadApplicationApiList
-	ApplicationId() *string
-	SetApplicationId(val *string)
-	ApplicationIdInput() *string
 	AppRoleIds() cdktf.StringMap
 	AppRoles() DataAzureadApplicationAppRolesList
 	// Experimental.
@@ -127,7 +124,6 @@ type DataAzureadApplication interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *DataAzureadApplicationTimeouts)
-	ResetApplicationId()
 	ResetClientId()
 	ResetDisplayName()
 	ResetId()
@@ -161,26 +157,6 @@ func (j *jsiiProxy_DataAzureadApplication) Api() DataAzureadApplicationApiList {
 	_jsii_.Get(
 		j,
 		"api",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataAzureadApplication) ApplicationId() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"applicationId",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataAzureadApplication) ApplicationIdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"applicationIdInput",
 		&returns,
 	)
 	return returns
@@ -717,7 +693,7 @@ func (j *jsiiProxy_DataAzureadApplication) Web() DataAzureadApplicationWebList {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/data-sources/application azuread_application} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/data-sources/application azuread_application} Data Source.
 func NewDataAzureadApplication(scope constructs.Construct, id *string, config *DataAzureadApplicationConfig) DataAzureadApplication {
 	_init_.Initialize()
 
@@ -735,7 +711,7 @@ func NewDataAzureadApplication(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/data-sources/application azuread_application} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/data-sources/application azuread_application} Data Source.
 func NewDataAzureadApplication_Override(d DataAzureadApplication, scope constructs.Construct, id *string, config *DataAzureadApplicationConfig) {
 	_init_.Initialize()
 
@@ -743,17 +719,6 @@ func NewDataAzureadApplication_Override(d DataAzureadApplication, scope construc
 		"@cdktf/provider-azuread.dataAzureadApplication.DataAzureadApplication",
 		[]interface{}{scope, id, config},
 		d,
-	)
-}
-
-func (j *jsiiProxy_DataAzureadApplication)SetApplicationId(val *string) {
-	if err := j.validateSetApplicationIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"applicationId",
-		val,
 	)
 }
 
@@ -1151,14 +1116,6 @@ func (d *jsiiProxy_DataAzureadApplication) PutTimeouts(value *DataAzureadApplica
 		d,
 		"putTimeouts",
 		[]interface{}{value},
-	)
-}
-
-func (d *jsiiProxy_DataAzureadApplication) ResetApplicationId() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetApplicationId",
-		nil, // no parameters
 	)
 }
 

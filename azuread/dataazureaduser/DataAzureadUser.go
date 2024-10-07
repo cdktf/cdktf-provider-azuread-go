@@ -5,14 +5,14 @@ package dataazureaduser
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azuread-go/azuread/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/dataazureaduser/internal"
+	"github.com/cdktf/cdktf-provider-azuread-go/azuread/v13/dataazureaduser/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/data-sources/user azuread_user}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/data-sources/user azuread_user}.
 type DataAzureadUser interface {
 	cdktf.TerraformDataSource
 	AccountEnabled() cdktf.IResolvable
@@ -827,7 +827,7 @@ func (j *jsiiProxy_DataAzureadUser) UserType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/data-sources/user azuread_user} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/data-sources/user azuread_user} Data Source.
 func NewDataAzureadUser(scope constructs.Construct, id *string, config *DataAzureadUserConfig) DataAzureadUser {
 	_init_.Initialize()
 
@@ -845,7 +845,7 @@ func NewDataAzureadUser(scope constructs.Construct, id *string, config *DataAzur
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/data-sources/user azuread_user} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/data-sources/user azuread_user} Data Source.
 func NewDataAzureadUser_Override(d DataAzureadUser, scope constructs.Construct, id *string, config *DataAzureadUserConfig) {
 	_init_.Initialize()
 

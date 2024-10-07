@@ -5,22 +5,19 @@ package applicationfederatedidentitycredential
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azuread-go/azuread/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/applicationfederatedidentitycredential/internal"
+	"github.com/cdktf/cdktf-provider-azuread-go/azuread/v13/applicationfederatedidentitycredential/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/application_federated_identity_credential azuread_application_federated_identity_credential}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/application_federated_identity_credential azuread_application_federated_identity_credential}.
 type ApplicationFederatedIdentityCredential interface {
 	cdktf.TerraformResource
 	ApplicationId() *string
 	SetApplicationId(val *string)
 	ApplicationIdInput() *string
-	ApplicationObjectId() *string
-	SetApplicationObjectId(val *string)
-	ApplicationObjectIdInput() *string
 	Audiences() *[]*string
 	SetAudiences(val *[]*string)
 	AudiencesInput() *[]*string
@@ -132,8 +129,6 @@ type ApplicationFederatedIdentityCredential interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *ApplicationFederatedIdentityCredentialTimeouts)
-	ResetApplicationId()
-	ResetApplicationObjectId()
 	ResetDescription()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -173,26 +168,6 @@ func (j *jsiiProxy_ApplicationFederatedIdentityCredential) ApplicationIdInput() 
 	_jsii_.Get(
 		j,
 		"applicationIdInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ApplicationFederatedIdentityCredential) ApplicationObjectId() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"applicationObjectId",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ApplicationFederatedIdentityCredential) ApplicationObjectIdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"applicationObjectIdInput",
 		&returns,
 	)
 	return returns
@@ -509,7 +484,7 @@ func (j *jsiiProxy_ApplicationFederatedIdentityCredential) TimeoutsInput() inter
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/application_federated_identity_credential azuread_application_federated_identity_credential} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/application_federated_identity_credential azuread_application_federated_identity_credential} Resource.
 func NewApplicationFederatedIdentityCredential(scope constructs.Construct, id *string, config *ApplicationFederatedIdentityCredentialConfig) ApplicationFederatedIdentityCredential {
 	_init_.Initialize()
 
@@ -527,7 +502,7 @@ func NewApplicationFederatedIdentityCredential(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/application_federated_identity_credential azuread_application_federated_identity_credential} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/application_federated_identity_credential azuread_application_federated_identity_credential} Resource.
 func NewApplicationFederatedIdentityCredential_Override(a ApplicationFederatedIdentityCredential, scope constructs.Construct, id *string, config *ApplicationFederatedIdentityCredentialConfig) {
 	_init_.Initialize()
 
@@ -545,17 +520,6 @@ func (j *jsiiProxy_ApplicationFederatedIdentityCredential)SetApplicationId(val *
 	_jsii_.Set(
 		j,
 		"applicationId",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ApplicationFederatedIdentityCredential)SetApplicationObjectId(val *string) {
-	if err := j.validateSetApplicationObjectIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"applicationObjectId",
 		val,
 	)
 }
@@ -1055,22 +1019,6 @@ func (a *jsiiProxy_ApplicationFederatedIdentityCredential) PutTimeouts(value *Ap
 		a,
 		"putTimeouts",
 		[]interface{}{value},
-	)
-}
-
-func (a *jsiiProxy_ApplicationFederatedIdentityCredential) ResetApplicationId() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetApplicationId",
-		nil, // no parameters
-	)
-}
-
-func (a *jsiiProxy_ApplicationFederatedIdentityCredential) ResetApplicationObjectId() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetApplicationObjectId",
-		nil, // no parameters
 	)
 }
 

@@ -5,14 +5,14 @@ package conditionalaccesspolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azuread-go/azuread/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/conditionalaccesspolicy/internal"
+	"github.com/cdktf/cdktf-provider-azuread-go/azuread/v13/conditionalaccesspolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/conditional_access_policy azuread_conditional_access_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/conditional_access_policy azuread_conditional_access_policy}.
 type ConditionalAccessPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -55,6 +55,7 @@ type ConditionalAccessPolicy interface {
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
+	ObjectId() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -330,6 +331,16 @@ func (j *jsiiProxy_ConditionalAccessPolicy) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_ConditionalAccessPolicy) ObjectId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"objectId",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ConditionalAccessPolicy) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -451,7 +462,7 @@ func (j *jsiiProxy_ConditionalAccessPolicy) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/conditional_access_policy azuread_conditional_access_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/conditional_access_policy azuread_conditional_access_policy} Resource.
 func NewConditionalAccessPolicy(scope constructs.Construct, id *string, config *ConditionalAccessPolicyConfig) ConditionalAccessPolicy {
 	_init_.Initialize()
 
@@ -469,7 +480,7 @@ func NewConditionalAccessPolicy(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/conditional_access_policy azuread_conditional_access_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/conditional_access_policy azuread_conditional_access_policy} Resource.
 func NewConditionalAccessPolicy_Override(c ConditionalAccessPolicy, scope constructs.Construct, id *string, config *ConditionalAccessPolicyConfig) {
 	_init_.Initialize()
 

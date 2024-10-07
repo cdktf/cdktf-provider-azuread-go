@@ -5,14 +5,14 @@ package accesspackagecatalog
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azuread-go/azuread/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/accesspackagecatalog/internal"
+	"github.com/cdktf/cdktf-provider-azuread-go/azuread/v13/accesspackagecatalog/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/access_package_catalog azuread_access_package_catalog}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/access_package_catalog azuread_access_package_catalog}.
 type AccessPackageCatalog interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -428,7 +428,7 @@ func (j *jsiiProxy_AccessPackageCatalog) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/access_package_catalog azuread_access_package_catalog} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/access_package_catalog azuread_access_package_catalog} Resource.
 func NewAccessPackageCatalog(scope constructs.Construct, id *string, config *AccessPackageCatalogConfig) AccessPackageCatalog {
 	_init_.Initialize()
 
@@ -446,7 +446,7 @@ func NewAccessPackageCatalog(scope constructs.Construct, id *string, config *Acc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/access_package_catalog azuread_access_package_catalog} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/access_package_catalog azuread_access_package_catalog} Resource.
 func NewAccessPackageCatalog_Override(a AccessPackageCatalog, scope constructs.Construct, id *string, config *AccessPackageCatalogConfig) {
 	_init_.Initialize()
 

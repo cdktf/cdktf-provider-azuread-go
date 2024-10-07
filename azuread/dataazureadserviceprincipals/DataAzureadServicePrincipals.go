@@ -5,19 +5,16 @@ package dataazureadserviceprincipals
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azuread-go/azuread/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/dataazureadserviceprincipals/internal"
+	"github.com/cdktf/cdktf-provider-azuread-go/azuread/v13/dataazureadserviceprincipals/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/data-sources/service_principals azuread_service_principals}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/data-sources/service_principals azuread_service_principals}.
 type DataAzureadServicePrincipals interface {
 	cdktf.TerraformDataSource
-	ApplicationIds() *[]*string
-	SetApplicationIds(val *[]*string)
-	ApplicationIdsInput() *[]*string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	ClientIds() *[]*string
@@ -103,7 +100,6 @@ type DataAzureadServicePrincipals interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *DataAzureadServicePrincipalsTimeouts)
-	ResetApplicationIds()
 	ResetClientIds()
 	ResetDisplayNames()
 	ResetId()
@@ -131,26 +127,6 @@ type DataAzureadServicePrincipals interface {
 // The jsii proxy struct for DataAzureadServicePrincipals
 type jsiiProxy_DataAzureadServicePrincipals struct {
 	internal.Type__cdktfTerraformDataSource
-}
-
-func (j *jsiiProxy_DataAzureadServicePrincipals) ApplicationIds() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"applicationIds",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataAzureadServicePrincipals) ApplicationIdsInput() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"applicationIdsInput",
-		&returns,
-	)
-	return returns
 }
 
 func (j *jsiiProxy_DataAzureadServicePrincipals) CdktfStack() cdktf.TerraformStack {
@@ -444,7 +420,7 @@ func (j *jsiiProxy_DataAzureadServicePrincipals) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/data-sources/service_principals azuread_service_principals} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/data-sources/service_principals azuread_service_principals} Data Source.
 func NewDataAzureadServicePrincipals(scope constructs.Construct, id *string, config *DataAzureadServicePrincipalsConfig) DataAzureadServicePrincipals {
 	_init_.Initialize()
 
@@ -462,7 +438,7 @@ func NewDataAzureadServicePrincipals(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/data-sources/service_principals azuread_service_principals} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/data-sources/service_principals azuread_service_principals} Data Source.
 func NewDataAzureadServicePrincipals_Override(d DataAzureadServicePrincipals, scope constructs.Construct, id *string, config *DataAzureadServicePrincipalsConfig) {
 	_init_.Initialize()
 
@@ -470,17 +446,6 @@ func NewDataAzureadServicePrincipals_Override(d DataAzureadServicePrincipals, sc
 		"@cdktf/provider-azuread.dataAzureadServicePrincipals.DataAzureadServicePrincipals",
 		[]interface{}{scope, id, config},
 		d,
-	)
-}
-
-func (j *jsiiProxy_DataAzureadServicePrincipals)SetApplicationIds(val *[]*string) {
-	if err := j.validateSetApplicationIdsParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"applicationIds",
-		val,
 	)
 }
 
@@ -889,14 +854,6 @@ func (d *jsiiProxy_DataAzureadServicePrincipals) PutTimeouts(value *DataAzureadS
 		d,
 		"putTimeouts",
 		[]interface{}{value},
-	)
-}
-
-func (d *jsiiProxy_DataAzureadServicePrincipals) ResetApplicationIds() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetApplicationIds",
-		nil, // no parameters
 	)
 }
 

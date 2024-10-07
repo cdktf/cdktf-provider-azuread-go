@@ -266,14 +266,6 @@ func (j *jsiiProxy_DirectoryRoleAssignment) validateSetAppScopeIdParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_DirectoryRoleAssignment) validateSetAppScopeObjectIdParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_DirectoryRoleAssignment) validateSetConnectionParameters(val interface{}) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
@@ -365,14 +357,6 @@ func (j *jsiiProxy_DirectoryRoleAssignment) validateSetCountParameters(val inter
 }
 
 func (j *jsiiProxy_DirectoryRoleAssignment) validateSetDirectoryScopeIdParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DirectoryRoleAssignment) validateSetDirectoryScopeObjectIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

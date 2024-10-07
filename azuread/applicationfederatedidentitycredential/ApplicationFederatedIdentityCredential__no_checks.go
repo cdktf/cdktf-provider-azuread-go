@@ -99,10 +99,6 @@ func (j *jsiiProxy_ApplicationFederatedIdentityCredential) validateSetApplicatio
 	return nil
 }
 
-func (j *jsiiProxy_ApplicationFederatedIdentityCredential) validateSetApplicationObjectIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_ApplicationFederatedIdentityCredential) validateSetAudiencesParameters(val *[]*string) error {
 	return nil
 }

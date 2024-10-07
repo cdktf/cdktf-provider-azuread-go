@@ -5,14 +5,14 @@ package serviceprincipaldelegatedpermissiongrant
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azuread-go/azuread/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/serviceprincipaldelegatedpermissiongrant/internal"
+	"github.com/cdktf/cdktf-provider-azuread-go/azuread/v13/serviceprincipaldelegatedpermissiongrant/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/service_principal_delegated_permission_grant azuread_service_principal_delegated_permission_grant}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/service_principal_delegated_permission_grant azuread_service_principal_delegated_permission_grant}.
 type ServicePrincipalDelegatedPermissionGrant interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -427,7 +427,7 @@ func (j *jsiiProxy_ServicePrincipalDelegatedPermissionGrant) UserObjectIdInput()
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/service_principal_delegated_permission_grant azuread_service_principal_delegated_permission_grant} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/service_principal_delegated_permission_grant azuread_service_principal_delegated_permission_grant} Resource.
 func NewServicePrincipalDelegatedPermissionGrant(scope constructs.Construct, id *string, config *ServicePrincipalDelegatedPermissionGrantConfig) ServicePrincipalDelegatedPermissionGrant {
 	_init_.Initialize()
 
@@ -445,7 +445,7 @@ func NewServicePrincipalDelegatedPermissionGrant(scope constructs.Construct, id 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/service_principal_delegated_permission_grant azuread_service_principal_delegated_permission_grant} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/service_principal_delegated_permission_grant azuread_service_principal_delegated_permission_grant} Resource.
 func NewServicePrincipalDelegatedPermissionGrant_Override(s ServicePrincipalDelegatedPermissionGrant, scope constructs.Construct, id *string, config *ServicePrincipalDelegatedPermissionGrantConfig) {
 	_init_.Initialize()
 

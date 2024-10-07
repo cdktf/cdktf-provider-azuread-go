@@ -5,14 +5,14 @@ package accesspackage
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azuread-go/azuread/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/accesspackage/internal"
+	"github.com/cdktf/cdktf-provider-azuread-go/azuread/v13/accesspackage/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/access_package azuread_access_package}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/access_package azuread_access_package}.
 type AccessPackage interface {
 	cdktf.TerraformResource
 	CatalogId() *string
@@ -427,7 +427,7 @@ func (j *jsiiProxy_AccessPackage) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/access_package azuread_access_package} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/access_package azuread_access_package} Resource.
 func NewAccessPackage(scope constructs.Construct, id *string, config *AccessPackageConfig) AccessPackage {
 	_init_.Initialize()
 
@@ -445,7 +445,7 @@ func NewAccessPackage(scope constructs.Construct, id *string, config *AccessPack
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/access_package azuread_access_package} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/access_package azuread_access_package} Resource.
 func NewAccessPackage_Override(a AccessPackage, scope constructs.Construct, id *string, config *AccessPackageConfig) {
 	_init_.Initialize()
 

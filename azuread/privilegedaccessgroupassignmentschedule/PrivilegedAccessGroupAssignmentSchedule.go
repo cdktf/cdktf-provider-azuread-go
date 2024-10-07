@@ -5,14 +5,14 @@ package privilegedaccessgroupassignmentschedule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azuread-go/azuread/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/privilegedaccessgroupassignmentschedule/internal"
+	"github.com/cdktf/cdktf-provider-azuread-go/azuread/v13/privilegedaccessgroupassignmentschedule/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/privileged_access_group_assignment_schedule azuread_privileged_access_group_assignment_schedule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/privileged_access_group_assignment_schedule azuread_privileged_access_group_assignment_schedule}.
 type PrivilegedAccessGroupAssignmentSchedule interface {
 	cdktf.TerraformResource
 	AssignmentType() *string
@@ -582,7 +582,7 @@ func (j *jsiiProxy_PrivilegedAccessGroupAssignmentSchedule) TimeoutsInput() inte
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/privileged_access_group_assignment_schedule azuread_privileged_access_group_assignment_schedule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/privileged_access_group_assignment_schedule azuread_privileged_access_group_assignment_schedule} Resource.
 func NewPrivilegedAccessGroupAssignmentSchedule(scope constructs.Construct, id *string, config *PrivilegedAccessGroupAssignmentScheduleConfig) PrivilegedAccessGroupAssignmentSchedule {
 	_init_.Initialize()
 
@@ -600,7 +600,7 @@ func NewPrivilegedAccessGroupAssignmentSchedule(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/privileged_access_group_assignment_schedule azuread_privileged_access_group_assignment_schedule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/privileged_access_group_assignment_schedule azuread_privileged_access_group_assignment_schedule} Resource.
 func NewPrivilegedAccessGroupAssignmentSchedule_Override(p PrivilegedAccessGroupAssignmentSchedule, scope constructs.Construct, id *string, config *PrivilegedAccessGroupAssignmentScheduleConfig) {
 	_init_.Initialize()
 

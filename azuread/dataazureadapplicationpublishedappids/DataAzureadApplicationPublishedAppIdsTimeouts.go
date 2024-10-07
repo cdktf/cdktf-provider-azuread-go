@@ -5,7 +5,7 @@ package dataazureadapplicationpublishedappids
 
 
 type DataAzureadApplicationPublishedAppIdsTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/data-sources/application_published_app_ids#read DataAzureadApplicationPublishedAppIds#read}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/data-sources/application_published_app_ids#read DataAzureadApplicationPublishedAppIds#read}.
 	Read *string `field:"optional" json:"read" yaml:"read"`
 }
 

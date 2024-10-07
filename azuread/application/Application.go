@@ -5,19 +5,18 @@ package application
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azuread-go/azuread/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/application/internal"
+	"github.com/cdktf/cdktf-provider-azuread-go/azuread/v13/application/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/application azuread_application}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/application azuread_application}.
 type Application interface {
 	cdktf.TerraformResource
 	Api() ApplicationApiOutputReference
 	ApiInput() *ApplicationApi
-	ApplicationId() *string
 	AppRole() ApplicationAppRoleList
 	AppRoleIds() cdktf.StringMap
 	AppRoleInput() interface{}
@@ -267,16 +266,6 @@ func (j *jsiiProxy_Application) ApiInput() *ApplicationApi {
 	_jsii_.Get(
 		j,
 		"apiInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Application) ApplicationId() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"applicationId",
 		&returns,
 	)
 	return returns
@@ -1093,7 +1082,7 @@ func (j *jsiiProxy_Application) WebInput() *ApplicationWeb {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/application azuread_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/application azuread_application} Resource.
 func NewApplication(scope constructs.Construct, id *string, config *ApplicationConfig) Application {
 	_init_.Initialize()
 
@@ -1111,7 +1100,7 @@ func NewApplication(scope constructs.Construct, id *string, config *ApplicationC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/application azuread_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/application azuread_application} Resource.
 func NewApplication_Override(a Application, scope constructs.Construct, id *string, config *ApplicationConfig) {
 	_init_.Initialize()
 

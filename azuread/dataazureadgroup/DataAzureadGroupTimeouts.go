@@ -5,7 +5,7 @@ package dataazureadgroup
 
 
 type DataAzureadGroupTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/data-sources/group#read DataAzureadGroup#read}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/data-sources/group#read DataAzureadGroup#read}.
 	Read *string `field:"optional" json:"read" yaml:"read"`
 }
 

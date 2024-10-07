@@ -75,10 +75,6 @@ func validateDataAzureadServicePrincipal_IsTerraformElementParameters(x interfac
 	return nil
 }
 
-func (j *jsiiProxy_DataAzureadServicePrincipal) validateSetApplicationIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataAzureadServicePrincipal) validateSetClientIdParameters(val *string) error {
 	return nil
 }

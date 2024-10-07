@@ -5,14 +5,14 @@ package dataazureadapplicationtemplate
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azuread-go/azuread/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/dataazureadapplicationtemplate/internal"
+	"github.com/cdktf/cdktf-provider-azuread-go/azuread/v13/dataazureadapplicationtemplate/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/data-sources/application_template azuread_application_template}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/data-sources/application_template azuread_application_template}.
 type DataAzureadApplicationTemplate interface {
 	cdktf.TerraformDataSource
 	Categories() *[]*string
@@ -403,7 +403,7 @@ func (j *jsiiProxy_DataAzureadApplicationTemplate) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/data-sources/application_template azuread_application_template} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/data-sources/application_template azuread_application_template} Data Source.
 func NewDataAzureadApplicationTemplate(scope constructs.Construct, id *string, config *DataAzureadApplicationTemplateConfig) DataAzureadApplicationTemplate {
 	_init_.Initialize()
 
@@ -421,7 +421,7 @@ func NewDataAzureadApplicationTemplate(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/data-sources/application_template azuread_application_template} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/data-sources/application_template azuread_application_template} Data Source.
 func NewDataAzureadApplicationTemplate_Override(d DataAzureadApplicationTemplate, scope constructs.Construct, id *string, config *DataAzureadApplicationTemplateConfig) {
 	_init_.Initialize()
 

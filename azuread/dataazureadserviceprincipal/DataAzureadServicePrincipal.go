@@ -5,21 +5,18 @@ package dataazureadserviceprincipal
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azuread-go/azuread/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/dataazureadserviceprincipal/internal"
+	"github.com/cdktf/cdktf-provider-azuread-go/azuread/v13/dataazureadserviceprincipal/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/data-sources/service_principal azuread_service_principal}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/data-sources/service_principal azuread_service_principal}.
 type DataAzureadServicePrincipal interface {
 	cdktf.TerraformDataSource
 	AccountEnabled() cdktf.IResolvable
 	AlternativeNames() *[]*string
-	ApplicationId() *string
-	SetApplicationId(val *string)
-	ApplicationIdInput() *string
 	ApplicationTenantId() *string
 	AppRoleAssignmentRequired() cdktf.IResolvable
 	AppRoleIds() cdktf.StringMap
@@ -120,7 +117,6 @@ type DataAzureadServicePrincipal interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *DataAzureadServicePrincipalTimeouts)
-	ResetApplicationId()
 	ResetClientId()
 	ResetDisplayName()
 	ResetId()
@@ -163,26 +159,6 @@ func (j *jsiiProxy_DataAzureadServicePrincipal) AlternativeNames() *[]*string {
 	_jsii_.Get(
 		j,
 		"alternativeNames",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataAzureadServicePrincipal) ApplicationId() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"applicationId",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataAzureadServicePrincipal) ApplicationIdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"applicationIdInput",
 		&returns,
 	)
 	return returns
@@ -649,7 +625,7 @@ func (j *jsiiProxy_DataAzureadServicePrincipal) Type() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/data-sources/service_principal azuread_service_principal} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/data-sources/service_principal azuread_service_principal} Data Source.
 func NewDataAzureadServicePrincipal(scope constructs.Construct, id *string, config *DataAzureadServicePrincipalConfig) DataAzureadServicePrincipal {
 	_init_.Initialize()
 
@@ -667,7 +643,7 @@ func NewDataAzureadServicePrincipal(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/data-sources/service_principal azuread_service_principal} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/data-sources/service_principal azuread_service_principal} Data Source.
 func NewDataAzureadServicePrincipal_Override(d DataAzureadServicePrincipal, scope constructs.Construct, id *string, config *DataAzureadServicePrincipalConfig) {
 	_init_.Initialize()
 
@@ -675,17 +651,6 @@ func NewDataAzureadServicePrincipal_Override(d DataAzureadServicePrincipal, scop
 		"@cdktf/provider-azuread.dataAzureadServicePrincipal.DataAzureadServicePrincipal",
 		[]interface{}{scope, id, config},
 		d,
-	)
-}
-
-func (j *jsiiProxy_DataAzureadServicePrincipal)SetApplicationId(val *string) {
-	if err := j.validateSetApplicationIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"applicationId",
-		val,
 	)
 }
 
@@ -1072,14 +1037,6 @@ func (d *jsiiProxy_DataAzureadServicePrincipal) PutTimeouts(value *DataAzureadSe
 		d,
 		"putTimeouts",
 		[]interface{}{value},
-	)
-}
-
-func (d *jsiiProxy_DataAzureadServicePrincipal) ResetApplicationId() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetApplicationId",
-		nil, // no parameters
 	)
 }
 

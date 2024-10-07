@@ -5,14 +5,14 @@ package synchronizationjobprovisionondemand
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azuread-go/azuread/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/synchronizationjobprovisionondemand/internal"
+	"github.com/cdktf/cdktf-provider-azuread-go/azuread/v13/synchronizationjobprovisionondemand/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/synchronization_job_provision_on_demand azuread_synchronization_job_provision_on_demand}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/synchronization_job_provision_on_demand azuread_synchronization_job_provision_on_demand}.
 type SynchronizationJobProvisionOnDemand interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -427,7 +427,7 @@ func (j *jsiiProxy_SynchronizationJobProvisionOnDemand) TriggersInput() *map[str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/synchronization_job_provision_on_demand azuread_synchronization_job_provision_on_demand} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/synchronization_job_provision_on_demand azuread_synchronization_job_provision_on_demand} Resource.
 func NewSynchronizationJobProvisionOnDemand(scope constructs.Construct, id *string, config *SynchronizationJobProvisionOnDemandConfig) SynchronizationJobProvisionOnDemand {
 	_init_.Initialize()
 
@@ -445,7 +445,7 @@ func NewSynchronizationJobProvisionOnDemand(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/synchronization_job_provision_on_demand azuread_synchronization_job_provision_on_demand} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/synchronization_job_provision_on_demand azuread_synchronization_job_provision_on_demand} Resource.
 func NewSynchronizationJobProvisionOnDemand_Override(s SynchronizationJobProvisionOnDemand, scope constructs.Construct, id *string, config *SynchronizationJobProvisionOnDemandConfig) {
 	_init_.Initialize()
 

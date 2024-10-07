@@ -115,10 +115,6 @@ func (j *jsiiProxy_ServicePrincipal) validateSetAlternativeNamesParameters(val *
 	return nil
 }
 
-func (j *jsiiProxy_ServicePrincipal) validateSetApplicationIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_ServicePrincipal) validateSetAppRoleAssignmentRequiredParameters(val interface{}) error {
 	return nil
 }

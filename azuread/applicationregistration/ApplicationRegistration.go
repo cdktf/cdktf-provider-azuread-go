@@ -5,14 +5,14 @@ package applicationregistration
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azuread-go/azuread/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/applicationregistration/internal"
+	"github.com/cdktf/cdktf-provider-azuread-go/azuread/v13/applicationregistration/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/application_registration azuread_application_registration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/application_registration azuread_application_registration}.
 type ApplicationRegistration interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -737,7 +737,7 @@ func (j *jsiiProxy_ApplicationRegistration) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/application_registration azuread_application_registration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/application_registration azuread_application_registration} Resource.
 func NewApplicationRegistration(scope constructs.Construct, id *string, config *ApplicationRegistrationConfig) ApplicationRegistration {
 	_init_.Initialize()
 
@@ -755,7 +755,7 @@ func NewApplicationRegistration(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/application_registration azuread_application_registration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/application_registration azuread_application_registration} Resource.
 func NewApplicationRegistration_Override(a ApplicationRegistration, scope constructs.Construct, id *string, config *ApplicationRegistrationConfig) {
 	_init_.Initialize()
 

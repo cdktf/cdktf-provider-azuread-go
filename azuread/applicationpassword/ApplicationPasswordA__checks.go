@@ -266,14 +266,6 @@ func (j *jsiiProxy_ApplicationPasswordA) validateSetApplicationIdParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_ApplicationPasswordA) validateSetApplicationObjectIdParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_ApplicationPasswordA) validateSetConnectionParameters(val interface{}) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
@@ -475,6 +467,9 @@ func validateNewApplicationPasswordAParameters(scope constructs.Construct, id *s
 		return fmt.Errorf("parameter id is required, but nil was provided")
 	}
 
+	if config == nil {
+		return fmt.Errorf("parameter config is required, but nil was provided")
+	}
 	if err := _jsii_.ValidateStruct(config, func() string { return "parameter config" }); err != nil {
 		return err
 	}

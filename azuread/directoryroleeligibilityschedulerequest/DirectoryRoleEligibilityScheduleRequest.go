@@ -5,14 +5,14 @@ package directoryroleeligibilityschedulerequest
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azuread-go/azuread/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/directoryroleeligibilityschedulerequest/internal"
+	"github.com/cdktf/cdktf-provider-azuread-go/azuread/v13/directoryroleeligibilityschedulerequest/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/directory_role_eligibility_schedule_request azuread_directory_role_eligibility_schedule_request}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/directory_role_eligibility_schedule_request azuread_directory_role_eligibility_schedule_request}.
 type DirectoryRoleEligibilityScheduleRequest interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -426,7 +426,7 @@ func (j *jsiiProxy_DirectoryRoleEligibilityScheduleRequest) TimeoutsInput() inte
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/directory_role_eligibility_schedule_request azuread_directory_role_eligibility_schedule_request} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/directory_role_eligibility_schedule_request azuread_directory_role_eligibility_schedule_request} Resource.
 func NewDirectoryRoleEligibilityScheduleRequest(scope constructs.Construct, id *string, config *DirectoryRoleEligibilityScheduleRequestConfig) DirectoryRoleEligibilityScheduleRequest {
 	_init_.Initialize()
 
@@ -444,7 +444,7 @@ func NewDirectoryRoleEligibilityScheduleRequest(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/directory_role_eligibility_schedule_request azuread_directory_role_eligibility_schedule_request} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/directory_role_eligibility_schedule_request azuread_directory_role_eligibility_schedule_request} Resource.
 func NewDirectoryRoleEligibilityScheduleRequest_Override(d DirectoryRoleEligibilityScheduleRequest, scope constructs.Construct, id *string, config *DirectoryRoleEligibilityScheduleRequestConfig) {
 	_init_.Initialize()
 

@@ -5,22 +5,19 @@ package applicationcertificate
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azuread-go/azuread/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/applicationcertificate/internal"
+	"github.com/cdktf/cdktf-provider-azuread-go/azuread/v13/applicationcertificate/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/application_certificate azuread_application_certificate}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/application_certificate azuread_application_certificate}.
 type ApplicationCertificate interface {
 	cdktf.TerraformResource
 	ApplicationId() *string
 	SetApplicationId(val *string)
 	ApplicationIdInput() *string
-	ApplicationObjectId() *string
-	SetApplicationObjectId(val *string)
-	ApplicationObjectIdInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -137,8 +134,6 @@ type ApplicationCertificate interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *ApplicationCertificateTimeouts)
-	ResetApplicationId()
-	ResetApplicationObjectId()
 	ResetEncoding()
 	ResetEndDate()
 	ResetEndDateRelative()
@@ -183,26 +178,6 @@ func (j *jsiiProxy_ApplicationCertificate) ApplicationIdInput() *string {
 	_jsii_.Get(
 		j,
 		"applicationIdInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ApplicationCertificate) ApplicationObjectId() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"applicationObjectId",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ApplicationCertificate) ApplicationObjectIdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"applicationObjectIdInput",
 		&returns,
 	)
 	return returns
@@ -549,7 +524,7 @@ func (j *jsiiProxy_ApplicationCertificate) ValueInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/application_certificate azuread_application_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/application_certificate azuread_application_certificate} Resource.
 func NewApplicationCertificate(scope constructs.Construct, id *string, config *ApplicationCertificateConfig) ApplicationCertificate {
 	_init_.Initialize()
 
@@ -567,7 +542,7 @@ func NewApplicationCertificate(scope constructs.Construct, id *string, config *A
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/application_certificate azuread_application_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/application_certificate azuread_application_certificate} Resource.
 func NewApplicationCertificate_Override(a ApplicationCertificate, scope constructs.Construct, id *string, config *ApplicationCertificateConfig) {
 	_init_.Initialize()
 
@@ -585,17 +560,6 @@ func (j *jsiiProxy_ApplicationCertificate)SetApplicationId(val *string) {
 	_jsii_.Set(
 		j,
 		"applicationId",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ApplicationCertificate)SetApplicationObjectId(val *string) {
-	if err := j.validateSetApplicationObjectIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"applicationObjectId",
 		val,
 	)
 }
@@ -1117,22 +1081,6 @@ func (a *jsiiProxy_ApplicationCertificate) PutTimeouts(value *ApplicationCertifi
 		a,
 		"putTimeouts",
 		[]interface{}{value},
-	)
-}
-
-func (a *jsiiProxy_ApplicationCertificate) ResetApplicationId() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetApplicationId",
-		nil, // no parameters
-	)
-}
-
-func (a *jsiiProxy_ApplicationCertificate) ResetApplicationObjectId() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetApplicationObjectId",
-		nil, // no parameters
 	)
 }
 

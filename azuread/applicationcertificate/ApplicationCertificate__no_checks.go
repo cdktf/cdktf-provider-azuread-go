@@ -99,10 +99,6 @@ func (j *jsiiProxy_ApplicationCertificate) validateSetApplicationIdParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_ApplicationCertificate) validateSetApplicationObjectIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_ApplicationCertificate) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

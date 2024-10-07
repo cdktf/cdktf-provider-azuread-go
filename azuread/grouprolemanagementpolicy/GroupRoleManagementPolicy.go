@@ -5,14 +5,14 @@ package grouprolemanagementpolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azuread-go/azuread/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/grouprolemanagementpolicy/internal"
+	"github.com/cdktf/cdktf-provider-azuread-go/azuread/v13/grouprolemanagementpolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/group_role_management_policy azuread_group_role_management_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/group_role_management_policy azuread_group_role_management_policy}.
 type GroupRoleManagementPolicy interface {
 	cdktf.TerraformResource
 	ActivationRules() GroupRoleManagementPolicyActivationRulesOutputReference
@@ -498,7 +498,7 @@ func (j *jsiiProxy_GroupRoleManagementPolicy) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/group_role_management_policy azuread_group_role_management_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/group_role_management_policy azuread_group_role_management_policy} Resource.
 func NewGroupRoleManagementPolicy(scope constructs.Construct, id *string, config *GroupRoleManagementPolicyConfig) GroupRoleManagementPolicy {
 	_init_.Initialize()
 
@@ -516,7 +516,7 @@ func NewGroupRoleManagementPolicy(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/group_role_management_policy azuread_group_role_management_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/group_role_management_policy azuread_group_role_management_policy} Resource.
 func NewGroupRoleManagementPolicy_Override(g GroupRoleManagementPolicy, scope constructs.Construct, id *string, config *GroupRoleManagementPolicyConfig) {
 	_init_.Initialize()
 

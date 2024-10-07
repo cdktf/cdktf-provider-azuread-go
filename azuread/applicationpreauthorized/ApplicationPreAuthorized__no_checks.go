@@ -99,14 +99,6 @@ func (j *jsiiProxy_ApplicationPreAuthorized) validateSetApplicationIdParameters(
 	return nil
 }
 
-func (j *jsiiProxy_ApplicationPreAuthorized) validateSetApplicationObjectIdParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_ApplicationPreAuthorized) validateSetAuthorizedAppIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_ApplicationPreAuthorized) validateSetAuthorizedClientIdParameters(val *string) error {
 	return nil
 }

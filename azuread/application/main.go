@@ -18,7 +18,6 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "api", GoGetter: "Api"},
 			_jsii_.MemberProperty{JsiiProperty: "apiInput", GoGetter: "ApiInput"},
-			_jsii_.MemberProperty{JsiiProperty: "applicationId", GoGetter: "ApplicationId"},
 			_jsii_.MemberProperty{JsiiProperty: "appRole", GoGetter: "AppRole"},
 			_jsii_.MemberProperty{JsiiProperty: "appRoleIds", GoGetter: "AppRoleIds"},
 			_jsii_.MemberProperty{JsiiProperty: "appRoleInput", GoGetter: "AppRoleInput"},

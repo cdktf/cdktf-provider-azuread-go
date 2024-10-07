@@ -5,14 +5,14 @@ package serviceprincipaltokensigningcertificate
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azuread-go/azuread/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/serviceprincipaltokensigningcertificate/internal"
+	"github.com/cdktf/cdktf-provider-azuread-go/azuread/v13/serviceprincipaltokensigningcertificate/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/service_principal_token_signing_certificate azuread_service_principal_token_signing_certificate}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/service_principal_token_signing_certificate azuread_service_principal_token_signing_certificate}.
 type ServicePrincipalTokenSigningCertificate interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -449,7 +449,7 @@ func (j *jsiiProxy_ServicePrincipalTokenSigningCertificate) Value() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/service_principal_token_signing_certificate azuread_service_principal_token_signing_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/service_principal_token_signing_certificate azuread_service_principal_token_signing_certificate} Resource.
 func NewServicePrincipalTokenSigningCertificate(scope constructs.Construct, id *string, config *ServicePrincipalTokenSigningCertificateConfig) ServicePrincipalTokenSigningCertificate {
 	_init_.Initialize()
 
@@ -467,7 +467,7 @@ func NewServicePrincipalTokenSigningCertificate(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/service_principal_token_signing_certificate azuread_service_principal_token_signing_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/service_principal_token_signing_certificate azuread_service_principal_token_signing_certificate} Resource.
 func NewServicePrincipalTokenSigningCertificate_Override(s ServicePrincipalTokenSigningCertificate, scope constructs.Construct, id *string, config *ServicePrincipalTokenSigningCertificateConfig) {
 	_init_.Initialize()
 

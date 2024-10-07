@@ -5,14 +5,14 @@ package applicationapprole
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azuread-go/azuread/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/applicationapprole/internal"
+	"github.com/cdktf/cdktf-provider-azuread-go/azuread/v13/applicationapprole/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/application_app_role azuread_application_app_role}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/application_app_role azuread_application_app_role}.
 type ApplicationAppRoleA interface {
 	cdktf.TerraformResource
 	AllowedMemberTypes() *[]*string
@@ -473,7 +473,7 @@ func (j *jsiiProxy_ApplicationAppRoleA) ValueInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/application_app_role azuread_application_app_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/application_app_role azuread_application_app_role} Resource.
 func NewApplicationAppRoleA(scope constructs.Construct, id *string, config *ApplicationAppRoleAConfig) ApplicationAppRoleA {
 	_init_.Initialize()
 
@@ -491,7 +491,7 @@ func NewApplicationAppRoleA(scope constructs.Construct, id *string, config *Appl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/application_app_role azuread_application_app_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/application_app_role azuread_application_app_role} Resource.
 func NewApplicationAppRoleA_Override(a ApplicationAppRoleA, scope constructs.Construct, id *string, config *ApplicationAppRoleAConfig) {
 	_init_.Initialize()
 

@@ -15,8 +15,6 @@ func init() {
 		reflect.TypeOf((*DataAzureadServicePrincipals)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
-			_jsii_.MemberProperty{JsiiProperty: "applicationIds", GoGetter: "ApplicationIds"},
-			_jsii_.MemberProperty{JsiiProperty: "applicationIdsInput", GoGetter: "ApplicationIdsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
 			_jsii_.MemberProperty{JsiiProperty: "clientIds", GoGetter: "ClientIds"},
 			_jsii_.MemberProperty{JsiiProperty: "clientIdsInput", GoGetter: "ClientIdsInput"},
@@ -50,7 +48,6 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
-			_jsii_.MemberMethod{JsiiMethod: "resetApplicationIds", GoMethod: "ResetApplicationIds"},
 			_jsii_.MemberMethod{JsiiMethod: "resetClientIds", GoMethod: "ResetClientIds"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDisplayNames", GoMethod: "ResetDisplayNames"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
@@ -114,7 +111,6 @@ func init() {
 		reflect.TypeOf((*DataAzureadServicePrincipalsServicePrincipalsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountEnabled", GoGetter: "AccountEnabled"},
-			_jsii_.MemberProperty{JsiiProperty: "applicationId", GoGetter: "ApplicationId"},
 			_jsii_.MemberProperty{JsiiProperty: "applicationTenantId", GoGetter: "ApplicationTenantId"},
 			_jsii_.MemberProperty{JsiiProperty: "appRoleAssignmentRequired", GoGetter: "AppRoleAssignmentRequired"},
 			_jsii_.MemberProperty{JsiiProperty: "clientId", GoGetter: "ClientId"},

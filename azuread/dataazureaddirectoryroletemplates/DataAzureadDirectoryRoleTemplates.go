@@ -5,14 +5,14 @@ package dataazureaddirectoryroletemplates
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azuread-go/azuread/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/dataazureaddirectoryroletemplates/internal"
+	"github.com/cdktf/cdktf-provider-azuread-go/azuread/v13/dataazureaddirectoryroletemplates/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/data-sources/directory_role_templates azuread_directory_role_templates}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/data-sources/directory_role_templates azuread_directory_role_templates}.
 type DataAzureadDirectoryRoleTemplates interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -311,7 +311,7 @@ func (j *jsiiProxy_DataAzureadDirectoryRoleTemplates) TimeoutsInput() interface{
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/data-sources/directory_role_templates azuread_directory_role_templates} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/data-sources/directory_role_templates azuread_directory_role_templates} Data Source.
 func NewDataAzureadDirectoryRoleTemplates(scope constructs.Construct, id *string, config *DataAzureadDirectoryRoleTemplatesConfig) DataAzureadDirectoryRoleTemplates {
 	_init_.Initialize()
 
@@ -329,7 +329,7 @@ func NewDataAzureadDirectoryRoleTemplates(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/data-sources/directory_role_templates azuread_directory_role_templates} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/data-sources/directory_role_templates azuread_directory_role_templates} Data Source.
 func NewDataAzureadDirectoryRoleTemplates_Override(d DataAzureadDirectoryRoleTemplates, scope constructs.Construct, id *string, config *DataAzureadDirectoryRoleTemplatesConfig) {
 	_init_.Initialize()
 

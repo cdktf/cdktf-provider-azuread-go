@@ -5,14 +5,14 @@ package dataazureadapplicationpublishedappids
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azuread-go/azuread/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/dataazureadapplicationpublishedappids/internal"
+	"github.com/cdktf/cdktf-provider-azuread-go/azuread/v13/dataazureadapplicationpublishedappids/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/data-sources/application_published_app_ids azuread_application_published_app_ids}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/data-sources/application_published_app_ids azuread_application_published_app_ids}.
 type DataAzureadApplicationPublishedAppIds interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -300,7 +300,7 @@ func (j *jsiiProxy_DataAzureadApplicationPublishedAppIds) TimeoutsInput() interf
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/data-sources/application_published_app_ids azuread_application_published_app_ids} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/data-sources/application_published_app_ids azuread_application_published_app_ids} Data Source.
 func NewDataAzureadApplicationPublishedAppIds(scope constructs.Construct, id *string, config *DataAzureadApplicationPublishedAppIdsConfig) DataAzureadApplicationPublishedAppIds {
 	_init_.Initialize()
 
@@ -318,7 +318,7 @@ func NewDataAzureadApplicationPublishedAppIds(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/data-sources/application_published_app_ids azuread_application_published_app_ids} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/data-sources/application_published_app_ids azuread_application_published_app_ids} Data Source.
 func NewDataAzureadApplicationPublishedAppIds_Override(d DataAzureadApplicationPublishedAppIds, scope constructs.Construct, id *string, config *DataAzureadApplicationPublishedAppIdsConfig) {
 	_init_.Initialize()
 

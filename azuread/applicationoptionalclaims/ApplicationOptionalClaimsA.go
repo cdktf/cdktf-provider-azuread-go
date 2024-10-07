@@ -5,14 +5,14 @@ package applicationoptionalclaims
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azuread-go/azuread/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/applicationoptionalclaims/internal"
+	"github.com/cdktf/cdktf-provider-azuread-go/azuread/v13/applicationoptionalclaims/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/application_optional_claims azuread_application_optional_claims}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/application_optional_claims azuread_application_optional_claims}.
 type ApplicationOptionalClaimsA interface {
 	cdktf.TerraformResource
 	AccessToken() ApplicationOptionalClaimsAccessTokenAList
@@ -429,7 +429,7 @@ func (j *jsiiProxy_ApplicationOptionalClaimsA) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/application_optional_claims azuread_application_optional_claims} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/application_optional_claims azuread_application_optional_claims} Resource.
 func NewApplicationOptionalClaimsA(scope constructs.Construct, id *string, config *ApplicationOptionalClaimsAConfig) ApplicationOptionalClaimsA {
 	_init_.Initialize()
 
@@ -447,7 +447,7 @@ func NewApplicationOptionalClaimsA(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/application_optional_claims azuread_application_optional_claims} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/application_optional_claims azuread_application_optional_claims} Resource.
 func NewApplicationOptionalClaimsA_Override(a ApplicationOptionalClaimsA, scope constructs.Construct, id *string, config *ApplicationOptionalClaimsAConfig) {
 	_init_.Initialize()
 
