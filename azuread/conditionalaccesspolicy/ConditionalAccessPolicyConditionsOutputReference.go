@@ -39,6 +39,9 @@ type ConditionalAccessPolicyConditionsOutputReference interface {
 	DevicesInput() *ConditionalAccessPolicyConditionsDevices
 	// Experimental.
 	Fqn() *string
+	InsiderRiskLevels() *string
+	SetInsiderRiskLevels(val *string)
+	InsiderRiskLevelsInput() *string
 	InternalValue() *ConditionalAccessPolicyConditions
 	SetInternalValue(val *ConditionalAccessPolicyConditions)
 	Locations() ConditionalAccessPolicyConditionsLocationsOutputReference
@@ -96,6 +99,7 @@ type ConditionalAccessPolicyConditionsOutputReference interface {
 	PutUsers(value *ConditionalAccessPolicyConditionsUsers)
 	ResetClientApplications()
 	ResetDevices()
+	ResetInsiderRiskLevels()
 	ResetLocations()
 	ResetPlatforms()
 	ResetServicePrincipalRiskLevels()
@@ -231,6 +235,26 @@ func (j *jsiiProxy_ConditionalAccessPolicyConditionsOutputReference) Fqn() *stri
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConditionalAccessPolicyConditionsOutputReference) InsiderRiskLevels() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"insiderRiskLevels",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConditionalAccessPolicyConditionsOutputReference) InsiderRiskLevelsInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"insiderRiskLevelsInput",
 		&returns,
 	)
 	return returns
@@ -443,6 +467,17 @@ func (j *jsiiProxy_ConditionalAccessPolicyConditionsOutputReference)SetComplexOb
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ConditionalAccessPolicyConditionsOutputReference)SetInsiderRiskLevels(val *string) {
+	if err := j.validateSetInsiderRiskLevelsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"insiderRiskLevels",
 		val,
 	)
 }
@@ -777,6 +812,14 @@ func (c *jsiiProxy_ConditionalAccessPolicyConditionsOutputReference) ResetDevice
 	_jsii_.InvokeVoid(
 		c,
 		"resetDevices",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ConditionalAccessPolicyConditionsOutputReference) ResetInsiderRiskLevels() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetInsiderRiskLevels",
 		nil, // no parameters
 	)
 }

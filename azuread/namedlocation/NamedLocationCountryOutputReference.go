@@ -26,6 +26,9 @@ type NamedLocationCountryOutputReference interface {
 	CountriesAndRegions() *[]*string
 	SetCountriesAndRegions(val *[]*string)
 	CountriesAndRegionsInput() *[]*string
+	CountryLookupMethod() *string
+	SetCountryLookupMethod(val *string)
+	CountryLookupMethodInput() *string
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -70,6 +73,7 @@ type NamedLocationCountryOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetCountryLookupMethod()
 	ResetIncludeUnknownCountriesAndRegions()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -121,6 +125,26 @@ func (j *jsiiProxy_NamedLocationCountryOutputReference) CountriesAndRegionsInput
 	_jsii_.Get(
 		j,
 		"countriesAndRegionsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NamedLocationCountryOutputReference) CountryLookupMethod() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"countryLookupMethod",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NamedLocationCountryOutputReference) CountryLookupMethodInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"countryLookupMethodInput",
 		&returns,
 	)
 	return returns
@@ -253,6 +277,17 @@ func (j *jsiiProxy_NamedLocationCountryOutputReference)SetCountriesAndRegions(va
 	_jsii_.Set(
 		j,
 		"countriesAndRegions",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NamedLocationCountryOutputReference)SetCountryLookupMethod(val *string) {
+	if err := j.validateSetCountryLookupMethodParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"countryLookupMethod",
 		val,
 	)
 }
@@ -485,6 +520,14 @@ func (n *jsiiProxy_NamedLocationCountryOutputReference) InterpolationForAttribut
 	)
 
 	return returns
+}
+
+func (n *jsiiProxy_NamedLocationCountryOutputReference) ResetCountryLookupMethod() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetCountryLookupMethod",
+		nil, // no parameters
+	)
 }
 
 func (n *jsiiProxy_NamedLocationCountryOutputReference) ResetIncludeUnknownCountriesAndRegions() {

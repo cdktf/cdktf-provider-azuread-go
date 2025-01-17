@@ -5,13 +5,13 @@ package applicationpermissionscope
 
 
 type ApplicationPermissionScopeTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/application_permission_scope#create ApplicationPermissionScope#create}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.1.0/docs/resources/application_permission_scope#create ApplicationPermissionScope#create}.
 	Create *string `field:"optional" json:"create" yaml:"create"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/application_permission_scope#delete ApplicationPermissionScope#delete}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.1.0/docs/resources/application_permission_scope#delete ApplicationPermissionScope#delete}.
 	Delete *string `field:"optional" json:"delete" yaml:"delete"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/application_permission_scope#read ApplicationPermissionScope#read}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.1.0/docs/resources/application_permission_scope#read ApplicationPermissionScope#read}.
 	Read *string `field:"optional" json:"read" yaml:"read"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/application_permission_scope#update ApplicationPermissionScope#update}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.1.0/docs/resources/application_permission_scope#update ApplicationPermissionScope#update}.
 	Update *string `field:"optional" json:"update" yaml:"update"`
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/user azuread_user}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.1.0/docs/resources/user azuread_user}.
 type User interface {
 	cdktf.TerraformResource
 	AboutMe() *string
@@ -72,6 +72,9 @@ type User interface {
 	Division() *string
 	SetDivision(val *string)
 	DivisionInput() *string
+	EmployeeHireDate() *string
+	SetEmployeeHireDate(val *string)
+	EmployeeHireDateInput() *string
 	EmployeeId() *string
 	SetEmployeeId(val *string)
 	EmployeeIdInput() *string
@@ -240,6 +243,7 @@ type User interface {
 	ResetDisablePasswordExpiration()
 	ResetDisableStrongPassword()
 	ResetDivision()
+	ResetEmployeeHireDate()
 	ResetEmployeeId()
 	ResetEmployeeType()
 	ResetFaxNumber()
@@ -609,6 +613,26 @@ func (j *jsiiProxy_User) DivisionInput() *string {
 	_jsii_.Get(
 		j,
 		"divisionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_User) EmployeeHireDate() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"employeeHireDate",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_User) EmployeeHireDateInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"employeeHireDateInput",
 		&returns,
 	)
 	return returns
@@ -1315,7 +1339,7 @@ func (j *jsiiProxy_User) UserType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/user azuread_user} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/3.1.0/docs/resources/user azuread_user} Resource.
 func NewUser(scope constructs.Construct, id *string, config *UserConfig) User {
 	_init_.Initialize()
 
@@ -1333,7 +1357,7 @@ func NewUser(scope constructs.Construct, id *string, config *UserConfig) User {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/user azuread_user} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/3.1.0/docs/resources/user azuread_user} Resource.
 func NewUser_Override(u User, scope constructs.Construct, id *string, config *UserConfig) {
 	_init_.Initialize()
 
@@ -1513,6 +1537,17 @@ func (j *jsiiProxy_User)SetDivision(val *string) {
 	_jsii_.Set(
 		j,
 		"division",
+		val,
+	)
+}
+
+func (j *jsiiProxy_User)SetEmployeeHireDate(val *string) {
+	if err := j.validateSetEmployeeHireDateParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"employeeHireDate",
 		val,
 	)
 }
@@ -2264,6 +2299,14 @@ func (u *jsiiProxy_User) ResetDivision() {
 	_jsii_.InvokeVoid(
 		u,
 		"resetDivision",
+		nil, // no parameters
+	)
+}
+
+func (u *jsiiProxy_User) ResetEmployeeHireDate() {
+	_jsii_.InvokeVoid(
+		u,
+		"resetEmployeeHireDate",
 		nil, // no parameters
 	)
 }

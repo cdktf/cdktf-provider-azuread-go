@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/data-sources/user azuread_user}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.1.0/docs/data-sources/user azuread_user}.
 type DataAzureadUser interface {
 	cdktf.TerraformDataSource
 	AccountEnabled() cdktf.IResolvable
@@ -39,6 +39,7 @@ type DataAzureadUser interface {
 	SetDependsOn(val *[]*string)
 	DisplayName() *string
 	Division() *string
+	EmployeeHireDate() *string
 	EmployeeId() *string
 	SetEmployeeId(val *string)
 	EmployeeIdInput() *string
@@ -321,6 +322,16 @@ func (j *jsiiProxy_DataAzureadUser) Division() *string {
 	_jsii_.Get(
 		j,
 		"division",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzureadUser) EmployeeHireDate() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"employeeHireDate",
 		&returns,
 	)
 	return returns
@@ -827,7 +838,7 @@ func (j *jsiiProxy_DataAzureadUser) UserType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/data-sources/user azuread_user} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/3.1.0/docs/data-sources/user azuread_user} Data Source.
 func NewDataAzureadUser(scope constructs.Construct, id *string, config *DataAzureadUserConfig) DataAzureadUser {
 	_init_.Initialize()
 
@@ -845,7 +856,7 @@ func NewDataAzureadUser(scope constructs.Construct, id *string, config *DataAzur
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/data-sources/user azuread_user} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/3.1.0/docs/data-sources/user azuread_user} Data Source.
 func NewDataAzureadUser_Override(d DataAzureadUser, scope constructs.Construct, id *string, config *DataAzureadUserConfig) {
 	_init_.Initialize()
 

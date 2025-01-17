@@ -24,28 +24,28 @@ type DirectoryRoleAssignmentConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The object ID of the member principal.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/directory_role_assignment#principal_object_id DirectoryRoleAssignment#principal_object_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.1.0/docs/resources/directory_role_assignment#principal_object_id DirectoryRoleAssignment#principal_object_id}
 	PrincipalObjectId *string `field:"required" json:"principalObjectId" yaml:"principalObjectId"`
 	// The object ID of the directory role for this assignment.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/directory_role_assignment#role_id DirectoryRoleAssignment#role_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.1.0/docs/resources/directory_role_assignment#role_id DirectoryRoleAssignment#role_id}
 	RoleId *string `field:"required" json:"roleId" yaml:"roleId"`
 	// Identifier of the app-specific scope when the assignment scope is app-specific.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/directory_role_assignment#app_scope_id DirectoryRoleAssignment#app_scope_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.1.0/docs/resources/directory_role_assignment#app_scope_id DirectoryRoleAssignment#app_scope_id}
 	AppScopeId *string `field:"optional" json:"appScopeId" yaml:"appScopeId"`
 	// Identifier of the directory object representing the scope of the assignment.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/directory_role_assignment#directory_scope_id DirectoryRoleAssignment#directory_scope_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.1.0/docs/resources/directory_role_assignment#directory_scope_id DirectoryRoleAssignment#directory_scope_id}
 	DirectoryScopeId *string `field:"optional" json:"directoryScopeId" yaml:"directoryScopeId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/directory_role_assignment#id DirectoryRoleAssignment#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.1.0/docs/resources/directory_role_assignment#id DirectoryRoleAssignment#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/directory_role_assignment#timeouts DirectoryRoleAssignment#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.1.0/docs/resources/directory_role_assignment#timeouts DirectoryRoleAssignment#timeouts}
 	Timeouts *DirectoryRoleAssignmentTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

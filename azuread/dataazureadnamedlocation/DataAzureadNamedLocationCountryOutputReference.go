@@ -24,6 +24,7 @@ type DataAzureadNamedLocationCountryOutputReference interface {
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
 	CountriesAndRegions() *[]*string
+	CountryLookupMethod() *string
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -106,6 +107,16 @@ func (j *jsiiProxy_DataAzureadNamedLocationCountryOutputReference) CountriesAndR
 	_jsii_.Get(
 		j,
 		"countriesAndRegions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzureadNamedLocationCountryOutputReference) CountryLookupMethod() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"countryLookupMethod",
 		&returns,
 	)
 	return returns

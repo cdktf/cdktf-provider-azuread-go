@@ -31,6 +31,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
 			_jsii_.MemberProperty{JsiiProperty: "displayName", GoGetter: "DisplayName"},
 			_jsii_.MemberProperty{JsiiProperty: "division", GoGetter: "Division"},
+			_jsii_.MemberProperty{JsiiProperty: "employeeHireDate", GoGetter: "EmployeeHireDate"},
 			_jsii_.MemberProperty{JsiiProperty: "employeeId", GoGetter: "EmployeeId"},
 			_jsii_.MemberProperty{JsiiProperty: "employeeIdInput", GoGetter: "EmployeeIdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "employeeType", GoGetter: "EmployeeType"},

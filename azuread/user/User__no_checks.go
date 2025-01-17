@@ -155,6 +155,10 @@ func (j *jsiiProxy_User) validateSetDivisionParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_User) validateSetEmployeeHireDateParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_User) validateSetEmployeeIdParameters(val *string) error {
 	return nil
 }

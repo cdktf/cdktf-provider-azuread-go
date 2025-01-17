@@ -87,6 +87,10 @@ func (j *jsiiProxy_ConditionalAccessPolicyConditionsOutputReference) validateSet
 	return nil
 }
 
+func (j *jsiiProxy_ConditionalAccessPolicyConditionsOutputReference) validateSetInsiderRiskLevelsParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ConditionalAccessPolicyConditionsOutputReference) validateSetInternalValueParameters(val *ConditionalAccessPolicyConditions) error {
 	return nil
 }
