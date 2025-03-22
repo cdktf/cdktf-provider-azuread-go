@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.1.0/docs/data-sources/service_principals azuread_service_principals}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/data-sources/service_principals azuread_service_principals}.
 type DataAzureadServicePrincipals interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -420,7 +420,7 @@ func (j *jsiiProxy_DataAzureadServicePrincipals) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/3.1.0/docs/data-sources/service_principals azuread_service_principals} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/data-sources/service_principals azuread_service_principals} Data Source.
 func NewDataAzureadServicePrincipals(scope constructs.Construct, id *string, config *DataAzureadServicePrincipalsConfig) DataAzureadServicePrincipals {
 	_init_.Initialize()
 
@@ -438,7 +438,7 @@ func NewDataAzureadServicePrincipals(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/3.1.0/docs/data-sources/service_principals azuread_service_principals} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/data-sources/service_principals azuread_service_principals} Data Source.
 func NewDataAzureadServicePrincipals_Override(d DataAzureadServicePrincipals, scope constructs.Construct, id *string, config *DataAzureadServicePrincipalsConfig) {
 	_init_.Initialize()
 

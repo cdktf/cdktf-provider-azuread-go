@@ -24,20 +24,20 @@ type DataAzureadAdministrativeUnitConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The display name for the administrative unit.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.1.0/docs/data-sources/administrative_unit#display_name DataAzureadAdministrativeUnit#display_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/data-sources/administrative_unit#display_name DataAzureadAdministrativeUnit#display_name}
 	DisplayName *string `field:"optional" json:"displayName" yaml:"displayName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.1.0/docs/data-sources/administrative_unit#id DataAzureadAdministrativeUnit#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/data-sources/administrative_unit#id DataAzureadAdministrativeUnit#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// The object ID of the administrative unit.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.1.0/docs/data-sources/administrative_unit#object_id DataAzureadAdministrativeUnit#object_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/data-sources/administrative_unit#object_id DataAzureadAdministrativeUnit#object_id}
 	ObjectId *string `field:"optional" json:"objectId" yaml:"objectId"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.1.0/docs/data-sources/administrative_unit#timeouts DataAzureadAdministrativeUnit#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/data-sources/administrative_unit#timeouts DataAzureadAdministrativeUnit#timeouts}
 	Timeouts *DataAzureadAdministrativeUnitTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

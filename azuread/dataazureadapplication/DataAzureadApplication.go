@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.1.0/docs/data-sources/application azuread_application}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/data-sources/application azuread_application}.
 type DataAzureadApplication interface {
 	cdktf.TerraformDataSource
 	Api() DataAzureadApplicationApiList
@@ -693,7 +693,7 @@ func (j *jsiiProxy_DataAzureadApplication) Web() DataAzureadApplicationWebList {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/3.1.0/docs/data-sources/application azuread_application} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/data-sources/application azuread_application} Data Source.
 func NewDataAzureadApplication(scope constructs.Construct, id *string, config *DataAzureadApplicationConfig) DataAzureadApplication {
 	_init_.Initialize()
 
@@ -711,7 +711,7 @@ func NewDataAzureadApplication(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/3.1.0/docs/data-sources/application azuread_application} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/data-sources/application azuread_application} Data Source.
 func NewDataAzureadApplication_Override(d DataAzureadApplication, scope constructs.Construct, id *string, config *DataAzureadApplicationConfig) {
 	_init_.Initialize()
 

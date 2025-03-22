@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.1.0/docs/resources/application_owner azuread_application_owner}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/application_owner azuread_application_owner}.
 type ApplicationOwner interface {
 	cdktf.TerraformResource
 	ApplicationId() *string
@@ -380,7 +380,7 @@ func (j *jsiiProxy_ApplicationOwner) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/3.1.0/docs/resources/application_owner azuread_application_owner} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/application_owner azuread_application_owner} Resource.
 func NewApplicationOwner(scope constructs.Construct, id *string, config *ApplicationOwnerConfig) ApplicationOwner {
 	_init_.Initialize()
 
@@ -398,7 +398,7 @@ func NewApplicationOwner(scope constructs.Construct, id *string, config *Applica
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/3.1.0/docs/resources/application_owner azuread_application_owner} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/application_owner azuread_application_owner} Resource.
 func NewApplicationOwner_Override(a ApplicationOwner, scope constructs.Construct, id *string, config *ApplicationOwnerConfig) {
 	_init_.Initialize()
 

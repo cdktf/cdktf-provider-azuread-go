@@ -12,9 +12,12 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.1.0/docs azuread}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs azuread}.
 type AzureadProvider interface {
 	cdktf.TerraformProvider
+	AdoPipelineServiceConnectionId() *string
+	SetAdoPipelineServiceConnectionId(val *string)
+	AdoPipelineServiceConnectionIdInput() *string
 	Alias() *string
 	SetAlias(val *string)
 	AliasInput() *string
@@ -106,6 +109,7 @@ type AzureadProvider interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAdoPipelineServiceConnectionId()
 	ResetAlias()
 	ResetClientCertificate()
 	ResetClientCertificatePassword()
@@ -147,6 +151,26 @@ type AzureadProvider interface {
 // The jsii proxy struct for AzureadProvider
 type jsiiProxy_AzureadProvider struct {
 	internal.Type__cdktfTerraformProvider
+}
+
+func (j *jsiiProxy_AzureadProvider) AdoPipelineServiceConnectionId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"adoPipelineServiceConnectionId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AzureadProvider) AdoPipelineServiceConnectionIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"adoPipelineServiceConnectionIdInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_AzureadProvider) Alias() *string {
@@ -690,7 +714,7 @@ func (j *jsiiProxy_AzureadProvider) UseOidcInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/3.1.0/docs azuread} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs azuread} Resource.
 func NewAzureadProvider(scope constructs.Construct, id *string, config *AzureadProviderConfig) AzureadProvider {
 	_init_.Initialize()
 
@@ -708,7 +732,7 @@ func NewAzureadProvider(scope constructs.Construct, id *string, config *AzureadP
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/3.1.0/docs azuread} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs azuread} Resource.
 func NewAzureadProvider_Override(a AzureadProvider, scope constructs.Construct, id *string, config *AzureadProviderConfig) {
 	_init_.Initialize()
 
@@ -716,6 +740,14 @@ func NewAzureadProvider_Override(a AzureadProvider, scope constructs.Construct, 
 		"@cdktf/provider-azuread.provider.AzureadProvider",
 		[]interface{}{scope, id, config},
 		a,
+	)
+}
+
+func (j *jsiiProxy_AzureadProvider)SetAdoPipelineServiceConnectionId(val *string) {
+	_jsii_.Set(
+		j,
+		"adoPipelineServiceConnectionId",
+		val,
 	)
 }
 
@@ -1032,6 +1064,14 @@ func (a *jsiiProxy_AzureadProvider) OverrideLogicalId(newLogicalId *string) {
 		a,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (a *jsiiProxy_AzureadProvider) ResetAdoPipelineServiceConnectionId() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetAdoPipelineServiceConnectionId",
+		nil, // no parameters
 	)
 }
 

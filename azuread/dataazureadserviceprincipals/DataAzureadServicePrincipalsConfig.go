@@ -24,13 +24,13 @@ type DataAzureadServicePrincipalsConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The client IDs of the applications associated with the service principals.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.1.0/docs/data-sources/service_principals#client_ids DataAzureadServicePrincipals#client_ids}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/data-sources/service_principals#client_ids DataAzureadServicePrincipals#client_ids}
 	ClientIds *[]*string `field:"optional" json:"clientIds" yaml:"clientIds"`
 	// The display names of the applications associated with the service principals.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.1.0/docs/data-sources/service_principals#display_names DataAzureadServicePrincipals#display_names}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/data-sources/service_principals#display_names DataAzureadServicePrincipals#display_names}
 	DisplayNames *[]*string `field:"optional" json:"displayNames" yaml:"displayNames"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.1.0/docs/data-sources/service_principals#id DataAzureadServicePrincipals#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/data-sources/service_principals#id DataAzureadServicePrincipals#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -39,21 +39,21 @@ type DataAzureadServicePrincipalsConfig struct {
 	//
 	// The data source will still fail if no service principals are found
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.1.0/docs/data-sources/service_principals#ignore_missing DataAzureadServicePrincipals#ignore_missing}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/data-sources/service_principals#ignore_missing DataAzureadServicePrincipals#ignore_missing}
 	IgnoreMissing interface{} `field:"optional" json:"ignoreMissing" yaml:"ignoreMissing"`
 	// The object IDs of the service principals.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.1.0/docs/data-sources/service_principals#object_ids DataAzureadServicePrincipals#object_ids}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/data-sources/service_principals#object_ids DataAzureadServicePrincipals#object_ids}
 	ObjectIds *[]*string `field:"optional" json:"objectIds" yaml:"objectIds"`
 	// Fetch all service principals with no filter and return all that were found.
 	//
 	// The data source will still fail if no service principals are found.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.1.0/docs/data-sources/service_principals#return_all DataAzureadServicePrincipals#return_all}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/data-sources/service_principals#return_all DataAzureadServicePrincipals#return_all}
 	ReturnAll interface{} `field:"optional" json:"returnAll" yaml:"returnAll"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.1.0/docs/data-sources/service_principals#timeouts DataAzureadServicePrincipals#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/data-sources/service_principals#timeouts DataAzureadServicePrincipals#timeouts}
 	Timeouts *DataAzureadServicePrincipalsTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 
