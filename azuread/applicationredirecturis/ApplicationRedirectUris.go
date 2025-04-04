@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/application_redirect_uris azuread_application_redirect_uris}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/application_redirect_uris azuread_application_redirect_uris}.
 type ApplicationRedirectUris interface {
 	cdktf.TerraformResource
 	ApplicationId() *string
@@ -403,7 +403,7 @@ func (j *jsiiProxy_ApplicationRedirectUris) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/application_redirect_uris azuread_application_redirect_uris} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/application_redirect_uris azuread_application_redirect_uris} Resource.
 func NewApplicationRedirectUris(scope constructs.Construct, id *string, config *ApplicationRedirectUrisConfig) ApplicationRedirectUris {
 	_init_.Initialize()
 
@@ -421,7 +421,7 @@ func NewApplicationRedirectUris(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/application_redirect_uris azuread_application_redirect_uris} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/application_redirect_uris azuread_application_redirect_uris} Resource.
 func NewApplicationRedirectUris_Override(a ApplicationRedirectUris, scope constructs.Construct, id *string, config *ApplicationRedirectUrisConfig) {
 	_init_.Initialize()
 

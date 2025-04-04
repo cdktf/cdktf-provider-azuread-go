@@ -5,11 +5,11 @@ package applicationfallbackpublicclient
 
 
 type ApplicationFallbackPublicClientTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/application_fallback_public_client#create ApplicationFallbackPublicClient#create}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/application_fallback_public_client#create ApplicationFallbackPublicClient#create}.
 	Create *string `field:"optional" json:"create" yaml:"create"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/application_fallback_public_client#delete ApplicationFallbackPublicClient#delete}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/application_fallback_public_client#delete ApplicationFallbackPublicClient#delete}.
 	Delete *string `field:"optional" json:"delete" yaml:"delete"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/application_fallback_public_client#read ApplicationFallbackPublicClient#read}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/application_fallback_public_client#read ApplicationFallbackPublicClient#read}.
 	Read *string `field:"optional" json:"read" yaml:"read"`
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/app_role_assignment azuread_app_role_assignment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/app_role_assignment azuread_app_role_assignment}.
 type AppRoleAssignment interface {
 	cdktf.TerraformResource
 	AppRoleId() *string
@@ -436,7 +436,7 @@ func (j *jsiiProxy_AppRoleAssignment) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/app_role_assignment azuread_app_role_assignment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/app_role_assignment azuread_app_role_assignment} Resource.
 func NewAppRoleAssignment(scope constructs.Construct, id *string, config *AppRoleAssignmentConfig) AppRoleAssignment {
 	_init_.Initialize()
 
@@ -454,7 +454,7 @@ func NewAppRoleAssignment(scope constructs.Construct, id *string, config *AppRol
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/app_role_assignment azuread_app_role_assignment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/app_role_assignment azuread_app_role_assignment} Resource.
 func NewAppRoleAssignment_Override(a AppRoleAssignment, scope constructs.Construct, id *string, config *AppRoleAssignmentConfig) {
 	_init_.Initialize()
 
