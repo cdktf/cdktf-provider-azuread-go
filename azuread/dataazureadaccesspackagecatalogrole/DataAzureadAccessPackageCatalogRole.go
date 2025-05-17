@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/data-sources/access_package_catalog_role azuread_access_package_catalog_role}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.4.0/docs/data-sources/access_package_catalog_role azuread_access_package_catalog_role}.
 type DataAzureadAccessPackageCatalogRole interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -359,7 +359,7 @@ func (j *jsiiProxy_DataAzureadAccessPackageCatalogRole) TimeoutsInput() interfac
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/data-sources/access_package_catalog_role azuread_access_package_catalog_role} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/3.4.0/docs/data-sources/access_package_catalog_role azuread_access_package_catalog_role} Data Source.
 func NewDataAzureadAccessPackageCatalogRole(scope constructs.Construct, id *string, config *DataAzureadAccessPackageCatalogRoleConfig) DataAzureadAccessPackageCatalogRole {
 	_init_.Initialize()
 
@@ -377,7 +377,7 @@ func NewDataAzureadAccessPackageCatalogRole(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/data-sources/access_package_catalog_role azuread_access_package_catalog_role} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/3.4.0/docs/data-sources/access_package_catalog_role azuread_access_package_catalog_role} Data Source.
 func NewDataAzureadAccessPackageCatalogRole_Override(d DataAzureadAccessPackageCatalogRole, scope constructs.Construct, id *string, config *DataAzureadAccessPackageCatalogRoleConfig) {
 	_init_.Initialize()
 

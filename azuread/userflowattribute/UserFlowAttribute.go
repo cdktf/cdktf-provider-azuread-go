@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/user_flow_attribute azuread_user_flow_attribute}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.4.0/docs/resources/user_flow_attribute azuread_user_flow_attribute}.
 type UserFlowAttribute interface {
 	cdktf.TerraformResource
 	AttributeType() *string
@@ -414,7 +414,7 @@ func (j *jsiiProxy_UserFlowAttribute) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/user_flow_attribute azuread_user_flow_attribute} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/3.4.0/docs/resources/user_flow_attribute azuread_user_flow_attribute} Resource.
 func NewUserFlowAttribute(scope constructs.Construct, id *string, config *UserFlowAttributeConfig) UserFlowAttribute {
 	_init_.Initialize()
 
@@ -432,7 +432,7 @@ func NewUserFlowAttribute(scope constructs.Construct, id *string, config *UserFl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/user_flow_attribute azuread_user_flow_attribute} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/3.4.0/docs/resources/user_flow_attribute azuread_user_flow_attribute} Resource.
 func NewUserFlowAttribute_Override(u UserFlowAttribute, scope constructs.Construct, id *string, config *UserFlowAttributeConfig) {
 	_init_.Initialize()
 

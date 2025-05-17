@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/group_without_members azuread_group_without_members}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.4.0/docs/resources/group_without_members azuread_group_without_members}.
 type GroupWithoutMembers interface {
 	cdktf.TerraformResource
 	AdministrativeUnitIds() *[]*string
@@ -936,7 +936,7 @@ func (j *jsiiProxy_GroupWithoutMembers) WritebackEnabledInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/group_without_members azuread_group_without_members} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/3.4.0/docs/resources/group_without_members azuread_group_without_members} Resource.
 func NewGroupWithoutMembers(scope constructs.Construct, id *string, config *GroupWithoutMembersConfig) GroupWithoutMembers {
 	_init_.Initialize()
 
@@ -954,7 +954,7 @@ func NewGroupWithoutMembers(scope constructs.Construct, id *string, config *Grou
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/group_without_members azuread_group_without_members} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/3.4.0/docs/resources/group_without_members azuread_group_without_members} Resource.
 func NewGroupWithoutMembers_Override(g GroupWithoutMembers, scope constructs.Construct, id *string, config *GroupWithoutMembersConfig) {
 	_init_.Initialize()
 
