@@ -31,6 +31,8 @@ type ConditionalAccessPolicyConditionsClientApplicationsOutputReference interfac
 	ExcludedServicePrincipals() *[]*string
 	SetExcludedServicePrincipals(val *[]*string)
 	ExcludedServicePrincipalsInput() *[]*string
+	Filter() ConditionalAccessPolicyConditionsClientApplicationsFilterOutputReference
+	FilterInput() *ConditionalAccessPolicyConditionsClientApplicationsFilter
 	// Experimental.
 	Fqn() *string
 	IncludedServicePrincipals() *[]*string
@@ -70,7 +72,9 @@ type ConditionalAccessPolicyConditionsClientApplicationsOutputReference interfac
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutFilter(value *ConditionalAccessPolicyConditionsClientApplicationsFilter)
 	ResetExcludedServicePrincipals()
+	ResetFilter()
 	ResetIncludedServicePrincipals()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -132,6 +136,26 @@ func (j *jsiiProxy_ConditionalAccessPolicyConditionsClientApplicationsOutputRefe
 	_jsii_.Get(
 		j,
 		"excludedServicePrincipalsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConditionalAccessPolicyConditionsClientApplicationsOutputReference) Filter() ConditionalAccessPolicyConditionsClientApplicationsFilterOutputReference {
+	var returns ConditionalAccessPolicyConditionsClientApplicationsFilterOutputReference
+	_jsii_.Get(
+		j,
+		"filter",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConditionalAccessPolicyConditionsClientApplicationsOutputReference) FilterInput() *ConditionalAccessPolicyConditionsClientApplicationsFilter {
+	var returns *ConditionalAccessPolicyConditionsClientApplicationsFilter
+	_jsii_.Get(
+		j,
+		"filterInput",
 		&returns,
 	)
 	return returns
@@ -488,10 +512,29 @@ func (c *jsiiProxy_ConditionalAccessPolicyConditionsClientApplicationsOutputRefe
 	return returns
 }
 
+func (c *jsiiProxy_ConditionalAccessPolicyConditionsClientApplicationsOutputReference) PutFilter(value *ConditionalAccessPolicyConditionsClientApplicationsFilter) {
+	if err := c.validatePutFilterParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putFilter",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ConditionalAccessPolicyConditionsClientApplicationsOutputReference) ResetExcludedServicePrincipals() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetExcludedServicePrincipals",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ConditionalAccessPolicyConditionsClientApplicationsOutputReference) ResetFilter() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetFilter",
 		nil, // no parameters
 	)
 }

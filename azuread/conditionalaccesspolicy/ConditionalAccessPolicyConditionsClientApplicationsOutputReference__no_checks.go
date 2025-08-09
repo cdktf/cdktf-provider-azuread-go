@@ -47,6 +47,10 @@ func (c *jsiiProxy_ConditionalAccessPolicyConditionsClientApplicationsOutputRefe
 	return nil
 }
 
+func (c *jsiiProxy_ConditionalAccessPolicyConditionsClientApplicationsOutputReference) validatePutFilterParameters(value *ConditionalAccessPolicyConditionsClientApplicationsFilter) error {
+	return nil
+}
+
 func (c *jsiiProxy_ConditionalAccessPolicyConditionsClientApplicationsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }
