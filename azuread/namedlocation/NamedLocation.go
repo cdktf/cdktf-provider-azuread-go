@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.5.0/docs/resources/named_location azuread_named_location}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.6.0/docs/resources/named_location azuread_named_location}.
 type NamedLocation interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -55,6 +55,7 @@ type NamedLocation interface {
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
+	ObjectId() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -324,6 +325,16 @@ func (j *jsiiProxy_NamedLocation) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_NamedLocation) ObjectId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"objectId",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_NamedLocation) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -405,7 +416,7 @@ func (j *jsiiProxy_NamedLocation) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/3.5.0/docs/resources/named_location azuread_named_location} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/3.6.0/docs/resources/named_location azuread_named_location} Resource.
 func NewNamedLocation(scope constructs.Construct, id *string, config *NamedLocationConfig) NamedLocation {
 	_init_.Initialize()
 
@@ -423,7 +434,7 @@ func NewNamedLocation(scope constructs.Construct, id *string, config *NamedLocat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/3.5.0/docs/resources/named_location azuread_named_location} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/3.6.0/docs/resources/named_location azuread_named_location} Resource.
 func NewNamedLocation_Override(n NamedLocation, scope constructs.Construct, id *string, config *NamedLocationConfig) {
 	_init_.Initialize()
 
