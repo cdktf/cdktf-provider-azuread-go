@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzureadServicePrincipalAppRolesOutputReference) validateG
 	return nil
 }
 
-func (d *jsiiProxy_DataAzureadServicePrincipalAppRolesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzureadServicePrincipalAppRolesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzureadServicePrincipalAppRolesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzureadServicePrincipalAppRolesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

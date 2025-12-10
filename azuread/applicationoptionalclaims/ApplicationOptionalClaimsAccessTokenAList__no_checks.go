@@ -15,7 +15,7 @@ func (a *jsiiProxy_ApplicationOptionalClaimsAccessTokenAList) validateGetParamet
 	return nil
 }
 
-func (a *jsiiProxy_ApplicationOptionalClaimsAccessTokenAList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApplicationOptionalClaimsAccessTokenAList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

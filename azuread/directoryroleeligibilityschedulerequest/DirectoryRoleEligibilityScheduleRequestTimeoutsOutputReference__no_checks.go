@@ -43,11 +43,11 @@ func (d *jsiiProxy_DirectoryRoleEligibilityScheduleRequestTimeoutsOutputReferenc
 	return nil
 }
 
-func (d *jsiiProxy_DirectoryRoleEligibilityScheduleRequestTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DirectoryRoleEligibilityScheduleRequestTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DirectoryRoleEligibilityScheduleRequestTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DirectoryRoleEligibilityScheduleRequestTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (a *jsiiProxy_AccessPackageAssignmentPolicyAssignmentReviewSettingsReviewer
 	return nil
 }
 
-func (a *jsiiProxy_AccessPackageAssignmentPolicyAssignmentReviewSettingsReviewerList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AccessPackageAssignmentPolicyAssignmentReviewSettingsReviewerList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

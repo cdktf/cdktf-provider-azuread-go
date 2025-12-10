@@ -43,11 +43,11 @@ func (c *jsiiProxy_ConditionalAccessPolicyConditionsPlatformsOutputReference) va
 	return nil
 }
 
-func (c *jsiiProxy_ConditionalAccessPolicyConditionsPlatformsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ConditionalAccessPolicyConditionsPlatformsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ConditionalAccessPolicyConditionsPlatformsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ConditionalAccessPolicyConditionsPlatformsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,7 +43,7 @@ func (a *jsiiProxy_ApplicationWebOutputReference) validateGetStringMapAttributeP
 	return nil
 }
 
-func (a *jsiiProxy_ApplicationWebOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_ApplicationWebOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (a *jsiiProxy_ApplicationWebOutputReference) validatePutImplicitGrantParame
 	return nil
 }
 
-func (a *jsiiProxy_ApplicationWebOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApplicationWebOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

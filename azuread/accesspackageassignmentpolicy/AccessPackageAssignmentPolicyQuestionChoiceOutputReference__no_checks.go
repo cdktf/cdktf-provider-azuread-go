@@ -43,7 +43,7 @@ func (a *jsiiProxy_AccessPackageAssignmentPolicyQuestionChoiceOutputReference) v
 	return nil
 }
 
-func (a *jsiiProxy_AccessPackageAssignmentPolicyQuestionChoiceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AccessPackageAssignmentPolicyQuestionChoiceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (a *jsiiProxy_AccessPackageAssignmentPolicyQuestionChoiceOutputReference) v
 	return nil
 }
 
-func (a *jsiiProxy_AccessPackageAssignmentPolicyQuestionChoiceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AccessPackageAssignmentPolicyQuestionChoiceOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

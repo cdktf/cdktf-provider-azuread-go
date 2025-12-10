@@ -15,7 +15,7 @@ func (a *jsiiProxy_ApplicationRequiredResourceAccessList) validateGetParameters(
 	return nil
 }
 
-func (a *jsiiProxy_ApplicationRequiredResourceAccessList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApplicationRequiredResourceAccessList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

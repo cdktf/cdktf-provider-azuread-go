@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzureadDirectoryRolesRolesList) validateGetParameters(ind
 	return nil
 }
 
-func (d *jsiiProxy_DataAzureadDirectoryRolesRolesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzureadDirectoryRolesRolesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

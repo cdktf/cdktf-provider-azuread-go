@@ -43,11 +43,11 @@ func (g *jsiiProxy_GroupRoleManagementPolicyNotificationRulesEligibleAssignments
 	return nil
 }
 
-func (g *jsiiProxy_GroupRoleManagementPolicyNotificationRulesEligibleAssignmentsAdminNotificationsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GroupRoleManagementPolicyNotificationRulesEligibleAssignmentsAdminNotificationsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GroupRoleManagementPolicyNotificationRulesEligibleAssignmentsAdminNotificationsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GroupRoleManagementPolicyNotificationRulesEligibleAssignmentsAdminNotificationsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

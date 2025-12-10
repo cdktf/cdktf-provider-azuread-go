@@ -15,7 +15,7 @@ func (a *jsiiProxy_AccessPackageAssignmentPolicyApprovalSettingsApprovalStageLis
 	return nil
 }
 
-func (a *jsiiProxy_AccessPackageAssignmentPolicyApprovalSettingsApprovalStageList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AccessPackageAssignmentPolicyApprovalSettingsApprovalStageList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

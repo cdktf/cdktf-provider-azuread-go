@@ -15,6 +15,9 @@ type ConditionalAccessPolicyConditionsOutputReference interface {
 	cdktf.ComplexObject
 	Applications() ConditionalAccessPolicyConditionsApplicationsOutputReference
 	ApplicationsInput() *ConditionalAccessPolicyConditionsApplications
+	AuthenticationFlowTransferMethods() *[]*string
+	SetAuthenticationFlowTransferMethods(val *[]*string)
+	AuthenticationFlowTransferMethodsInput() *[]*string
 	ClientApplications() ConditionalAccessPolicyConditionsClientApplicationsOutputReference
 	ClientApplicationsInput() *ConditionalAccessPolicyConditionsClientApplications
 	ClientAppTypes() *[]*string
@@ -90,13 +93,14 @@ type ConditionalAccessPolicyConditionsOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutApplications(value *ConditionalAccessPolicyConditionsApplications)
 	PutClientApplications(value *ConditionalAccessPolicyConditionsClientApplications)
 	PutDevices(value *ConditionalAccessPolicyConditionsDevices)
 	PutLocations(value *ConditionalAccessPolicyConditionsLocations)
 	PutPlatforms(value *ConditionalAccessPolicyConditionsPlatforms)
 	PutUsers(value *ConditionalAccessPolicyConditionsUsers)
+	ResetAuthenticationFlowTransferMethods()
 	ResetClientApplications()
 	ResetDevices()
 	ResetInsiderRiskLevels()
@@ -107,7 +111,7 @@ type ConditionalAccessPolicyConditionsOutputReference interface {
 	ResetUserRiskLevels()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -135,6 +139,26 @@ func (j *jsiiProxy_ConditionalAccessPolicyConditionsOutputReference) Application
 	_jsii_.Get(
 		j,
 		"applicationsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConditionalAccessPolicyConditionsOutputReference) AuthenticationFlowTransferMethods() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"authenticationFlowTransferMethods",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConditionalAccessPolicyConditionsOutputReference) AuthenticationFlowTransferMethodsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"authenticationFlowTransferMethodsInput",
 		&returns,
 	)
 	return returns
@@ -438,6 +462,17 @@ func NewConditionalAccessPolicyConditionsOutputReference_Override(c ConditionalA
 	)
 }
 
+func (j *jsiiProxy_ConditionalAccessPolicyConditionsOutputReference)SetAuthenticationFlowTransferMethods(val *[]*string) {
+	if err := j.validateSetAuthenticationFlowTransferMethodsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"authenticationFlowTransferMethods",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ConditionalAccessPolicyConditionsOutputReference)SetClientAppTypes(val *[]*string) {
 	if err := j.validateSetClientAppTypesParameters(val); err != nil {
 		panic(err)
@@ -718,8 +753,8 @@ func (c *jsiiProxy_ConditionalAccessPolicyConditionsOutputReference) Interpolati
 	return returns
 }
 
-func (c *jsiiProxy_ConditionalAccessPolicyConditionsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+func (c *jsiiProxy_ConditionalAccessPolicyConditionsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -727,7 +762,7 @@ func (c *jsiiProxy_ConditionalAccessPolicyConditionsOutputReference) Interpolati
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -800,6 +835,14 @@ func (c *jsiiProxy_ConditionalAccessPolicyConditionsOutputReference) PutUsers(va
 	)
 }
 
+func (c *jsiiProxy_ConditionalAccessPolicyConditionsOutputReference) ResetAuthenticationFlowTransferMethods() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetAuthenticationFlowTransferMethods",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_ConditionalAccessPolicyConditionsOutputReference) ResetClientApplications() {
 	_jsii_.InvokeVoid(
 		c,
@@ -864,8 +907,8 @@ func (c *jsiiProxy_ConditionalAccessPolicyConditionsOutputReference) ResetUserRi
 	)
 }
 
-func (c *jsiiProxy_ConditionalAccessPolicyConditionsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := c.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_ConditionalAccessPolicyConditionsOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -873,7 +916,7 @@ func (c *jsiiProxy_ConditionalAccessPolicyConditionsOutputReference) Resolve(_co
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

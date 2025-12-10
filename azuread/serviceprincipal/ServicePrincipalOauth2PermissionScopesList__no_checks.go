@@ -15,7 +15,7 @@ func (s *jsiiProxy_ServicePrincipalOauth2PermissionScopesList) validateGetParame
 	return nil
 }
 
-func (s *jsiiProxy_ServicePrincipalOauth2PermissionScopesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_ServicePrincipalOauth2PermissionScopesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

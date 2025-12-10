@@ -43,11 +43,11 @@ func (s *jsiiProxy_SynchronizationJobProvisionOnDemandParameterSubjectOutputRefe
 	return nil
 }
 
-func (s *jsiiProxy_SynchronizationJobProvisionOnDemandParameterSubjectOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SynchronizationJobProvisionOnDemandParameterSubjectOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SynchronizationJobProvisionOnDemandParameterSubjectOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SynchronizationJobProvisionOnDemandParameterSubjectOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzureadServicePrincipalOauth2PermissionScopesOutputRefere
 	return nil
 }
 
-func (d *jsiiProxy_DataAzureadServicePrincipalOauth2PermissionScopesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzureadServicePrincipalOauth2PermissionScopesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzureadServicePrincipalOauth2PermissionScopesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzureadServicePrincipalOauth2PermissionScopesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzureadNamedLocationCountryList) validateGetParameters(in
 	return nil
 }
 
-func (d *jsiiProxy_DataAzureadNamedLocationCountryList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzureadNamedLocationCountryList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

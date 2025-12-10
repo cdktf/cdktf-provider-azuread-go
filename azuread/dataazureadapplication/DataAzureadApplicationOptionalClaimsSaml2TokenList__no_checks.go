@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzureadApplicationOptionalClaimsSaml2TokenList) validateG
 	return nil
 }
 
-func (d *jsiiProxy_DataAzureadApplicationOptionalClaimsSaml2TokenList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzureadApplicationOptionalClaimsSaml2TokenList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

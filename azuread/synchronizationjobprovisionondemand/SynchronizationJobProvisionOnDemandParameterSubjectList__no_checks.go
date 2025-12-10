@@ -15,7 +15,7 @@ func (s *jsiiProxy_SynchronizationJobProvisionOnDemandParameterSubjectList) vali
 	return nil
 }
 
-func (s *jsiiProxy_SynchronizationJobProvisionOnDemandParameterSubjectList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SynchronizationJobProvisionOnDemandParameterSubjectList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

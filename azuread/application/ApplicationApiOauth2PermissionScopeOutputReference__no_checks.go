@@ -43,11 +43,11 @@ func (a *jsiiProxy_ApplicationApiOauth2PermissionScopeOutputReference) validateG
 	return nil
 }
 
-func (a *jsiiProxy_ApplicationApiOauth2PermissionScopeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_ApplicationApiOauth2PermissionScopeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_ApplicationApiOauth2PermissionScopeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApplicationApiOauth2PermissionScopeOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

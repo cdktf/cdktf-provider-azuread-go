@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzureadServicePrincipalOauth2PermissionScopesList) valida
 	return nil
 }
 
-func (d *jsiiProxy_DataAzureadServicePrincipalOauth2PermissionScopesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzureadServicePrincipalOauth2PermissionScopesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (s *jsiiProxy_SynchronizationSecretCredentialOutputReference) validateGetSt
 	return nil
 }
 
-func (s *jsiiProxy_SynchronizationSecretCredentialOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SynchronizationSecretCredentialOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SynchronizationSecretCredentialOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SynchronizationSecretCredentialOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

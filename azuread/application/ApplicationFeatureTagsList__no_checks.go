@@ -15,7 +15,7 @@ func (a *jsiiProxy_ApplicationFeatureTagsList) validateGetParameters(index *floa
 	return nil
 }
 
-func (a *jsiiProxy_ApplicationFeatureTagsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApplicationFeatureTagsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (s *jsiiProxy_SynchronizationJobScheduleList) validateGetParameters(index *
 	return nil
 }
 
-func (s *jsiiProxy_SynchronizationJobScheduleList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SynchronizationJobScheduleList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

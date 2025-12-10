@@ -15,7 +15,7 @@ func (a *jsiiProxy_AccessPackageAssignmentPolicyQuestionTextLocalizedTextList) v
 	return nil
 }
 
-func (a *jsiiProxy_AccessPackageAssignmentPolicyQuestionTextLocalizedTextList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AccessPackageAssignmentPolicyQuestionTextLocalizedTextList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

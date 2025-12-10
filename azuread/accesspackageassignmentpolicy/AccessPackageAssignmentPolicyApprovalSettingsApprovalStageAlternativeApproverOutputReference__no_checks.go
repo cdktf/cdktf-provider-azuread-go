@@ -43,11 +43,11 @@ func (a *jsiiProxy_AccessPackageAssignmentPolicyApprovalSettingsApprovalStageAlt
 	return nil
 }
 
-func (a *jsiiProxy_AccessPackageAssignmentPolicyApprovalSettingsApprovalStageAlternativeApproverOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AccessPackageAssignmentPolicyApprovalSettingsApprovalStageAlternativeApproverOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AccessPackageAssignmentPolicyApprovalSettingsApprovalStageAlternativeApproverOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AccessPackageAssignmentPolicyApprovalSettingsApprovalStageAlternativeApproverOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

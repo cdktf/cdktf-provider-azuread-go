@@ -43,11 +43,11 @@ func (s *jsiiProxy_ServicePrincipalTokenSigningCertificateTimeoutsOutputReferenc
 	return nil
 }
 
-func (s *jsiiProxy_ServicePrincipalTokenSigningCertificateTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_ServicePrincipalTokenSigningCertificateTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_ServicePrincipalTokenSigningCertificateTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_ServicePrincipalTokenSigningCertificateTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

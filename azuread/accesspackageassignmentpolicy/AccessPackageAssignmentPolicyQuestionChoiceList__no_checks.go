@@ -15,7 +15,7 @@ func (a *jsiiProxy_AccessPackageAssignmentPolicyQuestionChoiceList) validateGetP
 	return nil
 }
 
-func (a *jsiiProxy_AccessPackageAssignmentPolicyQuestionChoiceList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AccessPackageAssignmentPolicyQuestionChoiceList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

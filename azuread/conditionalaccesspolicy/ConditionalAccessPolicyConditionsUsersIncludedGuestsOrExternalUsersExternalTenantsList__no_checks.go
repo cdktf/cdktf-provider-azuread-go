@@ -15,7 +15,7 @@ func (c *jsiiProxy_ConditionalAccessPolicyConditionsUsersIncludedGuestsOrExterna
 	return nil
 }
 
-func (c *jsiiProxy_ConditionalAccessPolicyConditionsUsersIncludedGuestsOrExternalUsersExternalTenantsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ConditionalAccessPolicyConditionsUsersIncludedGuestsOrExternalUsersExternalTenantsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

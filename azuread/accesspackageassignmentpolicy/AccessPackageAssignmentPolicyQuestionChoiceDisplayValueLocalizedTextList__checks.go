@@ -29,9 +29,9 @@ func (a *jsiiProxy_AccessPackageAssignmentPolicyQuestionChoiceDisplayValueLocali
 	return nil
 }
 
-func (a *jsiiProxy_AccessPackageAssignmentPolicyQuestionChoiceDisplayValueLocalizedTextList) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (a *jsiiProxy_AccessPackageAssignmentPolicyQuestionChoiceDisplayValueLocalizedTextList) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

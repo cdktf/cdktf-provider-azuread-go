@@ -43,11 +43,11 @@ func (g *jsiiProxy_GroupWithoutMembersDynamicMembershipOutputReference) validate
 	return nil
 }
 
-func (g *jsiiProxy_GroupWithoutMembersDynamicMembershipOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GroupWithoutMembersDynamicMembershipOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GroupWithoutMembersDynamicMembershipOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GroupWithoutMembersDynamicMembershipOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

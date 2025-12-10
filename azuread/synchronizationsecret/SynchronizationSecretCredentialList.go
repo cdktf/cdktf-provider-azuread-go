@@ -41,7 +41,7 @@ type SynchronizationSecretCredentialList interface {
 	Get(index *float64) SynchronizationSecretCredentialOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -231,8 +231,8 @@ func (s *jsiiProxy_SynchronizationSecretCredentialList) Get(index *float64) Sync
 	return returns
 }
 
-func (s *jsiiProxy_SynchronizationSecretCredentialList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := s.validateResolveParameters(_context); err != nil {
+func (s *jsiiProxy_SynchronizationSecretCredentialList) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -240,7 +240,7 @@ func (s *jsiiProxy_SynchronizationSecretCredentialList) Resolve(_context cdktf.I
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

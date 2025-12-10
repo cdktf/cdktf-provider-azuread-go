@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzureadApplicationRequiredResourceAccessList) validateGet
 	return nil
 }
 
-func (d *jsiiProxy_DataAzureadApplicationRequiredResourceAccessList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzureadApplicationRequiredResourceAccessList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

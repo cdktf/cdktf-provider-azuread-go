@@ -43,7 +43,7 @@ func (c *jsiiProxy_ConditionalAccessPolicyConditionsUsersIncludedGuestsOrExterna
 	return nil
 }
 
-func (c *jsiiProxy_ConditionalAccessPolicyConditionsUsersIncludedGuestsOrExternalUsersOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ConditionalAccessPolicyConditionsUsersIncludedGuestsOrExternalUsersOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (c *jsiiProxy_ConditionalAccessPolicyConditionsUsersIncludedGuestsOrExterna
 	return nil
 }
 
-func (c *jsiiProxy_ConditionalAccessPolicyConditionsUsersIncludedGuestsOrExternalUsersOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ConditionalAccessPolicyConditionsUsersIncludedGuestsOrExternalUsersOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

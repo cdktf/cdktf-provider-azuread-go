@@ -43,11 +43,11 @@ func (g *jsiiProxy_GroupRoleManagementPolicyActivationRulesApprovalStagePrimaryA
 	return nil
 }
 
-func (g *jsiiProxy_GroupRoleManagementPolicyActivationRulesApprovalStagePrimaryApproverOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GroupRoleManagementPolicyActivationRulesApprovalStagePrimaryApproverOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GroupRoleManagementPolicyActivationRulesApprovalStagePrimaryApproverOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GroupRoleManagementPolicyActivationRulesApprovalStagePrimaryApproverOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

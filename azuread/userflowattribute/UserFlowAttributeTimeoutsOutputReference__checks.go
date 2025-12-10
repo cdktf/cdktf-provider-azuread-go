@@ -85,17 +85,17 @@ func (u *jsiiProxy_UserFlowAttributeTimeoutsOutputReference) validateGetStringMa
 	return nil
 }
 
-func (u *jsiiProxy_UserFlowAttributeTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (u *jsiiProxy_UserFlowAttributeTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
 }
 
-func (u *jsiiProxy_UserFlowAttributeTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (u *jsiiProxy_UserFlowAttributeTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

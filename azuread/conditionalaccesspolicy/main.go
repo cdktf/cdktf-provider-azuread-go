@@ -347,6 +347,8 @@ func init() {
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "applications", GoGetter: "Applications"},
 			_jsii_.MemberProperty{JsiiProperty: "applicationsInput", GoGetter: "ApplicationsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "authenticationFlowTransferMethods", GoGetter: "AuthenticationFlowTransferMethods"},
+			_jsii_.MemberProperty{JsiiProperty: "authenticationFlowTransferMethodsInput", GoGetter: "AuthenticationFlowTransferMethodsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "clientApplications", GoGetter: "ClientApplications"},
 			_jsii_.MemberProperty{JsiiProperty: "clientApplicationsInput", GoGetter: "ClientApplicationsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "clientAppTypes", GoGetter: "ClientAppTypes"},
@@ -382,6 +384,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putLocations", GoMethod: "PutLocations"},
 			_jsii_.MemberMethod{JsiiMethod: "putPlatforms", GoMethod: "PutPlatforms"},
 			_jsii_.MemberMethod{JsiiMethod: "putUsers", GoMethod: "PutUsers"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAuthenticationFlowTransferMethods", GoMethod: "ResetAuthenticationFlowTransferMethods"},
 			_jsii_.MemberMethod{JsiiMethod: "resetClientApplications", GoMethod: "ResetClientApplications"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDevices", GoMethod: "ResetDevices"},
 			_jsii_.MemberMethod{JsiiMethod: "resetInsiderRiskLevels", GoMethod: "ResetInsiderRiskLevels"},

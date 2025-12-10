@@ -41,7 +41,7 @@ type ApplicationFeatureTagsList interface {
 	Get(index *float64) ApplicationFeatureTagsOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -231,8 +231,8 @@ func (a *jsiiProxy_ApplicationFeatureTagsList) Get(index *float64) ApplicationFe
 	return returns
 }
 
-func (a *jsiiProxy_ApplicationFeatureTagsList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := a.validateResolveParameters(_context); err != nil {
+func (a *jsiiProxy_ApplicationFeatureTagsList) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := a.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -240,7 +240,7 @@ func (a *jsiiProxy_ApplicationFeatureTagsList) Resolve(_context cdktf.IResolveCo
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

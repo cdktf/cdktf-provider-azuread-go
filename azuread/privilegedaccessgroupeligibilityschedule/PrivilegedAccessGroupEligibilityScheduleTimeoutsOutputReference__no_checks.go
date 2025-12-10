@@ -43,11 +43,11 @@ func (p *jsiiProxy_PrivilegedAccessGroupEligibilityScheduleTimeoutsOutputReferen
 	return nil
 }
 
-func (p *jsiiProxy_PrivilegedAccessGroupEligibilityScheduleTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PrivilegedAccessGroupEligibilityScheduleTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PrivilegedAccessGroupEligibilityScheduleTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PrivilegedAccessGroupEligibilityScheduleTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

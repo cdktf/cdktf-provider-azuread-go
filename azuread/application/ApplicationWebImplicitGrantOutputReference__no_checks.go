@@ -43,11 +43,11 @@ func (a *jsiiProxy_ApplicationWebImplicitGrantOutputReference) validateGetString
 	return nil
 }
 
-func (a *jsiiProxy_ApplicationWebImplicitGrantOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_ApplicationWebImplicitGrantOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_ApplicationWebImplicitGrantOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApplicationWebImplicitGrantOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

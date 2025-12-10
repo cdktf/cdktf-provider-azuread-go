@@ -43,11 +43,11 @@ func (c *jsiiProxy_CustomDirectoryRoleTimeoutsOutputReference) validateGetString
 	return nil
 }
 
-func (c *jsiiProxy_CustomDirectoryRoleTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CustomDirectoryRoleTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CustomDirectoryRoleTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CustomDirectoryRoleTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

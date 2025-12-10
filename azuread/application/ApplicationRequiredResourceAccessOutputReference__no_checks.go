@@ -43,7 +43,7 @@ func (a *jsiiProxy_ApplicationRequiredResourceAccessOutputReference) validateGet
 	return nil
 }
 
-func (a *jsiiProxy_ApplicationRequiredResourceAccessOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_ApplicationRequiredResourceAccessOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (a *jsiiProxy_ApplicationRequiredResourceAccessOutputReference) validatePut
 	return nil
 }
 
-func (a *jsiiProxy_ApplicationRequiredResourceAccessOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApplicationRequiredResourceAccessOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

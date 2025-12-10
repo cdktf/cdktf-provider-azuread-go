@@ -15,7 +15,7 @@ func (s *jsiiProxy_ServicePrincipalFeatureTagsList) validateGetParameters(index 
 	return nil
 }
 
-func (s *jsiiProxy_ServicePrincipalFeatureTagsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_ServicePrincipalFeatureTagsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

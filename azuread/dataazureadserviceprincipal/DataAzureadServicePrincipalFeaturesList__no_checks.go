@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzureadServicePrincipalFeaturesList) validateGetParameter
 	return nil
 }
 
-func (d *jsiiProxy_DataAzureadServicePrincipalFeaturesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzureadServicePrincipalFeaturesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

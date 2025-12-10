@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.6.0/docs/resources/service_principal_certificate azuread_service_principal_certificate}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/service_principal_certificate azuread_service_principal_certificate}.
 type ServicePrincipalCertificate interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -524,7 +524,7 @@ func (j *jsiiProxy_ServicePrincipalCertificate) ValueInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/3.6.0/docs/resources/service_principal_certificate azuread_service_principal_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/service_principal_certificate azuread_service_principal_certificate} Resource.
 func NewServicePrincipalCertificate(scope constructs.Construct, id *string, config *ServicePrincipalCertificateConfig) ServicePrincipalCertificate {
 	_init_.Initialize()
 
@@ -542,7 +542,7 @@ func NewServicePrincipalCertificate(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/3.6.0/docs/resources/service_principal_certificate azuread_service_principal_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/service_principal_certificate azuread_service_principal_certificate} Resource.
 func NewServicePrincipalCertificate_Override(s ServicePrincipalCertificate, scope constructs.Construct, id *string, config *ServicePrincipalCertificateConfig) {
 	_init_.Initialize()
 

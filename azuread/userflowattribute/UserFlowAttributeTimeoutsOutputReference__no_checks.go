@@ -43,11 +43,11 @@ func (u *jsiiProxy_UserFlowAttributeTimeoutsOutputReference) validateGetStringMa
 	return nil
 }
 
-func (u *jsiiProxy_UserFlowAttributeTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (u *jsiiProxy_UserFlowAttributeTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (u *jsiiProxy_UserFlowAttributeTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (u *jsiiProxy_UserFlowAttributeTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

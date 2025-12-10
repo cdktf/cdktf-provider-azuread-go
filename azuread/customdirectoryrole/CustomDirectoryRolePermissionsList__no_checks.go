@@ -15,7 +15,7 @@ func (c *jsiiProxy_CustomDirectoryRolePermissionsList) validateGetParameters(ind
 	return nil
 }
 
-func (c *jsiiProxy_CustomDirectoryRolePermissionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CustomDirectoryRolePermissionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

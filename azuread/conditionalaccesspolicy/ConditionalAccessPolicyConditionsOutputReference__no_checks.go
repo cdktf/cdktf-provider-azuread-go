@@ -43,7 +43,7 @@ func (c *jsiiProxy_ConditionalAccessPolicyConditionsOutputReference) validateGet
 	return nil
 }
 
-func (c *jsiiProxy_ConditionalAccessPolicyConditionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ConditionalAccessPolicyConditionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -71,7 +71,11 @@ func (c *jsiiProxy_ConditionalAccessPolicyConditionsOutputReference) validatePut
 	return nil
 }
 
-func (c *jsiiProxy_ConditionalAccessPolicyConditionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ConditionalAccessPolicyConditionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+	return nil
+}
+
+func (j *jsiiProxy_ConditionalAccessPolicyConditionsOutputReference) validateSetAuthenticationFlowTransferMethodsParameters(val *[]*string) error {
 	return nil
 }
 

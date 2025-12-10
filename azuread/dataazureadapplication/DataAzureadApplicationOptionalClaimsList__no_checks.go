@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzureadApplicationOptionalClaimsList) validateGetParamete
 	return nil
 }
 
-func (d *jsiiProxy_DataAzureadApplicationOptionalClaimsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzureadApplicationOptionalClaimsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

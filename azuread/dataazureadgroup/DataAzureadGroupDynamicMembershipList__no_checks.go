@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzureadGroupDynamicMembershipList) validateGetParameters(
 	return nil
 }
 
-func (d *jsiiProxy_DataAzureadGroupDynamicMembershipList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzureadGroupDynamicMembershipList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

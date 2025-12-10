@@ -15,7 +15,7 @@ func (s *jsiiProxy_SynchronizationSecretCredentialList) validateGetParameters(in
 	return nil
 }
 
-func (s *jsiiProxy_SynchronizationSecretCredentialList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SynchronizationSecretCredentialList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (s *jsiiProxy_SynchronizationJobProvisionOnDemandTimeoutsOutputReference) v
 	return nil
 }
 
-func (s *jsiiProxy_SynchronizationJobProvisionOnDemandTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SynchronizationJobProvisionOnDemandTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SynchronizationJobProvisionOnDemandTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SynchronizationJobProvisionOnDemandTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

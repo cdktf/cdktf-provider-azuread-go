@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzureadAccessPackageCatalogTimeoutsOutputReference) valid
 	return nil
 }
 
-func (d *jsiiProxy_DataAzureadAccessPackageCatalogTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzureadAccessPackageCatalogTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzureadAccessPackageCatalogTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzureadAccessPackageCatalogTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

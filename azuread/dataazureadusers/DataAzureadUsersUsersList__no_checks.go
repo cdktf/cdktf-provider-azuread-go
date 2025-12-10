@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzureadUsersUsersList) validateGetParameters(index *float
 	return nil
 }
 
-func (d *jsiiProxy_DataAzureadUsersUsersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzureadUsersUsersList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

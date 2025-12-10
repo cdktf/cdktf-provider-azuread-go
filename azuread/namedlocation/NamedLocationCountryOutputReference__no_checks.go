@@ -43,11 +43,11 @@ func (n *jsiiProxy_NamedLocationCountryOutputReference) validateGetStringMapAttr
 	return nil
 }
 
-func (n *jsiiProxy_NamedLocationCountryOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NamedLocationCountryOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (n *jsiiProxy_NamedLocationCountryOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NamedLocationCountryOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,7 +43,7 @@ func (a *jsiiProxy_AccessPackageAssignmentPolicyAssignmentReviewSettingsOutputRe
 	return nil
 }
 
-func (a *jsiiProxy_AccessPackageAssignmentPolicyAssignmentReviewSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AccessPackageAssignmentPolicyAssignmentReviewSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (a *jsiiProxy_AccessPackageAssignmentPolicyAssignmentReviewSettingsOutputRe
 	return nil
 }
 
-func (a *jsiiProxy_AccessPackageAssignmentPolicyAssignmentReviewSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AccessPackageAssignmentPolicyAssignmentReviewSettingsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

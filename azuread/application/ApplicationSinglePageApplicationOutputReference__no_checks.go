@@ -43,11 +43,11 @@ func (a *jsiiProxy_ApplicationSinglePageApplicationOutputReference) validateGetS
 	return nil
 }
 
-func (a *jsiiProxy_ApplicationSinglePageApplicationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_ApplicationSinglePageApplicationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_ApplicationSinglePageApplicationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApplicationSinglePageApplicationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

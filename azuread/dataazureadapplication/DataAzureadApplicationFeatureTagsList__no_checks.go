@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzureadApplicationFeatureTagsList) validateGetParameters(
 	return nil
 }
 
-func (d *jsiiProxy_DataAzureadApplicationFeatureTagsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzureadApplicationFeatureTagsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

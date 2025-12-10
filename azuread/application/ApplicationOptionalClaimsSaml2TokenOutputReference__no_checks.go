@@ -43,11 +43,11 @@ func (a *jsiiProxy_ApplicationOptionalClaimsSaml2TokenOutputReference) validateG
 	return nil
 }
 
-func (a *jsiiProxy_ApplicationOptionalClaimsSaml2TokenOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_ApplicationOptionalClaimsSaml2TokenOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_ApplicationOptionalClaimsSaml2TokenOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApplicationOptionalClaimsSaml2TokenOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 
